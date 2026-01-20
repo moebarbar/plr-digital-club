@@ -1,0 +1,134 @@
+Create a high-end, modern, conversion-focused homepage / marketing page for a digital product platform.
+
+Brand & Purpose
+
+The website sells resell-ready digital products.
+
+Users get access to 1,000+ curated digital products with Master Resell Rights (MRR).
+
+Users can resell the products anywhere and keep 100% of the profit.
+
+One-time payment, lifetime access.
+
+Core Headline (MUST USE)
+
+Get Resell-Ready Digital Products for 100% Profit
+
+Subheadline
+
+Instant access to 1,000+ curated digital products with Master Resell Rights.
+No creation. No monthly fees. Just profit.
+
+Design & Visual Style
+
+Extremely creative, premium, modern SaaS-style design
+
+Clean layout, strong typography, bold spacing
+
+Dark or light theme is acceptable, but must feel high-end
+
+Smooth animations and subtle micro-interactions (hover, fade, slide)
+
+Use cards, grids, and visual hierarchy — no long text blocks
+
+Mobile-first and fully responsive
+
+Homepage Structure (IMPORTANT)
+
+Build a short, high-converting page with the following sections in this order:
+
+Hero Section
+
+Big bold headline (provided above)
+
+Short subheadline
+
+Primary CTA button: “Get Instant Access”
+
+Secondary CTA (optional): “See What’s Inside”
+
+Trust / Credibility Section
+
+Short trust statements (e.g. lifetime access, beginner-friendly, 30-day guarantee)
+
+Minimal and clean
+
+What You Get (Value Snapshot)
+
+Card-based layout showing:
+
+1,000+ Digital Products
+
+Master Resell Rights
+
+Keep 100% Profit
+
+Brand-ready & editable
+
+Lifetime access
+
+Product Categories
+
+Display categories visually (icons or cards), such as:
+
+Templates & Systems
+
+AI & Business Tools
+
+Marketing Assets
+
+SaaS & Software (Lifetime Deals)
+
+Planners, Journals & eBooks
+
+Website & Funnel Kits
+
+Each category should have a one-line benefit
+
+How It Works
+
+Simple 4-step process:
+
+Join
+
+Download
+
+Customize
+
+Sell & keep 100% profit
+
+Pricing / Offer Section
+
+Emphasize one-time payment
+
+Highlight lifetime access and value
+
+Strong CTA button
+
+Final CTA Section
+
+Bold closing statement
+
+Repeat CTA: “Get Instant Access”
+
+Copywriting Rules
+
+Short, punchy, benefit-driven copy
+
+No hype, no exaggeration
+
+Avoid long paragraphs
+
+Focus on clarity and value
+
+Technical Requirements
+
+Use modern frontend stack (HTML, CSS, JavaScript or React)
+
+Clean, readable, well-structured code
+
+Comment the code where necessary
+
+Use placeholders for images/icons if needed
+
+The final result should feel like a premium SaaS marketing homepage, not a blog or marketplace listing.
