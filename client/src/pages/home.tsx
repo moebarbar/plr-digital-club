@@ -215,7 +215,7 @@ function HeroSection() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-muted-foreground mb-4">
             <div className="flex items-center gap-2" data-testid="hero-trust-payment">
               <CheckCircle className="w-4 h-4 text-primary" />
               <span>One-time payment</span>
@@ -228,6 +228,15 @@ function HeroSection() {
               <CheckCircle className="w-4 h-4 text-primary" />
               <span>Instant download</span>
             </div>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-2 text-xs md:text-sm text-muted-foreground" data-testid="hero-security-strip">
+            <span className="flex items-center gap-1">
+              <Shield className="w-3 h-3 md:w-4 md:h-4 text-primary" />
+              Secure SSL Checkout
+            </span>
+            <span className="text-border">|</span>
+            <span>30-Day Money-Back Guarantee</span>
           </div>
         </div>
 
@@ -479,11 +488,15 @@ function ValueSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
+            <Badge variant="secondary" className="mb-4">
+              <Zap className="w-4 h-4 mr-2" />
+              90% OFF - Limited Time
+            </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-value-title">
-              Your Membership Includes
+              Everything You Need to Start Selling Digital Products
             </h2>
             <p className="text-muted-foreground text-lg" data-testid="text-value-subtitle">
-              One payment. Lifetime access. Everything included.
+              One payment. Lifetime access. Start today.
             </p>
           </div>
 
