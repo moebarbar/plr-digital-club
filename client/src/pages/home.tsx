@@ -126,6 +126,41 @@ function HeroSection() {
   );
 }
 
+function StatsSection() {
+  const stats = [
+    { number: "1,000+", label: "Digital Products", icon: Package },
+    { number: "5,000+", label: "Happy Members", icon: Users },
+    { number: "$2M+", label: "Member Earnings", icon: DollarSign },
+    { number: "4.9/5", label: "Member Rating", icon: Star },
+  ];
+
+  return (
+    <section className="py-16 bg-primary/5" data-testid="section-stats">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="text-center"
+              data-testid={`stat-item-${index}`}
+            >
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
+                <stat.icon className="w-6 h-6 text-primary" />
+              </div>
+              <p className="text-3xl md:text-4xl font-bold text-primary mb-1" data-testid={`stat-number-${index}`}>
+                {stat.number}
+              </p>
+              <p className="text-muted-foreground text-sm" data-testid={`stat-label-${index}`}>
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function TrustSection() {
   const trustItems = [
     { icon: Infinity, text: "Lifetime Access" },
@@ -136,17 +171,19 @@ function TrustSection() {
   ];
 
   return (
-    <section className="py-12 border-y border-border bg-muted/30" data-testid="section-trust">
+    <section className="py-8 border-y border-border" data-testid="section-trust">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-wrap justify-center gap-6 md:gap-12">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-16">
           {trustItems.map((item, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 text-muted-foreground"
+              className="flex items-center gap-3"
               data-testid={`trust-item-${index}`}
             >
-              <item.icon className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium" data-testid={`trust-text-${index}`}>{item.text}</span>
+              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                <item.icon className="w-4 h-4 text-primary" />
+              </div>
+              <span className="text-sm font-semibold" data-testid={`trust-text-${index}`}>{item.text}</span>
             </div>
           ))}
         </div>
@@ -378,16 +415,18 @@ function TestimonialsSection() {
     {
       quote: "I started selling the Notion templates from PLR Digital Club and made my first $1k in just 3 days. The quality is unmatched.",
       name: "Sarah Jenkins",
-      role: "Digital Marketer",
-      earnings: "$1,250 this week",
+      role: "Digital Entrepreneur",
+      earnings: "$12,430 this month",
       avatar: "SJ",
+      highlight: "Made $1k in 3 days",
     },
     {
-      quote: "The best investment I've made. No more spending weeks creating products. I just download, rebrand, and sell.",
+      quote: "The best investment I've made. No more spending weeks creating products. I just download, customize, and sell.",
       name: "Michael Chen",
       role: "Side Hustler",
       earnings: "$4,500 this month",
       avatar: "MC",
+      highlight: "Quit my 9-5 job",
     },
     {
       quote: "Finally, PLR content that doesn't look like it was made in 1999. The designs are modern and actually convert.",
@@ -395,6 +434,7 @@ function TestimonialsSection() {
       role: "Content Creator",
       earnings: "$890 this week",
       avatar: "JW",
+      highlight: "10x my content output",
     },
   ];
 
@@ -402,28 +442,38 @@ function TestimonialsSection() {
     <section className="py-12 md:py-20" data-testid="section-testimonials">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
+          <Badge variant="secondary" className="mb-4">
+            <Star className="w-4 h-4 mr-2 fill-primary text-primary" />
+            Verified Success Stories
+          </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-testimonials-title">
             Real Results from Real People
           </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Join thousands of entrepreneurs who are already building their digital product empires
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="p-6 hover-elevate transition-all duration-300"
+              className="p-6 hover-elevate transition-all duration-300 relative overflow-visible"
               data-testid={`card-testimonial-${index}`}
             >
-              <div className="flex gap-1 mb-4">
+              <Badge className="absolute -top-3 left-6 bg-primary text-primary-foreground">
+                {testimonial.highlight}
+              </Badge>
+              <div className="flex gap-1 mb-4 mt-2">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                 ))}
               </div>
-              <blockquote className="text-muted-foreground mb-6" data-testid={`text-testimonial-quote-${index}`}>
+              <blockquote className="mb-6" data-testid={`text-testimonial-quote-${index}`}>
                 "{testimonial.quote}"
               </blockquote>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-400 flex items-center justify-center text-white font-semibold">
                   {testimonial.avatar}
                 </div>
                 <div>
@@ -433,7 +483,7 @@ function TestimonialsSection() {
               </div>
               <div className="mt-4 pt-4 border-t border-border">
                 <p className="text-sm text-muted-foreground">Recent Earnings</p>
-                <p className="text-lg font-semibold text-primary" data-testid={`text-testimonial-earnings-${index}`}>
+                <p className="text-lg font-bold text-primary" data-testid={`text-testimonial-earnings-${index}`}>
                   {testimonial.earnings}
                 </p>
               </div>
@@ -528,26 +578,35 @@ function FAQSection() {
 
 function FinalCTASection() {
   return (
-    <section className="py-12 md:py-24 relative overflow-hidden" data-testid="section-final-cta">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10" />
-      <div className="absolute top-10 right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-10 left-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+    <section className="py-16 md:py-28 relative overflow-hidden" data-testid="section-final-cta">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent" />
+      <div className="absolute top-10 right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 left-20 w-80 h-80 bg-blue-400/10 rounded-full blur-3xl" />
       
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" data-testid="text-final-headline">
-            Start Your Digital Business Today
+          <Badge variant="secondary" className="mb-6">
+            <Zap className="w-4 h-4 mr-2" />
+            Limited Time Offer
+          </Badge>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6" data-testid="text-final-headline">
+            Ready to Start Earning?
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto" data-testid="text-final-subheadline">
-            Don't spend months creating products. Grab ours, sell them as your own, and keep all the profit.
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto" data-testid="text-final-subheadline">
+            Join 5,000+ entrepreneurs who are already selling digital products and keeping 100% of the profits.
+          </p>
+          <p className="text-2xl md:text-3xl font-bold mb-8">
+            <span className="line-through text-muted-foreground">$497</span>{" "}
+            <span className="text-primary">$97</span>{" "}
+            <span className="text-sm font-normal text-muted-foreground">one-time payment</span>
           </p>
           
-          <Button size="lg" data-testid="button-final-cta">
-            Get Started for $97
+          <Button size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/25" data-testid="button-final-cta">
+            Get Instant Access Now
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
-          <div className="flex flex-wrap justify-center gap-6 mt-8 text-muted-foreground text-sm">
+          <div className="flex flex-wrap justify-center gap-6 mt-10 text-muted-foreground text-sm">
             <div className="flex items-center gap-2" data-testid="final-trust-guarantee">
               <Shield className="w-4 h-4 text-primary" />
               <span>30-Day Money-Back Guarantee</span>
@@ -600,6 +659,7 @@ export default function Home() {
     <div className="min-h-screen bg-background" data-testid="page-home">
       <Header />
       <HeroSection />
+      <StatsSection />
       <TrustSection />
       <HowItWorksSection />
       <ProductsSection />
