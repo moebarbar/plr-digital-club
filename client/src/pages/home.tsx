@@ -884,7 +884,7 @@ function Footer() {
           <div>
             <p className="font-semibold mb-1" data-testid="text-footer-brand">PLR Digital Club</p>
             <p className="text-muted-foreground text-sm" data-testid="text-copyright">
-              © 2025 PLR Digital Club. All rights reserved.
+              © 2026 PLR Digital Club. All rights reserved.
             </p>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
