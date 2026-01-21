@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -100,6 +101,13 @@ function Header() {
           >
             FAQ
           </button>
+          <Link 
+            href="/blog" 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            data-testid="nav-blog"
+          >
+            Blog
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -156,6 +164,13 @@ function Header() {
           >
             FAQ
           </button>
+          <Link 
+            href="/blog" 
+            className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            data-testid="mobile-nav-blog"
+          >
+            Blog
+          </Link>
           <a 
             href={SIGNIN_URL} 
             target="_blank" 
