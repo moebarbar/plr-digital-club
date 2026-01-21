@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -8,7 +9,7 @@ import {
   Infinity,
   Palette,
   Download,
-  Settings,
+  RefreshCw,
   TrendingUp,
   LayoutTemplate,
   Bot,
@@ -23,7 +24,17 @@ import {
   ArrowRight,
   Sparkles,
   Zap,
+  Star,
+  Check,
+  ChevronDown,
 } from "lucide-react";
+
+import heroImage from "@assets/generated_images/digital_product_bundle_mockup.png";
+import emailDbImage from "@assets/generated_images/email_database_product_mockup.png";
+import socialTemplatesImage from "@assets/generated_images/social_media_templates_mockup.png";
+import plannerImage from "@assets/generated_images/digital_planner_mockup.png";
+import aiToolsImage from "@assets/generated_images/ai_business_tools_mockup.png";
+import funnelKitsImage from "@assets/generated_images/website_funnel_kits_mockup.png";
 
 function HeroSection() {
   return (
@@ -33,31 +44,60 @@ function HeroSection() {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <Badge variant="secondary" className="mb-6" data-testid="badge-hero">
-            <Sparkles className="w-4 h-4 mr-2" />
-            1,000+ Digital Products with MRR
-          </Badge>
-          
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6" data-testid="text-hero-headline">
-            Get Resell-Ready Digital Products for{" "}
-            <span className="text-primary" data-testid="text-hero-highlight">100% Profit</span>
-          </h1>
-          
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed" data-testid="text-hero-subheadline">
-            Instant access to 1,000+ curated digital products with Master Resell Rights.
-            <br className="hidden md:block" />
-            No creation. No monthly fees. Just profit.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="w-full sm:w-auto" data-testid="button-cta-primary">
-              Get Instant Access
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto" data-testid="button-cta-secondary">
-              See What's Inside
-            </Button>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
+            <Badge variant="secondary" className="mb-6" data-testid="badge-hero">
+              <Sparkles className="w-4 h-4 mr-2" />
+              New Products Added Weekly
+            </Badge>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6" data-testid="text-hero-headline">
+              Get Resell-Ready Digital Products for{" "}
+              <span className="text-primary" data-testid="text-hero-highlight">100% Profit</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="text-hero-subheadline">
+              Pay once. Access hundreds of proven PLR & MRR products. Rebrand them, sell them, and keep every single penny. No hidden fees.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              <Button size="lg" className="w-full sm:w-auto" data-testid="button-cta-primary">
+                Get Instant Access for $97
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button size="lg" variant="outline" className="w-full sm:w-auto" data-testid="button-cta-secondary">
+                Browse Products
+              </Button>
+            </div>
+
+            <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2" data-testid="hero-trust-payment">
+                <CheckCircle className="w-4 h-4 text-primary" />
+                <span>One-time payment</span>
+              </div>
+              <div className="flex items-center gap-2" data-testid="hero-trust-rights">
+                <CheckCircle className="w-4 h-4 text-primary" />
+                <span>Commercial rights included</span>
+              </div>
+              <div className="flex items-center gap-2" data-testid="hero-trust-download">
+                <CheckCircle className="w-4 h-4 text-primary" />
+                <span>Instant download</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <img 
+              src={heroImage} 
+              alt="Digital Product Bundle with PLR and MRR Rights - Over 500 Premium Digital Products" 
+              className="w-full rounded-xl shadow-2xl"
+              data-testid="img-hero-bundle"
+            />
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card border border-border rounded-lg px-6 py-3 shadow-lg">
+              <p className="text-sm font-semibold text-center" data-testid="text-hero-value">
+                TOTAL VALUE: <span className="text-primary">$5,490+</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -94,163 +134,25 @@ function TrustSection() {
   );
 }
 
-function ValueSection() {
-  const valueCards = [
-    {
-      icon: Package,
-      title: "1,000+ Digital Products",
-      description: "Massive library of ready-to-sell digital assets",
-    },
-    {
-      icon: Award,
-      title: "Master Resell Rights",
-      description: "Full rights to resell and keep every penny",
-    },
-    {
-      icon: DollarSign,
-      title: "Keep 100% Profit",
-      description: "No royalties, no splits, all yours",
-    },
-    {
-      icon: Palette,
-      title: "Brand-Ready & Editable",
-      description: "Customize with your branding in minutes",
-    },
-    {
-      icon: Infinity,
-      title: "Lifetime Access",
-      description: "Pay once, access forever with free updates",
-    },
-    {
-      icon: Zap,
-      title: "Instant Delivery",
-      description: "Download everything immediately after purchase",
-    },
-  ];
-
-  return (
-    <section className="py-12 md:py-20" data-testid="section-value">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-value-title">
-            Everything You Need to Start Selling
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-value-subtitle">
-            One purchase gives you access to a complete digital product business
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {valueCards.map((card, index) => (
-            <Card
-              key={index}
-              className="p-8 hover-elevate transition-all duration-300"
-              data-testid={`card-value-${index}`}
-            >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                <card.icon className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3" data-testid={`text-value-card-title-${index}`}>{card.title}</h3>
-              <p className="text-muted-foreground" data-testid={`text-value-card-desc-${index}`}>{card.description}</p>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function CategoriesSection() {
-  const categories = [
-    {
-      icon: LayoutTemplate,
-      title: "Templates & Systems",
-      benefit: "Launch faster with proven frameworks",
-    },
-    {
-      icon: Bot,
-      title: "AI & Business Tools",
-      benefit: "Automate and scale your operations",
-    },
-    {
-      icon: Megaphone,
-      title: "Marketing Assets",
-      benefit: "Graphics, copy, and conversion tools",
-    },
-    {
-      icon: Laptop,
-      title: "SaaS & Software",
-      benefit: "Lifetime deals on premium tools",
-    },
-    {
-      icon: BookOpen,
-      title: "Planners & eBooks",
-      benefit: "Ready-to-sell digital guides",
-    },
-    {
-      icon: Globe,
-      title: "Website & Funnel Kits",
-      benefit: "Complete sales system templates",
-    },
-  ];
-
-  return (
-    <section className="py-12 md:py-20 bg-muted/30" data-testid="section-categories">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-categories-title">
-            Product Categories
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-categories-subtitle">
-            Diverse collection covering every profitable niche
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((category, index) => (
-            <Card
-              key={index}
-              className="p-6 hover-elevate transition-all duration-300 cursor-pointer"
-              data-testid={`card-category-${index}`}
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <category.icon className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1" data-testid={`text-category-title-${index}`}>{category.title}</h3>
-                  <p className="text-muted-foreground text-sm" data-testid={`text-category-benefit-${index}`}>{category.benefit}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function HowItWorksSection() {
   const steps = [
     {
-      number: "01",
-      title: "Join",
-      description: "Get instant access with a one-time payment",
-    },
-    {
-      number: "02",
+      number: "1",
+      icon: Download,
       title: "Download",
-      description: "Browse and download any products you want",
+      description: "Browse our library of high-quality digital products and download the ones that fit your niche. Ebooks, courses, templates, and more.",
     },
     {
-      number: "03",
-      title: "Customize",
-      description: "Add your branding and make it yours",
+      number: "2",
+      icon: RefreshCw,
+      title: "Rebrand",
+      description: "You get the source files. Edit the cover, change the title, add your logo. Make it uniquely yours in minutes.",
     },
     {
-      number: "04",
-      title: "Sell & Profit",
-      description: "Sell anywhere and keep 100% of the revenue",
+      number: "3",
+      icon: TrendingUp,
+      title: "Resell",
+      description: "Upload it to your store (Etsy, Shopify, Gumroad) and sell it. You keep 100% of every sale you make.",
     },
   ];
 
@@ -262,26 +164,26 @@ function HowItWorksSection() {
             How It Works
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-how-subtitle">
-            Start your digital product business in four simple steps
+            We've removed the hardest part of making money online: creating the product. Now you can focus on selling and earning.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="relative" data-testid={`step-${index}`}>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-primary/20 mb-4" data-testid={`step-number-${index}`}>
-                  {step.number}
-                </div>
-                <h3 className="text-xl font-semibold mb-2" data-testid={`step-title-${index}`}>{step.title}</h3>
-                <p className="text-muted-foreground" data-testid={`step-desc-${index}`}>{step.description}</p>
+            <Card
+              key={index}
+              className="p-8 text-center hover-elevate transition-all duration-300"
+              data-testid={`step-${index}`}
+            >
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                <step.icon className="w-8 h-8 text-primary" />
               </div>
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-full w-full">
-                  <div className="w-1/2 border-t-2 border-dashed border-border" />
-                </div>
-              )}
-            </div>
+              <div className="text-sm font-semibold text-primary mb-2" data-testid={`step-number-${index}`}>
+                Step {step.number}
+              </div>
+              <h3 className="text-xl font-semibold mb-3" data-testid={`step-title-${index}`}>{step.title}</h3>
+              <p className="text-muted-foreground" data-testid={`step-desc-${index}`}>{step.description}</p>
+            </Card>
           ))}
         </div>
       </div>
@@ -289,65 +191,323 @@ function HowItWorksSection() {
   );
 }
 
-function PricingSection() {
-  const features = [
-    "1,000+ Digital Products",
-    "Master Resell Rights",
-    "Brand-Ready Templates",
-    "Lifetime Access",
-    "Free Future Updates",
-    "Commercial License",
-    "24/7 Support",
-    "30-Day Money Back Guarantee",
+function ProductsSection() {
+  const products = [
+    {
+      image: emailDbImage,
+      title: "USA Business Email Database",
+      price: "$97",
+      badges: ["PLR", "MRR", "Asset"],
+      alt: "Professional email database visualization with business contacts",
+    },
+    {
+      image: socialTemplatesImage,
+      title: "Social Media Templates & Ads",
+      price: "$47",
+      badges: ["PLR", "MRR", "Template"],
+      alt: "Modern social media marketing templates for Instagram and Facebook",
+    },
+    {
+      image: plannerImage,
+      title: "Planners & Journals Bundle",
+      price: "$37",
+      badges: ["PLR", "Template"],
+      alt: "Digital planner and journal templates for productivity",
+    },
+    {
+      image: aiToolsImage,
+      title: "AI & Business Automation Tools",
+      price: "$67",
+      badges: ["PLR", "MRR", "Software"],
+      alt: "AI-powered business automation tools and software",
+    },
+    {
+      image: funnelKitsImage,
+      title: "Website & Funnel Kits",
+      price: "$57",
+      badges: ["PLR", "MRR", "Template"],
+      alt: "Professional website and sales funnel templates",
+    },
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-muted/30" data-testid="section-pricing">
+    <section className="py-12 md:py-20" data-testid="section-products">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="max-w-2xl mx-auto">
-          <Card className="p-8 md:p-12 relative overflow-visible">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-            
-            <div className="relative text-center mb-8">
-              <Badge variant="secondary" className="mb-4" data-testid="badge-limited-offer">
-                Limited Time Offer
-              </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-2" data-testid="text-pricing-title">
-                One-Time Payment
-              </h2>
-              <p className="text-muted-foreground" data-testid="text-pricing-subtitle">
-                Lifetime access to everything. No subscriptions.
-              </p>
-            </div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-products-title">
+            Premium Products Included
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-products-subtitle">
+            Get instant access to these and hundreds more when you join today.
+          </p>
+        </div>
 
-            <div className="relative text-center mb-8">
-              <div className="flex items-baseline justify-center gap-2">
-                <span className="text-5xl md:text-6xl font-bold text-primary" data-testid="text-price">
-                  $97
-                </span>
-                <span className="text-muted-foreground line-through text-xl" data-testid="text-price-original">$297</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {products.map((product, index) => (
+            <Card
+              key={index}
+              className="overflow-hidden hover-elevate transition-all duration-300 cursor-pointer"
+              data-testid={`card-product-${index}`}
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.alt}
+                  className="w-full h-full object-cover"
+                  data-testid={`img-product-${index}`}
+                />
+                <div className="absolute top-3 left-3 flex flex-wrap gap-2">
+                  {product.badges.map((badge, badgeIndex) => (
+                    <Badge 
+                      key={badgeIndex} 
+                      variant="secondary" 
+                      className="bg-background/90 backdrop-blur-sm"
+                      data-testid={`badge-product-${index}-${badgeIndex}`}
+                    >
+                      {badge}
+                    </Badge>
+                  ))}
+                </div>
               </div>
-              <p className="text-muted-foreground mt-2" data-testid="text-price-note">One-time payment, lifetime value</p>
-            </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold mb-2" data-testid={`text-product-title-${index}`}>
+                  {product.title}
+                </h3>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground">100% Profit</span>
+                  <span className="text-lg font-bold text-primary" data-testid={`text-product-price-${index}`}>
+                    {product.price}
+                  </span>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
 
-            <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-              {features.map((feature, index) => (
+        <div className="text-center mt-10">
+          <Button variant="outline" size="lg" data-testid="button-view-all-products">
+            View All 500+ Products
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ValueSection() {
+  const valueItems = [
+    { title: "Access to 500+ Digital Products", value: "$4,997 Value", icon: Package },
+    { title: "Master Resell Rights License", value: "$997 Value", icon: Award },
+    { title: "Marketing Assets & Sales Copy", value: "$497 Value", icon: Megaphone },
+    { title: "Lifetime Updates", value: "Priceless", icon: Infinity },
+  ];
+
+  return (
+    <section className="py-12 md:py-20 bg-muted/30" data-testid="section-value">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-value-title">
+              Why Join Today?
+            </h2>
+          </div>
+
+          <Card className="p-8 md:p-12" data-testid="card-value-breakdown">
+            <div className="space-y-6 mb-8">
+              {valueItems.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3"
-                  data-testid={`feature-${index}`}
+                  className="flex items-center justify-between py-4 border-b border-border last:border-0"
+                  data-testid={`value-item-${index}`}
                 >
-                  <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-sm" data-testid={`feature-text-${index}`}>{feature}</span>
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <item.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <span className="font-medium" data-testid={`value-item-title-${index}`}>{item.title}</span>
+                  </div>
+                  <span className="text-muted-foreground" data-testid={`value-item-value-${index}`}>{item.value}</span>
                 </div>
               ))}
             </div>
 
-            <Button size="lg" className="w-full" data-testid="button-pricing-cta">
-              Get Instant Access
+            <div className="bg-muted/50 rounded-lg p-6 mb-8">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                  <p className="text-muted-foreground text-sm">Total Value</p>
+                  <p className="text-3xl font-bold line-through text-muted-foreground" data-testid="text-total-value">$6,491</p>
+                </div>
+                <div className="text-center md:text-right">
+                  <p className="text-muted-foreground text-sm">Today's Price</p>
+                  <p className="text-5xl font-bold text-primary" data-testid="text-todays-price">$97</p>
+                </div>
+              </div>
+            </div>
+
+            <Button size="lg" className="w-full" data-testid="button-value-cta">
+              Get Instant Access Now
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
+
+            <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2" data-testid="text-guarantee">
+              <Shield className="w-4 h-4 text-primary" />
+              30-Day Money-Back Guarantee
+            </p>
           </Card>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TestimonialsSection() {
+  const testimonials = [
+    {
+      quote: "I started selling the Notion templates from PLR Digital Club and made my first $1k in just 3 days. The quality is unmatched.",
+      name: "Sarah Jenkins",
+      role: "Digital Marketer",
+      earnings: "$1,250 this week",
+      avatar: "SJ",
+    },
+    {
+      quote: "The best investment I've made. No more spending weeks creating products. I just download, rebrand, and sell.",
+      name: "Michael Chen",
+      role: "Side Hustler",
+      earnings: "$4,500 this month",
+      avatar: "MC",
+    },
+    {
+      quote: "Finally, PLR content that doesn't look like it was made in 1999. The designs are modern and actually convert.",
+      name: "Jessica Williams",
+      role: "Content Creator",
+      earnings: "$890 this week",
+      avatar: "JW",
+    },
+  ];
+
+  return (
+    <section className="py-12 md:py-20" data-testid="section-testimonials">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-testimonials-title">
+            Real Results from Real People
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <Card
+              key={index}
+              className="p-6 hover-elevate transition-all duration-300"
+              data-testid={`card-testimonial-${index}`}
+            >
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <blockquote className="text-muted-foreground mb-6" data-testid={`text-testimonial-quote-${index}`}>
+                "{testimonial.quote}"
+              </blockquote>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold">
+                  {testimonial.avatar}
+                </div>
+                <div>
+                  <p className="font-semibold" data-testid={`text-testimonial-name-${index}`}>{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                </div>
+              </div>
+              <div className="mt-4 pt-4 border-t border-border">
+                <p className="text-sm text-muted-foreground">Recent Earnings</p>
+                <p className="text-lg font-semibold text-primary" data-testid={`text-testimonial-earnings-${index}`}>
+                  {testimonial.earnings}
+                </p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FAQItem({ question, answer, index }: { question: string; answer: string; index: number }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className="bg-card border border-border rounded-lg"
+      data-testid={`faq-item-${index}`}
+    >
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between p-6 text-left font-semibold"
+        data-testid={`faq-trigger-${index}`}
+      >
+        <span>{question}</span>
+        <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+      <div 
+        className="overflow-hidden transition-all duration-200"
+        style={{ 
+          maxHeight: isOpen ? '500px' : '0px',
+          opacity: isOpen ? 1 : 0,
+          visibility: isOpen ? 'visible' : 'hidden'
+        }}
+      >
+        <div 
+          className="px-6 pb-6 text-muted-foreground"
+          data-testid={`faq-content-${index}`}
+        >
+          {answer}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FAQSection() {
+  const faqs = [
+    {
+      question: "Is this legal?",
+      answer: "Absolutely! PLR (Private Label Rights) and MRR (Master Resell Rights) are legitimate licenses that allow you to rebrand and resell digital products. You're essentially purchasing the rights to use these products as your own.",
+    },
+    {
+      question: "Can I really resell these?",
+      answer: "Yes! That's the entire point. With MRR, you can sell these products and keep 100% of the profit. With PLR, you can also modify, rebrand, and even claim authorship of the products.",
+    },
+    {
+      question: "Do I need experience?",
+      answer: "No experience needed! Our products come ready to sell. We provide the files, sales copy, and even marketing materials. If you can upload a file and set a price, you can make money.",
+    },
+    {
+      question: "Is this a subscription?",
+      answer: "No, this is a one-time payment of $97 for lifetime access. No monthly fees, no hidden charges. Pay once and access everything forever, including all future updates.",
+    },
+    {
+      question: "How fast can I start?",
+      answer: "Immediately! After purchase, you get instant access to download all products. You could have your first product listed for sale within an hour of joining.",
+    },
+  ];
+
+  return (
+    <section className="py-12 md:py-20 bg-muted/30" data-testid="section-faq">
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-faq-title">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-muted-foreground text-lg" data-testid="text-faq-subtitle">
+            Everything you need to know about the PLR Digital Club.
+          </p>
+        </div>
+
+        <div className="space-y-4" data-testid="faq-list">
+          {faqs.map((faq, index) => (
+            <FAQItem key={index} question={faq.question} answer={faq.answer} index={index} />
+          ))}
         </div>
       </div>
     </section>
@@ -364,21 +524,21 @@ function FinalCTASection() {
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" data-testid="text-final-headline">
-            Ready to Start Your Digital Product Empire?
+            Start Your Digital Business Today
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto" data-testid="text-final-subheadline">
-            Join thousands of entrepreneurs who are building passive income with our digital products.
+            Don't spend months creating products. Grab ours, sell them as your own, and keep all the profit.
           </p>
           
           <Button size="lg" data-testid="button-final-cta">
-            Get Instant Access Now
+            Get Started for $97
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
           
           <div className="flex flex-wrap justify-center gap-6 mt-8 text-muted-foreground text-sm">
             <div className="flex items-center gap-2" data-testid="final-trust-guarantee">
               <Shield className="w-4 h-4 text-primary" />
-              <span>30-Day Guarantee</span>
+              <span>30-Day Money-Back Guarantee</span>
             </div>
             <div className="flex items-center gap-2" data-testid="final-trust-lifetime">
               <Infinity className="w-4 h-4 text-primary" />
@@ -400,9 +560,12 @@ function Footer() {
     <footer className="py-8 border-t border-border" data-testid="footer">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm" data-testid="text-copyright">
-            © 2025 Digital Products MRR. All rights reserved.
-          </p>
+          <div>
+            <p className="font-semibold mb-1" data-testid="text-footer-brand">PLR Digital Club</p>
+            <p className="text-muted-foreground text-sm" data-testid="text-copyright">
+              © 2025 PLR Digital Club. All rights reserved.
+            </p>
+          </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-privacy">
               Privacy Policy
@@ -425,10 +588,11 @@ export default function Home() {
     <div className="min-h-screen bg-background" data-testid="page-home">
       <HeroSection />
       <TrustSection />
-      <ValueSection />
-      <CategoriesSection />
       <HowItWorksSection />
-      <PricingSection />
+      <ProductsSection />
+      <ValueSection />
+      <TestimonialsSection />
+      <FAQSection />
       <FinalCTASection />
       <Footer />
     </div>
