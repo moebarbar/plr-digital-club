@@ -64,29 +64,29 @@ function Header() {
 
 function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-16 md:py-24" data-testid="section-hero">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10" />
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+    <section className="relative overflow-hidden py-20 md:py-32" data-testid="section-hero">
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-blue-400/10 rounded-full blur-3xl" />
       
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="text-center max-w-4xl mx-auto mb-12">
-          <Badge variant="secondary" className="mb-6" data-testid="badge-hero">
+          <Badge variant="secondary" className="mb-8 px-4 py-2 text-sm" data-testid="badge-hero">
             <Sparkles className="w-4 h-4 mr-2" />
             1000+ Products Ready to Resell
           </Badge>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6" data-testid="text-hero-headline">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight" data-testid="text-hero-headline">
             Get Resell-Ready Digital Products for{" "}
-            <span className="text-primary" data-testid="text-hero-highlight">100% Profit</span>
+            <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent" data-testid="text-hero-highlight">100% Profit</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto" data-testid="text-hero-subheadline">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subheadline">
             Pay once. Access 1000+ digital products with full PLR & MRR rights. Rebrand them, sell them anywhere, and keep 100% of the profits.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" data-testid="button-cta-primary">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+            <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/25" data-testid="button-cta-primary">
               Get Instant Access for $97
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
