@@ -83,7 +83,7 @@ function HeroSection() {
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight" data-testid="text-hero-headline">
             Get Resell-Ready Digital Products for{" "}
-            <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent" data-testid="text-hero-highlight">100% Profit</span>
+            <span className="bg-gradient-to-r from-primary via-blue-400 to-cyan-400 bg-clip-text text-transparent" data-testid="text-hero-highlight">100% Profit</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subheadline">
