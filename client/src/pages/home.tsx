@@ -165,9 +165,9 @@ function HowItWorksSection() {
     },
     {
       number: "2",
-      icon: RefreshCw,
-      title: "Rebrand",
-      description: "You get the source files. Edit the cover, change the title, add your logo. Make it uniquely yours in minutes.",
+      icon: Zap,
+      title: "Customize",
+      description: "Add your personal touch if you want. Change the cover, update the title, or sell them as-is. Your choice, your business.",
     },
     {
       number: "3",
