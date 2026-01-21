@@ -115,6 +115,11 @@ function HeroSection() {
             className="w-full"
             data-testid="img-hero-bundle"
           />
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card border border-border rounded-lg px-6 py-3 shadow-lg">
+            <p className="text-sm font-semibold text-center" data-testid="text-hero-value">
+              TOTAL VALUE: <span className="text-primary">$5,490+</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
