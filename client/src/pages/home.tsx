@@ -82,7 +82,7 @@ function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto" data-testid="text-hero-subheadline">
-            Pay once. Access hundreds of proven PLR & MRR products. Rebrand them, sell them, and keep every single penny. No hidden fees.
+            Pay once. Access 500+ digital products with full PLR & MRR rights. Rebrand them, sell them anywhere, and keep 100% of the profits.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -99,7 +99,7 @@ function HeroSection() {
             </div>
             <div className="flex items-center gap-2" data-testid="hero-trust-rights">
               <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Commercial rights included</span>
+              <span>Full PLR & MRR rights</span>
             </div>
             <div className="flex items-center gap-2" data-testid="hero-trust-download">
               <CheckCircle className="w-4 h-4 text-primary" />
@@ -306,8 +306,8 @@ function ProductsSection() {
 
 function ValueSection() {
   const valueItems = [
-    { title: "Access to 500+ Digital Products", value: "$4,997 Value", icon: Package },
-    { title: "Master Resell Rights License", value: "$997 Value", icon: Award },
+    { title: "500+ Digital Products with PLR & MRR", value: "$4,997 Value", icon: Package },
+    { title: "Full Resell & Rebrand Rights", value: "$997 Value", icon: Award },
     { title: "Marketing Assets & Sales Copy", value: "$497 Value", icon: Megaphone },
     { title: "Lifetime Updates & New Products", value: "Priceless", icon: Infinity },
   ];
