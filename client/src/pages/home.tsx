@@ -38,7 +38,7 @@ import funnelKitsImage from "@assets/generated_images/website_funnel_kits_mockup
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 
-const CHECKOUT_URL = "https://plrclubhouse.simvoly.com/me/website/checkout-page";
+const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://plrdigitalclub.com/signin";
 
 function Header() {
