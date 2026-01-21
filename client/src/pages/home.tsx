@@ -222,36 +222,31 @@ function ProductsSection() {
     {
       image: emailDbImage,
       title: "USA Business Email Database",
-      price: "$97",
-      badges: ["PLR", "MRR", "Asset"],
+      category: "Marketing Asset",
       alt: "Professional email database visualization with business contacts",
     },
     {
       image: socialTemplatesImage,
       title: "Social Media Templates & Ads",
-      price: "$47",
-      badges: ["PLR", "MRR", "Template"],
+      category: "Design Templates",
       alt: "Modern social media marketing templates for Instagram and Facebook",
     },
     {
       image: plannerImage,
       title: "Planners & Journals Bundle",
-      price: "$37",
-      badges: ["PLR", "Template"],
+      category: "Digital Products",
       alt: "Digital planner and journal templates for productivity",
     },
     {
       image: aiToolsImage,
       title: "AI & Business Automation Tools",
-      price: "$67",
-      badges: ["PLR", "MRR", "Software"],
+      category: "Software Tools",
       alt: "AI-powered business automation tools and software",
     },
     {
       image: funnelKitsImage,
       title: "Website & Funnel Kits",
-      price: "$57",
-      badges: ["PLR", "MRR", "Template"],
+      category: "Website Assets",
       alt: "Professional website and sales funnel templates",
     },
   ];
@@ -261,10 +256,10 @@ function ProductsSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-products-title">
-            Premium Products Included
+            What's Inside Your Membership
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-products-subtitle">
-            Get instant access to these and hundreds more when you join today.
+            All of these products (and 500+ more) are included with your $97 one-time membership.
           </p>
         </div>
 
@@ -272,7 +267,7 @@ function ProductsSection() {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover-elevate transition-all duration-300 cursor-pointer"
+              className="overflow-hidden hover-elevate transition-all duration-300"
               data-testid={`card-product-${index}`}
             >
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -282,37 +277,30 @@ function ProductsSection() {
                   className="w-full h-full object-cover"
                   data-testid={`img-product-${index}`}
                 />
-                <div className="absolute top-3 left-3 flex flex-wrap gap-2">
-                  {product.badges.map((badge, badgeIndex) => (
-                    <Badge 
-                      key={badgeIndex} 
-                      variant="secondary" 
-                      className="bg-background/90 backdrop-blur-sm"
-                      data-testid={`badge-product-${index}-${badgeIndex}`}
-                    >
-                      {badge}
-                    </Badge>
-                  ))}
-                </div>
+                <Badge 
+                  variant="secondary" 
+                  className="absolute top-3 left-3 bg-primary text-primary-foreground"
+                  data-testid={`badge-product-${index}`}
+                >
+                  Included
+                </Badge>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2" data-testid={`text-product-title-${index}`}>
+                <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1" data-testid={`text-product-category-${index}`}>
+                  {product.category}
+                </p>
+                <h3 className="text-lg font-semibold" data-testid={`text-product-title-${index}`}>
                   {product.title}
                 </h3>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">100% Profit</span>
-                  <span className="text-lg font-bold text-primary" data-testid={`text-product-price-${index}`}>
-                    {product.price}
-                  </span>
-                </div>
               </div>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-10">
+          <p className="text-muted-foreground mb-4">Plus 500+ more products in categories like ebooks, courses, graphics, and more</p>
           <Button variant="outline" size="lg" data-testid="button-view-all-products">
-            View All 500+ Products
+            See Everything That's Included
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
@@ -326,7 +314,7 @@ function ValueSection() {
     { title: "Access to 500+ Digital Products", value: "$4,997 Value", icon: Package },
     { title: "Master Resell Rights License", value: "$997 Value", icon: Award },
     { title: "Marketing Assets & Sales Copy", value: "$497 Value", icon: Megaphone },
-    { title: "Lifetime Updates", value: "Priceless", icon: Infinity },
+    { title: "Lifetime Updates & New Products", value: "Priceless", icon: Infinity },
   ];
 
   return (
@@ -335,8 +323,11 @@ function ValueSection() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-value-title">
-              Why Join Today?
+              Your Membership Includes
             </h2>
+            <p className="text-muted-foreground text-lg" data-testid="text-value-subtitle">
+              One payment. Lifetime access. Everything included.
+            </p>
           </div>
 
           <Card className="p-8 md:p-12" data-testid="card-value-breakdown">
