@@ -175,8 +175,9 @@ function HeroSection() {
   return (
     <section className="relative overflow-hidden py-12 md:py-20 lg:py-32" data-testid="section-hero">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-      <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-blue-400/10 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-blue-400/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
       
       <div className="relative max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center max-w-4xl mx-auto mb-8 md:mb-12">
@@ -187,7 +188,7 @@ function HeroSection() {
           
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight" data-testid="text-hero-headline">
             Get Resell-Ready Digital Products for{" "}
-            <span className="bg-gradient-to-r from-primary via-blue-400 to-cyan-400 bg-clip-text text-transparent" data-testid="text-hero-highlight">100% Profit</span>
+            <span className="gradient-text-animated" data-testid="text-hero-highlight">100% Profit</span>
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-10 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subheadline">
@@ -195,7 +196,7 @@ function HeroSection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/25" asChild data-testid="button-cta-primary">
+            <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/25 glow-button animate-glow" asChild data-testid="button-cta-primary">
               <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
                 Get Instant Access for $97
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -273,13 +274,13 @@ function StatsSection() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center"
+              className="text-center group"
               data-testid={`stat-item-${index}`}
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
-                <stat.icon className="w-6 h-6 text-primary" />
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-4 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
+                <stat.icon className="w-7 h-7 text-primary" />
               </div>
-              <p className="text-3xl md:text-4xl font-bold text-primary mb-1" data-testid={`stat-number-${index}`}>
+              <p className="text-3xl md:text-4xl font-bold gradient-text-animated mb-1" data-testid={`stat-number-${index}`}>
                 {stat.number}
               </p>
               <p className="text-muted-foreground text-sm" data-testid={`stat-label-${index}`}>
@@ -362,10 +363,10 @@ function HowItWorksSection() {
           {steps.map((step, index) => (
             <Card
               key={index}
-              className="p-8 text-center hover-elevate transition-all duration-300"
+              className="p-8 text-center card-lift hover-elevate transition-all duration-300 group"
               data-testid={`step-${index}`}
             >
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-blue-400/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <step.icon className="w-8 h-8 text-primary" />
               </div>
               <div className="text-sm font-semibold text-primary mb-2" data-testid={`step-number-${index}`}>
@@ -431,14 +432,14 @@ function ProductsSection() {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover-elevate transition-all duration-300"
+              className="overflow-hidden card-lift hover-elevate transition-all duration-300 group"
               data-testid={`card-product-${index}`}
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.alt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   data-testid={`img-product-${index}`}
                 />
                 <Badge 
@@ -702,7 +703,7 @@ function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="p-6 hover-elevate transition-all duration-300 relative overflow-visible"
+              className="p-6 card-lift hover-elevate transition-all duration-300 relative overflow-visible group"
               data-testid={`card-testimonial-${index}`}
             >
               <Badge className="absolute -top-3 left-6 bg-primary text-primary-foreground">
@@ -717,8 +718,11 @@ function TestimonialsSection() {
                 "{testimonial.quote}"
               </blockquote>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-400 flex items-center justify-center text-white font-semibold">
-                  {testimonial.avatar}
+                <div className="relative">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-blue-400 animate-pulse opacity-50 scale-110" />
+                  <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-400 flex items-center justify-center text-white font-semibold">
+                    {testimonial.avatar}
+                  </div>
                 </div>
                 <div>
                   <p className="font-semibold" data-testid={`text-testimonial-name-${index}`}>{testimonial.name}</p>
@@ -744,12 +748,12 @@ function FAQItem({ question, answer, index }: { question: string; answer: string
 
   return (
     <div
-      className="bg-card border border-border rounded-lg"
+      className="bg-card border border-border rounded-lg hover:border-primary/30 transition-colors duration-300"
       data-testid={`faq-item-${index}`}
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-6 text-left font-semibold"
+        className="w-full flex items-center justify-between p-6 text-left font-semibold hover:text-primary transition-colors"
         data-testid={`faq-trigger-${index}`}
       >
         <span>{question}</span>
@@ -834,18 +838,18 @@ function FinalCTASection() {
             Limited Time Offer
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6" data-testid="text-final-headline">
-            Ready to Start Earning?
+            Ready to <span className="gradient-text-animated">Start Earning?</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto" data-testid="text-final-subheadline">
             Join 5,000+ entrepreneurs who are already selling digital products and keeping 100% of the profits.
           </p>
           <p className="text-2xl md:text-3xl font-bold mb-8">
             <span className="line-through text-muted-foreground">$497</span>{" "}
-            <span className="text-primary">$97</span>{" "}
+            <span className="gradient-text-animated text-4xl md:text-5xl">$97</span>{" "}
             <span className="text-sm font-normal text-muted-foreground">one-time payment</span>
           </p>
           
-          <Button size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/25" asChild data-testid="button-final-cta">
+          <Button size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/25 glow-button animate-glow" asChild data-testid="button-final-cta">
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
               Get Instant Access Now
               <ArrowRight className="ml-2 w-5 h-5" />
