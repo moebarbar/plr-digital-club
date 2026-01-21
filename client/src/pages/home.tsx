@@ -39,6 +39,7 @@ import aiToolsImage from "@assets/generated_images/ai_business_tools_mockup.png"
 import funnelKitsImage from "@assets/generated_images/website_funnel_kits_mockup.png";
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
+import reviewImage from "@assets/PLR-DIGITAL-CLUB-review_(1)_1768970449756.png";
 
 const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://plrdigitalclub.com/signin";
@@ -200,6 +201,18 @@ function HeroSection() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 mb-8" data-testid="hero-reviews">
+            <img 
+              src={reviewImage} 
+              alt="Customer reviews - 4.8 stars from 500+ users" 
+              className="h-10 md:h-12"
+              data-testid="img-hero-reviews"
+            />
+            <p className="text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">4.8</span> from <span className="font-semibold text-foreground">500+</span> happy users
+            </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
