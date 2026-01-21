@@ -35,8 +35,43 @@ export default function BlogPost() {
       if (metaDescription) {
         metaDescription.setAttribute("content", post.metaDescription);
       }
+      
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (!ogTitle) {
+        ogTitle = document.createElement('meta');
+        ogTitle.setAttribute('property', 'og:title');
+        document.head.appendChild(ogTitle);
+      }
+      ogTitle.setAttribute('content', `${post.title} | PLR Digital Club Blog`);
+      
+      let ogDesc = document.querySelector('meta[property="og:description"]');
+      if (!ogDesc) {
+        ogDesc = document.createElement('meta');
+        ogDesc.setAttribute('property', 'og:description');
+        document.head.appendChild(ogDesc);
+      }
+      ogDesc.setAttribute('content', post.metaDescription);
+      
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (!ogUrl) {
+        ogUrl = document.createElement('meta');
+        ogUrl.setAttribute('property', 'og:url');
+        document.head.appendChild(ogUrl);
+      }
+      ogUrl.setAttribute('content', window.location.href);
+      
+      const postImage = blogImages[slug];
+      if (postImage) {
+        let ogImage = document.querySelector('meta[property="og:image"]');
+        if (!ogImage) {
+          ogImage = document.createElement('meta');
+          ogImage.setAttribute('property', 'og:image');
+          document.head.appendChild(ogImage);
+        }
+        ogImage.setAttribute('content', window.location.origin + postImage);
+      }
     }
-  }, [post]);
+  }, [post, slug]);
 
   if (!post) {
     return (
@@ -76,7 +111,7 @@ export default function BlogPost() {
                 </Button>
               </Link>
               <a href="https://plrdigitalclub.com/checkout-page">
-                <Button className="bg-primary hover:bg-primary/90" data-testid="button-post-cta">
+                <Button data-testid="button-post-cta">
                   Get Access
                 </Button>
               </a>
@@ -192,7 +227,7 @@ export default function BlogPost() {
                   Get instant access to 1,000+ PLR & MRR products with full resell rights. One payment, lifetime access.
                 </p>
                 <a href="https://plrdigitalclub.com/checkout-page">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90" data-testid="button-post-cta-main">
+                  <Button size="lg" data-testid="button-post-cta-main">
                     Get Lifetime Access - $97 <ChevronRight className="ml-2" />
                   </Button>
                 </a>

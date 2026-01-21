@@ -23,6 +23,30 @@ export default function Blog() {
     if (metaDescription) {
       metaDescription.setAttribute("content", "Explore expert articles on PLR products, Master Resell Rights, passive income strategies, and digital product marketing. Learn how to build your online business.");
     }
+    
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Blog - PLR Digital Club | Digital Products & Passive Income Tips');
+    
+    let ogDesc = document.querySelector('meta[property="og:description"]');
+    if (!ogDesc) {
+      ogDesc = document.createElement('meta');
+      ogDesc.setAttribute('property', 'og:description');
+      document.head.appendChild(ogDesc);
+    }
+    ogDesc.setAttribute('content', 'Explore expert articles on PLR products, Master Resell Rights, passive income strategies, and digital product marketing.');
+    
+    let ogUrl = document.querySelector('meta[property="og:url"]');
+    if (!ogUrl) {
+      ogUrl = document.createElement('meta');
+      ogUrl.setAttribute('property', 'og:url');
+      document.head.appendChild(ogUrl);
+    }
+    ogUrl.setAttribute('content', window.location.href);
   }, []);
 
   return (
@@ -44,7 +68,7 @@ export default function Blog() {
                 <Button variant="ghost" data-testid="link-blog-home">Home</Button>
               </Link>
               <a href="https://plrdigitalclub.com/checkout-page">
-                <Button className="bg-primary hover:bg-primary/90" data-testid="button-blog-cta">
+                <Button data-testid="button-blog-cta">
                   Get Access
                 </Button>
               </a>
@@ -156,7 +180,7 @@ export default function Blog() {
             Get instant access to 1,000+ PLR & MRR products and start building your passive income today.
           </p>
           <a href="https://plrdigitalclub.com/checkout-page">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6" data-testid="button-blog-cta-main">
+            <Button size="lg" className="text-lg px-8 py-6" data-testid="button-blog-cta-main">
               Get Lifetime Access - $97 <ChevronRight className="ml-2" />
             </Button>
           </a>
