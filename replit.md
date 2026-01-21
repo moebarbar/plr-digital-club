@@ -14,6 +14,13 @@ A high-end, conversion-focused marketing landing page for selling resell-ready d
 - Added comprehensive data-testid attributes for testing
 - SEO meta tags optimized with keywords, Open Graph, and Twitter cards
 - Styled for PLR Digital Club branding
+- **Blog Section Added**: Full blog with 6 SEO-optimized articles
+  - Blog listing page at /blog with category filters
+  - Individual post pages at /blog/:slug with full article content
+  - Topics: PLR basics, MRR explained, passive income, digital niches, starting online business, marketing tips
+  - Each article 250-300 words with custom generated images
+  - Full OG meta tags for social sharing
+  - Related posts, tags, and CTAs on each article page
 
 ## User Preferences
 
