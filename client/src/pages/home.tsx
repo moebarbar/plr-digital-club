@@ -39,6 +39,7 @@ import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 
 const CHECKOUT_URL = "https://plrclubhouse.simvoly.com/me/website/checkout-page";
+const SIGNIN_URL = "https://plrdigitalclub.com/signin";
 
 function Header() {
   return (
@@ -57,7 +58,7 @@ function Header() {
           data-testid="img-logo-dark"
         />
         <Button size="sm" variant="outline" asChild data-testid="button-header-login">
-          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+          <a href={SIGNIN_URL} target="_blank" rel="noopener noreferrer">
             Access Member Area
           </a>
         </Button>
