@@ -38,6 +38,8 @@ import funnelKitsImage from "@assets/generated_images/website_funnel_kits_mockup
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 
+const CHECKOUT_URL = "https://plrclubhouse.simvoly.com/me/website/checkout-page";
+
 function Header() {
   return (
     <header className="py-4 border-b border-border" data-testid="header">
@@ -54,8 +56,10 @@ function Header() {
           className="h-10 md:h-12 hidden dark:block" 
           data-testid="img-logo-dark"
         />
-        <Button size="sm" variant="outline" data-testid="button-header-login">
-          Access Member Area
+        <Button size="sm" variant="outline" asChild data-testid="button-header-login">
+          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+            Access Member Area
+          </a>
         </Button>
       </div>
     </header>
@@ -86,9 +90,11 @@ function HeroSection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/25" data-testid="button-cta-primary">
-              Get Instant Access for $97
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/25" asChild data-testid="button-cta-primary">
+              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                Get Instant Access for $97
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
           </div>
 
@@ -331,9 +337,11 @@ function ProductsSection() {
 
         <div className="text-center mt-10">
           <p className="text-muted-foreground mb-4">Plus 1000+ more products in categories like ebooks, courses, graphics, and more</p>
-          <Button variant="outline" size="lg" data-testid="button-view-all-products">
-            See Everything That's Included
-            <ArrowRight className="ml-2 w-5 h-5" />
+          <Button variant="outline" size="lg" asChild data-testid="button-view-all-products">
+            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+              See Everything That's Included
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
           </Button>
         </div>
       </div>
@@ -394,9 +402,11 @@ function ValueSection() {
               </div>
             </div>
 
-            <Button size="lg" className="w-full" data-testid="button-value-cta">
-              Get Instant Access Now
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button size="lg" className="w-full" asChild data-testid="button-value-cta">
+              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                Get Instant Access Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
 
             <p className="text-center text-sm text-muted-foreground mt-4 flex items-center justify-center gap-2" data-testid="text-guarantee">
@@ -601,9 +611,11 @@ function FinalCTASection() {
             <span className="text-sm font-normal text-muted-foreground">one-time payment</span>
           </p>
           
-          <Button size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/25" data-testid="button-final-cta">
-            Get Instant Access Now
-            <ArrowRight className="ml-2 w-5 h-5" />
+          <Button size="lg" className="text-lg px-10 py-6 shadow-lg shadow-primary/25" asChild data-testid="button-final-cta">
+            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+              Get Instant Access Now
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
           </Button>
           
           <div className="flex flex-wrap justify-center gap-6 mt-10 text-muted-foreground text-sm">
