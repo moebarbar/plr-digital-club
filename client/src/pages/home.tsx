@@ -73,7 +73,7 @@ function HeroSection() {
         <div className="text-center max-w-4xl mx-auto mb-12">
           <Badge variant="secondary" className="mb-6" data-testid="badge-hero">
             <Sparkles className="w-4 h-4 mr-2" />
-            New Products Added Weekly
+            1000+ Products Ready to Resell
           </Badge>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6" data-testid="text-hero-headline">
@@ -82,7 +82,7 @@ function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto" data-testid="text-hero-subheadline">
-            Pay once. Access 500+ digital products with full PLR & MRR rights. Rebrand them, sell them anywhere, and keep 100% of the profits.
+            Pay once. Access 1000+ digital products with full PLR & MRR rights. Rebrand them, sell them anywhere, and keep 100% of the profits.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -254,7 +254,7 @@ function ProductsSection() {
             What's Inside Your Membership
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-products-subtitle">
-            All of these products (and 500+ more) are included with your $97 one-time membership.
+            All of these products (and 1000+ more) are included with your $97 one-time membership.
           </p>
         </div>
 
@@ -293,7 +293,7 @@ function ProductsSection() {
         </div>
 
         <div className="text-center mt-10">
-          <p className="text-muted-foreground mb-4">Plus 500+ more products in categories like ebooks, courses, graphics, and more</p>
+          <p className="text-muted-foreground mb-4">Plus 1000+ more products in categories like ebooks, courses, graphics, and more</p>
           <Button variant="outline" size="lg" data-testid="button-view-all-products">
             See Everything That's Included
             <ArrowRight className="ml-2 w-5 h-5" />
@@ -306,7 +306,7 @@ function ProductsSection() {
 
 function ValueSection() {
   const valueItems = [
-    { title: "500+ Digital Products with PLR & MRR", value: "$4,997 Value", icon: Package },
+    { title: "1000+ Digital Products with PLR & MRR", value: "$4,997 Value", icon: Package },
     { title: "Full Resell & Rebrand Rights", value: "$997 Value", icon: Award },
     { title: "Marketing Assets & Sales Copy", value: "$497 Value", icon: Megaphone },
     { title: "Lifetime Updates & New Products", value: "Priceless", icon: Infinity },
