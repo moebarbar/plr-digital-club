@@ -475,6 +475,108 @@ function ProductsSection() {
   );
 }
 
+function UpdatesSection() {
+  const updates = [
+    { text: "New Planners and Journals", tag: "Updated", isNew: false },
+    { text: "2026 Journals and Planners Bundle", tag: null, isNew: true },
+    { text: "New 1000 Social Media Reels", tag: "Updated", isNew: false },
+    { text: "Notion Templates", tag: "Updated", isNew: false },
+    { text: "New AI ART", tag: "New Category", isNew: true },
+    { text: "New Excel Templates", tag: "New Category", isNew: true },
+    { text: "Guide & Newsletter Templates", tag: "New Category", isNew: true },
+    { text: "Coloring Book Bundle (Printables)", tag: null, isNew: false },
+    { text: "Mega Fitness Bundle", tag: "Updated", isNew: false },
+    { text: "Die-cut Stickers", tag: "Updated", isNew: false },
+    { text: "New Resume Templates", tag: "Updated", isNew: false },
+    { text: "New SOP/HOW TO Templates", tag: "Updated", isNew: false },
+    { text: "New Courses", tag: "Updated", isNew: false },
+    { text: "Canva Carousel Bundle", tag: "New Category", isNew: true },
+    { text: "Canva Bio Link Bundle", tag: "New Category", isNew: true },
+    { text: "Simply Passive Course", tag: "New Category", isNew: true },
+    { text: "New 2025 Planners and Journals", tag: null, isNew: false },
+    { text: "Instagram Growth Mastery Bundle", tag: null, isNew: false },
+    { text: "Restaurant Social Media Collection", tag: null, isNew: false },
+    { text: "Canva Guide and Newsletter Templates", tag: null, isNew: false },
+    { text: "Influencer Social Media Collection", tag: null, isNew: false },
+    { text: "Boss Academy Bundle", tag: null, isNew: false },
+    { text: "Instagram Growth Academy", tag: null, isNew: false },
+    { text: "100,000 Faceless Reels/Shorts/TikTok", tag: null, isNew: false },
+    { text: "1000+ Viral Hooks for Social Media", tag: null, isNew: false },
+    { text: "ADHD Bundle Self Care Bundle", tag: null, isNew: false },
+    { text: "New 100 Planners and Journals", tag: "Updated", isNew: false },
+    { text: "1000 Templates ADHD Care Bundle", tag: null, isNew: false },
+    { text: "1500 Educational Resources for Kids", tag: null, isNew: false },
+    { text: "ManyChat Automation Templates", tag: null, isNew: false },
+  ];
+
+  return (
+    <section className="py-12 md:py-20 bg-gradient-to-b from-background to-muted/30" data-testid="section-updates">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-12">
+          <Badge variant="secondary" className="mb-4 animate-pulse">
+            <RefreshCw className="w-4 h-4 mr-2" />
+            Auto-Syncing Updates
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-updates-title">
+            2026 Product Updates
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            New products added regularly. Your membership includes all future updates.
+          </p>
+        </div>
+
+        <Card className="p-6 md:p-8 bg-card/50 backdrop-blur border-primary/20" data-testid="card-updates">
+          <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border">
+            <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+            <span className="text-sm font-mono text-muted-foreground">LIVE UPDATE FEED</span>
+            <span className="text-xs text-muted-foreground ml-auto font-mono">Last sync: Today</span>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-96 overflow-y-auto pr-2">
+            {updates.map((update, index) => (
+              <div 
+                key={index}
+                className="flex items-center gap-3 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors group"
+                data-testid={`update-item-${index}`}
+              >
+                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    {update.tag && (
+                      <Badge 
+                        variant="outline" 
+                        className={`text-xs ${update.isNew ? 'border-primary text-primary' : 'border-muted-foreground'}`}
+                      >
+                        {update.tag}
+                      </Badge>
+                    )}
+                    <span className="text-sm font-medium truncate">{update.text}</span>
+                  </div>
+                </div>
+                <span className="text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0">
+                  Access
+                </span>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-6 pt-4 border-t border-border flex items-center justify-between">
+            <span className="text-sm text-muted-foreground font-mono">
+              {updates.length} items synced
+            </span>
+            <Button variant="outline" size="sm" asChild>
+              <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+                Get Full Access
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
+          </div>
+        </Card>
+      </div>
+    </section>
+  );
+}
+
 function ValueSection() {
   const valueItems = [
     { title: "1000+ Digital Products with PLR & MRR", value: "$4,997 Value", icon: Package },
@@ -805,6 +907,7 @@ export default function Home() {
       <TrustSection />
       <HowItWorksSection />
       <ProductsSection />
+      <UpdatesSection />
       <ValueSection />
       <TestimonialsSection />
       <FAQSection />
