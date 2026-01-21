@@ -27,6 +27,8 @@ import {
   Star,
   Check,
   ChevronDown,
+  Menu,
+  X,
 } from "lucide-react";
 
 import heroImage from "@assets/PLR_Digital_Club_Header__1768953600526.png";
@@ -42,26 +44,29 @@ const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://plrdigitalclub.com/signin";
 
 function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setMobileMenuOpen(false);
   };
 
   return (
     <header className="py-4 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50" data-testid="header">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between gap-4">
         <img 
           src={logoLight} 
           alt="PLR Digital Club" 
-          className="h-10 md:h-12 dark:hidden" 
+          className="h-8 md:h-12 dark:hidden" 
           data-testid="img-logo-light"
         />
         <img 
           src={logoDark} 
           alt="PLR Digital Club" 
-          className="h-10 md:h-12 hidden dark:block" 
+          className="h-8 md:h-12 hidden dark:block" 
           data-testid="img-logo-dark"
         />
         
@@ -96,11 +101,70 @@ function Header() {
           </button>
         </nav>
 
-        <Button size="sm" variant="outline" asChild data-testid="button-header-login">
-          <a href={SIGNIN_URL} target="_blank" rel="noopener noreferrer">
+        <div className="flex items-center gap-2">
+          <Button size="sm" variant="outline" asChild className="hidden sm:inline-flex" data-testid="button-header-login">
+            <a href={SIGNIN_URL} target="_blank" rel="noopener noreferrer">
+              Access Member Area
+            </a>
+          </Button>
+          
+          <Button 
+            size="icon" 
+            variant="ghost" 
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            data-testid="button-mobile-menu"
+          >
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </Button>
+        </div>
+      </div>
+      
+      <div 
+        className={`md:hidden border-t border-border bg-background transition-all duration-300 overflow-hidden ${
+          mobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+        }`}
+        data-testid="mobile-menu"
+      >
+        <nav className="flex flex-col p-4 gap-2">
+          <button 
+            onClick={() => scrollToSection('how-it-works')} 
+            className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            data-testid="mobile-nav-how-it-works"
+          >
+            How It Works
+          </button>
+          <button 
+            onClick={() => scrollToSection('products')} 
+            className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            data-testid="mobile-nav-products"
+          >
+            Products
+          </button>
+          <button 
+            onClick={() => scrollToSection('pricing')} 
+            className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            data-testid="mobile-nav-pricing"
+          >
+            Pricing
+          </button>
+          <button 
+            onClick={() => scrollToSection('faq')} 
+            className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            data-testid="mobile-nav-faq"
+          >
+            FAQ
+          </button>
+          <a 
+            href={SIGNIN_URL} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-left py-3 px-4 rounded-md text-primary font-medium hover:bg-muted transition-colors"
+            data-testid="mobile-nav-login"
+          >
             Access Member Area
           </a>
-        </Button>
+        </nav>
       </div>
     </header>
   );
@@ -108,24 +172,24 @@ function Header() {
 
 function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-32" data-testid="section-hero">
+    <section className="relative overflow-hidden py-12 md:py-20 lg:py-32" data-testid="section-hero">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
       <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-blue-400/10 rounded-full blur-3xl" />
       
-      <div className="relative max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-4xl mx-auto mb-12">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center max-w-4xl mx-auto mb-8 md:mb-12">
           <Badge variant="secondary" className="mb-8 px-4 py-2 text-sm" data-testid="badge-hero">
             <Sparkles className="w-4 h-4 mr-2" />
             1000+ Products Ready to Resell
           </Badge>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight" data-testid="text-hero-headline">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight" data-testid="text-hero-headline">
             Get Resell-Ready Digital Products for{" "}
             <span className="bg-gradient-to-r from-primary via-blue-400 to-cyan-400 bg-clip-text text-transparent" data-testid="text-hero-highlight">100% Profit</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subheadline">
+          <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-10 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subheadline">
             Pay once. Access 1000+ digital products with full PLR & MRR rights. Rebrand them, sell them anywhere, and keep 100% of the profits.
           </p>
           
@@ -182,7 +246,7 @@ function StatsSection() {
 
   return (
     <section className="py-16 bg-primary/5" data-testid="section-stats">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div
@@ -218,7 +282,7 @@ function TrustSection() {
 
   return (
     <section className="py-8 border-y border-border" data-testid="section-trust">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-wrap justify-center gap-8 md:gap-16">
           {trustItems.map((item, index) => (
             <div
@@ -262,7 +326,7 @@ function HowItWorksSection() {
 
   return (
     <section id="how-it-works" className="py-12 md:py-20" data-testid="section-how-it-works">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-how-title">
             How It Works
@@ -331,7 +395,7 @@ function ProductsSection() {
 
   return (
     <section id="products" className="py-12 md:py-20" data-testid="section-products">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-products-title">
             What's Inside Your Membership
@@ -399,7 +463,7 @@ function ValueSection() {
 
   return (
     <section id="pricing" className="py-12 md:py-20 bg-muted/30" data-testid="section-value">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-value-title">
@@ -490,7 +554,7 @@ function TestimonialsSection() {
 
   return (
     <section className="py-12 md:py-20" data-testid="section-testimonials">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">
             <Star className="w-4 h-4 mr-2 fill-primary text-primary" />
@@ -606,7 +670,7 @@ function FAQSection() {
 
   return (
     <section id="faq" className="py-12 md:py-20 bg-muted/30" data-testid="section-faq">
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-faq-title">
             Frequently Asked Questions
@@ -633,7 +697,7 @@ function FinalCTASection() {
       <div className="absolute top-10 right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
       <div className="absolute bottom-10 left-20 w-80 h-80 bg-blue-400/10 rounded-full blur-3xl" />
       
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <Badge variant="secondary" className="mb-6">
             <Zap className="w-4 h-4 mr-2" />
@@ -681,7 +745,7 @@ function FinalCTASection() {
 function Footer() {
   return (
     <footer className="py-8 border-t border-border" data-testid="footer">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <p className="font-semibold mb-1" data-testid="text-footer-brand">PLR Digital Club</p>
