@@ -493,7 +493,6 @@ function UpdatesSection() {
     { text: "Canva Carousel Bundle", tag: "New Category", isNew: true },
     { text: "Canva Bio Link Bundle", tag: "New Category", isNew: true },
     { text: "Simply Passive Course", tag: "New Category", isNew: true },
-    { text: "New 2025 Planners and Journals", tag: null, isNew: false },
     { text: "Instagram Growth Mastery Bundle", tag: null, isNew: false },
     { text: "Restaurant Social Media Collection", tag: null, isNew: false },
     { text: "Canva Guide and Newsletter Templates", tag: null, isNew: false },
