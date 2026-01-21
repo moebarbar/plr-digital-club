@@ -29,7 +29,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 
-import heroImage from "@assets/generated_images/digital_product_bundle_mockup.png";
+import heroImage from "@assets/PLR_Digital_Club_Header__1768953600526.png";
 import emailDbImage from "@assets/generated_images/email_database_product_mockup.png";
 import socialTemplatesImage from "@assets/generated_images/social_media_templates_mockup.png";
 import plannerImage from "@assets/generated_images/digital_planner_mockup.png";
@@ -54,8 +54,8 @@ function Header() {
           className="h-10 md:h-12 hidden dark:block" 
           data-testid="img-logo-dark"
         />
-        <Button size="sm" data-testid="button-header-cta">
-          Get Access
+        <Button size="sm" variant="outline" data-testid="button-header-login">
+          Access Member Area
         </Button>
       </div>
     </header>
@@ -70,61 +70,51 @@ function HeroSection() {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <Badge variant="secondary" className="mb-6" data-testid="badge-hero">
-              <Sparkles className="w-4 h-4 mr-2" />
-              New Products Added Weekly
-            </Badge>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6" data-testid="text-hero-headline">
-              Get Resell-Ready Digital Products for{" "}
-              <span className="text-primary" data-testid="text-hero-highlight">100% Profit</span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="text-hero-subheadline">
-              Pay once. Access hundreds of proven PLR & MRR products. Rebrand them, sell them, and keep every single penny. No hidden fees.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button size="lg" className="w-full sm:w-auto" data-testid="button-cta-primary">
-                Get Instant Access for $97
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto" data-testid="button-cta-secondary">
-                Browse Products
-              </Button>
-            </div>
-
-            <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2" data-testid="hero-trust-payment">
-                <CheckCircle className="w-4 h-4 text-primary" />
-                <span>One-time payment</span>
-              </div>
-              <div className="flex items-center gap-2" data-testid="hero-trust-rights">
-                <CheckCircle className="w-4 h-4 text-primary" />
-                <span>Commercial rights included</span>
-              </div>
-              <div className="flex items-center gap-2" data-testid="hero-trust-download">
-                <CheckCircle className="w-4 h-4 text-primary" />
-                <span>Instant download</span>
-              </div>
-            </div>
+        <div className="text-center max-w-4xl mx-auto mb-12">
+          <Badge variant="secondary" className="mb-6" data-testid="badge-hero">
+            <Sparkles className="w-4 h-4 mr-2" />
+            New Products Added Weekly
+          </Badge>
+          
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6" data-testid="text-hero-headline">
+            Get Resell-Ready Digital Products for{" "}
+            <span className="text-primary" data-testid="text-hero-highlight">100% Profit</span>
+          </h1>
+          
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto" data-testid="text-hero-subheadline">
+            Pay once. Access hundreds of proven PLR & MRR products. Rebrand them, sell them, and keep every single penny. No hidden fees.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Button size="lg" data-testid="button-cta-primary">
+              Get Instant Access for $97
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
           </div>
 
-          <div className="relative">
-            <img 
-              src={heroImage} 
-              alt="Digital Product Bundle with PLR and MRR Rights - Over 500 Premium Digital Products" 
-              className="w-full rounded-xl shadow-2xl"
-              data-testid="img-hero-bundle"
-            />
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card border border-border rounded-lg px-6 py-3 shadow-lg">
-              <p className="text-sm font-semibold text-center" data-testid="text-hero-value">
-                TOTAL VALUE: <span className="text-primary">$5,490+</span>
-              </p>
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2" data-testid="hero-trust-payment">
+              <CheckCircle className="w-4 h-4 text-primary" />
+              <span>One-time payment</span>
+            </div>
+            <div className="flex items-center gap-2" data-testid="hero-trust-rights">
+              <CheckCircle className="w-4 h-4 text-primary" />
+              <span>Commercial rights included</span>
+            </div>
+            <div className="flex items-center gap-2" data-testid="hero-trust-download">
+              <CheckCircle className="w-4 h-4 text-primary" />
+              <span>Instant download</span>
             </div>
           </div>
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+          <img 
+            src={heroImage} 
+            alt="Digital Product Bundle with PLR and MRR Rights - Over 500 Premium Digital Products" 
+            className="w-full"
+            data-testid="img-hero-bundle"
+          />
         </div>
       </div>
     </section>
