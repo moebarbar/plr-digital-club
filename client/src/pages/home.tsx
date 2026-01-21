@@ -42,9 +42,16 @@ const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://plrdigitalclub.com/signin";
 
 function Header() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <header className="py-4 border-b border-border" data-testid="header">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <header className="py-4 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50" data-testid="header">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-4">
         <img 
           src={logoLight} 
           alt="PLR Digital Club" 
@@ -57,6 +64,38 @@ function Header() {
           className="h-10 md:h-12 hidden dark:block" 
           data-testid="img-logo-dark"
         />
+        
+        <nav className="hidden md:flex items-center gap-6" data-testid="nav-menu">
+          <button 
+            onClick={() => scrollToSection('how-it-works')} 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            data-testid="nav-how-it-works"
+          >
+            How It Works
+          </button>
+          <button 
+            onClick={() => scrollToSection('products')} 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            data-testid="nav-products"
+          >
+            Products
+          </button>
+          <button 
+            onClick={() => scrollToSection('pricing')} 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            data-testid="nav-pricing"
+          >
+            Pricing
+          </button>
+          <button 
+            onClick={() => scrollToSection('faq')} 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            data-testid="nav-faq"
+          >
+            FAQ
+          </button>
+        </nav>
+
         <Button size="sm" variant="outline" asChild data-testid="button-header-login">
           <a href={SIGNIN_URL} target="_blank" rel="noopener noreferrer">
             Access Member Area
@@ -222,7 +261,7 @@ function HowItWorksSection() {
   ];
 
   return (
-    <section className="py-12 md:py-20" data-testid="section-how-it-works">
+    <section id="how-it-works" className="py-12 md:py-20" data-testid="section-how-it-works">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-how-title">
@@ -291,7 +330,7 @@ function ProductsSection() {
   ];
 
   return (
-    <section className="py-12 md:py-20" data-testid="section-products">
+    <section id="products" className="py-12 md:py-20" data-testid="section-products">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-products-title">
@@ -359,7 +398,7 @@ function ValueSection() {
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-muted/30" data-testid="section-value">
+    <section id="pricing" className="py-12 md:py-20 bg-muted/30" data-testid="section-value">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -566,7 +605,7 @@ function FAQSection() {
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-muted/30" data-testid="section-faq">
+    <section id="faq" className="py-12 md:py-20 bg-muted/30" data-testid="section-faq">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-faq-title">
