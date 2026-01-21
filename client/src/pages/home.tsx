@@ -35,17 +35,24 @@ import socialTemplatesImage from "@assets/generated_images/social_media_template
 import plannerImage from "@assets/generated_images/digital_planner_mockup.png";
 import aiToolsImage from "@assets/generated_images/ai_business_tools_mockup.png";
 import funnelKitsImage from "@assets/generated_images/website_funnel_kits_mockup.png";
-import logoImage from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
+import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
+import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 
 function Header() {
   return (
     <header className="py-4 border-b border-border" data-testid="header">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <img 
-          src={logoImage} 
+          src={logoLight} 
           alt="PLR Digital Club" 
-          className="h-10 md:h-12" 
-          data-testid="img-logo"
+          className="h-10 md:h-12 dark:hidden" 
+          data-testid="img-logo-light"
+        />
+        <img 
+          src={logoDark} 
+          alt="PLR Digital Club" 
+          className="h-10 md:h-12 hidden dark:block" 
+          data-testid="img-logo-dark"
         />
         <Button size="sm" data-testid="button-header-cta">
           Get Access
