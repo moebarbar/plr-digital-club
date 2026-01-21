@@ -261,6 +261,8 @@ function HeroSection() {
             src={heroImage} 
             alt="Digital Product Bundle with PLR and MRR Rights - Over 500 Premium Digital Products" 
             className="w-full"
+            loading="eager"
+            fetchPriority="high"
             data-testid="img-hero-bundle"
           />
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card border border-border rounded-lg px-6 py-3 shadow-lg">
@@ -455,6 +457,7 @@ function ProductsSection() {
                   src={product.image}
                   alt={product.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                   data-testid={`img-product-${index}`}
                 />
                 <Badge 

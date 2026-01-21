@@ -126,6 +126,7 @@ export default function Blog() {
                       src={blogImages[index]} 
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
                       data-testid={`img-blog-post-${index}`}
                     />
                     <div className="absolute top-3 left-3">

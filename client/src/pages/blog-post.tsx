@@ -161,6 +161,8 @@ export default function BlogPost() {
                 src={postImage} 
                 alt={post.title}
                 className="w-full h-auto object-cover"
+                loading="eager"
+                fetchPriority="high"
                 data-testid="img-post-featured"
               />
             </div>
