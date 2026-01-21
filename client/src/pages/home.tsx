@@ -533,9 +533,12 @@ function UpdatesSection() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-96 overflow-y-auto pr-2">
             {updates.map((update, index) => (
-              <div 
+              <a 
                 key={index}
-                className="flex items-center gap-3 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors group"
+                href={CHECKOUT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors group cursor-pointer"
                 data-testid={`update-item-${index}`}
               >
                 <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
@@ -555,7 +558,7 @@ function UpdatesSection() {
                 <span className="text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0">
                   Access
                 </span>
-              </div>
+              </a>
             ))}
           </div>
           
