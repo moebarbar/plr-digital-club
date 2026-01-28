@@ -432,9 +432,12 @@ function ProductsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-white text-sm font-semibold line-clamp-2" data-testid={`text-product-title-${index}`}>
+                  <h3 className="text-white text-sm font-semibold line-clamp-1" data-testid={`text-product-title-${index}`}>
                     {product.title}
                   </h3>
+                  <p className="text-white/80 text-xs mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2" data-testid={`text-product-desc-${index}`}>
+                    {product.description} + more inside...
+                  </p>
                 </div>
               </div>
             </Card>

@@ -131,8 +131,8 @@ export default function Products() {
                     <h3 className="text-white text-sm font-semibold mb-1" data-testid={`text-product-title-${index}`}>
                       {product.title}
                     </h3>
-                    <p className="text-white/70 text-xs line-clamp-2">
-                      {product.description}
+                    <p className="text-white/80 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2" data-testid={`text-product-desc-${index}`}>
+                      {product.description} + more inside...
                     </p>
                   </div>
                 </div>
