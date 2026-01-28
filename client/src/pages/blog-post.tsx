@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { blogPosts, getPostBySlug } from "@/data/blogPosts";
 import logoImage from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import { useEffect } from "react";
+import { Breadcrumb } from "@/components/Breadcrumb";
+import { ArticleSchema } from "@/components/SchemaMarkup";
 
 import blogImage1 from "@assets/generated_images/plr_products_beginner_guide.png";
 import blogImage2 from "@assets/generated_images/master_resell_rights_profits.png";
@@ -120,18 +122,24 @@ export default function BlogPost() {
         </div>
       </header>
 
+      {/* Article Schema */}
+      <ArticleSchema
+        title={post.title}
+        description={post.metaDescription}
+        author={post.author}
+        datePublished={post.date}
+        url={`https://plrdigitalclub.com/blog/${slug}`}
+      />
+
       {/* Article */}
       <article className="py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8" data-testid="nav-breadcrumb">
-              <Link href="/" className="hover:text-primary">Home</Link>
-              <span>/</span>
-              <Link href="/blog" className="hover:text-primary">Blog</Link>
-              <span>/</span>
-              <span className="text-foreground">{post.category}</span>
-            </nav>
+            <Breadcrumb items={[
+              { label: "Blog", href: "/blog" },
+              { label: post.title }
+            ]} />
 
             {/* Header */}
             <header className="mb-8">

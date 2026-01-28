@@ -37,6 +37,7 @@ import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 import reviewImage from "@assets/PLR-DIGITAL-CLUB-review_(1)_1768970449756.png";
 import { productCategories } from "@/data/productCategories";
+import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
 
 const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://plrdigitalclub.com/signin";
@@ -904,6 +905,19 @@ function Footer() {
 export default function Home() {
   return (
     <div className="min-h-screen bg-background" data-testid="page-home">
+      <WebsiteSchema />
+      <OrganizationSchema />
+      <ProductSchema 
+        name="PLR Digital Club Lifetime Membership"
+        description="Get instant access to 1000+ premium PLR & MRR digital products. Download Notion templates, ebooks, courses, planners and more. Rebrand and resell anywhere - keep 100% of every sale."
+        price={97}
+        url="https://plrdigitalclub.com/checkout-page"
+      />
+      <ReviewSchema reviews={[
+        { author: "Sarah M.", rating: 5, text: "Amazing value! I've already made back my investment 10x over.", date: "2026-01-10" },
+        { author: "Michael R.", rating: 5, text: "The quality of these products blew me away. Started selling day one!", date: "2026-01-12" },
+        { author: "Jessica T.", rating: 5, text: "Best investment I've made for my business. The templates are professional quality.", date: "2026-01-15" }
+      ]} />
       <Header />
       <HeroSection />
       <StatsSection />

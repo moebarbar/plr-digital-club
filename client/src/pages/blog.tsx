@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { blogPosts, categories } from "@/data/blogPosts";
 import logoImage from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import { useEffect } from "react";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 import blogImage1 from "@assets/generated_images/plr_products_beginner_guide.png";
 import blogImage2 from "@assets/generated_images/master_resell_rights_profits.png";
@@ -79,14 +80,17 @@ export default function Blog() {
 
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container mx-auto px-4 text-center">
-          <Badge className="mb-4" data-testid="badge-blog-label">Blog</Badge>
+        <div className="container mx-auto px-4">
+          <Breadcrumb items={[{ label: "Blog" }]} />
+          <div className="text-center">
+            <Badge className="mb-4" data-testid="badge-blog-label">Blog</Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-blog-title">
             Digital Products & <span className="text-primary">Passive Income</span> Tips
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="text-blog-subtitle">
             Expert insights on PLR, MRR, and building a profitable online business with digital products.
           </p>
+          </div>
         </div>
       </section>
 

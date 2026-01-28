@@ -1,0 +1,14 @@
+# Robots.txt for PLR Digital Club
+# https://plrdigitalclub.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://plrdigitalclub.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin and private areas (if any)
+Disallow: /api/

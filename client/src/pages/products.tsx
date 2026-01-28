@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { productCategories } from "@/data/productCategories";
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
 
@@ -85,6 +86,8 @@ export default function Products() {
 
       <main className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <Breadcrumb items={[{ label: "Products" }]} />
+          
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-primary/10 text-primary border-primary/20" data-testid="badge-products-count">
               <Package className="w-3 h-3 mr-1" />
