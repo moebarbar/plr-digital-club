@@ -24,7 +24,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
           itemScope 
           itemType="https://schema.org/ListItem"
         >
-          <Link href="/" className="hover:text-foreground transition-colors flex items-center gap-1">
+          <Link href="/" className="hover:text-foreground transition-colors flex items-center gap-1" data-testid="link-breadcrumb-home">
             <Home className="w-3.5 h-3.5" />
             <span itemProp="name">Home</span>
           </Link>
@@ -43,13 +43,13 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
             <ChevronRight className="w-3.5 h-3.5 mx-1" />
             {item.href ? (
               <>
-                <Link href={item.href} className="hover:text-foreground transition-colors">
+                <Link href={item.href} className="hover:text-foreground transition-colors" data-testid={`link-breadcrumb-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                   <span itemProp="name">{item.label}</span>
                 </Link>
                 <link itemProp="item" href={`https://plrdigitalclub.com${item.href}`} />
               </>
             ) : (
-              <span className="text-foreground font-medium" itemProp="name">{item.label}</span>
+              <span className="text-foreground font-medium" itemProp="name" data-testid={`text-breadcrumb-${item.label.toLowerCase().replace(/\s+/g, '-').substring(0, 20)}`}>{item.label}</span>
             )}
             <meta itemProp="position" content={String(index + 2)} />
           </li>
