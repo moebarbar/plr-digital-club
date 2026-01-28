@@ -23,10 +23,11 @@ A high-end, conversion-focused marketing landing page for selling resell-ready d
   - Related posts, tags, and CTAs on each article page
 - **Products Showcase Enhanced**: 48 product category images
   - Compressed from 54MB to 3.3MB for fast loading
-  - Shows 12 categories initially with "Show More" button
+  - Homepage shows 6 preview categories with "Browse All 48 Categories" button
+  - Dedicated /products page with all 48 categories and search functionality
   - Lazy loading for all product images
   - Gradient overlay with titles
-  - "Plus Hundreds More Inside" teaser CTA
+  - Full SEO meta tags and OG tags on /products page
   - Data file: client/src/data/productCategories.ts
 - **Performance Optimizations**:
   - Reduced Google Fonts from 20+ fonts to just Inter
