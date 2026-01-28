@@ -277,7 +277,7 @@ function StatsSection() {
     { number: "1,000+", label: "Digital Products", icon: Package },
     { number: "48", label: "Categories", icon: Sparkles },
     { number: "PLR", label: "Full Rights Included", icon: CheckCircle },
-    { number: "24/7", label: "Instant Access", icon: Clock },
+    { number: "Free", label: "Lifetime Updates", icon: RefreshCw },
   ];
 
   return (
