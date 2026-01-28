@@ -32,10 +32,10 @@ import {
   X,
 } from "lucide-react";
 
-import heroImage from "@assets/PLR_Digital_Club_Header__1768953600526.png";
+import heroImage from "@assets/PLR_Digital_Club_Header.webp";
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
-import reviewImage from "@assets/PLR-DIGITAL-CLUB-review_(1)_1768970449756.png";
+import reviewImage from "@assets/PLR-DIGITAL-CLUB-review.webp";
 import { productCategories } from "@/data/productCategories";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
 
@@ -259,7 +259,6 @@ function HeroSection() {
             alt="Digital Product Bundle with PLR and MRR Rights - Over 500 Premium Digital Products" 
             className="w-full"
             loading="eager"
-            fetchPriority="high"
             data-testid="img-hero-bundle"
           />
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card border border-border rounded-lg px-6 py-3 shadow-lg">
