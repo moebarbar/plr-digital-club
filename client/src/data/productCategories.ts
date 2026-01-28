@@ -76,6 +76,7 @@ export const productCategories: ProductCategory[] = [
   { image: presetsPhotoshopImg, title: "Photoshop Presets", description: "Professional color grading presets" },
   { image: adobeIllustratorImg, title: "Illustrator Assets", description: "Vector graphics and illustrations" },
   { image: svgImg, title: "SVG Assets", description: "Scalable vector graphics for web and print" },
+  { image: infographicsImg, title: "Editable Infographics", description: "Visual data presentations and graphics" },
   { image: excelImg, title: "Excel Templates", description: "Spreadsheets for business and personal use" },
   { image: resumeImg, title: "Resume Templates", description: "Professional CV and resume designs" },
   { image: brochuresImg, title: "Brochures & Flyers", description: "Marketing materials ready to customize" },

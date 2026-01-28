@@ -30,9 +30,13 @@ A high-end, conversion-focused marketing landing page for selling resell-ready d
   - Full SEO meta tags and OG tags on /products page
   - Data file: client/src/data/productCategories.ts
 - **Performance Optimizations**:
-  - Reduced Google Fonts from 20+ fonts to just Inter
+  - All images converted to WebP format (82% smaller hero, 38% smaller products)
+  - Hero and review images use eager loading for LCP
+  - Product images lazy loaded below the fold
+  - Google Fonts preloaded with defer to avoid render-blocking
+  - Server caching headers: 1 year for static assets (images, CSS, JS)
   - Code splitting for blog pages (lazy loaded)
-  - Image lazy loading below the fold
+  - Reduced Google Fonts from 20+ fonts to just Inter
 - **SEO Enhancements**:
   - XML sitemap at /sitemap.xml with all pages
   - Optimized robots.txt with sitemap reference
