@@ -77,13 +77,6 @@ function Header() {
             How It Works
           </button>
           <button 
-            onClick={() => scrollToSection('products')} 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            data-testid="nav-products"
-          >
-            Products
-          </button>
-          <button 
             onClick={() => scrollToSection('pricing')} 
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             data-testid="nav-pricing"
@@ -97,6 +90,13 @@ function Header() {
           >
             FAQ
           </button>
+          <Link 
+            href="/products" 
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            data-testid="nav-products"
+          >
+            Products
+          </Link>
           <Link 
             href="/blog" 
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -140,13 +140,6 @@ function Header() {
             How It Works
           </button>
           <button 
-            onClick={() => scrollToSection('products')} 
-            className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-            data-testid="mobile-nav-products"
-          >
-            Products
-          </button>
-          <button 
             onClick={() => scrollToSection('pricing')} 
             className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
             data-testid="mobile-nav-pricing"
@@ -160,6 +153,13 @@ function Header() {
           >
             FAQ
           </button>
+          <Link 
+            href="/products" 
+            className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+            data-testid="mobile-nav-products"
+          >
+            Products
+          </Link>
           <Link 
             href="/blog" 
             className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
@@ -396,10 +396,8 @@ function HowItWorksSection() {
 }
 
 function ProductsSection() {
-  const [showAll, setShowAll] = useState(false);
-  const INITIAL_COUNT = 12;
-  const displayedProducts = showAll ? productCategories : productCategories.slice(0, INITIAL_COUNT);
-  const remainingCount = productCategories.length - INITIAL_COUNT;
+  const DISPLAY_COUNT = 6;
+  const displayedProducts = productCategories.slice(0, DISPLAY_COUNT);
 
   return (
     <section id="products" className="py-12 md:py-20" data-testid="section-products">
@@ -410,14 +408,14 @@ function ProductsSection() {
             48 Categories • 1000+ Products
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-products-title">
-            Everything Inside Your Membership
+            What's Inside Your Membership
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-products-subtitle">
-            Get instant access to all these product categories. Rebrand, customize, and resell with full PLR & MRR rights.
+            Here's a preview of what you'll get. Full access includes 48 categories with 1000+ products.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
           {displayedProducts.map((product, index) => (
             <Card
               key={index}
@@ -443,19 +441,14 @@ function ProductsSection() {
           ))}
         </div>
 
-        {!showAll && remainingCount > 0 && (
-          <div className="text-center mt-8">
-            <Button 
-              variant="outline" 
-              size="lg" 
-              onClick={() => setShowAll(true)}
-              data-testid="button-show-more-products"
-            >
-              Show {remainingCount} More Categories
-              <ChevronDown className="ml-2 w-5 h-5" />
+        <div className="text-center mt-8">
+          <Link href="/products">
+            <Button variant="outline" size="lg" data-testid="button-browse-products">
+              Browse All 48 Categories
+              <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-          </div>
-        )}
+          </Link>
+        </div>
 
         <div className="mt-12 text-center bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/10">
           <Sparkles className="w-8 h-8 text-primary mx-auto mb-4" />

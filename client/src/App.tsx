@@ -9,6 +9,7 @@ import NotFound from "@/pages/not-found";
 
 const Blog = lazy(() => import("@/pages/blog"));
 const BlogPost = lazy(() => import("@/pages/blog-post"));
+const Products = lazy(() => import("@/pages/products"));
 
 function LoadingFallback() {
   return (
@@ -23,6 +24,7 @@ function Router() {
     <Suspense fallback={<LoadingFallback />}>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/products" component={Products} />
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogPost} />
         <Route component={NotFound} />
