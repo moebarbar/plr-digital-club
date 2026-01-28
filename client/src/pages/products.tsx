@@ -118,15 +118,15 @@ export default function Products() {
                 className="overflow-hidden hover-elevate transition-all duration-300 group"
                 data-testid={`card-product-${index}`}
               >
-                <div className="relative aspect-square overflow-hidden">
+                <div className="relative aspect-square overflow-hidden bg-white">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 p-3"
                     loading="lazy"
                     data-testid={`img-product-${index}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h3 className="text-white text-sm font-semibold mb-1" data-testid={`text-product-title-${index}`}>
                       {product.title}
