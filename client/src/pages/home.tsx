@@ -33,14 +33,10 @@ import {
 } from "lucide-react";
 
 import heroImage from "@assets/PLR_Digital_Club_Header__1768953600526.png";
-import emailDbImage from "@assets/generated_images/email_database_product_mockup.png";
-import socialTemplatesImage from "@assets/generated_images/social_media_templates_mockup.png";
-import plannerImage from "@assets/generated_images/digital_planner_mockup.png";
-import aiToolsImage from "@assets/generated_images/ai_business_tools_mockup.png";
-import funnelKitsImage from "@assets/generated_images/website_funnel_kits_mockup.png";
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 import reviewImage from "@assets/PLR-DIGITAL-CLUB-review_(1)_1768970449756.png";
+import { productCategories } from "@/data/productCategories";
 
 const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://plrdigitalclub.com/signin";
@@ -400,91 +396,78 @@ function HowItWorksSection() {
 }
 
 function ProductsSection() {
-  const products = [
-    {
-      image: emailDbImage,
-      title: "USA Business Email Database",
-      category: "Marketing Asset",
-      alt: "Professional email database visualization with business contacts",
-    },
-    {
-      image: socialTemplatesImage,
-      title: "Social Media Templates & Ads",
-      category: "Design Templates",
-      alt: "Modern social media marketing templates for Instagram and Facebook",
-    },
-    {
-      image: plannerImage,
-      title: "Planners & Journals Bundle",
-      category: "Digital Products",
-      alt: "Digital planner and journal templates for productivity",
-    },
-    {
-      image: aiToolsImage,
-      title: "AI & Business Automation Tools",
-      category: "Software Tools",
-      alt: "AI-powered business automation tools and software",
-    },
-    {
-      image: funnelKitsImage,
-      title: "Website & Funnel Kits",
-      category: "Website Assets",
-      alt: "Professional website and sales funnel templates",
-    },
-  ];
+  const [showAll, setShowAll] = useState(false);
+  const INITIAL_COUNT = 12;
+  const displayedProducts = showAll ? productCategories : productCategories.slice(0, INITIAL_COUNT);
+  const remainingCount = productCategories.length - INITIAL_COUNT;
 
   return (
     <section id="products" className="py-12 md:py-20" data-testid="section-products">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
+          <Badge className="mb-4 bg-primary/10 text-primary border-primary/20" data-testid="badge-products-count">
+            <Package className="w-3 h-3 mr-1" />
+            48 Categories • 1000+ Products
+          </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-products-title">
-            What's Inside Your Membership
+            Everything Inside Your Membership
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-products-subtitle">
-            All of these products (and 1000+ more) are included with your $97 one-time membership.
+            Get instant access to all these product categories. Rebrand, customize, and resell with full PLR & MRR rights.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          {displayedProducts.map((product, index) => (
             <Card
               key={index}
-              className="overflow-hidden card-lift hover-elevate transition-all duration-300 group"
+              className="overflow-hidden hover-elevate transition-all duration-300 group"
               data-testid={`card-product-${index}`}
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-square overflow-hidden">
                 <img
                   src={product.image}
-                  alt={product.alt}
+                  alt={product.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   data-testid={`img-product-${index}`}
                 />
-                <Badge 
-                  variant="secondary" 
-                  className="absolute top-3 left-3 bg-primary text-primary-foreground"
-                  data-testid={`badge-product-${index}`}
-                >
-                  Included
-                </Badge>
-              </div>
-              <div className="p-6">
-                <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1" data-testid={`text-product-category-${index}`}>
-                  {product.category}
-                </p>
-                <h3 className="text-lg font-semibold" data-testid={`text-product-title-${index}`}>
-                  {product.title}
-                </h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <h3 className="text-white text-sm font-semibold line-clamp-2" data-testid={`text-product-title-${index}`}>
+                    {product.title}
+                  </h3>
+                </div>
               </div>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-10">
-          <p className="text-muted-foreground mb-4">Plus 1000+ more products in categories like ebooks, courses, graphics, and more</p>
-          <Button variant="outline" size="lg" asChild data-testid="button-view-all-products">
+        {!showAll && remainingCount > 0 && (
+          <div className="text-center mt-8">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              onClick={() => setShowAll(true)}
+              data-testid="button-show-more-products"
+            >
+              Show {remainingCount} More Categories
+              <ChevronDown className="ml-2 w-5 h-5" />
+            </Button>
+          </div>
+        )}
+
+        <div className="mt-12 text-center bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/10">
+          <Sparkles className="w-8 h-8 text-primary mx-auto mb-4" />
+          <h3 className="text-xl md:text-2xl font-bold mb-2" data-testid="text-more-inside">
+            Plus Hundreds More Inside the Platform
+          </h3>
+          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
+            New products added regularly. Get lifetime access to everything for just one payment.
+          </p>
+          <Button size="lg" className="glow-cta" asChild data-testid="button-get-access-products">
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              See Everything That's Included
+              Get Instant Access - $97
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>
