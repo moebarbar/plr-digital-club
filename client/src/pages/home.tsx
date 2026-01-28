@@ -294,7 +294,7 @@ function StatsSection() {
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 mb-4 group-hover:bg-primary group-hover:scale-105 transition-all duration-300">
                   <stat.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
                 </div>
-                <p className="text-3xl md:text-4xl font-bold text-foreground mb-1" data-testid={`stat-number-${index}`}>
+                <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-primary to-sky-400 bg-clip-text text-transparent mb-1" data-testid={`stat-number-${index}`}>
                   {stat.number}
                 </p>
                 <p className="text-muted-foreground text-sm font-medium" data-testid={`stat-label-${index}`}>
