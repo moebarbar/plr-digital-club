@@ -33,6 +33,12 @@ A high-end, conversion-focused marketing landing page for selling resell-ready d
   - Reduced Google Fonts from 20+ fonts to just Inter
   - Code splitting for blog pages (lazy loaded)
   - Image lazy loading below the fold
+- **SEO Enhancements**:
+  - XML sitemap at /sitemap.xml with all pages
+  - Optimized robots.txt with sitemap reference
+  - Schema markup: Product, Review, Organization, Website, Article
+  - Breadcrumb navigation with schema.org markup on all sub-pages
+  - Full Open Graph and Twitter Card meta tags on all pages
 
 ## User Preferences
 
