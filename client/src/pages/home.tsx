@@ -275,8 +275,8 @@ function HeroSection() {
 function StatsSection() {
   const stats = [
     { number: "1,000+", label: "Digital Products", icon: Package },
-    { number: "48", label: "Categories", icon: Sparkles },
-    { number: "PLR", label: "Full Rights Included", icon: CheckCircle },
+    { number: "50+", label: "Categories", icon: Sparkles },
+    { number: "PLR/MRR", label: "Rights Included", icon: CheckCircle },
     { number: "Free", label: "Lifetime Updates", icon: RefreshCw },
   ];
 
