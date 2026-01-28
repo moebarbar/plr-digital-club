@@ -21,6 +21,17 @@ A high-end, conversion-focused marketing landing page for selling resell-ready d
   - Each article 250-300 words with custom generated images
   - Full OG meta tags for social sharing
   - Related posts, tags, and CTAs on each article page
+- **Products Showcase Enhanced**: 48 product category images
+  - Compressed from 54MB to 3.3MB for fast loading
+  - Shows 12 categories initially with "Show More" button
+  - Lazy loading for all product images
+  - Gradient overlay with titles
+  - "Plus Hundreds More Inside" teaser CTA
+  - Data file: client/src/data/productCategories.ts
+- **Performance Optimizations**:
+  - Reduced Google Fonts from 20+ fonts to just Inter
+  - Code splitting for blog pages (lazy loaded)
+  - Image lazy loading below the fold
 
 ## User Preferences
 
