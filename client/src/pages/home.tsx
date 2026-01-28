@@ -274,35 +274,30 @@ function HeroSection() {
 
 function StatsSection() {
   const stats = [
-    { number: "1,000+", label: "Digital Products", icon: Package, color: "from-blue-500 to-cyan-400" },
-    { number: "5,000+", label: "Happy Members", icon: Users, color: "from-violet-500 to-purple-400" },
-    { number: "$2M+", label: "Member Earnings", icon: DollarSign, color: "from-emerald-500 to-green-400" },
-    { number: "4.9/5", label: "Member Rating", icon: Star, color: "from-amber-500 to-yellow-400" },
+    { number: "1,000+", label: "Digital Products", icon: Package },
+    { number: "48", label: "Categories", icon: Sparkles },
+    { number: "PLR", label: "Full Rights Included", icon: CheckCircle },
+    { number: "24/7", label: "Instant Access", icon: Clock },
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden" data-testid="section-stats">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-      
-      <div className="max-w-7xl mx-auto px-4 md:px-6 relative">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+    <section className="py-16 bg-muted/30" data-testid="section-stats">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {stats.map((stat, index) => (
             <div
               key={index}
               className="group relative"
               data-testid={`stat-item-${index}`}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500 scale-95 group-hover:scale-100" />
-              <div className="relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 md:p-8 text-center hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-1">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${stat.color} mb-5 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                  <stat.icon className="w-8 h-8 text-white drop-shadow-sm" />
+              <div className="bg-card border border-border rounded-2xl p-6 md:p-8 text-center hover:border-primary hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 mb-4 group-hover:bg-primary group-hover:scale-105 transition-all duration-300">
+                  <stat.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
                 </div>
-                <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent mb-2" data-testid={`stat-number-${index}`}>
+                <p className="text-3xl md:text-4xl font-bold text-foreground mb-1" data-testid={`stat-number-${index}`}>
                   {stat.number}
                 </p>
-                <p className="text-muted-foreground text-sm font-medium tracking-wide uppercase" data-testid={`stat-label-${index}`}>
+                <p className="text-muted-foreground text-sm font-medium" data-testid={`stat-label-${index}`}>
                   {stat.label}
                 </p>
               </div>
@@ -316,33 +311,27 @@ function StatsSection() {
 
 function TrustSection() {
   const trustItems = [
-    { icon: Infinity, text: "Lifetime Access", highlight: true },
-    { icon: Users, text: "Beginner Friendly", highlight: false },
-    { icon: Shield, text: "30-Day Guarantee", highlight: false },
-    { icon: Clock, text: "Instant Download", highlight: false },
-    { icon: DollarSign, text: "One-Time Payment", highlight: true },
+    { icon: Infinity, text: "Lifetime Access" },
+    { icon: Users, text: "Beginner Friendly" },
+    { icon: Shield, text: "30-Day Guarantee" },
+    { icon: Clock, text: "Instant Download" },
+    { icon: DollarSign, text: "One-Time Payment" },
   ];
 
   return (
-    <section className="py-10 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 border-y border-primary/10" data-testid="section-trust">
+    <section className="py-8 border-y border-border" data-testid="section-trust">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           {trustItems.map((item, index) => (
             <div
               key={index}
-              className={`flex items-center gap-3 px-5 py-3 rounded-full transition-all duration-300 hover:scale-105 ${
-                item.highlight 
-                  ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/25' 
-                  : 'bg-card border border-border hover:border-primary/30 hover:shadow-md'
-              }`}
+              className="flex items-center gap-3 px-4 py-2 rounded-full bg-card border border-border hover:border-primary hover:bg-primary hover:shadow-md transition-all duration-300 group"
               data-testid={`trust-item-${index}`}
             >
-              <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                item.highlight ? 'bg-white/20' : 'bg-primary/10'
-              }`}>
-                <item.icon className={`w-4 h-4 ${item.highlight ? 'text-white' : 'text-primary'}`} />
+              <div className="w-8 h-8 rounded-full bg-primary/10 group-hover:bg-white/20 flex items-center justify-center transition-colors duration-300">
+                <item.icon className="w-4 h-4 text-primary group-hover:text-white transition-colors duration-300" />
               </div>
-              <span className={`text-sm font-semibold whitespace-nowrap ${item.highlight ? '' : ''}`} data-testid={`trust-text-${index}`}>
+              <span className="text-sm font-semibold whitespace-nowrap group-hover:text-white transition-colors duration-300" data-testid={`trust-text-${index}`}>
                 {item.text}
               </span>
             </div>
