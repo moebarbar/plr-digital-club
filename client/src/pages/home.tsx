@@ -37,6 +37,7 @@ import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 import reviewImage from "@assets/PLR-DIGITAL-CLUB-review.webp";
 import { productCategories } from "@/data/productCategories";
+import { blogPosts } from "@/data/blogPosts";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
 
 const CHECKOUT_URL = "https://app.plrdigitalclub.com/checkout-page";
@@ -825,6 +826,64 @@ function FAQSection() {
   );
 }
 
+function BlogPreviewSection() {
+  const latestPosts = [...blogPosts]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
+
+  return (
+    <section className="py-12 md:py-20" data-testid="section-blog-preview">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-12">
+          <Badge variant="secondary" className="mb-4">
+            <BookOpen className="w-4 h-4 mr-2" />
+            From the Blog
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-blog-title">
+            Learn How to Grow Your Business
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-blog-subtitle">
+            Tips, strategies, and insights to help you succeed with digital products.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+          {latestPosts.map((post) => (
+            <Link href={`/blog/${post.slug}`} key={post.id}>
+              <Card className="h-full overflow-visible hover-elevate" data-testid={`blog-card-${post.id}`}>
+                <div className="p-6">
+                  <Badge variant="outline" className="mb-3 text-xs">
+                    {post.category}
+                  </Badge>
+                  <h3 className="font-semibold text-lg mb-2 line-clamp-2" data-testid={`blog-title-${post.id}`}>
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between text-xs text-muted-foreground">
+                    <span>{post.date}</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <Button variant="outline" asChild data-testid="button-view-all-blog">
+            <Link href="/blog">
+              View All Articles
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function FinalCTASection() {
   return (
     <section className="py-16 md:py-28 relative overflow-hidden" data-testid="section-final-cta">
@@ -931,6 +990,7 @@ export default function Home() {
       <ValueSection />
       <TestimonialsSection />
       <FAQSection />
+      <BlogPreviewSection />
       <FinalCTASection />
       <Footer />
     </div>
