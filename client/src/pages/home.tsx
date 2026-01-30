@@ -39,7 +39,7 @@ import reviewImage from "@assets/PLR-DIGITAL-CLUB-review.webp";
 import { productCategories } from "@/data/productCategories";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
 
-const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
+const CHECKOUT_URL = "https://app.plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://app.plrdigitalclub.com/";
 
 function Header() {
