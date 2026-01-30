@@ -39,6 +39,9 @@ import reviewImage from "@assets/PLR-DIGITAL-CLUB-review.webp";
 import testimonialSarah from "@/assets/images/testimonial-sarah.jpg";
 import testimonialMichael from "@/assets/images/testimonial-michael.jpg";
 import testimonialJessica from "@/assets/images/testimonial-jessica.jpg";
+import testimonialDavid from "@/assets/images/testimonial-david.jpg";
+import testimonialEmily from "@/assets/images/testimonial-emily.jpg";
+import testimonialMarcus from "@/assets/images/testimonial-marcus.jpg";
 import { productCategories } from "@/data/productCategories";
 import { blogPosts } from "@/data/blogPosts";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
@@ -685,6 +688,30 @@ function TestimonialsSection() {
       earnings: "$890 this week",
       image: testimonialJessica,
       highlight: "10x my content output",
+    },
+    {
+      quote: "I was skeptical at first, but after my first month I made enough to cover 6 months of expenses. This is the real deal.",
+      name: "David Thompson",
+      role: "Freelance Designer",
+      earnings: "$8,200 this month",
+      image: testimonialDavid,
+      highlight: "Covered 6 months expenses",
+    },
+    {
+      quote: "The variety of products is incredible. I found my niche in planners and journals and haven't looked back since.",
+      name: "Emily Rodriguez",
+      role: "Online Seller",
+      earnings: "$3,750 this month",
+      image: testimonialEmily,
+      highlight: "Found my niche",
+    },
+    {
+      quote: "What I love most is the support community. Fellow members share tips and it's helped me grow faster than going solo.",
+      name: "Marcus Johnson",
+      role: "E-commerce Entrepreneur",
+      earnings: "$6,100 this month",
+      image: testimonialMarcus,
+      highlight: "Growing faster together",
     },
   ];
 
