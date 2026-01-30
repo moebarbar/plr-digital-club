@@ -54,61 +54,61 @@ function Header() {
   };
 
   return (
-    <header className="py-4 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50" data-testid="header">
+    <header className="py-5 md:py-6 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50" data-testid="header">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between gap-4">
         <img 
           src={logoLight} 
           alt="PLR Digital Club" 
-          className="h-8 md:h-12 dark:hidden" 
+          className="h-10 md:h-14 dark:hidden" 
           data-testid="img-logo-light"
         />
         <img 
           src={logoDark} 
           alt="PLR Digital Club" 
-          className="h-8 md:h-12 hidden dark:block" 
+          className="h-10 md:h-14 hidden dark:block" 
           data-testid="img-logo-dark"
         />
         
-        <nav className="hidden md:flex items-center gap-6" data-testid="nav-menu">
+        <nav className="hidden md:flex items-center gap-8" data-testid="nav-menu">
           <button 
             onClick={() => scrollToSection('how-it-works')} 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             data-testid="nav-how-it-works"
           >
             How It Works
           </button>
           <button 
             onClick={() => scrollToSection('pricing')} 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             data-testid="nav-pricing"
           >
             Pricing
           </button>
           <button 
             onClick={() => scrollToSection('faq')} 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             data-testid="nav-faq"
           >
             FAQ
           </button>
           <Link 
             href="/products" 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             data-testid="nav-products"
           >
             Products
           </Link>
           <Link 
             href="/blog" 
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
             data-testid="nav-blog"
           >
             Blog
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2">
-          <Button size="sm" variant="outline" asChild className="hidden sm:inline-flex" data-testid="button-header-login">
+        <div className="flex items-center gap-3">
+          <Button variant="outline" asChild className="hidden sm:inline-flex" data-testid="button-header-login">
             <a href={SIGNIN_URL} target="_blank" rel="noopener noreferrer">
               Access Member Area
             </a>
