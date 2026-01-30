@@ -761,6 +761,10 @@ function TestimonialsSection() {
                 <div>
                   <p className="font-semibold" data-testid={`text-testimonial-name-${index}`}>{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <div className="flex items-center gap-1 mt-1">
+                    <CheckCircle className="w-3 h-3 text-green-500" />
+                    <span className="text-xs text-green-600 font-medium">Verified Purchase</span>
+                  </div>
                 </div>
               </div>
               <div className="mt-4 pt-4 border-t border-border">
