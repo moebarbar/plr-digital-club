@@ -134,12 +134,12 @@ function Header() {
       </div>
       
       <div 
-        className={`md:hidden border-t border-border bg-background transition-all duration-300 overflow-hidden ${
-          mobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden border-t border-border bg-background transition-all duration-300 ${
+          mobileMenuOpen ? 'max-h-[80vh] opacity-100 overflow-y-auto' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
         data-testid="mobile-menu"
       >
-        <nav className="flex flex-col p-4 gap-2">
+        <nav className="flex flex-col p-4 gap-2 pb-6">
           <button 
             onClick={() => scrollToSection('how-it-works')} 
             className="text-left py-3 px-4 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
