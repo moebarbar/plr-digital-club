@@ -666,52 +666,46 @@ function ValueSection() {
 function TestimonialsSection() {
   const testimonials = [
     {
-      quote: "I started selling the Notion templates from PLR Digital Club and made my first $1k in just 3 days. The quality is unmatched.",
+      quote: "The Notion templates from PLR Digital Club are incredibly well-designed. The quality is unmatched and saved me so much time.",
       name: "Sarah Jenkins",
       role: "Digital Entrepreneur",
-      earnings: "$12,430 this month",
       image: testimonialSarah,
-      highlight: "Made $1k in 3 days",
+      highlight: "Amazing Quality",
     },
     {
       quote: "The best investment I've made. No more spending weeks creating products. I just download, customize, and sell.",
       name: "Michael Chen",
       role: "Side Hustler",
-      earnings: "$4,500 this month",
       image: testimonialMichael,
-      highlight: "Quit my 9-5 job",
+      highlight: "Huge Time Saver",
     },
     {
-      quote: "Finally, PLR content that doesn't look like it was made in 1999. The designs are modern and actually convert.",
+      quote: "Finally, PLR content that doesn't look like it was made in 1999. The designs are modern and professional.",
       name: "Jessica Williams",
       role: "Content Creator",
-      earnings: "$890 this week",
       image: testimonialJessica,
-      highlight: "10x my content output",
+      highlight: "Modern Designs",
     },
     {
-      quote: "I was skeptical at first, but after my first month I made enough to cover 6 months of expenses. This is the real deal.",
+      quote: "I was skeptical at first, but the product quality exceeded my expectations. Definitely worth every penny.",
       name: "David Thompson",
       role: "Freelance Designer",
-      earnings: "$8,200 this month",
       image: testimonialDavid,
-      highlight: "Covered 6 months expenses",
+      highlight: "Exceeded Expectations",
     },
     {
       quote: "The variety of products is incredible. I found my niche in planners and journals and haven't looked back since.",
       name: "Emily Rodriguez",
       role: "Online Seller",
-      earnings: "$3,750 this month",
       image: testimonialEmily,
-      highlight: "Found my niche",
+      highlight: "Great Variety",
     },
     {
-      quote: "What I love most is the support community. Fellow members share tips and it's helped me grow faster than going solo.",
+      quote: "What I love most is the support community. Fellow members share tips and it's helped me learn so much faster.",
       name: "Marcus Johnson",
       role: "E-commerce Entrepreneur",
-      earnings: "$6,100 this month",
       image: testimonialMarcus,
-      highlight: "Growing faster together",
+      highlight: "Helpful Community",
     },
   ];
 
@@ -766,12 +760,6 @@ function TestimonialsSection() {
                     <span className="text-xs text-green-600 font-medium">Verified Purchase</span>
                   </div>
                 </div>
-              </div>
-              <div className="mt-4 pt-4 border-t border-border">
-                <p className="text-sm text-muted-foreground">Recent Earnings</p>
-                <p className="text-lg font-bold text-primary" data-testid={`text-testimonial-earnings-${index}`}>
-                  {testimonial.earnings}
-                </p>
               </div>
             </Card>
           ))}
