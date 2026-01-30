@@ -40,7 +40,7 @@ import { productCategories } from "@/data/productCategories";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
 
 const CHECKOUT_URL = "https://plrdigitalclub.com/checkout-page";
-const SIGNIN_URL = "https://plrdigitalclub.com/signin";
+const SIGNIN_URL = "https://app.plrdigitalclub.com/";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
