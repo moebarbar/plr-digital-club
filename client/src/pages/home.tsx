@@ -36,6 +36,9 @@ import heroImage from "@assets/PLR_Digital_Club_Header.webp";
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import logoDark from "@assets/PLR_Digital_Club_Logo_(4)_1768953475194.png";
 import reviewImage from "@assets/PLR-DIGITAL-CLUB-review.webp";
+import testimonialSarah from "@/assets/images/testimonial-sarah.jpg";
+import testimonialMichael from "@/assets/images/testimonial-michael.jpg";
+import testimonialJessica from "@/assets/images/testimonial-jessica.jpg";
 import { productCategories } from "@/data/productCategories";
 import { blogPosts } from "@/data/blogPosts";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
@@ -664,7 +667,7 @@ function TestimonialsSection() {
       name: "Sarah Jenkins",
       role: "Digital Entrepreneur",
       earnings: "$12,430 this month",
-      avatar: "SJ",
+      image: testimonialSarah,
       highlight: "Made $1k in 3 days",
     },
     {
@@ -672,7 +675,7 @@ function TestimonialsSection() {
       name: "Michael Chen",
       role: "Side Hustler",
       earnings: "$4,500 this month",
-      avatar: "MC",
+      image: testimonialMichael,
       highlight: "Quit my 9-5 job",
     },
     {
@@ -680,7 +683,7 @@ function TestimonialsSection() {
       name: "Jessica Williams",
       role: "Content Creator",
       earnings: "$890 this week",
-      avatar: "JW",
+      image: testimonialJessica,
       highlight: "10x my content output",
     },
   ];
@@ -722,9 +725,11 @@ function TestimonialsSection() {
               <div className="flex items-center gap-4">
                 <div className="relative">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-blue-400 animate-pulse opacity-50 scale-110" />
-                  <div className="relative w-12 h-12 rounded-full bg-gradient-to-br from-primary to-blue-400 flex items-center justify-center text-white font-semibold">
-                    {testimonial.avatar}
-                  </div>
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name}
+                    className="relative w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+                  />
                 </div>
                 <div>
                   <p className="font-semibold" data-testid={`text-testimonial-name-${index}`}>{testimonial.name}</p>
