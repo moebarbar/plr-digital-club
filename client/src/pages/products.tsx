@@ -118,7 +118,7 @@ export default function Products() {
             {filteredProducts.map((product, index) => (
               <Card
                 key={index}
-                className="overflow-hidden hover-elevate transition-all duration-300 group"
+                className="overflow-hidden transition-all duration-300 group border-2 border-transparent hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10"
                 data-testid={`card-product-${index}`}
               >
                 <div className="relative aspect-square overflow-hidden bg-white">
@@ -129,14 +129,15 @@ export default function Products() {
                     loading="lazy"
                     data-testid={`img-product-${index}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="text-white text-sm font-semibold mb-1" data-testid={`text-product-title-${index}`}>
-                      {product.title}
-                    </h3>
-                    <p className="text-white/80 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2" data-testid={`text-product-desc-${index}`}>
-                      {product.description} + more inside...
-                    </p>
+                  <div className="absolute bottom-0 left-0 right-0">
+                    <div className="bg-gradient-to-t from-black/80 via-black/50 to-transparent pt-8 pb-3 px-3">
+                      <h3 className="text-white text-sm font-semibold mb-1" data-testid={`text-product-title-${index}`}>
+                        {product.title}
+                      </h3>
+                      <p className="text-white/70 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2" data-testid={`text-product-desc-${index}`}>
+                        {product.description} + more inside...
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Card>
