@@ -235,24 +235,24 @@ function HeroSection() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-muted-foreground mb-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-base font-medium text-foreground/80 mb-4">
             <div className="flex items-center gap-2" data-testid="hero-trust-payment">
-              <CheckCircle className="w-4 h-4 text-primary" />
+              <CheckCircle className="w-5 h-5 text-primary" />
               <span>One-time payment</span>
             </div>
             <div className="flex items-center gap-2" data-testid="hero-trust-rights">
-              <CheckCircle className="w-4 h-4 text-primary" />
+              <CheckCircle className="w-5 h-5 text-primary" />
               <span>Full PLR & MRR rights</span>
             </div>
             <div className="flex items-center gap-2" data-testid="hero-trust-download">
-              <CheckCircle className="w-4 h-4 text-primary" />
+              <CheckCircle className="w-5 h-5 text-primary" />
               <span>Instant download</span>
             </div>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-2 text-xs md:text-sm text-muted-foreground" data-testid="hero-security-strip">
-            <span className="flex items-center gap-1">
-              <Shield className="w-3 h-3 md:w-4 md:h-4 text-primary" />
+          <div className="flex flex-wrap justify-center gap-3 text-sm md:text-base font-medium text-foreground/70" data-testid="hero-security-strip">
+            <span className="flex items-center gap-1.5">
+              <Shield className="w-4 h-4 md:w-5 md:h-5 text-primary" />
               Secure SSL Checkout
             </span>
             <span className="text-border">|</span>
