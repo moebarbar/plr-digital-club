@@ -983,6 +983,21 @@ function Footer() {
             </a>
           </div>
         </div>
+        
+        <div className="mt-8 pt-6 border-t border-border">
+          <p className="text-xs text-muted-foreground text-center mb-4" data-testid="text-facebook-disclaimer">
+            Disclaimer: This website is not affiliated with, endorsed by, or sponsored by Facebook. Facebook, its logo, and other related marks are registered trademarks of Facebook, Inc.
+          </p>
+          <p className="text-xs text-muted-foreground text-center mb-4" data-testid="text-copyright-notice">
+            © Copyright © 2026 PLR Digital Club. All rights reserved. All materials, content, and intellectual property on this website are protected by copyright law and international treaties. Unauthorized reproduction, distribution, or use of any content without the express written permission of the copyright owner is strictly prohibited.
+          </p>
+          <p className="text-xs text-muted-foreground text-center" data-testid="text-contact-info">
+            For inquiries or permissions, please contact{' '}
+            <a href="mailto:support@plrdigitalclub.com" className="text-primary hover:underline">
+              support@plrdigitalclub.com
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
