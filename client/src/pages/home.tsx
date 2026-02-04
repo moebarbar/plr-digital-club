@@ -30,6 +30,7 @@ import {
   ChevronDown,
   Menu,
   X,
+  BadgeCheck,
 } from "lucide-react";
 
 import heroImage from "@assets/PLR_Digital_Club_Header.webp";
@@ -256,7 +257,10 @@ function HeroSection() {
               Secure SSL Checkout
             </span>
             <span className="text-border">|</span>
-            <span>30-Day Money-Back Guarantee</span>
+            <span className="flex items-center gap-1.5">
+              <BadgeCheck className="w-4 h-4 md:w-5 md:h-5 text-primary" />
+              30-Day Money-Back Guarantee
+            </span>
           </div>
         </div>
 
