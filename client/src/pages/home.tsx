@@ -978,7 +978,7 @@ function Footer() {
             <Link href="/terms" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-terms">
               Terms of Service
             </Link>
-            <a href="#" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-contact">
+            <a href="https://app.plrdigitalclub.com/contact-us" target="_blank" rel="noopener noreferrer" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-contact">
               Contact
             </a>
           </div>
