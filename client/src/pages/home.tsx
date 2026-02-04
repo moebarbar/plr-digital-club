@@ -44,7 +44,7 @@ import testimonialEmily from "@/assets/images/testimonial-emily.jpg";
 import testimonialMarcus from "@/assets/images/testimonial-marcus.jpg";
 import { productCategories } from "@/data/productCategories";
 import { blogPosts } from "@/data/blogPosts";
-import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema } from "@/components/SchemaMarkup";
+import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema, FAQSchema } from "@/components/SchemaMarkup";
 
 const CHECKOUT_URL = "https://app.plrdigitalclub.com/checkout-page";
 const SIGNIN_URL = "https://app.plrdigitalclub.com/";
@@ -1019,9 +1019,16 @@ export default function Home() {
         url="https://plrdigitalclub.com/checkout-page"
       />
       <ReviewSchema reviews={[
-        { author: "Sarah M.", rating: 5, text: "Amazing value! I've already made back my investment 10x over.", date: "2026-01-10" },
-        { author: "Michael R.", rating: 5, text: "The quality of these products blew me away. Started selling day one!", date: "2026-01-12" },
+        { author: "Sarah M.", rating: 5, text: "The quality of these products exceeded my expectations. Saved me so much time!", date: "2026-01-10" },
+        { author: "Michael R.", rating: 5, text: "The quality of these products blew me away. Professional and easy to customize!", date: "2026-01-12" },
         { author: "Jessica T.", rating: 5, text: "Best investment I've made for my business. The templates are professional quality.", date: "2026-01-15" }
+      ]} />
+      <FAQSchema faqs={[
+        { question: "Is this legal?", answer: "Absolutely! PLR (Private Label Rights) and MRR (Master Resell Rights) are legitimate licenses that allow you to rebrand and resell digital products. You're essentially purchasing the rights to use these products as your own." },
+        { question: "Can I really resell these?", answer: "Yes! That's the entire point. With MRR, you can sell these products and keep 100% of the profit. With PLR, you can also modify, rebrand, and even claim authorship of the products." },
+        { question: "Do I need experience?", answer: "No experience needed! Our products come ready to sell. We provide the files, sales copy, and even marketing materials. If you can upload a file and set a price, you can start selling." },
+        { question: "Is this a subscription?", answer: "No, this is a one-time payment of $97 for lifetime access. No monthly fees, no hidden charges. Pay once and access everything forever, including all future updates." },
+        { question: "How fast can I start?", answer: "Immediately! After purchase, you get instant access to download all products. You could have your first product listed for sale within an hour of joining." }
       ]} />
       <Header />
       <HeroSection />
