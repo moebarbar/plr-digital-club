@@ -972,9 +972,9 @@ function Footer() {
             </p>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-privacy">
+            <Link href="/privacy" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-privacy">
               Privacy Policy
-            </a>
+            </Link>
             <a href="#" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-terms">
               Terms of Service
             </a>
