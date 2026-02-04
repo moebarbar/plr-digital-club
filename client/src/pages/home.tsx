@@ -965,8 +965,11 @@ function Footer() {
     <footer className="py-8 border-t border-border" data-testid="footer">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div>
-            <p className="font-semibold mb-1" data-testid="text-footer-brand">PLR Digital Club</p>
+          <div className="max-w-md">
+            <p className="font-semibold mb-2" data-testid="text-footer-brand">PLR Digital Club</p>
+            <p className="text-muted-foreground text-sm mb-3" data-testid="text-footer-description">
+              PLR Digital Club is a platform that offers access to 1,000+ digital products with master resell rights, seller tools, resources, AI tools, and everything needed to succeed in selling digital products online.
+            </p>
             <p className="text-muted-foreground text-sm" data-testid="text-copyright">
               © 2026 PLR Digital Club. All rights reserved.
             </p>
