@@ -215,7 +215,7 @@ function HeroSection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button size="lg" className="text-lg px-8 py-6 shadow-lg shadow-primary/25 glow-button animate-glow" asChild data-testid="button-cta-primary">
+            <Button size="lg" className="text-lg px-8 py-6 glow-button" asChild data-testid="button-cta-primary">
               <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
                 Get Instant Access for $97
                 <ArrowRight className="ml-2 w-5 h-5" />
