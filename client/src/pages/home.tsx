@@ -975,9 +975,9 @@ function Footer() {
             <Link href="/privacy" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-privacy">
               Privacy Policy
             </Link>
-            <a href="#" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-terms">
+            <Link href="/terms" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-terms">
               Terms of Service
-            </a>
+            </Link>
             <a href="#" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-contact">
               Contact
             </a>
