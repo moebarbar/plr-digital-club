@@ -205,12 +205,12 @@ function HeroSection() {
             1000+ Products Ready to Resell
           </Badge>
           
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight" data-testid="text-hero-headline">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight mb-6 leading-tight" data-testid="text-hero-headline">
             Get Resell-Ready Digital Products for{" "}
             <span className="gradient-text-animated" data-testid="text-hero-highlight">100% Profit</span>
           </h1>
           
-          <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-10 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subheadline">
+          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 md:mb-10 leading-relaxed max-w-3xl mx-auto" data-testid="text-hero-subheadline">
             Pay once. Access 1000+ digital products with full PLR & MRR rights. Rebrand them, sell them anywhere, and keep 100% of the profits.
           </p>
           
@@ -375,10 +375,10 @@ function HowItWorksSection() {
     <section id="how-it-works" className="py-12 md:py-20" data-testid="section-how-it-works">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-how-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-how-title">
             How It Works
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-how-subtitle">
+          <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto" data-testid="text-how-subtitle">
             We've removed the hardest part of making money online: creating the product. Now you can focus on selling and earning.
           </p>
         </div>
@@ -418,10 +418,10 @@ function ProductsSection() {
             <Package className="w-3 h-3 mr-1" />
             48 Categories • 1000+ Products
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-products-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-products-title">
             What's Inside Your Membership
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-products-subtitle">
+          <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto" data-testid="text-products-subtitle">
             Here's a preview of what you'll get. Full access includes 48 categories with 1000+ products.
           </p>
         </div>
@@ -467,10 +467,10 @@ function ProductsSection() {
 
         <div className="mt-12 text-center bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/10">
           <Sparkles className="w-8 h-8 text-primary mx-auto mb-4" />
-          <h3 className="text-xl md:text-2xl font-bold mb-2" data-testid="text-more-inside">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3" data-testid="text-more-inside">
             Plus Hundreds More Inside the Platform
           </h3>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
+          <p className="text-muted-foreground text-lg lg:text-xl mb-6 max-w-xl mx-auto">
             New products added regularly. Get lifetime access to everything for just one payment.
           </p>
           <Button size="lg" className="glow-cta" asChild data-testid="button-get-access-products">
@@ -526,7 +526,7 @@ function UpdatesSection() {
             <RefreshCw className="w-4 h-4 mr-2" />
             Auto-Syncing Updates
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-updates-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-updates-title">
             2026 Product Updates
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -606,10 +606,10 @@ function ValueSection() {
               <Zap className="w-4 h-4 mr-2" />
               90% OFF - Limited Time
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-value-title">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-value-title">
               Everything You Need to Start Selling Digital Products
             </h2>
-            <p className="text-muted-foreground text-lg" data-testid="text-value-subtitle">
+            <p className="text-muted-foreground text-lg lg:text-xl" data-testid="text-value-subtitle">
               One payment. Lifetime access. Start today.
             </p>
           </div>
@@ -718,10 +718,10 @@ function TestimonialsSection() {
             <Star className="w-4 h-4 mr-2 fill-primary text-primary" />
             Verified Success Stories
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-testimonials-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-testimonials-title">
             Real Results from Real People
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto">
             Join thousands of entrepreneurs who are already building their digital product empires
           </p>
         </div>
@@ -833,10 +833,10 @@ function FAQSection() {
     <section id="faq" className="py-12 md:py-20 bg-muted/30" data-testid="section-faq">
       <div className="max-w-3xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-faq-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-faq-title">
             Frequently Asked Questions
           </h2>
-          <p className="text-muted-foreground text-lg" data-testid="text-faq-subtitle">
+          <p className="text-muted-foreground text-lg lg:text-xl" data-testid="text-faq-subtitle">
             Everything you need to know about the PLR Digital Club.
           </p>
         </div>
@@ -864,10 +864,10 @@ function BlogPreviewSection() {
             <BookOpen className="w-4 h-4 mr-2" />
             From the Blog
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" data-testid="text-blog-title">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-blog-title">
             Learn How to Grow Your Business
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto" data-testid="text-blog-subtitle">
+          <p className="text-muted-foreground text-lg lg:text-xl max-w-2xl mx-auto" data-testid="text-blog-subtitle">
             Tips, strategies, and insights to help you succeed with digital products.
           </p>
         </div>
@@ -922,7 +922,7 @@ function FinalCTASection() {
             <Zap className="w-4 h-4 mr-2" />
             Limited Time Offer
           </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6" data-testid="text-final-headline">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-6" data-testid="text-final-headline">
             Ready to <span className="gradient-text-animated">Start Earning?</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto" data-testid="text-final-subheadline">
