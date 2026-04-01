@@ -47,8 +47,8 @@ import { productCategories } from "@/data/productCategories";
 import { blogPosts } from "@/data/blogPosts";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema, FAQSchema } from "@/components/SchemaMarkup";
 
-const CHECKOUT_URL = "https://plrdigitalclub.com";
-const SIGNIN_URL = "https://plrdigitalclub.com/login";
+const CHECKOUT_URL = "https://app.plrdigitalclub.com";
+const SIGNIN_URL = "https://app.plrdigitalclub.com/login";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
