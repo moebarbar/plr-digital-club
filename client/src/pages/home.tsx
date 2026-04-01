@@ -47,8 +47,8 @@ import { productCategories } from "@/data/productCategories";
 import { blogPosts } from "@/data/blogPosts";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema, FAQSchema } from "@/components/SchemaMarkup";
 
-const CHECKOUT_URL = "https://app.plrdigitalclub.com/checkout-page";
-const SIGNIN_URL = "https://app.plrdigitalclub.com/";
+const CHECKOUT_URL = "https://plrdigitalclub.com";
+const SIGNIN_URL = "https://plrdigitalclub.com/login";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -218,7 +218,7 @@ function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Button size="lg" className="text-lg px-8 py-6 glow-button" asChild data-testid="button-cta-primary">
               <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-                Get Instant Access for $97
+                Get Instant Access for $197
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
@@ -479,7 +479,7 @@ function ProductsSection() {
           </p>
           <Button size="lg" className="glow-cta" asChild data-testid="button-get-access-products">
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              Get Instant Access - $97
+              Get Instant Access - $197
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>
@@ -645,7 +645,7 @@ function ValueSection() {
                 </div>
                 <div className="text-center md:text-right">
                   <p className="text-muted-foreground text-sm">Today's Price</p>
-                  <p className="text-5xl font-bold text-primary" data-testid="text-todays-price">$97</p>
+                  <p className="text-5xl font-bold text-primary" data-testid="text-todays-price">$197</p>
                 </div>
               </div>
             </div>
@@ -825,7 +825,7 @@ function FAQSection() {
     },
     {
       question: "Is this a subscription?",
-      answer: "No, this is a one-time payment of $97 for lifetime access. No monthly fees, no hidden charges. Pay once and access everything forever, including all future updates.",
+      answer: "No, this is a one-time payment of $197 for lifetime access. No monthly fees, no hidden charges. Pay once and access everything forever, including all future updates.",
     },
     {
       question: "How fast can I start?",
@@ -934,7 +934,7 @@ function FinalCTASection() {
           </p>
           <p className="text-2xl md:text-3xl font-bold mb-8">
             <span className="line-through text-muted-foreground">$497</span>{" "}
-            <span className="gradient-text-animated text-4xl md:text-5xl">$97</span>{" "}
+            <span className="gradient-text-animated text-4xl md:text-5xl">$197</span>{" "}
             <span className="text-sm font-normal text-muted-foreground">one-time payment</span>
           </p>
           
@@ -986,7 +986,7 @@ function Footer() {
             <Link href="/terms" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-terms">
               Terms of Service
             </Link>
-            <a href="https://app.plrdigitalclub.com/contact-us" target="_blank" rel="noopener noreferrer" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-contact">
+            <a href="mailto:support@plrdigitalclub.com" className="hover-elevate px-2 py-1 rounded-md" data-testid="link-contact">
               Contact
             </a>
           </div>
@@ -1031,7 +1031,7 @@ export default function Home() {
         { question: "Is this legal?", answer: "Absolutely! PLR (Private Label Rights) and MRR (Master Resell Rights) are legitimate licenses that allow you to rebrand and resell digital products. You're essentially purchasing the rights to use these products as your own." },
         { question: "Can I really resell these?", answer: "Yes! That's the entire point. With MRR, you can sell these products and keep 100% of the profit. With PLR, you can also modify, rebrand, and even claim authorship of the products." },
         { question: "Do I need experience?", answer: "No experience needed! Our products come ready to sell. We provide the files, sales copy, and even marketing materials. If you can upload a file and set a price, you can start selling." },
-        { question: "Is this a subscription?", answer: "No, this is a one-time payment of $97 for lifetime access. No monthly fees, no hidden charges. Pay once and access everything forever, including all future updates." },
+        { question: "Is this a subscription?", answer: "No, this is a one-time payment of $197 for lifetime access. No monthly fees, no hidden charges. Pay once and access everything forever, including all future updates." },
         { question: "How fast can I start?", answer: "Immediately! After purchase, you get instant access to download all products. You could have your first product listed for sale within an hour of joining." }
       ]} />
       <Header />
