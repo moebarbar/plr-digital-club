@@ -40,6 +40,8 @@ export default function BlogPost() {
   const post = getPostBySlug(slug);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+    
     if (post) {
       document.title = `${post.title} | PLR Digital Club Blog`;
       const metaDescription = document.querySelector('meta[name="description"]');
