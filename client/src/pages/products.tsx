@@ -17,7 +17,7 @@ import { productCategories } from "@/data/productCategories";
 import logoLight from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-const CHECKOUT_URL = "https://plrdigitalclub.com";
+const CHECKOUT_URL = "https://members.plrdigitalclub.com";
 
 export default function Products() {
   const [searchQuery, setSearchQuery] = useState("");

@@ -8,14 +8,18 @@ import logoImage from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import { useEffect } from "react";
 import { Breadcrumb } from "@/components/Breadcrumb";
 
-import blogImage1 from "@assets/generated_images/plr_products_beginner_guide.png";
-import blogImage2 from "@assets/generated_images/master_resell_rights_profits.png";
-import blogImage3 from "@assets/generated_images/passive_income_digital_products.png";
-import blogImage4 from "@assets/generated_images/digital_product_niches_overview.png";
-import blogImage5 from "@assets/generated_images/online_business_startup_launch.png";
-import blogImage6 from "@assets/generated_images/digital_marketing_tips_visual.png";
+import blogImage1 from "@assets/generated_images/plr_reselling_guide_2026_1775017443408.png";
+import blogImage2 from "@assets/generated_images/digital_niches_booming_1775017457894.png";
+import blogImage3 from "@assets/generated_images/mrr_vs_plr_profits_1775017470264.png";
+import blogImage4 from "@assets/generated_images/passive_income_stream_zero_experience_1775017496008.png";
+import blogImage5 from "@assets/generated_images/rebranding_digital_products_profit_secret_1775017507781.png";
+import blogImage6 from "@assets/generated_images/digital_product_seller_tools_2026_1775017522114.png";
+import blogImage7 from "@assets/generated_images/notion_templates_perfect_product_1775017548435.png";
+import blogImage8 from "@assets/generated_images/etsy_vs_own_website_selling_1775017561242.png";
+import blogImage9 from "@assets/generated_images/launch_online_course_plr_1775017574442.png";
+import blogImage10 from "@assets/generated_images/psychology_pricing_digital_products_1775017588569.png";
 
-const blogImages = [blogImage1, blogImage2, blogImage3, blogImage4, blogImage5, blogImage6];
+const blogImages = [blogImage1, blogImage2, blogImage3, blogImage4, blogImage5, blogImage6, blogImage7, blogImage8, blogImage9, blogImage10];
 
 export default function Blog() {
   useEffect(() => {
@@ -68,7 +72,7 @@ export default function Blog() {
               <Link href="/">
                 <Button variant="ghost" data-testid="link-blog-home">Home</Button>
               </Link>
-              <a href="https://plrdigitalclub.com/checkout-page">
+              <a href="https://members.plrdigitalclub.com">
                 <Button data-testid="button-blog-cta">
                   Get Access
                 </Button>
@@ -184,7 +188,7 @@ export default function Blog() {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Get instant access to 1,000+ PLR & MRR products and start building your passive income today.
           </p>
-          <a href="https://plrdigitalclub.com/checkout-page">
+          <a href="https://members.plrdigitalclub.com">
             <Button size="lg" className="text-lg px-8 py-6" data-testid="button-blog-cta-main">
               Get Lifetime Access - $97 <ChevronRight className="ml-2" />
             </Button>

@@ -7,22 +7,31 @@ import { blogPosts, getPostBySlug } from "@/data/blogPosts";
 import logoImage from "@assets/PLR_Digital_Club_Logo_(3)_1768953394261.png";
 import { useEffect } from "react";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { ArticleSchema } from "@/components/SchemaMarkup";
+import { ArticleSchema, FAQSchema } from "@/components/SchemaMarkup";
+import ReactMarkdown from "react-markdown";
 
-import blogImage1 from "@assets/generated_images/plr_products_beginner_guide.png";
-import blogImage2 from "@assets/generated_images/master_resell_rights_profits.png";
-import blogImage3 from "@assets/generated_images/passive_income_digital_products.png";
-import blogImage4 from "@assets/generated_images/digital_product_niches_overview.png";
-import blogImage5 from "@assets/generated_images/online_business_startup_launch.png";
-import blogImage6 from "@assets/generated_images/digital_marketing_tips_visual.png";
+import blogImage1 from "@assets/generated_images/plr_reselling_guide_2026_1775017443408.png";
+import blogImage2 from "@assets/generated_images/digital_niches_booming_1775017457894.png";
+import blogImage3 from "@assets/generated_images/mrr_vs_plr_profits_1775017470264.png";
+import blogImage4 from "@assets/generated_images/passive_income_stream_zero_experience_1775017496008.png";
+import blogImage5 from "@assets/generated_images/rebranding_digital_products_profit_secret_1775017507781.png";
+import blogImage6 from "@assets/generated_images/digital_product_seller_tools_2026_1775017522114.png";
+import blogImage7 from "@assets/generated_images/notion_templates_perfect_product_1775017548435.png";
+import blogImage8 from "@assets/generated_images/etsy_vs_own_website_selling_1775017561242.png";
+import blogImage9 from "@assets/generated_images/launch_online_course_plr_1775017574442.png";
+import blogImage10 from "@assets/generated_images/psychology_pricing_digital_products_1775017588569.png";
 
 const blogImages: Record<string, string> = {
-  "what-are-plr-products-beginners-guide": blogImage1,
-  "master-resell-rights-explained-keep-100-percent-profits": blogImage2,
-  "5-ways-passive-income-digital-products-2026": blogImage3,
-  "best-niches-selling-digital-products-online": blogImage4,
-  "start-online-business-ready-made-digital-products": blogImage5,
-  "digital-product-marketing-tips-beginners": blogImage6,
+  "reselling-plr-products-2026-guide": blogImage1,
+  "5-digital-product-niches-booming": blogImage2,
+  "mrr-vs-plr-which-is-profitable": blogImage3,
+  "start-passive-income-stream-zero-experience": blogImage4,
+  "rebranding-digital-products-maximum-profit": blogImage5,
+  "top-10-tools-digital-product-seller-2026": blogImage6,
+  "why-notion-templates-perfect-digital-product": blogImage7,
+  "etsy-vs-own-website-where-to-sell": blogImage8,
+  "launch-first-online-course-using-plr": blogImage9,
+  "psychology-pricing-digital-products": blogImage10,
 };
 
 export default function BlogPost() {
@@ -112,7 +121,7 @@ export default function BlogPost() {
                   <ArrowLeft className="w-4 h-4 mr-2" /> Blog
                 </Button>
               </Link>
-              <a href="https://plrdigitalclub.com/checkout-page">
+              <a href="https://members.plrdigitalclub.com">
                 <Button data-testid="button-post-cta">
                   Get Access
                 </Button>
@@ -130,6 +139,9 @@ export default function BlogPost() {
         datePublished={post.date}
         url={`https://plrdigitalclub.com/blog/${slug}`}
       />
+      {post.faqs && post.faqs.length > 0 && (
+        <FAQSchema faqs={post.faqs} />
+      )}
 
       {/* Article */}
       <article className="py-12 md:py-16">
@@ -176,36 +188,10 @@ export default function BlogPost() {
 
             {/* Content */}
             <div 
-              className="prose prose-lg dark:prose-invert max-w-none mb-10"
+              className="prose prose-lg dark:prose-invert max-w-none prose-a:text-primary prose-a:no-underline hover:prose-a:underline mb-10"
               data-testid="content-post-body"
             >
-              {post.content.split('\n\n').map((paragraph, index) => {
-                if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                  return (
-                    <h3 key={index} className="text-xl font-semibold mt-8 mb-4">
-                      {paragraph.replace(/\*\*/g, '')}
-                    </h3>
-                  );
-                }
-                if (paragraph.includes('**')) {
-                  const parts = paragraph.split(/(\*\*.*?\*\*)/g);
-                  return (
-                    <p key={index} className="mb-4 text-muted-foreground leading-relaxed">
-                      {parts.map((part, i) => {
-                        if (part.startsWith('**') && part.endsWith('**')) {
-                          return <strong key={i} className="text-foreground font-semibold">{part.replace(/\*\*/g, '')}</strong>;
-                        }
-                        return part;
-                      })}
-                    </p>
-                  );
-                }
-                return (
-                  <p key={index} className="mb-4 text-muted-foreground leading-relaxed">
-                    {paragraph}
-                  </p>
-                );
-              })}
+              <ReactMarkdown>{post.content}</ReactMarkdown>
             </div>
 
             {/* Tags */}
@@ -235,7 +221,7 @@ export default function BlogPost() {
                 <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
                   Get instant access to 1,000+ PLR & MRR products with full resell rights. One payment, lifetime access.
                 </p>
-                <a href="https://plrdigitalclub.com/checkout-page">
+                <a href="https://members.plrdigitalclub.com">
                   <Button size="lg" data-testid="button-post-cta-main">
                     Get Lifetime Access - $97 <ChevronRight className="ml-2" />
                   </Button>
