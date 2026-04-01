@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   keywords: ['PLR digital products', 'MRR digital products', 'master resell rights', 'private label rights', 'digital products to resell', 'PLR membership'],
   authors: [{ name: 'PLR Digital Club' }],
   creator: 'PLR Digital Club',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -34,6 +38,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+        <meta name="theme-color" content="#1A1A4E" />
+      </head>
       <body>{children}</body>
     </html>
   )

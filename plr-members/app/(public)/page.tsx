@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import CountdownTimer from '@/components/checkout/CountdownTimer'
 
 export default function CheckoutPage() {
@@ -56,7 +57,7 @@ export default function CheckoutPage() {
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* LEFT — Value pitch */}
       <div className="bg-[#1A1A4E] text-white p-10 lg:p-16 flex flex-col justify-center">
-        <p className="text-xl font-bold tracking-tight">⚡ PLR DIGITAL CLUB</p>
+        <Image src="/logo.png" alt="PLR Digital Club" width={180} height={45} className="h-11 w-auto" priority />
         <h1 className="text-4xl font-bold leading-tight mt-6 mb-8">
           1,000+ Digital Products.<br />One Payment. Forever.
         </h1>
