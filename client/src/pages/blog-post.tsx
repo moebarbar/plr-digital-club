@@ -123,7 +123,7 @@ export default function BlogPost() {
                   <ArrowLeft className="w-4 h-4 mr-2" /> Blog
                 </Button>
               </Link>
-              <a href="https://plrdigitalclub.com">
+              <a href="/checkout">
                 <Button data-testid="button-post-cta">
                   Get Access
                 </Button>
@@ -223,7 +223,7 @@ export default function BlogPost() {
                 <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
                   Get instant access to 1,000+ PLR & MRR products with full resell rights. One payment, lifetime access.
                 </p>
-                <a href="https://plrdigitalclub.com">
+                <a href="/checkout">
                   <Button size="lg" data-testid="button-post-cta-main">
                     Get Lifetime Access - $97 <ChevronRight className="ml-2" />
                   </Button>

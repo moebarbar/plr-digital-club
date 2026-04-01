@@ -56,7 +56,7 @@ export default function PLRDigitalProductsPage() {
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             Get lifetime access to the largest library of PLR digital products online. Canva templates, eBooks, planners, social media packs, and more — all with full private label rights.
           </p>
-          <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+          <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
             Get Instant Access — $197 Lifetime →
           </Link>
           <p className="text-blue-300 text-sm mt-3">One payment · No monthly fees · New products added weekly</p>
@@ -147,7 +147,7 @@ export default function PLRDigitalProductsPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Ready to Start Selling PLR Digital Products?</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">Join PLR Digital Club today and get instant access to 1,000+ done-for-you digital products with full resell rights.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Get Lifetime Access — $197 →
         </Link>
       </section>

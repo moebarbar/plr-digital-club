@@ -72,7 +72,7 @@ export default function Blog() {
               <Link href="/">
                 <Button variant="ghost" data-testid="link-blog-home">Home</Button>
               </Link>
-              <a href="https://plrdigitalclub.com">
+              <a href="/checkout">
                 <Button data-testid="button-blog-cta">
                   Get Access
                 </Button>
@@ -188,7 +188,7 @@ export default function Blog() {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Get instant access to 1,000+ PLR & MRR products and start building your passive income today.
           </p>
-          <a href="https://plrdigitalclub.com">
+          <a href="/checkout">
             <Button size="lg" className="text-lg px-8 py-6" data-testid="button-blog-cta-main">
               Get Lifetime Access - $97 <ChevronRight className="ml-2" />
             </Button>

@@ -40,7 +40,7 @@ export default function SellDigitalProductsPage() {
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             The complete beginner guide to building a digital product business. No experience, no inventory, no shipping. Start with done-for-you PLR products and earn passive income from day one.
           </p>
-          <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+          <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
             Get 1,000+ Products Ready to Sell →
           </Link>
         </div>
@@ -178,7 +178,7 @@ export default function SellDigitalProductsPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Start Your Digital Product Business Today</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">Get 1,000+ done-for-you PLR & MRR products, ready to sell. One payment of $197 — lifetime access, no monthly fees.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Get Instant Access — $197 →
         </Link>
       </section>

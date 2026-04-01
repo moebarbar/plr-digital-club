@@ -40,7 +40,7 @@ export default function PLREbooksPage() {
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             The largest PLR eBook library online. Rebrand and publish on Amazon KDP, sell on Etsy, or use as lead magnets. Every niche covered. Lifetime access from one payment.
           </p>
-          <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+          <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
             Get All 300,000+ eBooks — $197 Lifetime →
           </Link>
         </div>
@@ -123,7 +123,7 @@ export default function PLREbooksPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Get 300,000+ PLR eBooks Today</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">Plus 700+ Canva templates, social media packs, planners, and more. One payment, lifetime access.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Join PLR Digital Club — $197 →
         </Link>
       </section>

@@ -219,7 +219,7 @@ export default function BestPLRSitesPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Start With the Best PLR Membership in 2026</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">1,000+ PLR &amp; MRR products. One payment of $197. No monthly fees. Lifetime access.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Join PLR Digital Club — $197 →
         </Link>
       </section>

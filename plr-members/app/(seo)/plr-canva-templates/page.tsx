@@ -34,7 +34,7 @@ export default function PLRCanvaTemplatesPage() {
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             Get instant access to 300+ done-for-you Canva templates with full private label and resell rights. Rebrand in minutes, list on Etsy today.
           </p>
-          <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+          <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
             Get All 300+ Templates — $197 Lifetime →
           </Link>
         </div>
@@ -79,7 +79,7 @@ export default function PLRCanvaTemplatesPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Get 300+ Canva PLR Templates Today</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">Plus 700+ more digital products. One payment, lifetime access, full resell rights.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Join PLR Digital Club — $197 →
         </Link>
       </section>

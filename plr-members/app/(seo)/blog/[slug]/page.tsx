@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="bg-[#1A1A4E] rounded-2xl p-8 text-white text-center">
             <h3 className="text-2xl font-bold mb-2">Get 1,000+ PLR &amp; MRR Products</h3>
             <p className="text-blue-200 mb-6 text-sm">One payment of $197. Lifetime access. Start selling today.</p>
-            <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors">
+            <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-3 rounded-xl hover:bg-blue-50 transition-colors">
               Get Instant Access &#8212; $197 &#8594;
             </Link>
           </div>

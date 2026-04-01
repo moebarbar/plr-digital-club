@@ -47,7 +47,7 @@ export default function MRRDigitalProductsPage() {
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             Get lifetime access to 1,000+ digital products with master resell rights. Keep 100% of every sale. No experience needed — products are done-for-you and ready to list.
           </p>
-          <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+          <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
             Get Instant Access — $197 Lifetime →
           </Link>
           <p className="text-blue-300 text-sm mt-3">One payment · Lifetime access · New products every week</p>
@@ -135,7 +135,7 @@ export default function MRRDigitalProductsPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Get 1,000+ MRR & PLR Products Today</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">One payment of $197. Lifetime access. No monthly fees. Start selling digital products with master resell rights today.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Join Now — $197 Lifetime →
         </Link>
       </section>

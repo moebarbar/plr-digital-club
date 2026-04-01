@@ -47,8 +47,8 @@ import { productCategories } from "@/data/productCategories";
 import { blogPosts } from "@/data/blogPosts";
 import { ProductSchema, ReviewSchema, OrganizationSchema, WebsiteSchema, FAQSchema } from "@/components/SchemaMarkup";
 
-const CHECKOUT_URL = "https://plrdigitalclub.com";
-const SIGNIN_URL = "https://plrdigitalclub.com/login";
+const CHECKOUT_URL = "/checkout";
+const SIGNIN_URL = "/login";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -1020,7 +1020,7 @@ export default function Home() {
         name="PLR Digital Club Lifetime Membership"
         description="Get instant access to 1000+ premium PLR & MRR digital products. Download Notion templates, ebooks, courses, planners and more. Rebrand and resell anywhere - keep 100% of every sale."
         price={97}
-        url="https://plrdigitalclub.com"
+        url="https://plrdigitalclub.com/checkout"
       />
       <ReviewSchema reviews={[
         { author: "Sarah M.", rating: 5, text: "The quality of these products exceeded my expectations. Saved me so much time!", date: "2026-01-10" },

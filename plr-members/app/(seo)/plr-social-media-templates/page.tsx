@@ -49,7 +49,7 @@ export default function PLRSocialMediaTemplatesPage() {
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             Done-for-you Canva social media templates with full private label and resell rights. Instagram, Pinterest, TikTok, Facebook — every platform covered.
           </p>
-          <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+          <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
             Get All 500+ Templates — $197 Lifetime →
           </Link>
         </div>
@@ -130,7 +130,7 @@ export default function PLRSocialMediaTemplatesPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Get 500+ PLR Social Media Templates Today</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">Plus 300+ Canva templates, 300,000+ eBooks, planners, and more. One payment, lifetime access.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Join PLR Digital Club — $197 →
         </Link>
       </section>

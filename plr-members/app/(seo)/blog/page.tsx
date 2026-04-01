@@ -91,7 +91,7 @@ export default function BlogPage() {
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Ready to Start Selling?</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">Get 1,000+ done-for-you PLR & MRR products. One payment, lifetime access.</p>
-        <Link href="/" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
+        <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Get Instant Access — $197 →
         </Link>
       </section>

@@ -1,6 +1,8 @@
 import { build as esbuild } from "esbuild";
 import { build as viteBuild } from "vite";
 import { rm, readFile } from "fs/promises";
+import { execSync } from "child_process";
+import { resolve } from "path";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -37,6 +39,12 @@ async function buildAll() {
 
   console.log("building client...");
   await viteBuild();
+
+  console.log("installing plr-members dependencies...");
+  execSync("npm ci", { stdio: "inherit", cwd: resolve("plr-members") });
+
+  console.log("building Next.js (plr-members)...");
+  execSync("npm run build", { stdio: "inherit", cwd: resolve("plr-members") });
 
   console.log("building server...");
   const pkg = JSON.parse(await readFile("package.json", "utf-8"));
