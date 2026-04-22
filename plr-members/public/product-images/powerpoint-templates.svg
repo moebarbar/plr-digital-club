@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="slide1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- PowerPoint window -->
+  <g transform="translate(55, 50)" filter="url(#shadow)">
+    <rect width="460" height="320" rx="12" fill="#ffffff"/>
+    <!-- Chrome bar -->
+    <rect width="460" height="38" rx="12" fill="#F3F4F6"/>
+    <rect y="26" width="460" height="12" fill="#F3F4F6"/>
+    <rect y="38" width="460" height="1" fill="#E5E7EB"/>
+    <circle cx="18" cy="19" r="5" fill="#FF5F57"/>
+    <circle cx="34" cy="19" r="5" fill="#FFBD2E"/>
+    <circle cx="50" cy="19" r="5" fill="#28CA41"/>
+    <rect x="70" y="11" width="320" height="16" rx="8" fill="#E5E7EB"/>
+    <text x="230" y="23" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF" text-anchor="middle">Business Proposal.pptx — PowerPoint</text>
+
+    <!-- Ribbon toolbar -->
+    <rect x="0" y="39" width="460" height="32" fill="#F9FAFB"/>
+    <rect x="0" y="71" width="460" height="1" fill="#E5E7EB"/>
+    <rect x="10" y="46" width="36" height="18" rx="3" fill="#1565C0"/>
+    <text x="28" y="58" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Home</text>
+    <text x="70" y="58" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Insert</text>
+    <text x="110" y="58" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Design</text>
+    <text x="152" y="58" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Transitions</text>
+    <text x="198" y="58" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Animations</text>
+
+    <!-- Slide panel on left -->
+    <rect x="0" y="72" width="88" height="248" fill="#F9FAFB"/>
+    <rect x="88" y="72" width="1" height="248" fill="#E5E7EB"/>
+
+    <!-- Slide thumbnails -->
+    <rect x="8" y="82" width="72" height="46" rx="3" fill="#1A1A4E" stroke="#1565C0" stroke-width="1.5"/>
+    <rect x="12" y="86" width="64" height="16" rx="2" fill="#1565C0" opacity="0.6"/>
+    <rect x="12" y="106" width="45" height="3" rx="2" fill="#ffffff" opacity="0.5"/>
+    <rect x="12" y="112" width="55" height="3" rx="2" fill="#ffffff" opacity="0.3"/>
+    <text x="6" y="140" font-family="Arial,sans-serif" font-size="7" fill="#1565C0">1</text>
+
+    <rect x="8" y="144" width="72" height="46" rx="3" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+    <rect x="12" y="148" width="64" height="16" rx="2" fill="#EFF6FF"/>
+    <rect x="12" y="168" width="45" height="3" rx="2" fill="#D1D5DB"/>
+    <rect x="12" y="174" width="55" height="3" rx="2" fill="#D1D5DB"/>
+    <text x="6" y="202" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF">2</text>
+
+    <rect x="8" y="206" width="72" height="46" rx="3" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+    <rect x="12" y="210" width="64" height="16" rx="2" fill="#EFF6FF"/>
+    <rect x="12" y="230" width="38" height="3" rx="2" fill="#D1D5DB"/>
+    <rect x="12" y="236" width="55" height="3" rx="2" fill="#D1D5DB"/>
+    <text x="6" y="264" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF">3</text>
+
+    <rect x="8" y="268" width="72" height="44" rx="3" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1"/>
+    <rect x="12" y="272" width="64" height="14" rx="2" fill="#EFF6FF"/>
+    <rect x="12" y="290" width="50" height="3" rx="2" fill="#D1D5DB"/>
+    <text x="6" y="324" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF">4</text>
+
+    <!-- Main slide canvas -->
+    <rect x="90" y="72" width="370" height="248" fill="#F0F4FF"/>
+    <rect x="110" y="84" width="330" height="224" rx="4" fill="#1A1A4E" filter="url(#shadow2)"/>
+
+    <!-- Slide header band -->
+    <rect x="110" y="84" width="330" height="68" rx="4" fill="#1A1A4E"/>
+    <rect x="110" y="144" width="330" height="8" fill="#1A1A4E"/>
+    <!-- Accent bar -->
+    <rect x="110" y="84" width="6" height="76" fill="#1565C0"/>
+    <!-- Slide title -->
+    <text x="128" y="108" font-family="Georgia,serif" font-size="14" fill="#ffffff" font-weight="bold">Business Proposal 2026</text>
+    <text x="128" y="126" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">Prepared for Strategic Partners</text>
+    <rect x="128" y="136" width="80" height="2" fill="#1565C0"/>
+
+    <!-- Slide body - 3 columns -->
+    <rect x="118" y="160" width="96" height="100" rx="4" fill="#ffffff" opacity="0.06"/>
+    <rect x="224" y="160" width="96" height="100" rx="4" fill="#ffffff" opacity="0.06"/>
+    <rect x="330" y="160" width="96" height="100" rx="4" fill="#ffffff" opacity="0.06"/>
+
+    <!-- Column icons + content -->
+    <text x="166" y="186" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#93C5FD">📈</text>
+    <text x="166" y="202" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Growth</text>
+    <rect x="128" y="210" width="76" height="3" rx="2" fill="#ffffff" opacity="0.3"/>
+    <rect x="128" y="218" width="60" height="3" rx="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="128" y="226" width="70" height="3" rx="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="128" y="240" width="50" height="14" rx="7" fill="#1565C0" opacity="0.5"/>
+    <text x="153" y="251" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">+127%</text>
+
+    <text x="272" y="186" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#93C5FD">🎯</text>
+    <text x="272" y="202" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Strategy</text>
+    <rect x="234" y="210" width="76" height="3" rx="2" fill="#ffffff" opacity="0.3"/>
+    <rect x="234" y="218" width="55" height="3" rx="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="234" y="226" width="68" height="3" rx="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="234" y="240" width="50" height="14" rx="7" fill="#1565C0" opacity="0.5"/>
+    <text x="259" y="251" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">Q2 2026</text>
+
+    <text x="378" y="186" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#93C5FD">💡</text>
+    <text x="378" y="202" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Innovation</text>
+    <rect x="340" y="210" width="76" height="3" rx="2" fill="#ffffff" opacity="0.3"/>
+    <rect x="340" y="218" width="60" height="3" rx="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="340" y="226" width="50" height="3" rx="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="340" y="240" width="50" height="14" rx="7" fill="#1565C0" opacity="0.5"/>
+    <text x="365" y="251" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">New</text>
+
+    <!-- Slide number -->
+    <text x="432" y="300" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="end">1 / 12</text>
+
+    <!-- Bottom status bar -->
+    <rect x="90" y="310" width="370" height="10" fill="#F3F4F6"/>
+    <text x="100" y="318" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF">Slide 1 of 12</text>
+    <text x="440" y="318" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="end">75%  ——</text>
+  </g>
+
+  <!-- Floating slide cards right side -->
+  <g transform="translate(542, 52)" filter="url(#shadow2)">
+    <rect width="215" height="128" rx="10" fill="#1A1A4E"/>
+    <rect x="0" y="0" width="215" height="52" rx="10" fill="#1565C0" opacity="0.5"/>
+    <rect x="0" y="40" width="215" height="12" fill="#1565C0" opacity="0.5"/>
+    <rect x="8" y="0" width="4" height="128" rx="2" fill="#93C5FD" opacity="0.5"/>
+    <text x="110" y="22" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Sales Deck</text>
+    <text x="110" y="38" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">16:9 Widescreen</text>
+    <rect x="20" y="62" width="175" height="4" rx="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="20" y="72" width="140" height="4" rx="2" fill="#ffffff" opacity="0.15"/>
+    <rect x="20" y="86" width="80" height="24" rx="4" fill="#1565C0" opacity="0.4"/>
+    <rect x="110" y="86" width="80" height="24" rx="4" fill="#1565C0" opacity="0.4"/>
+    <rect x="20" y="116" width="175" height="4" rx="2" fill="#ffffff" opacity="0.1"/>
+  </g>
+
+  <g transform="translate(542, 198)" filter="url(#shadow2)">
+    <rect width="215" height="115" rx="10" fill="#0D47A1"/>
+    <rect x="0" y="0" width="215" height="44" rx="10" fill="#1A1A4E"/>
+    <rect x="0" y="32" width="215" height="12" fill="#1A1A4E"/>
+    <text x="110" y="22" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Report Template</text>
+    <text x="110" y="36" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Corporate Style</text>
+    <!-- Mini bar chart -->
+    <rect x="20" y="54" width="16" height="40" rx="2" fill="#93C5FD" opacity="0.4"/>
+    <rect x="44" y="66" width="16" height="28" rx="2" fill="#93C5FD" opacity="0.4"/>
+    <rect x="68" y="48" width="16" height="46" rx="2" fill="#ffffff" opacity="0.5"/>
+    <rect x="92" y="58" width="16" height="36" rx="2" fill="#93C5FD" opacity="0.4"/>
+    <rect x="116" y="44" width="16" height="50" rx="2" fill="#ffffff" opacity="0.5"/>
+    <rect x="140" y="60" width="16" height="34" rx="2" fill="#93C5FD" opacity="0.4"/>
+    <rect x="164" y="52" width="16" height="42" rx="2" fill="#93C5FD" opacity="0.4"/>
+    <rect x="20" y="94" width="175" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="110" y="110" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Fully Editable · Resell Rights</text>
+  </g>
+
+  <g transform="translate(542, 330)" filter="url(#shadow2)">
+    <rect width="215" height="60" rx="10" fill="#1E3A8A"/>
+    <text x="110" y="22" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">500+ Slide Layouts</text>
+    <text x="110" y="38" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">Multiple industries &amp; styles</text>
+    <rect x="20" y="48" width="175" height="5" rx="3" fill="#ffffff" opacity="0.1"/>
+    <rect x="20" y="48" width="155" height="5" rx="3" fill="#1565C0" opacity="0.6"/>
+  </g>
+
+  <!-- Label -->
+  <text x="360" y="418" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">PowerPoint Templates</text>
+  <text x="360" y="448" font-family="Arial,sans-serif" font-size="13" fill="#93C5FD" text-anchor="middle">Slides · Charts · Reports · Presentations</text>
+  <rect x="270" y="460" width="180" height="24" rx="12" fill="#ffffff" opacity="0.1"/>
+  <text x="360" y="478" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>
