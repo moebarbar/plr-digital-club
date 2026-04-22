@@ -8,10 +8,10 @@ import type { Profile } from '@/types/database'
 
 const NAV_ITEMS = [
   { href: '/dashboard', label: 'Dashboard', icon: '🏠' },
-  { href: '/dashboard/library', label: 'Product Library', icon: '📦' },
+  { href: '/library', label: 'Product Library', icon: '📦' },
   { href: '/dashboard/whats-new', label: "What's New", icon: '✨' },
   { href: '/dashboard/reseller-tools', label: 'Reseller Tools', icon: '🔧' },
-  { href: '/dashboard/profile', label: 'My Profile', icon: '👤' },
+  { href: '/profile', label: 'My Profile', icon: '👤' },
 ]
 
 interface SidebarProps {
