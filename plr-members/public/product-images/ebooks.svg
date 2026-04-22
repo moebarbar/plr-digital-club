@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="book1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0D47A1"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="book2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1B5E20"/>
+      <stop offset="100%" style="stop-color:#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="book3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A148C"/>
+      <stop offset="100%" style="stop-color:#6A1B9A"/>
+    </linearGradient>
+    <linearGradient id="book4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B71C1C"/>
+      <stop offset="100%" style="stop-color:#C62828"/>
+    </linearGradient>
+    <linearGradient id="book5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E65100"/>
+      <stop offset="100%" style="stop-color:#EF6C00"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Bookshelf row 1 -->
+  <!-- Book 1 - Blue -->
+  <g transform="translate(72, 80)" filter="url(#shadow)">
+    <rect x="0" y="0" width="18" height="200" rx="2" fill="#0A3880"/>
+    <rect x="16" y="0" width="68" height="200" rx="3" fill="url(#book1)"/>
+    <rect x="18" y="20" width="64" height="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="18" y="178" width="64" height="2" fill="#ffffff" opacity="0.2"/>
+    <text x="50" y="115" font-family="Georgia,serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,50,115)">DIGITAL MARKETING</text>
+    <rect x="22" y="80" width="56" height="40" rx="2" fill="#ffffff" opacity="0.1"/>
+    <text x="50" y="105" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#ffffff">📈</text>
+  </g>
+
+  <!-- Book 2 - Green -->
+  <g transform="translate(158, 95)" filter="url(#shadow)">
+    <rect x="0" y="0" width="16" height="185" rx="2" fill="#163D1A"/>
+    <rect x="14" y="0" width="72" height="185" rx="3" fill="url(#book2)"/>
+    <rect x="16" y="16" width="68" height="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="16" y="167" width="68" height="2" fill="#ffffff" opacity="0.2"/>
+    <text x="50" y="100" font-family="Georgia,serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,50,100)">PASSIVE INCOME</text>
+    <rect x="20" y="68" width="60" height="48" rx="2" fill="#ffffff" opacity="0.1"/>
+    <text x="50" y="97" font-family="Arial,sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">💰</text>
+  </g>
+
+  <!-- Book 3 - Purple -->
+  <g transform="translate(238, 75)" filter="url(#shadow)">
+    <rect x="0" y="0" width="20" height="210" rx="2" fill="#2D0A6B"/>
+    <rect x="18" y="0" width="75" height="210" rx="3" fill="url(#book3)"/>
+    <rect x="20" y="18" width="71" height="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="20" y="190" width="71" height="2" fill="#ffffff" opacity="0.2"/>
+    <text x="55" y="118" font-family="Georgia,serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,55,118)">SOCIAL MEDIA GROWTH</text>
+    <rect x="24" y="75" width="62" height="60" rx="2" fill="#ffffff" opacity="0.1"/>
+    <text x="55" y="110" font-family="Arial,sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">🚀</text>
+  </g>
+
+  <!-- Book 4 - Red -->
+  <g transform="translate(321, 90)" filter="url(#shadow)">
+    <rect x="0" y="0" width="16" height="195" rx="2" fill="#7B1010"/>
+    <rect x="14" y="0" width="65" height="195" rx="3" fill="url(#book4)"/>
+    <rect x="16" y="16" width="61" height="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="16" y="177" width="61" height="2" fill="#ffffff" opacity="0.2"/>
+    <text x="46" y="108" font-family="Georgia,serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,46,108)">DROPSHIPPING</text>
+    <rect x="20" y="72" width="54" height="50" rx="2" fill="#ffffff" opacity="0.1"/>
+    <text x="47" y="101" font-family="Arial,sans-serif" font-size="20" text-anchor="middle" fill="#ffffff">🛒</text>
+  </g>
+
+  <!-- Book 5 - Orange -->
+  <g transform="translate(394, 82)" filter="url(#shadow)">
+    <rect x="0" y="0" width="18" height="205" rx="2" fill="#A03D00"/>
+    <rect x="16" y="0" width="70" height="205" rx="3" fill="url(#book5)"/>
+    <rect x="18" y="18" width="66" height="2" fill="#ffffff" opacity="0.2"/>
+    <rect x="18" y="185" width="66" height="2" fill="#ffffff" opacity="0.2"/>
+    <text x="51" y="113" font-family="Georgia,serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,51,113)">MINDSET MASTERY</text>
+    <rect x="22" y="74" width="58" height="56" rx="2" fill="#ffffff" opacity="0.1"/>
+    <text x="51" y="106" font-family="Arial,sans-serif" font-size="22" text-anchor="middle" fill="#ffffff">🧠</text>
+  </g>
+
+  <!-- Shelf plank row 1 -->
+  <rect x="60" y="288" width="420" height="12" rx="3" fill="#0D47A1" opacity="0.6"/>
+
+  <!-- Row 2 books (shorter) -->
+  <g transform="translate(72, 315)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="14" height="150" rx="2" fill="#004D40"/>
+    <rect x="12" y="0" width="58" height="150" rx="3" fill="#00695C"/>
+    <text x="41" y="84" font-family="Georgia,serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,41,84)">CANVA DESIGN</text>
+    <text x="41" y="68" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">🎨</text>
+  </g>
+
+  <g transform="translate(148, 325)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="14" height="140" rx="2" fill="#F57F17"/>
+    <rect x="12" y="0" width="62" height="140" rx="3" fill="#F9A825"/>
+    <text x="43" y="78" font-family="Georgia,serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold" transform="rotate(-90,43,78)">EMAIL MARKETING</text>
+    <text x="43" y="62" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#1A1A4E">✉️</text>
+  </g>
+
+  <g transform="translate(218, 318)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="16" height="147" rx="2" fill="#1A237E"/>
+    <rect x="14" y="0" width="66" height="147" rx="3" fill="#283593"/>
+    <text x="47" y="82" font-family="Georgia,serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,47,82)">CRYPTO BASICS</text>
+    <text x="47" y="65" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">₿</text>
+  </g>
+
+  <g transform="translate(292, 330)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="14" height="135" rx="2" fill="#880E4F"/>
+    <rect x="12" y="0" width="58" height="135" rx="3" fill="#AD1457"/>
+    <text x="41" y="76" font-family="Georgia,serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,41,76)">SELF CARE</text>
+    <text x="41" y="60" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">🌸</text>
+  </g>
+
+  <g transform="translate(358, 320)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="14" height="145" rx="2" fill="#1B5E20"/>
+    <rect x="12" y="0" width="64" height="145" rx="3" fill="#2E7D32"/>
+    <text x="44" y="81" font-family="Georgia,serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold" transform="rotate(-90,44,81)">HEALTH &amp; FITNESS</text>
+    <text x="44" y="64" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">💪</text>
+  </g>
+
+  <!-- Shelf plank row 2 -->
+  <rect x="60" y="465" width="420" height="10" rx="3" fill="#0D47A1" opacity="0.5"/>
+
+  <!-- E-reader device on the right -->
+  <g transform="translate(525, 75)" filter="url(#shadow)">
+    <!-- Device body -->
+    <rect width="200" height="310" rx="16" fill="#1F2937"/>
+    <!-- Screen -->
+    <rect x="12" y="16" width="176" height="240" rx="8" fill="#F9FAFB"/>
+    <!-- Screen content -->
+    <rect x="24" y="30" width="152" height="14" rx="3" fill="#1A1A4E"/>
+    <text x="100" y="42" font-family="Georgia,serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Digital Marketing</text>
+    <rect x="24" y="52" width="152" height="1" fill="#E5E7EB"/>
+    <rect x="24" y="62" width="145" height="4" rx="2" fill="#374151" opacity="0.7"/>
+    <rect x="24" y="72" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="82" width="130" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="96" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="106" width="140" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="116" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="130" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="140" width="120" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="154" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="164" width="135" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="174" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="188" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="198" width="110" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="212" width="152" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="222" width="145" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <rect x="24" y="236" width="130" height="4" rx="2" fill="#374151" opacity="0.5"/>
+    <!-- Progress bar at bottom of screen -->
+    <rect x="24" y="248" width="152" height="3" rx="2" fill="#E5E7EB"/>
+    <rect x="24" y="248" width="80" height="3" rx="2" fill="#1565C0"/>
+    <!-- Home button -->
+    <circle cx="100" cy="285" r="14" fill="#374151"/>
+    <circle cx="100" cy="285" r="10" fill="#4B5563"/>
+    <!-- Side button -->
+    <rect x="196" y="80" width="6" height="30" rx="3" fill="#374151"/>
+  </g>
+
+  <!-- Badge count -->
+  <g transform="translate(525, 400)" filter="url(#shadow2)">
+    <rect width="200" height="50" rx="10" fill="#ffffff" opacity="0.12"/>
+    <text x="100" y="22" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">300,000+ eBooks</text>
+    <text x="100" y="40" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">Business · Health · Finance · Lifestyle</text>
+  </g>
+
+  <!-- Main label -->
+  <text x="295" y="415" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#ffffff" text-anchor="middle">eBooks</text>
+  <text x="295" y="445" font-family="Arial,sans-serif" font-size="13" fill="#93C5FD" text-anchor="middle">300k+ Digital Books · All Genres · All Devices</text>
+
+  <rect x="205" y="458" width="180" height="28" rx="14" fill="#ffffff" opacity="0.1"/>
+  <text x="295" y="477" font-family="Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>
