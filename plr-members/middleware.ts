@@ -2,6 +2,16 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
 export async function middleware(request: NextRequest) {
+  // Reconstruct the public URL so Supabase uses the real domain for cookies
+  const forwardedHost = request.headers.get('x-forwarded-host')
+  const forwardedProto = request.headers.get('x-forwarded-proto') || 'https'
+  if (forwardedHost) {
+    const url = request.nextUrl.clone()
+    url.host = forwardedHost
+    url.protocol = forwardedProto
+    request = new Request(url, request) as unknown as NextRequest
+  }
+
   let supabaseResponse = NextResponse.next({ request })
 
   const supabase = createServerClient(

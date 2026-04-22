@@ -53,6 +53,8 @@ function proxyToNext(req: Request, res: Response) {
     headers: {
       ...req.headers,
       host: `localhost:${NEXT_PORT}`,
+      "x-forwarded-host": req.headers.host || "",
+      "x-forwarded-proto": "https",
       ...(rawBody ? { "content-length": String(rawBody.length) } : {}),
     },
   };
