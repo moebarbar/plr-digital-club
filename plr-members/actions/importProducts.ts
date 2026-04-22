@@ -1,6 +1,13 @@
 'use server'
 
+import { createClient } from '@/lib/supabase/server'
 import { getSupabaseAdmin } from '@/lib/supabase/admin'
+
+async function requireAdmin() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user || user.email !== process.env.ADMIN_EMAIL) throw new Error('Unauthorized')
+}
 
 interface ProductRow {
   title: string
@@ -13,6 +20,7 @@ interface ProductRow {
 export async function importProducts(
   rows: ProductRow[]
 ): Promise<{ inserted: number; errors: string[] }> {
+  await requireAdmin()
   const admin = getSupabaseAdmin()
   const errors: string[] = []
   const categoryCache: Record<string, string> = {}

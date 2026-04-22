@@ -20,7 +20,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
 
   return (
     <DashboardShell profile={profile as Profile}>
-      {!profile.onboarding_complete && <OnboardingModal userId={profile.id} />}
+      {!profile.onboarding_complete && <OnboardingModal />}
       {children}
     </DashboardShell>
   )

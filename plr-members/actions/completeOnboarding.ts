@@ -1,14 +1,18 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { getSupabaseAdmin } from '@/lib/supabase/admin'
+import { createClient } from '@/lib/supabase/server'
 
-export async function completeOnboarding(userId: string): Promise<{ error?: string }> {
-  const admin = getSupabaseAdmin()
-  const { error } = await admin
+export async function completeOnboarding(): Promise<{ error?: string }> {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  if (!user) return { error: 'Not authenticated' }
+
+  const { error } = await supabase
     .from('profiles')
     .update({ onboarding_complete: true })
-    .eq('id', userId)
+    .eq('id', user.id)
 
   if (error) return { error: error.message }
 

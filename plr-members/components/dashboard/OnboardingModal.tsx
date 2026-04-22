@@ -36,7 +36,7 @@ const STEPS = [
   },
 ]
 
-export default function OnboardingModal({ userId }: { userId: string }) {
+export default function OnboardingModal() {
   const [step, setStep] = useState(0)
   const [isPending, startTransition] = useTransition()
   const isLast = step === STEPS.length - 1
@@ -45,7 +45,7 @@ export default function OnboardingModal({ userId }: { userId: string }) {
   function handleNext() {
     if (isLast) {
       startTransition(async () => {
-        await completeOnboarding(userId)
+        await completeOnboarding()
       })
     } else {
       setStep((s) => s + 1)

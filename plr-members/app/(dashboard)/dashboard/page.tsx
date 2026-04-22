@@ -93,7 +93,7 @@ export default async function DashboardPage() {
           {(categories as Category[])?.map((cat) => (
             <a
               key={cat.id}
-              href={`/dashboard/library?category=${cat.slug}`}
+              href={`/library?category=${cat.slug}`}
               className="bg-white rounded-xl border border-gray-200 p-4 text-center hover:border-[#1565C0] transition-colors"
             >
               <p className="text-sm font-medium text-gray-700">{cat.name}</p>
