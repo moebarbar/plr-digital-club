@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Wall Art Frame 1 - Quote style -->
+  <g transform="translate(60, 45)" filter="url(#shadow)">
+    <rect width="150" height="190" rx="8" fill="#8B7355"/>
+    <rect x="5" y="5" width="140" height="180" rx="6" fill="#6B5A3E"/>
+    <rect x="10" y="10" width="130" height="170" rx="4" fill="#ffffff"/>
+    <!-- Mat board -->
+    <rect x="16" y="16" width="118" height="158" rx="2" fill="#F8F6F0"/>
+    <!-- Art area -->
+    <rect x="24" y="24" width="102" height="142" rx="2" fill="#EFF6FF"/>
+    <!-- Quote art -->
+    <text x="75" y="58" font-family="Georgia,serif" font-size="20" fill="#1565C0" text-anchor="middle">"</text>
+    <text x="75" y="76" font-family="Georgia,serif" font-size="11" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Be the</text>
+    <text x="75" y="90" font-family="Georgia,serif" font-size="11" fill="#1A1A4E" text-anchor="middle" font-weight="bold">change you</text>
+    <text x="75" y="104" font-family="Georgia,serif" font-size="11" fill="#1A1A4E" text-anchor="middle" font-weight="bold">wish to see</text>
+    <text x="75" y="118" font-family="Georgia,serif" font-size="20" fill="#1565C0" text-anchor="middle">"</text>
+    <rect x="50" y="128" width="50" height="1" fill="#1565C0" opacity="0.4"/>
+    <text x="75" y="140" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle" letter-spacing="1">— GANDHI</text>
+    <!-- Hanger wire -->
+    <line x1="55" y1="5" x2="45" y2="-10" stroke="#6B5A3E" stroke-width="1.5"/>
+    <line x1="95" y1="5" x2="105" y2="-10" stroke="#6B5A3E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Wall Art Frame 2 - Botanical -->
+  <g transform="translate(230, 55)" filter="url(#shadow)">
+    <rect width="150" height="175" rx="8" fill="#1A1A4E"/>
+    <rect x="5" y="5" width="140" height="165" rx="6" fill="#0D1B3E"/>
+    <rect x="10" y="10" width="130" height="155" rx="4" fill="#ffffff"/>
+    <rect x="16" y="16" width="118" height="143" rx="2" fill="#F0F4FF"/>
+    <rect x="24" y="24" width="102" height="127" rx="2" fill="#EFF6FF"/>
+    <!-- Botanical illustration (simplified) -->
+    <text x="75" y="78" font-family="Arial,sans-serif" font-size="36" text-anchor="middle">🌿</text>
+    <text x="75" y="102" font-family="Georgia,serif" font-size="10" fill="#1A1A4E" text-anchor="middle" font-style="italic">Botanical</text>
+    <text x="75" y="116" font-family="Georgia,serif" font-size="10" fill="#1A1A4E" text-anchor="middle" font-style="italic">Collection</text>
+    <rect x="40" y="124" width="70" height="1" fill="#1565C0" opacity="0.3"/>
+    <text x="75" y="136" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle" letter-spacing="2">NATURE SERIES</text>
+    <!-- Hanger -->
+    <line x1="55" y1="5" x2="45" y2="-8" stroke="#1A1A4E" stroke-width="1.5"/>
+    <line x1="95" y1="5" x2="105" y2="-8" stroke="#1A1A4E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Wall Art Frame 3 - Geometric/Abstract -->
+  <g transform="translate(400, 45)" filter="url(#shadow)">
+    <rect width="150" height="190" rx="8" fill="#ffffff"/>
+    <rect x="5" y="5" width="140" height="180" rx="6" fill="#F3F4F6"/>
+    <rect x="10" y="10" width="130" height="170" rx="4" fill="#ffffff"/>
+    <rect x="16" y="16" width="118" height="158" rx="2" fill="#F8F8FF"/>
+    <rect x="24" y="24" width="102" height="142" rx="2" fill="#EFF6FF"/>
+    <!-- Geometric abstract design -->
+    <polygon points="75,35 105,95 45,95" fill="none" stroke="#1A1A4E" stroke-width="2"/>
+    <polygon points="75,50 95,85 55,85" fill="#1565C0" opacity="0.2"/>
+    <polygon points="75,48 92,80 58,80" fill="none" stroke="#1565C0" stroke-width="1"/>
+    <circle cx="75" cy="62" r="6" fill="#1A1A4E"/>
+    <text x="75" y="116" font-family="Arial,sans-serif" font-size="9" fill="#1A1A4E" text-anchor="middle" font-weight="bold" letter-spacing="2">GEOMETRIC</text>
+    <rect x="40" y="122" width="70" height="1" fill="#1565C0" opacity="0.3"/>
+    <text x="75" y="134" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle" letter-spacing="1">MODERN ART</text>
+    <!-- Hanger -->
+    <line x1="55" y1="5" x2="45" y2="-10" stroke="#D1D5DB" stroke-width="1.5"/>
+    <line x1="95" y1="5" x2="105" y2="-10" stroke="#D1D5DB" stroke-width="1.5"/>
+  </g>
+
+  <!-- Wall Art Frame 4 - Small accent -->
+  <g transform="translate(572, 68)" filter="url(#shadow2)">
+    <rect width="120" height="150" rx="8" fill="#1565C0"/>
+    <rect x="5" y="5" width="110" height="140" rx="6" fill="#1A1A4E"/>
+    <rect x="10" y="10" width="100" height="130" rx="4" fill="#EFF6FF"/>
+    <rect x="16" y="16" width="88" height="118" rx="2" fill="#F0F4FF"/>
+    <text x="60" y="60" font-family="Arial,sans-serif" font-size="28" text-anchor="middle">🌙</text>
+    <text x="60" y="82" font-family="Georgia,serif" font-size="9" fill="#1A1A4E" text-anchor="middle" font-style="italic">Dream Big</text>
+    <rect x="25" y="88" width="70" height="1" fill="#1565C0" opacity="0.4"/>
+    <text x="60" y="100" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">NIGHT SERIES</text>
+    <line x1="40" y1="5" x2="32" y2="-8" stroke="#1565C0" stroke-width="1.5"/>
+    <line x1="80" y1="5" x2="88" y2="-8" stroke="#1565C0" stroke-width="1.5"/>
+  </g>
+
+  <!-- Bottom info bar -->
+  <g transform="translate(60, 265)" filter="url(#shadow)">
+    <rect width="714" height="178" rx="12" fill="#ffffff"/>
+    <rect width="714" height="46" rx="12" fill="#1A1A4E"/>
+    <rect y="34" width="714" height="12" fill="#1A1A4E"/>
+    <text x="357" y="26" font-family="Georgia,serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Download · Print · Frame · Sell</text>
+
+    <rect x="16" y="60" width="160" height="92" rx="8" fill="#EFF6FF"/>
+    <text x="96" y="90" font-family="Arial,sans-serif" font-size="26" fill="#1A1A4E" text-anchor="middle" font-weight="bold">200+</text>
+    <text x="96" y="106" font-family="Arial,sans-serif" font-size="9" fill="#6B7280" text-anchor="middle">Art Designs</text>
+    <text x="96" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🖼️</text>
+
+    <rect x="192" y="60" width="160" height="92" rx="8" fill="#EFF6FF"/>
+    <text x="272" y="90" font-family="Arial,sans-serif" font-size="16" fill="#1A1A4E" text-anchor="middle" font-weight="bold">300 DPI</text>
+    <text x="272" y="106" font-family="Arial,sans-serif" font-size="9" fill="#6B7280" text-anchor="middle">Print Ready</text>
+    <text x="272" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🖨️</text>
+
+    <rect x="368" y="60" width="160" height="92" rx="8" fill="#EFF6FF"/>
+    <text x="448" y="90" font-family="Arial,sans-serif" font-size="16" fill="#1A1A4E" text-anchor="middle" font-weight="bold">PNG · PDF</text>
+    <text x="448" y="106" font-family="Arial,sans-serif" font-size="9" fill="#6B7280" text-anchor="middle">Multiple Sizes</text>
+    <text x="448" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📐</text>
+
+    <rect x="544" y="60" width="154" height="92" rx="8" fill="#1A1A4E"/>
+    <text x="621" y="88" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle" font-weight="bold">Etsy · Amazon</text>
+    <text x="621" y="102" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle">Society6 · Redbubble</text>
+    <text x="621" y="116" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.6">Sell on any platform</text>
+    <text x="621" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🛒</text>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="463" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Printable Wall Art</text>
+  <rect x="270" y="472" width="260" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
+  <text x="400" y="488" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>

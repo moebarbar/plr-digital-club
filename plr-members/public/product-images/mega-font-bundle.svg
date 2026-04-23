@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Main font showcase card -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="460" height="370" rx="12" fill="#ffffff"/>
+    <rect width="460" height="52" rx="12" fill="#1A1A4E"/>
+    <rect y="40" width="460" height="12" fill="#1A1A4E"/>
+    <text x="230" y="30" font-family="Georgia,serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Font Collection Showcase</text>
+
+    <!-- Font samples -->
+    <!-- Serif -->
+    <rect x="16" y="68" width="428" height="56" rx="6" fill="#F8F8FF"/>
+    <text x="28" y="86" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" letter-spacing="2">SERIF</text>
+    <text x="28" y="108" font-family="Georgia,serif" font-size="22" fill="#1A1A4E" font-weight="bold">The Quick Brown Fox</text>
+
+    <!-- Sans Serif -->
+    <rect x="16" y="132" width="428" height="56" rx="6" fill="#EFF6FF"/>
+    <text x="28" y="150" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" letter-spacing="2">SANS SERIF</text>
+    <text x="28" y="172" font-family="Arial,sans-serif" font-size="22" fill="#1565C0" font-weight="bold">The Quick Brown Fox</text>
+
+    <!-- Script -->
+    <rect x="16" y="196" width="428" height="56" rx="6" fill="#F8F8FF"/>
+    <text x="28" y="214" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" letter-spacing="2">DISPLAY</text>
+    <text x="28" y="238" font-family="Georgia,serif" font-size="26" fill="#1A1A4E" font-style="italic">The Quick Brown Fox</text>
+
+    <!-- Monospace -->
+    <rect x="16" y="260" width="428" height="56" rx="6" fill="#EFF6FF"/>
+    <text x="28" y="278" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" letter-spacing="2">MONOSPACE</text>
+    <text x="28" y="300" font-family="Courier,monospace" font-size="20" fill="#1565C0">The Quick Brown Fox</text>
+
+    <!-- Alphabet strip -->
+    <rect x="16" y="328" width="428" height="30" rx="6" fill="#1A1A4E"/>
+    <text x="230" y="348" font-family="Georgia,serif" font-size="14" fill="#93C5FD" text-anchor="middle" letter-spacing="4">A B C D E F G H I J K L M N</text>
+  </g>
+
+  <!-- Right stats -->
+  <g transform="translate(538, 42)" filter="url(#shadow2)">
+    <rect width="210" height="175" rx="12" fill="#1565C0" opacity="0.15"/>
+    <rect width="210" height="175" rx="12" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+    <text x="105" y="30" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Bundle Stats</text>
+    <rect x="20" y="38" width="170" height="1" fill="#ffffff" opacity="0.15"/>
+
+    <text x="105" y="72" font-family="Arial,sans-serif" font-size="36" fill="#93C5FD" text-anchor="middle" font-weight="bold">1000+</text>
+    <text x="105" y="88" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.8">Unique Fonts</text>
+
+    <rect x="20" y="98" width="170" height="1" fill="#ffffff" opacity="0.1"/>
+
+    <text x="105" y="122" font-family="Arial,sans-serif" font-size="18" fill="#93C5FD" text-anchor="middle" font-weight="bold">OTF · TTF · WOFF</text>
+    <text x="105" y="136" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.7">Web &amp; Print Ready</text>
+
+    <rect x="20" y="146" width="170" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="165" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">Commercial Use · PLR</text>
+  </g>
+
+  <!-- Font categories -->
+  <g transform="translate(538, 234)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#1A1A4E"/>
+    <rect width="210" height="44" rx="12" fill="#1565C0" opacity="0.4"/>
+    <rect y="32" width="210" height="12" fill="#1565C0" opacity="0.4"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Font Styles</text>
+
+    <text x="28" y="62" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">Aa</text>
+    <text x="52" y="62" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Serif &amp; Slab Serif</text>
+    <text x="28" y="82" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">Aa</text>
+    <text x="52" y="82" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Sans Serif &amp; Grotesque</text>
+    <text x="28" y="102" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">Aa</text>
+    <text x="52" y="102" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Script &amp; Handwritten</text>
+    <text x="28" y="122" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">Aa</text>
+    <text x="52" y="122" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Display &amp; Decorative</text>
+    <text x="28" y="142" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">Aa</text>
+    <text x="52" y="142" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Monospace &amp; Tech</text>
+
+    <rect x="18" y="154" width="174" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="172" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Personal &amp; Commercial Use</text>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="438" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Mega Font Bundle</text>
+  <text x="400" y="460" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">1000+ Fonts · Serif · Sans · Script · Display</text>
+  <rect x="275" y="472" width="250" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
+  <text x="400" y="488" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>

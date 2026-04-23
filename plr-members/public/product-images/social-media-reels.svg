@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Phone mockup 1 - main -->
+  <g transform="translate(68, 38)" filter="url(#shadow)">
+    <rect width="130" height="230" rx="20" fill="#0D1B3E"/>
+    <rect x="6" y="6" width="118" height="218" rx="16" fill="#1A1A4E"/>
+    <!-- Reel content area -->
+    <rect x="6" y="6" width="118" height="218" rx="16" fill="#1565C0" opacity="0.25"/>
+    <!-- Video frame lines -->
+    <rect x="6" y="6" width="118" height="145" rx="16" fill="#0D1B3E"/>
+    <rect x="6" y="143" width="118" height="8" fill="#0D1B3E"/>
+    <!-- Play button -->
+    <circle cx="65" cy="78" r="22" fill="#ffffff" opacity="0.15"/>
+    <polygon points="58,68 58,88 80,78" fill="#ffffff" opacity="0.9"/>
+    <!-- Motivational text overlay -->
+    <rect x="12" y="110" width="106" height="28" rx="4" fill="#000000" opacity="0.4"/>
+    <text x="65" y="122" font-family="Georgia,serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">Believe in</text>
+    <text x="65" y="133" font-family="Georgia,serif" font-size="9" fill="#93C5FD" text-anchor="middle" font-weight="bold">Yourself</text>
+    <!-- Bottom bar UI -->
+    <rect x="6" y="151" width="118" height="73" rx="0" fill="#1A1A4E"/>
+    <rect x="6" y="219" width="118" height="5" rx="0" fill="#1A1A4E"/>
+    <!-- Reel actions -->
+    <text x="108" y="168" font-family="Arial,sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">♥</text>
+    <text x="108" y="182" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">24K</text>
+    <text x="108" y="196" font-family="Arial,sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">💬</text>
+    <text x="108" y="210" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">843</text>
+    <!-- Caption -->
+    <text x="20" y="168" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" font-weight="bold">@yourpage</text>
+    <text x="20" y="179" font-family="Arial,sans-serif" font-size="6" fill="#D1D5DB">Rise and grind ✨</text>
+    <text x="20" y="190" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD">#motivation #mindset</text>
+    <!-- Progress bar -->
+    <rect x="12" y="215" width="96" height="2" rx="1" fill="#ffffff" opacity="0.2"/>
+    <rect x="12" y="215" width="40" height="2" rx="1" fill="#93C5FD" opacity="0.8"/>
+  </g>
+
+  <!-- Phone mockup 2 -->
+  <g transform="translate(218, 70)" filter="url(#shadow)">
+    <rect width="118" height="210" rx="18" fill="#0D1B3E"/>
+    <rect x="5" y="5" width="108" height="200" rx="14" fill="#1A1A4E"/>
+    <rect x="5" y="5" width="108" height="130" rx="14" fill="#0D2B6E"/>
+    <rect x="5" y="127" width="108" height="8" fill="#0D2B6E"/>
+    <!-- Sunrise/quote visual -->
+    <rect x="5" y="60" width="108" height="75" rx="0" fill="#1565C0" opacity="0.3"/>
+    <text x="59" y="85" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">☀️</text>
+    <text x="59" y="100" font-family="Georgia,serif" font-size="8" fill="#EFF6FF" text-anchor="middle" font-weight="bold">"Your only limit</text>
+    <text x="59" y="111" font-family="Georgia,serif" font-size="8" fill="#93C5FD" text-anchor="middle">is your mind"</text>
+    <!-- Bottom UI -->
+    <rect x="5" y="135" width="108" height="70" rx="0" fill="#1A1A4E"/>
+    <text x="18" y="152" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" font-weight="bold">@dailymotivation</text>
+    <text x="18" y="163" font-family="Arial,sans-serif" font-size="6" fill="#D1D5DB">Start your morning right 🌅</text>
+    <rect x="10" y="172" width="88" height="2" rx="1" fill="#ffffff" opacity="0.2"/>
+    <rect x="10" y="172" width="55" height="2" rx="1" fill="#93C5FD" opacity="0.8"/>
+    <text x="18" y="185" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD">#mindset #success</text>
+    <text x="95" y="155" font-family="Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">♥</text>
+    <text x="95" y="166" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">18K</text>
+  </g>
+
+  <!-- Phone mockup 3 -->
+  <g transform="translate(354, 55)" filter="url(#shadow)">
+    <rect width="118" height="210" rx="18" fill="#0D1B3E"/>
+    <rect x="5" y="5" width="108" height="200" rx="14" fill="#1A1A4E"/>
+    <rect x="5" y="5" width="108" height="130" rx="14" fill="#091535"/>
+    <rect x="5" y="127" width="108" height="8" fill="#091535"/>
+    <!-- Abstract motivational visual -->
+    <circle cx="59" cy="60" r="30" fill="#1565C0" opacity="0.2"/>
+    <circle cx="59" cy="60" r="20" fill="#1565C0" opacity="0.3"/>
+    <text x="59" y="66" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" fill="#ffffff">⚡</text>
+    <text x="59" y="88" font-family="Georgia,serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">DO THE WORK</text>
+    <text x="59" y="100" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle">Every. Single. Day.</text>
+    <text x="59" y="115" font-family="Arial,sans-serif" font-size="7" fill="#EFF6FF" text-anchor="middle" opacity="0.5">· · · · · · · · · · · ·</text>
+    <!-- Bottom UI -->
+    <rect x="5" y="135" width="108" height="70" rx="0" fill="#1A1A4E"/>
+    <text x="18" y="152" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" font-weight="bold">@grindculture</text>
+    <text x="18" y="163" font-family="Arial,sans-serif" font-size="6" fill="#D1D5DB">No excuses 💪</text>
+    <rect x="10" y="172" width="88" height="2" rx="1" fill="#ffffff" opacity="0.2"/>
+    <rect x="10" y="172" width="70" height="2" rx="1" fill="#1565C0" opacity="0.8"/>
+    <text x="18" y="185" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD">#hustle #grind</text>
+    <text x="95" y="155" font-family="Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">♥</text>
+    <text x="95" y="166" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">31K</text>
+  </g>
+
+  <!-- Info panel right -->
+  <g transform="translate(500, 38)" filter="url(#shadow)">
+    <rect width="240" height="180" rx="12" fill="#ffffff"/>
+    <rect width="240" height="46" rx="12" fill="#1A1A4E"/>
+    <rect y="34" width="240" height="12" fill="#1A1A4E"/>
+    <text x="120" y="26" font-family="Georgia,serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Reel Specs &amp; Formats</text>
+
+    <rect x="16" y="58" width="100" height="60" rx="8" fill="#EFF6FF"/>
+    <text x="66" y="82" font-family="Arial,sans-serif" font-size="22" fill="#1A1A4E" text-anchor="middle" font-weight="bold">9:16</text>
+    <text x="66" y="96" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Vertical Format</text>
+    <text x="66" y="110" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">Instagram · TikTok</text>
+
+    <rect x="128" y="58" width="100" height="60" rx="8" fill="#EFF6FF"/>
+    <text x="178" y="82" font-family="Arial,sans-serif" font-size="22" fill="#1A1A4E" text-anchor="middle" font-weight="bold">1:1</text>
+    <text x="178" y="96" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Square Format</text>
+    <text x="178" y="110" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">Facebook · Twitter</text>
+
+    <rect x="16" y="130" width="208" height="38" rx="8" fill="#1A1A4E"/>
+    <text x="120" y="148" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle" font-weight="bold">MP4 · MOV · Editable</text>
+    <text x="120" y="162" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.7">Ready to post · Full Resell Rights</text>
+  </g>
+
+  <!-- Stats panel -->
+  <g transform="translate(500, 238)" filter="url(#shadow2)">
+    <rect width="240" height="218" rx="12" fill="#1565C0" opacity="0.12"/>
+    <rect width="240" height="218" rx="12" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+    <text x="120" y="30" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Platform Coverage</text>
+    <rect x="20" y="38" width="200" height="1" fill="#ffffff" opacity="0.15"/>
+
+    <text x="28" y="62" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD">📱</text>
+    <text x="46" y="62" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Instagram Reels</text>
+    <text x="28" y="82" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD">🎵</text>
+    <text x="46" y="82" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">TikTok Videos</text>
+    <text x="28" y="102" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD">▶️</text>
+    <text x="46" y="102" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">YouTube Shorts</text>
+    <text x="28" y="122" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD">📘</text>
+    <text x="46" y="122" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Facebook Reels</text>
+
+    <rect x="20" y="134" width="200" height="1" fill="#ffffff" opacity="0.1"/>
+
+    <text x="120" y="160" font-family="Arial,sans-serif" font-size="28" fill="#93C5FD" text-anchor="middle" font-weight="bold">100+</text>
+    <text x="120" y="176" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.7">Motivational Clips</text>
+
+    <rect x="20" y="186" width="200" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="120" y="208" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Inspire · Uplift · Sell</text>
+  </g>
+
+  <!-- Label -->
+  <text x="305" y="463" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Social Media Reels</text>
+  <rect x="170" y="472" width="270" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
+  <text x="305" y="488" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>
