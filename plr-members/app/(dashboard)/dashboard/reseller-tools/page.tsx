@@ -42,6 +42,15 @@ Here's your link: [YOUR AFFILIATE LINK]
 Talk soon,
 [Your Name]`
 
+const RESOURCES = [
+  {
+    title: 'Black Digital Product Mockup',
+    description: 'A collection of mockups to use when listing digital products',
+    url: 'https://www.canva.com/design/DAFplpCzcCA/EKHe4-RMRvw01g_3DgiEwA/view?utm_content=DAFplpCzcCA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
+    icon: '🖼️',
+  },
+]
+
 const SOCIAL_CAPTIONS = [
   {
     platform: 'Instagram / Facebook',
@@ -131,6 +140,30 @@ export default function ResellerToolsPage() {
         <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2">
           <code className="flex-1 text-sm text-gray-700 truncate">{affiliateUrl}</code>
           <CopyButton text={affiliateUrl} label="Copy Link" />
+        </div>
+      </Card>
+
+      {/* Reseller resources */}
+      <Card>
+        <h2 className="font-bold text-gray-900 mb-1">Reseller Resources</h2>
+        <p className="text-sm text-gray-500 mb-4">Helpful assets to level up your listings and promotions.</p>
+        <div className="space-y-3">
+          {RESOURCES.map((resource) => (
+            <a
+              key={resource.title}
+              href={resource.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-[#1565C0] hover:bg-blue-50 transition-colors group"
+            >
+              <span className="text-2xl flex-shrink-0">{resource.icon}</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-gray-900 group-hover:text-[#1565C0]">{resource.title}</p>
+                <p className="text-xs text-gray-500 mt-0.5">{resource.description}</p>
+              </div>
+              <span className="text-gray-400 group-hover:text-[#1565C0] text-sm flex-shrink-0">↗</span>
+            </a>
+          ))}
         </div>
       </Card>
 
