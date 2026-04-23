@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 
@@ -66,6 +67,13 @@ const RESOURCES = [
     description: 'Use this template to deliver products to the final user after purchase',
     url: 'https://www.canva.com/design/DAGZx4Vdwh0/-BmK-gbZf6GZ8lxnno59bA/view?utm_content=DAGZx4Vdwh0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
     icon: '📦',
+  },
+  {
+    title: 'Marketplaces Guide',
+    description: 'A guide to help you understand the marketplaces where you can sell digital products',
+    url: '/dashboard/reseller-tools/marketplaces-guide',
+    icon: '🌍',
+    internal: true,
   },
 ]
 
@@ -166,22 +174,30 @@ export default function ResellerToolsPage() {
         <h2 className="font-bold text-gray-900 mb-1">Reseller Resources</h2>
         <p className="text-sm text-gray-500 mb-4">Helpful assets to level up your listings and promotions.</p>
         <div className="space-y-3">
-          {RESOURCES.map((resource) => (
-            <a
-              key={resource.title}
-              href={resource.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 p-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-[#1565C0] hover:bg-blue-50 transition-colors group"
-            >
-              <span className="text-2xl flex-shrink-0">{resource.icon}</span>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-gray-900 group-hover:text-[#1565C0]">{resource.title}</p>
-                <p className="text-xs text-gray-500 mt-0.5">{resource.description}</p>
-              </div>
-              <span className="text-gray-400 group-hover:text-[#1565C0] text-sm flex-shrink-0">↗</span>
-            </a>
-          ))}
+          {RESOURCES.map((resource) => {
+            const className = "flex items-center gap-4 p-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-[#1565C0] hover:bg-blue-50 transition-colors group"
+            const inner = (
+              <>
+                <span className="text-2xl flex-shrink-0">{resource.icon}</span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-semibold text-gray-900 group-hover:text-[#1565C0]">{resource.title}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{resource.description}</p>
+                </div>
+                <span className="text-gray-400 group-hover:text-[#1565C0] text-sm flex-shrink-0">
+                  {'internal' in resource && resource.internal ? '→' : '↗'}
+                </span>
+              </>
+            )
+            return 'internal' in resource && resource.internal ? (
+              <Link key={resource.title} href={resource.url} className={className}>
+                {inner}
+              </Link>
+            ) : (
+              <a key={resource.title} href={resource.url} target="_blank" rel="noopener noreferrer" className={className}>
+                {inner}
+              </a>
+            )
+          })}
         </div>
       </Card>
 
