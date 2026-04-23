@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6D28D9"/>
+      <stop offset="100%" style="stop-color:#A855F7"/>
+    </linearGradient>
+    <linearGradient id="lavender" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4C1D95"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="118" height="22" rx="11" fill="url(#lavender)"/>
+    <text x="75" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">📅 CANVA PLANNER BUNDLE</text>
+    <!-- Title -->
+    <text x="16" y="70" font-family="Georgia,serif" font-size="22" fill="#ffffff" font-weight="bold">2026–2027 Planner Bundle</text>
+    <text x="16" y="92" font-family="Georgia,serif" font-size="16" fill="#C4B5FD" font-weight="bold">Fully Editable in Canva · Full PLR</text>
+    <rect x="16" y="104" width="220" height="2" fill="#7C3AED"/>
+    <text x="16" y="121" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Plan your year in style · Rebrand &amp; resell</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="50" fill="#7C3AED" opacity="0.08"/>
+    <circle cx="415" cy="65" r="30" fill="#7C3AED" opacity="0.1"/>
+    <text x="415" y="77" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">📅</text>
+  </g>
+
+  <!-- Planner mockup grid -->
+  <g transform="translate(55, 188)" filter="url(#shadow2)">
+    <rect width="470" height="242" rx="12" fill="#ffffff"/>
+    <rect width="470" height="38" rx="12" fill="#0D1B3E"/>
+    <rect y="26" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="23" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Planner Template Previews</text>
+
+    <!-- Annual cover page -->
+    <rect x="14" y="50" width="100" height="178" rx="8" fill="#4C1D95"/>
+    <rect x="14" y="50" width="100" height="178" rx="8" fill="none" stroke="#7C3AED" stroke-width="1.5"/>
+    <!-- Spine -->
+    <rect x="14" y="50" width="8" height="178" rx="4" fill="#3B0764"/>
+    <!-- Cover content -->
+    <rect x="30" y="68" width="70" height="2" fill="#C4B5FD" opacity="0.6"/>
+    <text x="64" y="106" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📅</text>
+    <text x="64" y="130" font-family="Georgia,serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">2026</text>
+    <text x="64" y="146" font-family="Georgia,serif" font-size="13" fill="#C4B5FD" text-anchor="middle" font-weight="bold">2027</text>
+    <rect x="30" y="154" width="70" height="1" fill="#C4B5FD" opacity="0.4"/>
+    <text x="64" y="172" font-family="Arial,sans-serif" font-size="7" fill="#DDD6FE" text-anchor="middle">Planner Bundle</text>
+    <text x="64" y="186" font-family="Arial,sans-serif" font-size="6" fill="#A78BFA" text-anchor="middle">Canva Template</text>
+    <rect x="30" y="206" width="70" height="14" rx="7" fill="#7C3AED"/>
+    <text x="64" y="216" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle" font-weight="bold">PLR Rights</text>
+
+    <!-- Monthly spread -->
+    <rect x="124" y="50" width="152" height="88" rx="8" fill="#F5F3FF"/>
+    <rect x="124" y="50" width="152" height="88" rx="8" fill="none" stroke="#DDD6FE" stroke-width="1"/>
+    <!-- Month header -->
+    <rect x="124" y="50" width="152" height="24" rx="8" fill="url(#purple)"/>
+    <rect x="124" y="62" width="152" height="12" fill="#7C3AED"/>
+    <text x="200" y="66" font-family="Georgia,serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">January 2026</text>
+    <!-- Mini calendar grid -->
+    <text x="136" y="84" font-family="Arial,sans-serif" font-size="5.5" fill="#7C3AED" font-weight="bold">M</text>
+    <text x="151" y="84" font-family="Arial,sans-serif" font-size="5.5" fill="#7C3AED" font-weight="bold">T</text>
+    <text x="166" y="84" font-family="Arial,sans-serif" font-size="5.5" fill="#7C3AED" font-weight="bold">W</text>
+    <text x="181" y="84" font-family="Arial,sans-serif" font-size="5.5" fill="#7C3AED" font-weight="bold">T</text>
+    <text x="196" y="84" font-family="Arial,sans-serif" font-size="5.5" fill="#7C3AED" font-weight="bold">F</text>
+    <text x="211" y="84" font-family="Arial,sans-serif" font-size="5.5" fill="#E1306C" font-weight="bold">S</text>
+    <text x="226" y="84" font-family="Arial,sans-serif" font-size="5.5" fill="#E1306C" font-weight="bold">S</text>
+    <!-- Week 1 -->
+    <text x="196" y="95" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">1</text>
+    <text x="211" y="95" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280">2</text>
+    <text x="226" y="95" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280">3</text>
+    <!-- Week 2 -->
+    <text x="136" y="105" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">4</text>
+    <text x="151" y="105" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">5</text>
+    <text x="166" y="105" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">6</text>
+    <text x="181" y="105" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">7</text>
+    <text x="196" y="105" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">8</text>
+    <text x="211" y="105" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280">9</text>
+    <text x="226" y="105" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280">10</text>
+    <!-- Highlighted day -->
+    <circle cx="163" cy="103" r="5" fill="#7C3AED" opacity="0.2"/>
+    <!-- Week 3 -->
+    <text x="136" y="116" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">11</text>
+    <text x="151" y="116" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">12</text>
+    <text x="166" y="116" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">13</text>
+    <text x="181" y="116" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">14</text>
+    <text x="196" y="116" font-family="Arial,sans-serif" font-size="5.5" fill="#374151">15</text>
+    <text x="200" y="130" font-family="Arial,sans-serif" font-size="5" fill="#9CA3AF" text-anchor="middle">Monthly View</text>
+
+    <!-- Weekly spread -->
+    <rect x="124" y="146" width="152" height="82" rx="8" fill="#F5F3FF"/>
+    <rect x="124" y="146" width="152" height="82" rx="8" fill="none" stroke="#DDD6FE" stroke-width="1"/>
+    <rect x="124" y="146" width="152" height="22" rx="8" fill="#6D28D9" opacity="0.8"/>
+    <rect x="124" y="156" width="152" height="12" fill="#6D28D9" opacity="0.8"/>
+    <text x="200" y="162" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Week 3 · Jan 2026</text>
+    <!-- Day columns -->
+    <rect x="132" y="172" width="18" height="48" rx="3" fill="#EDE9FE"/>
+    <text x="141" y="182" font-family="Arial,sans-serif" font-size="5" fill="#7C3AED" text-anchor="middle" font-weight="bold">MON</text>
+    <rect x="153" y="172" width="18" height="48" rx="3" fill="#EDE9FE"/>
+    <text x="162" y="182" font-family="Arial,sans-serif" font-size="5" fill="#7C3AED" text-anchor="middle" font-weight="bold">TUE</text>
+    <rect x="174" y="172" width="18" height="48" rx="3" fill="#EDE9FE"/>
+    <text x="183" y="182" font-family="Arial,sans-serif" font-size="5" fill="#7C3AED" text-anchor="middle" font-weight="bold">WED</text>
+    <rect x="195" y="172" width="18" height="48" rx="3" fill="#EDE9FE"/>
+    <text x="204" y="182" font-family="Arial,sans-serif" font-size="5" fill="#7C3AED" text-anchor="middle" font-weight="bold">THU</text>
+    <rect x="216" y="172" width="18" height="48" rx="3" fill="#EDE9FE"/>
+    <text x="225" y="182" font-family="Arial,sans-serif" font-size="5" fill="#7C3AED" text-anchor="middle" font-weight="bold">FRI</text>
+    <!-- task lines in monday -->
+    <rect x="134" y="188" width="14" height="2" rx="1" fill="#C4B5FD"/>
+    <rect x="134" y="194" width="10" height="2" rx="1" fill="#C4B5FD"/>
+    <rect x="134" y="200" width="12" height="2" rx="1" fill="#C4B5FD"/>
+    <text x="200" y="228" font-family="Arial,sans-serif" font-size="5" fill="#9CA3AF" text-anchor="middle">Weekly View</text>
+
+    <!-- Daily page -->
+    <rect x="286" y="50" width="170" height="178" rx="8" fill="#F9F7FF"/>
+    <rect x="286" y="50" width="170" height="178" rx="8" fill="none" stroke="#DDD6FE" stroke-width="1"/>
+    <!-- Day header -->
+    <rect x="286" y="50" width="170" height="32" rx="8" fill="url(#lavender)"/>
+    <rect x="286" y="70" width="170" height="12" fill="#6D28D9"/>
+    <text x="371" y="70" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Wednesday · 14 Jan</text>
+    <!-- Habit tracker row -->
+    <text x="296" y="96" font-family="Arial,sans-serif" font-size="6.5" fill="#6D28D9" font-weight="bold">HABIT TRACKER</text>
+    <circle cx="296" cy="108" r="4" fill="none" stroke="#7C3AED" stroke-width="1"/>
+    <circle cx="308" cy="108" r="4" fill="#7C3AED"/>
+    <circle cx="320" cy="108" r="4" fill="#7C3AED"/>
+    <circle cx="332" cy="108" r="4" fill="none" stroke="#7C3AED" stroke-width="1"/>
+    <circle cx="344" cy="108" r="4" fill="#7C3AED"/>
+    <!-- To-do section -->
+    <text x="296" y="126" font-family="Arial,sans-serif" font-size="6.5" fill="#6D28D9" font-weight="bold">TODAY'S GOALS</text>
+    <rect x="296" y="132" width="150" height="6" rx="1" fill="#EDE9FE"/>
+    <rect x="296" y="142" width="130" height="6" rx="1" fill="#EDE9FE"/>
+    <rect x="296" y="152" width="140" height="6" rx="1" fill="#EDE9FE"/>
+    <!-- Notes -->
+    <text x="296" y="170" font-family="Arial,sans-serif" font-size="6.5" fill="#6D28D9" font-weight="bold">NOTES</text>
+    <rect x="296" y="176" width="150" height="4" rx="1" fill="#EDE9FE"/>
+    <rect x="296" y="184" width="120" height="4" rx="1" fill="#EDE9FE"/>
+    <rect x="296" y="192" width="140" height="4" rx="1" fill="#EDE9FE"/>
+    <text x="371" y="222" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Daily View</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Views Included</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📆</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Annual Overview</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🗓️</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Monthly Spreads</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📋</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Weekly Layouts</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">✏️</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Daily Pages</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#7C3AED" opacity="0.35"/>
+    <rect y="32" width="210" height="12" fill="#7C3AED" opacity="0.35"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Included</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">2026 &amp; 2027 full planners</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Annual, monthly &amp; weekly</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Daily pages with trackers</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Editable in free Canva</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Rebrand &amp; resell rights</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#C4B5FD" text-anchor="middle">Full PLR · Sell &amp; Keep 100%</text>
+  </g>
+</svg>
