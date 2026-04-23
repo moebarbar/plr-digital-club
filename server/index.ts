@@ -34,6 +34,7 @@ const NEXT_ROUTES = [
   "/sitemap.xml",
   "/robots.txt",
   "/_next",
+  "/product-images",
 ];
 
 function shouldProxyToNext(reqPath: string): boolean {
