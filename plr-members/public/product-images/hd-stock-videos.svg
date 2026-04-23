@@ -69,7 +69,7 @@
     <text x="432" y="252" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="end">0:32 / 2:14</text>
 
     <!-- Player controls -->
-    <rect x="8" y="260" width="444" height="36" rx="0" fill="#1A1A1A" rx="4"/>
+    <rect x="8" y="260" width="444" height="36" rx="4" fill="#1A1A1A"/>
     <!-- Progress bar -->
     <rect x="18" y="264" width="424" height="4" rx="2" fill="#374151"/>
     <rect x="18" y="264" width="148" height="4" rx="2" fill="#1565C0"/>
