@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Stream overlay mockup - main panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="300" rx="12" fill="#0D0D1A"/>
+    <!-- Stream scene background -->
+    <rect x="0" y="0" width="470" height="300" rx="12" fill="#111827"/>
+    <!-- Grid overlay subtle -->
+    <line x1="0" y1="75" x2="470" y2="75" stroke="#1565C0" stroke-width="0.3" opacity="0.2"/>
+    <line x1="0" y1="150" x2="470" y2="150" stroke="#1565C0" stroke-width="0.3" opacity="0.2"/>
+    <line x1="0" y1="225" x2="470" y2="225" stroke="#1565C0" stroke-width="0.3" opacity="0.2"/>
+    <line x1="117" y1="0" x2="117" y2="300" stroke="#1565C0" stroke-width="0.3" opacity="0.2"/>
+    <line x1="235" y1="0" x2="235" y2="300" stroke="#1565C0" stroke-width="0.3" opacity="0.2"/>
+    <line x1="352" y1="0" x2="352" y2="300" stroke="#1565C0" stroke-width="0.3" opacity="0.2"/>
+
+    <!-- Main game viewport -->
+    <rect x="12" y="12" width="296" height="200" rx="6" fill="#0D1B3E"/>
+    <rect x="12" y="12" width="296" height="200" rx="6" fill="#1565C0" opacity="0.1"/>
+    <!-- Game scene elements -->
+    <rect x="20" y="160" width="280" height="46" rx="0" fill="#0A0F1E"/>
+    <rect x="40" y="130" width="60" height="76" rx="2" fill="#1A2535" opacity="0.8"/>
+    <rect x="200" y="140" width="50" height="66" rx="2" fill="#1A2535" opacity="0.8"/>
+    <!-- Player character -->
+    <rect x="148" y="145" width="14" height="20" rx="2" fill="#93C5FD" opacity="0.8"/>
+    <circle cx="155" cy="140" r="6" fill="#93C5FD" opacity="0.8"/>
+    <!-- Health bar UI -->
+    <rect x="20" y="20" width="120" height="14" rx="7" fill="#0D0D0D" opacity="0.8"/>
+    <rect x="22" y="22" width="100" height="10" rx="5" fill="#1A1A4E"/>
+    <rect x="22" y="22" width="76" height="10" rx="5" fill="#1565C0"/>
+    <text x="148" y="31" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD">76 HP</text>
+    <!-- Score -->
+    <rect x="220" y="20" width="80" height="14" rx="7" fill="#0D0D0D" opacity="0.8"/>
+    <text x="260" y="31" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Score: 24,850</text>
+    <!-- Minimap -->
+    <rect x="258" y="160" width="44" height="44" rx="4" fill="#0D0D0D" opacity="0.85"/>
+    <rect x="261" y="163" width="38" height="38" rx="2" fill="#0D1B3E"/>
+    <circle cx="278" cy="182" r="3" fill="#93C5FD"/>
+    <circle cx="290" cy="175" r="2" fill="#ff6b6b" opacity="0.7"/>
+
+    <!-- Webcam overlay box -->
+    <rect x="316" y="12" width="142" height="106" rx="6" fill="#060E24"/>
+    <rect x="316" y="12" width="142" height="106" rx="6" fill="none" stroke="#1565C0" stroke-width="1.5"/>
+    <!-- Streamer face placeholder -->
+    <circle cx="387" cy="48" r="20" fill="#1A1A4E"/>
+    <text x="387" y="54" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🎮</text>
+    <text x="387" y="100" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle" font-weight="bold">xYourChannel</text>
+    <!-- Live badge -->
+    <rect x="322" y="16" width="28" height="14" rx="7" fill="#ff4444"/>
+    <text x="336" y="26" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">LIVE</text>
+
+    <!-- Alert overlay -->
+    <rect x="316" y="126" width="142" height="40" rx="6" fill="#1A1A4E"/>
+    <rect x="316" y="126" width="4" height="40" rx="2" fill="#93C5FD"/>
+    <text x="328" y="142" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" font-weight="bold">New Follower!</text>
+    <text x="328" y="156" font-family="Arial,sans-serif" font-size="7" fill="#ffffff">GamerPro99 just followed 🎉</text>
+
+    <!-- Donation/sub bar -->
+    <rect x="316" y="174" width="142" height="38" rx="6" fill="#0D1B3E" stroke="#1565C0" stroke-width="1"/>
+    <text x="387" y="190" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle" font-weight="bold">NEW SUB 🔔</text>
+    <text x="387" y="204" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">NightWolf · Tier 1</text>
+
+    <!-- Stream info bar bottom -->
+    <rect x="12" y="220" width="296" height="28" rx="4" fill="#0D0D0D" opacity="0.85"/>
+    <rect x="12" y="220" width="4" height="28" rx="2" fill="#ff4444"/>
+    <text x="24" y="232" font-family="Arial,sans-serif" font-size="7" fill="#ff4444" font-weight="bold">LIVE</text>
+    <text x="50" y="232" font-family="Arial,sans-serif" font-size="7" fill="#ffffff">Ranked Match · Solo Queue</text>
+    <text x="296" y="232" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="end">👁 1,284</text>
+    <text x="296" y="242" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="end">⏱ 02:14:38</text>
+    <text x="24" y="242" font-family="Arial,sans-serif" font-size="7" fill="#6B7280">#FPS  #Gaming  #Ranked</text>
+
+    <!-- Chat overlay panel -->
+    <rect x="12" y="256" width="296" height="36" rx="4" fill="#060E24" opacity="0.9"/>
+    <text x="22" y="269" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD" font-weight="bold">ChatUser1:</text>
+    <text x="78" y="269" font-family="Arial,sans-serif" font-size="6" fill="#D1D5DB">GG! That was insane 🔥</text>
+    <text x="22" y="282" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD" font-weight="bold">StreamFan:</text>
+    <text x="78" y="282" font-family="Arial,sans-serif" font-size="6" fill="#D1D5DB">POGGERS let's GOOO 🎮</text>
+
+    <!-- Bottom-right panel -->
+    <rect x="316" y="220" width="142" height="72" rx="6" fill="#0D1B3E"/>
+    <!-- Goals tracker -->
+    <text x="387" y="238" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Sub Goal</text>
+    <rect x="326" y="244" width="122" height="8" rx="4" fill="#1A1A4E"/>
+    <rect x="326" y="244" width="88" height="8" rx="4" fill="#1565C0"/>
+    <text x="387" y="258" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD" text-anchor="middle">88 / 125 subs</text>
+    <text x="387" y="276" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Donations</text>
+    <text x="387" y="288" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle" font-weight="bold">$247.50</text>
+  </g>
+
+  <!-- Asset card grid - bottom left -->
+  <g transform="translate(55, 360)" filter="url(#shadow2)">
+    <rect width="470" height="95" rx="10" fill="#ffffff"/>
+    <rect width="470" height="36" rx="10" fill="#1A1A4E"/>
+    <rect y="24" width="470" height="12" fill="#1A1A4E"/>
+    <text x="235" y="22" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's in the Bundle</text>
+
+    <rect x="12" y="44" width="80" height="40" rx="6" fill="#EFF6FF"/>
+    <text x="52" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎬</text>
+    <text x="52" y="74" font-family="Arial,sans-serif" font-size="6" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Stream Overlays</text>
+
+    <rect x="100" y="44" width="80" height="40" rx="6" fill="#EFF6FF"/>
+    <text x="140" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🔔</text>
+    <text x="140" y="74" font-family="Arial,sans-serif" font-size="6" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Alert Panels</text>
+
+    <rect x="188" y="44" width="80" height="40" rx="6" fill="#EFF6FF"/>
+    <text x="228" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎨</text>
+    <text x="228" y="74" font-family="Arial,sans-serif" font-size="6" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Twitch Panels</text>
+
+    <rect x="276" y="44" width="80" height="40" rx="6" fill="#EFF6FF"/>
+    <text x="316" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎵</text>
+    <text x="316" y="74" font-family="Arial,sans-serif" font-size="6" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Stream Music</text>
+
+    <rect x="364" y="44" width="94" height="40" rx="6" fill="#1A1A4E"/>
+    <text x="411" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" fill="#93C5FD">⚡</text>
+    <text x="411" y="74" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD" text-anchor="middle" font-weight="bold">Emotes &amp; Badges</text>
+  </g>
+
+  <!-- Right info panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="180" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#1A1A4E"/>
+    <rect y="32" width="210" height="12" fill="#1A1A4E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Platform Ready</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">📺</text>
+    <text x="57" y="89" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Twitch</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">▶️</text>
+    <text x="153" y="89" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">YouTube</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎵</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">TikTok Live</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎮</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Kick &amp; More</text>
+
+    <rect x="14" y="160" width="182" height="12" rx="4" fill="#1A1A4E" opacity="0.05"/>
+    <text x="105" y="170" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">All major streaming platforms</text>
+  </g>
+
+  <g transform="translate(548, 240)" filter="url(#shadow2)">
+    <rect width="210" height="215" rx="12" fill="#1A1A4E"/>
+    <rect width="210" height="44" rx="12" fill="#1565C0" opacity="0.4"/>
+    <rect y="32" width="210" height="12" fill="#1565C0" opacity="0.4"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Level Up Your Stream</text>
+
+    <text x="24" y="64" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="42" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Stream overlay packs</text>
+    <text x="24" y="84" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="42" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Animated alerts &amp; transitions</text>
+    <text x="24" y="104" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="42" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Twitch panels &amp; banners</text>
+    <text x="24" y="124" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="42" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Custom emotes &amp; badges</text>
+    <text x="24" y="144" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="42" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Royalty-free stream music</text>
+    <text x="24" y="164" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="42" y="164" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Sub goals &amp; chat widgets</text>
+    <text x="24" y="184" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="42" y="184" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">OBS &amp; Streamlabs ready</text>
+
+    <rect x="16" y="196" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="210" font-family="Arial,sans-serif" font-size="26" fill="#93C5FD" text-anchor="middle" font-weight="bold">⚡</text>
+  </g>
+
+  <!-- Label -->
+  <text x="308" y="476" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">Gamers / Streamers Bundle</text>
+  <rect x="155" y="484" width="306" height="14" rx="7" fill="#ffffff" opacity="0.1"/>
+</svg>
