@@ -61,6 +61,12 @@ const RESOURCES = [
     url: 'https://www.canva.com/design/DAFplpkwr44/t-yLxqLiNBkXeqo8V7AqWA/view?utm_content=DAFplpkwr44&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
     icon: '📐',
   },
+  {
+    title: 'Download Template',
+    description: 'Use this template to deliver products to the final user after purchase',
+    url: 'https://www.canva.com/design/DAGZx4Vdwh0/-BmK-gbZf6GZ8lxnno59bA/view?utm_content=DAGZx4Vdwh0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
+    icon: '📦',
+  },
 ]
 
 const SOCIAL_CAPTIONS = [
