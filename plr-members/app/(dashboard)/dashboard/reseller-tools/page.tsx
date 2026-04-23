@@ -55,6 +55,12 @@ const RESOURCES = [
     url: 'https://www.canva.com/design/DAFplvqk7rY/w95Fssk9ssV01Emu4XOHUA/view?utm_content=DAFplvqk7rY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
     icon: '🛍️',
   },
+  {
+    title: 'Notion Mockups',
+    description: 'A list of mockup designs to create outstanding mockups to sell Notion templates',
+    url: 'https://www.canva.com/design/DAFplpkwr44/t-yLxqLiNBkXeqo8V7AqWA/view?utm_content=DAFplpkwr44&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
+    icon: '📐',
+  },
 ]
 
 const SOCIAL_CAPTIONS = [
