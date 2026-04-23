@@ -49,6 +49,12 @@ const RESOURCES = [
     url: 'https://www.canva.com/design/DAFplpCzcCA/EKHe4-RMRvw01g_3DgiEwA/view?utm_content=DAFplpCzcCA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
     icon: '🖼️',
   },
+  {
+    title: 'Canva Mockups for Etsy',
+    description: 'A list of mockup designs to create outstanding listings to sell on Etsy and other marketplaces',
+    url: 'https://www.canva.com/design/DAFplvqk7rY/w95Fssk9ssV01Emu4XOHUA/view?utm_content=DAFplvqk7rY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview',
+    icon: '🛍️',
+  },
 ]
 
 const SOCIAL_CAPTIONS = [
