@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BE185D"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#EC4899" stroke-width="1" opacity="0.5"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="114" height="22" rx="11" fill="url(#pink)"/>
+    <text x="73" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">⭐ INFLUENCER PACK</text>
+    <!-- Title -->
+    <text x="16" y="70" font-family="Georgia,serif" font-size="20" fill="#ffffff" font-weight="bold">Influencer Social Media</text>
+    <text x="16" y="92" font-family="Georgia,serif" font-size="20" fill="#F9A8D4" font-weight="bold">Canva Collection</text>
+    <rect x="16" y="104" width="220" height="2" fill="#EC4899"/>
+    <text x="16" y="121" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Instagram · TikTok · Facebook · YouTube</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="50" fill="#EC4899" opacity="0.08"/>
+    <circle cx="415" cy="65" r="30" fill="#EC4899" opacity="0.1"/>
+    <text x="415" y="77" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">⭐</text>
+  </g>
+
+  <!-- Feed grid mockup + templates -->
+  <g transform="translate(55, 188)" filter="url(#shadow2)">
+    <rect width="470" height="242" rx="12" fill="#ffffff"/>
+    <rect width="470" height="38" rx="12" fill="#0D1B3E"/>
+    <rect y="26" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="23" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Aesthetic Feed &amp; Template Previews</text>
+
+    <!-- Instagram feed grid (3x3) -->
+    <rect x="14" y="50" width="76" height="76" rx="6" fill="#BE185D" opacity="0.9"/>
+    <text x="52" y="92" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🌸</text>
+    <rect x="96" y="50" width="76" height="76" rx="6" fill="#7C3AED" opacity="0.9"/>
+    <text x="134" y="92" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">✨</text>
+    <rect x="178" y="50" width="76" height="76" rx="6" fill="#DB2777" opacity="0.9"/>
+    <text x="216" y="92" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">💫</text>
+
+    <rect x="14" y="132" width="76" height="76" rx="6" fill="#9D174D" opacity="0.9"/>
+    <text x="52" y="174" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📸</text>
+    <rect x="96" y="132" width="76" height="76" rx="6" fill="#5B21B6" opacity="0.9"/>
+    <text x="134" y="174" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🎯</text>
+    <rect x="178" y="132" width="76" height="76" rx="6" fill="#BE185D" opacity="0.7"/>
+    <text x="216" y="174" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">💎</text>
+
+    <!-- Story template -->
+    <rect x="270" y="50" width="86" height="158" rx="10" fill="#0D1B3E"/>
+    <rect x="270" y="50" width="86" height="158" rx="10" fill="none" stroke="#EC4899" stroke-width="1.5"/>
+    <!-- Profile circle -->
+    <circle cx="313" cy="78" r="16" fill="#EC4899" opacity="0.3"/>
+    <circle cx="313" cy="78" r="12" fill="#EC4899" opacity="0.5"/>
+    <text x="313" y="83" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">⭐</text>
+    <text x="313" y="106" font-family="Arial,sans-serif" font-size="6.5" fill="#F9A8D4" text-anchor="middle">@yourname</text>
+    <rect x="280" y="114" width="66" height="4" rx="2" fill="#E2E8F0" opacity="0.3"/>
+    <rect x="284" y="122" width="58" height="4" rx="2" fill="#E2E8F0" opacity="0.2"/>
+    <rect x="280" y="150" width="66" height="22" rx="11" fill="url(#pink)"/>
+    <text x="313" y="165" font-family="Arial,sans-serif" font-size="6.5" fill="#ffffff" text-anchor="middle">Collab Post</text>
+    <text x="313" y="196" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Story Template</text>
+
+    <!-- Collab card -->
+    <rect x="366" y="50" width="90" height="76" rx="8" fill="#2D1B69"/>
+    <rect x="366" y="50" width="90" height="76" rx="8" fill="none" stroke="#7C3AED" stroke-width="1"/>
+    <text x="411" y="80" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🤝</text>
+    <text x="411" y="96" font-family="Arial,sans-serif" font-size="7" fill="#DDD6FE" text-anchor="middle" font-weight="bold">Collab Template</text>
+    <text x="411" y="114" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Post design</text>
+
+    <!-- Product promo card -->
+    <rect x="366" y="132" width="90" height="76" rx="8" fill="#831843"/>
+    <rect x="366" y="132" width="90" height="76" rx="8" fill="none" stroke="#EC4899" stroke-width="1"/>
+    <text x="411" y="162" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🛍️</text>
+    <text x="411" y="178" font-family="Arial,sans-serif" font-size="7" fill="#FBCFE8" text-anchor="middle" font-weight="bold">Product Promo</text>
+    <text x="411" y="196" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Carousel ready</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Template Types</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#FDF2F8"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📸</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Feed Posts</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#FDF2F8"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📱</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Stories</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#FDF2F8"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🎠</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Carousels</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#FDF2F8"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🤝</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Collabs</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#EC4899" opacity="0.25"/>
+    <rect y="32" width="210" height="12" fill="#EC4899" opacity="0.25"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Included</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#F9A8D4">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Aesthetic feed templates</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#F9A8D4">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Story &amp; reel covers</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#F9A8D4">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Collab post designs</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#F9A8D4">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Product promo carousels</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#F9A8D4">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Multi-platform ready</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#F9A8D4" text-anchor="middle">Full PLR · Rebrand &amp; Resell</text>
+  </g>
+</svg>

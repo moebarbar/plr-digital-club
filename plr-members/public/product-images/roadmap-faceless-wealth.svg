@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4C1D95"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="goldgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#92400E"/>
+      <stop offset="100%" style="stop-color:#D97706"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="104" height="22" rx="11" fill="url(#purple)"/>
+    <text x="68" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">🎭 FACELESS WEALTH</text>
+    <!-- Title -->
+    <text x="16" y="68" font-family="Georgia,serif" font-size="22" fill="#ffffff" font-weight="bold">Roadmap To</text>
+    <text x="16" y="92" font-family="Georgia,serif" font-size="22" fill="#C4B5FD" font-weight="bold">Faceless Wealth</text>
+    <rect x="16" y="104" width="220" height="2" fill="#7C3AED"/>
+    <text x="16" y="121" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Build income anonymously · No face required · Proven system</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="50" fill="#7C3AED" opacity="0.08"/>
+    <circle cx="415" cy="65" r="30" fill="#7C3AED" opacity="0.1"/>
+    <text x="415" y="77" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">🗺️</text>
+  </g>
+
+  <!-- Roadmap steps -->
+  <g transform="translate(55, 188)" filter="url(#shadow2)">
+    <rect width="470" height="242" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="38" rx="12" fill="#0A0F2E"/>
+    <rect y="26" width="470" height="12" fill="#0A0F2E"/>
+    <text x="235" y="23" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Your Roadmap to Faceless Wealth</text>
+
+    <!-- Step connector line -->
+    <line x1="50" y1="70" x2="50" y2="210" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Step 1 -->
+    <circle cx="50" cy="70" r="16" fill="#7C3AED"/>
+    <text x="50" y="75" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+    <rect x="76" y="52" width="378" height="34" rx="6" fill="#1A1A4E"/>
+    <text x="96" y="66" font-family="Arial,sans-serif" font-size="9" fill="#C4B5FD" font-weight="bold">Choose Your Faceless Niche</text>
+    <text x="96" y="78" font-family="Arial,sans-serif" font-size="7.5" fill="#9CA3AF">Pick a profitable market without showing your face</text>
+
+    <!-- Step 2 -->
+    <circle cx="50" cy="120" r="16" fill="#6D28D9"/>
+    <text x="50" y="125" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+    <rect x="76" y="102" width="378" height="34" rx="6" fill="#1A1A4E"/>
+    <text x="96" y="116" font-family="Arial,sans-serif" font-size="9" fill="#C4B5FD" font-weight="bold">Build Your Anonymous Brand</text>
+    <text x="96" y="128" font-family="Arial,sans-serif" font-size="7.5" fill="#9CA3AF">Create a powerful presence using avatars &amp; AI tools</text>
+
+    <!-- Step 3 -->
+    <circle cx="50" cy="170" r="16" fill="#5B21B6"/>
+    <text x="50" y="175" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+    <rect x="76" y="152" width="378" height="34" rx="6" fill="#1A1A4E"/>
+    <text x="96" y="166" font-family="Arial,sans-serif" font-size="9" fill="#C4B5FD" font-weight="bold">Create &amp; Automate Content</text>
+    <text x="96" y="178" font-family="Arial,sans-serif" font-size="7.5" fill="#9CA3AF">Scale with faceless videos, posts &amp; digital products</text>
+
+    <!-- Step 4 -->
+    <circle cx="50" cy="220" r="16" fill="url(#goldgrad)"/>
+    <text x="50" y="225" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">💰</text>
+    <rect x="76" y="202" width="378" height="34" rx="6" fill="#1A2033"/>
+    <rect x="76" y="202" width="378" height="34" rx="6" fill="none" stroke="#D97706" stroke-width="1"/>
+    <text x="96" y="216" font-family="Arial,sans-serif" font-size="9" fill="#FCD34D" font-weight="bold">Monetize &amp; Scale to Wealth</text>
+    <text x="96" y="228" font-family="Arial,sans-serif" font-size="7.5" fill="#9CA3AF">Multiple income streams · Stay fully anonymous</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Income Streams</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📱</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Social Media</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📦</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Digital Products</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🤝</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Affiliate Marketing</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🤖</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">AI Automation</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#7C3AED" opacity="0.35"/>
+    <rect y="32" width="210" height="12" fill="#7C3AED" opacity="0.35"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Inside</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Step-by-step roadmap</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Niche selection guide</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Anonymous brand strategy</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Monetization blueprints</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">AI tools &amp; automation tips</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#C4B5FD" text-anchor="middle">Full PLR · Sell &amp; Keep 100%</text>
+  </g>
+</svg>
