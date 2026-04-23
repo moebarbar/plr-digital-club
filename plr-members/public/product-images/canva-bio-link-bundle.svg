@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F766E"/>
+      <stop offset="100%" style="stop-color:#14B8A6"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Phone mockup with bio link page -->
+  <g transform="translate(55, 32)" filter="url(#shadow)">
+    <rect width="190" height="370" rx="24" fill="#1A1A1A"/>
+    <rect x="4" y="4" width="182" height="362" rx="21" fill="#0D0D0D"/>
+    <rect x="66" y="6" width="58" height="10" rx="5" fill="#1A1A1A"/>
+    <!-- Screen -->
+    <rect x="4" y="18" width="182" height="344" rx="18" fill="#F0FDFA"/>
+
+    <!-- Bio link page UI -->
+    <!-- Header bg -->
+    <rect x="4" y="18" width="182" height="90" rx="18" fill="url(#teal)"/>
+    <rect x="4" y="90" width="182" height="18" fill="#0F766E"/>
+
+    <!-- Avatar -->
+    <circle cx="95" cy="58" r="24" fill="#ffffff" opacity="0.2"/>
+    <circle cx="95" cy="58" r="20" fill="#ffffff"/>
+    <text x="95" y="64" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">👤</text>
+
+    <!-- Name + handle -->
+    <text x="95" y="96" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">@YourBrand</text>
+    <text x="95" y="108" font-family="Arial,sans-serif" font-size="7" fill="#99F6E4" text-anchor="middle">Digital Creator · PLR Expert</text>
+
+    <!-- Link buttons -->
+    <rect x="14" y="118" width="158" height="26" rx="13" fill="#ffffff"/>
+    <text x="95" y="135" font-family="Arial,sans-serif" font-size="8" fill="#0F766E" text-anchor="middle" font-weight="bold">🛍️ Shop My Products</text>
+
+    <rect x="14" y="150" width="158" height="26" rx="13" fill="#0F766E"/>
+    <text x="95" y="167" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">📧 Join My Newsletter</text>
+
+    <rect x="14" y="182" width="158" height="26" rx="13" fill="#1565C0"/>
+    <text x="95" y="199" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">🎓 Free Course Access</text>
+
+    <rect x="14" y="214" width="158" height="26" rx="13" fill="#7C3AED"/>
+    <text x="95" y="231" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">📱 Follow on Instagram</text>
+
+    <rect x="14" y="246" width="76" height="26" rx="13" fill="#0D1B3E"/>
+    <text x="52" y="263" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">📘 Facebook</text>
+
+    <rect x="96" y="246" width="76" height="26" rx="13" fill="#0D1B3E"/>
+    <text x="134" y="263" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">🐦 Twitter</text>
+
+    <!-- Social icons row -->
+    <text x="56" y="302" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📸</text>
+    <text x="83" y="302" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🎵</text>
+    <text x="110" y="302" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">▶️</text>
+    <text x="137" y="302" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">💼</text>
+
+    <!-- Footer -->
+    <text x="95" y="330" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Made with Canva · Fully Editable</text>
+    <text x="95" y="344" font-family="Arial,sans-serif" font-size="6" fill="#14B8A6" text-anchor="middle">✦ PLR Digital Club</text>
+  </g>
+
+  <!-- Template variants panel -->
+  <g transform="translate(262, 32)" filter="url(#shadow)">
+    <rect width="322" height="370" rx="12" fill="#ffffff"/>
+    <rect width="322" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="322" height="12" fill="#0D1B3E"/>
+    <text x="161" y="22" font-family="Georgia,serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">Bio Link Templates</text>
+    <text x="161" y="36" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle">Drag · Drop · Customize in Canva</text>
+
+    <!-- Template style cards -->
+    <!-- Style 1 - Teal -->
+    <rect x="12" y="56" width="90" height="140" rx="8" fill="#F0FDFA"/>
+    <rect x="12" y="56" width="90" height="50" rx="8" fill="url(#teal)"/>
+    <rect x="12" y="88" width="90" height="18" fill="#0F766E"/>
+    <text x="57" y="78" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Creator Style</text>
+    <rect x="20" y="116" width="74" height="12" rx="6" fill="#ffffff" stroke="#14B8A6" stroke-width="1"/>
+    <text x="57" y="125" font-family="Arial,sans-serif" font-size="6" fill="#0F766E" text-anchor="middle">🔗 My Links</text>
+    <rect x="20" y="132" width="74" height="12" rx="6" fill="#0F766E"/>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">🛍️ Shop Now</text>
+    <rect x="20" y="148" width="74" height="12" rx="6" fill="#1565C0"/>
+    <text x="57" y="157" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">📧 Subscribe</text>
+    <text x="57" y="185" font-family="Arial,sans-serif" font-size="6" fill="#0F766E" text-anchor="middle" font-weight="bold">Creator Niche</text>
+
+    <!-- Style 2 - Dark -->
+    <rect x="116" y="56" width="90" height="140" rx="8" fill="#1A1A4E"/>
+    <rect x="116" y="56" width="90" height="50" rx="8" fill="#0D1B3E"/>
+    <rect x="116" y="88" width="90" height="18" fill="#0D1B3E"/>
+    <text x="161" y="78" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle" font-weight="bold">Pro Dark Style</text>
+    <rect x="124" y="116" width="74" height="12" rx="6" fill="#1565C0"/>
+    <text x="161" y="125" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">💼 Portfolio</text>
+    <rect x="124" y="132" width="74" height="12" rx="6" fill="#7C3AED"/>
+    <text x="161" y="141" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">📱 Social Links</text>
+    <rect x="124" y="148" width="74" height="12" rx="6" fill="#1565C0" opacity="0.6"/>
+    <text x="161" y="157" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">🎯 Services</text>
+    <text x="161" y="185" font-family="Arial,sans-serif" font-size="6" fill="#93C5FD" text-anchor="middle" font-weight="bold">Business Niche</text>
+
+    <!-- Style 3 - Pink -->
+    <rect x="220" y="56" width="90" height="140" rx="8" fill="#FDF2F8"/>
+    <rect x="220" y="56" width="90" height="50" rx="8" fill="#BE185D"/>
+    <rect x="220" y="88" width="90" height="18" fill="#BE185D"/>
+    <text x="265" y="78" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Influencer Style</text>
+    <rect x="228" y="116" width="74" height="12" rx="6" fill="#BE185D"/>
+    <text x="265" y="125" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">✨ Latest Posts</text>
+    <rect x="228" y="132" width="74" height="12" rx="6" fill="#EC4899" opacity="0.7"/>
+    <text x="265" y="141" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">🛍️ Favourites</text>
+    <rect x="228" y="148" width="74" height="12" rx="6" fill="#BE185D" opacity="0.5"/>
+    <text x="265" y="157" font-family="Arial,sans-serif" font-size="6" fill="#ffffff" text-anchor="middle">💌 Collabs</text>
+    <text x="265" y="185" font-family="Arial,sans-serif" font-size="6" fill="#BE185D" text-anchor="middle" font-weight="bold">Influencer Niche</text>
+
+    <!-- Features list -->
+    <rect x="12" y="208" width="298" height="148" rx="8" fill="#F8FAFF"/>
+    <text x="161" y="228" font-family="Arial,sans-serif" font-size="9" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Everything You Get</text>
+    <rect x="12" y="232" width="298" height="1" fill="#E5E7EB"/>
+
+    <text x="30" y="254" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="46" y="254" font-family="Arial,sans-serif" font-size="8" fill="#374151">Multiple niche-specific designs</text>
+    <text x="170" y="254" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="186" y="254" font-family="Arial,sans-serif" font-size="8" fill="#374151">Fully editable in Canva</text>
+
+    <text x="30" y="272" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="46" y="272" font-family="Arial,sans-serif" font-size="8" fill="#374151">Custom button layouts</text>
+    <text x="170" y="272" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="186" y="272" font-family="Arial,sans-serif" font-size="8" fill="#374151">Mobile-optimized design</text>
+
+    <text x="30" y="290" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="46" y="290" font-family="Arial,sans-serif" font-size="8" fill="#374151">Rebrand with your logo</text>
+    <text x="170" y="290" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="186" y="290" font-family="Arial,sans-serif" font-size="8" fill="#374151">Sell to your clients</text>
+
+    <text x="30" y="308" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="46" y="308" font-family="Arial,sans-serif" font-size="8" fill="#374151">Works with Linktree &amp; Stan</text>
+    <text x="170" y="308" font-family="Arial,sans-serif" font-size="9" fill="#14B8A6">✓</text>
+    <text x="186" y="308" font-family="Arial,sans-serif" font-size="8" fill="#374151">Full PLR rights</text>
+
+    <rect x="24" y="322" width="274" height="28" rx="8" fill="#0D1B3E"/>
+    <text x="161" y="340" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle" font-weight="bold">Maximize Your Bio Link · Drive More Clicks</text>
+  </g>
+
+  <!-- Right panel -->
+  <g transform="translate(598, 32)" filter="url(#shadow2)">
+    <rect width="150" height="370" rx="12" fill="#0D1B3E"/>
+    <rect width="150" height="44" rx="12" fill="url(#teal)" opacity="0.5"/>
+    <rect y="32" width="150" height="12" fill="url(#teal)" opacity="0.5"/>
+    <text x="75" y="26" font-family="Georgia,serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Platforms</text>
+
+    <rect x="12" y="56" width="126" height="34" rx="6" fill="#1A1A4E"/>
+    <text x="75" y="70" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">📸</text>
+    <text x="75" y="83" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">Instagram</text>
+
+    <rect x="12" y="96" width="126" height="34" rx="6" fill="#1A1A4E"/>
+    <text x="75" y="110" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎵</text>
+    <text x="75" y="123" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">TikTok</text>
+
+    <rect x="12" y="136" width="126" height="34" rx="6" fill="#1A1A4E"/>
+    <text x="75" y="150" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">▶️</text>
+    <text x="75" y="163" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">YouTube</text>
+
+    <rect x="12" y="176" width="126" height="34" rx="6" fill="#1A1A4E"/>
+    <text x="75" y="190" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">💼</text>
+    <text x="75" y="203" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">LinkedIn</text>
+
+    <rect x="12" y="222" width="126" height="1" fill="#ffffff" opacity="0.1"/>
+
+    <text x="75" y="246" font-family="Arial,sans-serif" font-size="20" fill="#99F6E4" text-anchor="middle" font-weight="bold">100%</text>
+    <text x="75" y="262" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">Canva Editable</text>
+
+    <rect x="12" y="274" width="126" height="1" fill="#ffffff" opacity="0.1"/>
+
+    <text x="75" y="296" font-family="Arial,sans-serif" font-size="8" fill="#99F6E4" text-anchor="middle">Creator · Influencer</text>
+    <text x="75" y="310" font-family="Arial,sans-serif" font-size="8" fill="#99F6E4" text-anchor="middle">Business · Coach</text>
+    <text x="75" y="328" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">All niches covered</text>
+    <text x="75" y="348" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Full PLR Rights</text>
+  </g>
+</svg>
