@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#065F46"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#059669" stroke-width="1" opacity="0.5"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="110" height="22" rx="11" fill="url(#green)"/>
+    <text x="71" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">📚 KIDS BUNDLE</text>
+    <!-- Title -->
+    <text x="16" y="70" font-family="Georgia,serif" font-size="22" fill="#ffffff" font-weight="bold">Kids Educational</text>
+    <text x="16" y="92" font-family="Georgia,serif" font-size="22" fill="#6EE7B7" font-weight="bold">Resources Bundle</text>
+    <rect x="16" y="104" width="220" height="2" fill="#059669"/>
+    <text x="16" y="121" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Parents · Teachers · Homeschoolers · Content Creators</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="50" fill="#059669" opacity="0.08"/>
+    <circle cx="415" cy="65" r="30" fill="#059669" opacity="0.1"/>
+    <text x="415" y="77" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">🎓</text>
+  </g>
+
+  <!-- Resource grid -->
+  <g transform="translate(55, 188)" filter="url(#shadow2)">
+    <rect width="470" height="242" rx="12" fill="#ffffff"/>
+    <rect width="470" height="38" rx="12" fill="#0D1B3E"/>
+    <rect y="26" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="23" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Educational Resource Preview</text>
+
+    <!-- Worksheets -->
+    <rect x="14" y="50" width="100" height="90" rx="8" fill="#F0FDF4"/>
+    <rect x="14" y="50" width="100" height="90" rx="8" fill="none" stroke="#BBF7D0" stroke-width="1"/>
+    <text x="64" y="80" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">📝</text>
+    <text x="64" y="98" font-family="Arial,sans-serif" font-size="8" fill="#065F46" text-anchor="middle" font-weight="bold">Worksheets</text>
+    <text x="64" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Math · Reading</text>
+    <text x="64" y="122" font-family="Arial,sans-serif" font-size="6" fill="#059669" text-anchor="middle">Science · Writing</text>
+    <text x="64" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Activity Books -->
+    <rect x="124" y="50" width="100" height="90" rx="8" fill="#FFF7ED"/>
+    <rect x="124" y="50" width="100" height="90" rx="8" fill="none" stroke="#FED7AA" stroke-width="1"/>
+    <text x="174" y="80" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">🎨</text>
+    <text x="174" y="98" font-family="Arial,sans-serif" font-size="8" fill="#92400E" text-anchor="middle" font-weight="bold">Activity Books</text>
+    <text x="174" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Puzzles · Coloring</text>
+    <text x="174" y="122" font-family="Arial,sans-serif" font-size="6" fill="#D97706" text-anchor="middle">Creative fun</text>
+    <text x="174" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Flashcards -->
+    <rect x="234" y="50" width="100" height="90" rx="8" fill="#EFF6FF"/>
+    <rect x="234" y="50" width="100" height="90" rx="8" fill="none" stroke="#BFDBFE" stroke-width="1"/>
+    <text x="284" y="80" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">🃏</text>
+    <text x="284" y="98" font-family="Arial,sans-serif" font-size="8" fill="#1D4ED8" text-anchor="middle" font-weight="bold">Flashcards</text>
+    <text x="284" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">ABCs · Numbers</text>
+    <text x="284" y="122" font-family="Arial,sans-serif" font-size="6" fill="#1565C0" text-anchor="middle">Shapes &amp; Colors</text>
+    <text x="284" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Interactive tools -->
+    <rect x="344" y="50" width="112" height="90" rx="8" fill="#FAF5FF"/>
+    <rect x="344" y="50" width="112" height="90" rx="8" fill="none" stroke="#E9D5FF" stroke-width="1"/>
+    <text x="400" y="80" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">🎮</text>
+    <text x="400" y="98" font-family="Arial,sans-serif" font-size="8" fill="#7C3AED" text-anchor="middle" font-weight="bold">Interactive Tools</text>
+    <text x="400" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Learning games</text>
+    <text x="400" y="122" font-family="Arial,sans-serif" font-size="6" fill="#7C3AED" text-anchor="middle">&amp; activities</text>
+    <text x="400" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Bottom features -->
+    <rect x="14" y="152" width="140" height="76" rx="8" fill="#F8FAFC"/>
+    <rect x="14" y="152" width="140" height="76" rx="8" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="84" y="178" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🏠</text>
+    <text x="84" y="196" font-family="Arial,sans-serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Homeschool Ready</text>
+    <text x="84" y="208" font-family="Arial,sans-serif" font-size="6.5" fill="#6B7280" text-anchor="middle">Curriculum-aligned</text>
+    <text x="84" y="220" font-family="Arial,sans-serif" font-size="6" fill="#059669" text-anchor="middle">All grades covered</text>
+
+    <rect x="164" y="152" width="140" height="76" rx="8" fill="#F8FAFC"/>
+    <rect x="164" y="152" width="140" height="76" rx="8" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="234" y="178" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">📱</text>
+    <text x="234" y="196" font-family="Arial,sans-serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Digital Library</text>
+    <text x="234" y="208" font-family="Arial,sans-serif" font-size="6.5" fill="#6B7280" text-anchor="middle">Instant download</text>
+    <text x="234" y="220" font-family="Arial,sans-serif" font-size="6" fill="#1565C0" text-anchor="middle">PDF &amp; printable</text>
+
+    <rect x="314" y="152" width="142" height="76" rx="8" fill="#0D1B3E"/>
+    <text x="340" y="178" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">✏️</text>
+    <text x="406" y="174" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" font-weight="bold">Fun &amp; Engaging</text>
+    <text x="406" y="188" font-family="Arial,sans-serif" font-size="6.5" fill="#6EE7B7">Ignite love for learning</text>
+    <text x="406" y="200" font-family="Arial,sans-serif" font-size="6.5" fill="#6EE7B7">Supports development</text>
+    <text x="406" y="212" font-family="Arial,sans-serif" font-size="6" fill="#6B7280">Ages 3-12 covered</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Subjects Covered</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🔢</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Math</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📖</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Reading &amp; Writing</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🔬</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Science</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🎨</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Creative Arts</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#059669" opacity="0.35"/>
+    <rect y="32" width="210" height="12" fill="#059669" opacity="0.35"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Included</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#6EE7B7">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Fun worksheets</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#6EE7B7">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Activity books</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#6EE7B7">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Printable flashcards</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#6EE7B7">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Interactive learning tools</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#6EE7B7">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Ages 3-12, all subjects</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#6EE7B7" text-anchor="middle">Full PLR · Sell &amp; Keep 100%</text>
+  </g>
+</svg>

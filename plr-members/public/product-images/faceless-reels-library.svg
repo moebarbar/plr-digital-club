@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4C1D95"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D97706"/>
+      <stop offset="100%" style="stop-color:#F59E0B"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="110" height="22" rx="11" fill="url(#purple)"/>
+    <text x="71" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">🎬 100K REELS</text>
+    <!-- Title -->
+    <text x="16" y="70" font-family="Georgia,serif" font-size="20" fill="#ffffff" font-weight="bold">100,000+ Faceless Reel</text>
+    <text x="16" y="92" font-family="Georgia,serif" font-size="20" fill="#C4B5FD" font-weight="bold">Master Library</text>
+    <rect x="16" y="104" width="220" height="2" fill="#7C3AED"/>
+    <text x="16" y="121" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Stunning 4K videos · No filming · Master Resell Rights</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="50" fill="#7C3AED" opacity="0.08"/>
+    <circle cx="415" cy="65" r="30" fill="#7C3AED" opacity="0.1"/>
+    <text x="415" y="77" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">🎬</text>
+  </g>
+
+  <!-- Stats row -->
+  <g transform="translate(55, 188)">
+    <rect width="148" height="72" rx="10" fill="#ffffff" filter="url(#shadow2)"/>
+    <text x="74" y="28" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🎬</text>
+    <text x="74" y="50" font-family="Georgia,serif" font-size="16" fill="#7C3AED" text-anchor="middle" font-weight="bold">100K+</text>
+    <text x="74" y="64" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Faceless Reels</text>
+
+    <rect x="161" width="148" height="72" rx="10" fill="#ffffff" filter="url(#shadow2)"/>
+    <text x="235" y="28" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📺</text>
+    <text x="235" y="50" font-family="Georgia,serif" font-size="16" fill="#7C3AED" text-anchor="middle" font-weight="bold">4K Quality</text>
+    <text x="235" y="64" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Ultra HD Videos</text>
+
+    <rect x="322" width="148" height="72" rx="10" fill="#ffffff" filter="url(#shadow2)"/>
+    <text x="396" y="28" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">💰</text>
+    <text x="396" y="50" font-family="Georgia,serif" font-size="14" fill="#D97706" text-anchor="middle" font-weight="bold">MRR Included</text>
+    <text x="396" y="64" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Keep 100% Profits</text>
+  </g>
+
+  <!-- Video grid preview -->
+  <g transform="translate(55, 276)" filter="url(#shadow2)">
+    <rect width="470" height="154" rx="12" fill="#0A0F2E"/>
+    <rect width="470" height="40" rx="12" fill="#0D1B3E"/>
+    <rect y="28" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="24" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Video Category Library</text>
+
+    <!-- Video 1 -->
+    <rect x="14" y="50" width="78" height="90" rx="6" fill="#1A1A3E"/>
+    <rect x="14" y="50" width="78" height="90" rx="6" fill="none" stroke="#7C3AED" stroke-width="1"/>
+    <text x="53" y="86" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🌅</text>
+    <text x="53" y="104" font-family="Arial,sans-serif" font-size="6.5" fill="#C4B5FD" text-anchor="middle" font-weight="bold">Nature &amp;</text>
+    <text x="53" y="114" font-family="Arial,sans-serif" font-size="6.5" fill="#C4B5FD" text-anchor="middle">Landscapes</text>
+    <text x="53" y="130" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280" text-anchor="middle">4K · 9:16</text>
+
+    <!-- Video 2 -->
+    <rect x="100" y="50" width="78" height="90" rx="6" fill="#1A2A1A"/>
+    <rect x="100" y="50" width="78" height="90" rx="6" fill="none" stroke="#10B981" stroke-width="1"/>
+    <text x="139" y="86" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🏙️</text>
+    <text x="139" y="104" font-family="Arial,sans-serif" font-size="6.5" fill="#6EE7B7" text-anchor="middle" font-weight="bold">City &amp; Urban</text>
+    <text x="139" y="114" font-family="Arial,sans-serif" font-size="6.5" fill="#6EE7B7" text-anchor="middle">Timelapses</text>
+    <text x="139" y="130" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280" text-anchor="middle">4K · 9:16</text>
+
+    <!-- Video 3 -->
+    <rect x="186" y="50" width="78" height="90" rx="6" fill="#1A1A30"/>
+    <rect x="186" y="50" width="78" height="90" rx="6" fill="none" stroke="#3B82F6" stroke-width="1"/>
+    <text x="225" y="86" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🌊</text>
+    <text x="225" y="104" font-family="Arial,sans-serif" font-size="6.5" fill="#93C5FD" text-anchor="middle" font-weight="bold">Ocean &amp;</text>
+    <text x="225" y="114" font-family="Arial,sans-serif" font-size="6.5" fill="#93C5FD" text-anchor="middle">Water</text>
+    <text x="225" y="130" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280" text-anchor="middle">4K · 9:16</text>
+
+    <!-- Video 4 -->
+    <rect x="272" y="50" width="78" height="90" rx="6" fill="#2A1A10"/>
+    <rect x="272" y="50" width="78" height="90" rx="6" fill="none" stroke="#D97706" stroke-width="1"/>
+    <text x="311" y="86" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">✨</text>
+    <text x="311" y="104" font-family="Arial,sans-serif" font-size="6.5" fill="#FCD34D" text-anchor="middle" font-weight="bold">Abstract &amp;</text>
+    <text x="311" y="114" font-family="Arial,sans-serif" font-size="6.5" fill="#FCD34D" text-anchor="middle">Motion</text>
+    <text x="311" y="130" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280" text-anchor="middle">4K · 9:16</text>
+
+    <!-- More indicator -->
+    <rect x="358" y="50" width="98" height="90" rx="6" fill="#0D1B3E"/>
+    <rect x="358" y="50" width="98" height="90" rx="6" fill="none" stroke="#7C3AED" stroke-width="1.5"/>
+    <text x="407" y="82" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">+99K</text>
+    <text x="407" y="98" font-family="Arial,sans-serif" font-size="7" fill="#C4B5FD" text-anchor="middle" font-weight="bold">More Videos</text>
+    <text x="407" y="110" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">All niches &amp; styles</text>
+    <text x="407" y="122" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Ready to post</text>
+    <text x="407" y="134" font-family="Arial,sans-serif" font-size="5.5" fill="#7C3AED" text-anchor="middle">Faceless · No editing</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Video Categories</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🌿</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Nature</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🏙️</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Urban</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">✨</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Abstract</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🌊</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Ocean &amp; Sky</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#7C3AED" opacity="0.35"/>
+    <rect y="32" width="210" height="12" fill="#7C3AED" opacity="0.35"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Included</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">100,000+ 4K reels</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">No filming or editing</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">All niches covered</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Master Resell Rights</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Sell &amp; keep 100% profit</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#C4B5FD" text-anchor="middle">MRR · Faceless · Instant Access</text>
+  </g>
+</svg>

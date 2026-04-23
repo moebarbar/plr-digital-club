@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1D4ED8"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.5"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="110" height="22" rx="11" fill="url(#blue)"/>
+    <text x="71" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">💙 ADHD BUNDLE</text>
+    <!-- Title -->
+    <text x="16" y="70" font-family="Georgia,serif" font-size="22" fill="#ffffff" font-weight="bold">ADHD Self-Care Bundle</text>
+    <text x="16" y="92" font-family="Georgia,serif" font-size="16" fill="#93C5FD" font-weight="bold">Planners · Notion · Printables · Stickers</text>
+    <rect x="16" y="104" width="220" height="2" fill="#3B82F6"/>
+    <text x="16" y="121" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Stay organized · Build routines · Prioritize self-care</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="50" fill="#3B82F6" opacity="0.08"/>
+    <circle cx="415" cy="65" r="30" fill="#3B82F6" opacity="0.1"/>
+    <text x="415" y="77" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">💙</text>
+  </g>
+
+  <!-- Product grid -->
+  <g transform="translate(55, 188)" filter="url(#shadow2)">
+    <rect width="470" height="242" rx="12" fill="#ffffff"/>
+    <rect width="470" height="38" rx="12" fill="#0D1B3E"/>
+    <rect y="26" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="23" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">What's in the Bundle</text>
+
+    <!-- Planner card -->
+    <rect x="14" y="50" width="100" height="90" rx="8" fill="#EFF6FF"/>
+    <rect x="14" y="50" width="100" height="90" rx="8" fill="none" stroke="#BFDBFE" stroke-width="1"/>
+    <text x="64" y="80" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📋</text>
+    <text x="64" y="98" font-family="Arial,sans-serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Daily Planners</text>
+    <text x="64" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">ADHD-friendly</text>
+    <text x="64" y="122" font-family="Arial,sans-serif" font-size="6" fill="#3B82F6" text-anchor="middle">layouts</text>
+    <text x="64" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Notion card -->
+    <rect x="124" y="50" width="100" height="90" rx="8" fill="#EDE9FE"/>
+    <rect x="124" y="50" width="100" height="90" rx="8" fill="none" stroke="#DDD6FE" stroke-width="1"/>
+    <text x="174" y="80" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📱</text>
+    <text x="174" y="98" font-family="Arial,sans-serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Notion Templates</text>
+    <text x="174" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Focus &amp; task</text>
+    <text x="174" y="122" font-family="Arial,sans-serif" font-size="6" fill="#7C3AED" text-anchor="middle">management</text>
+    <text x="174" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Printables card -->
+    <rect x="234" y="50" width="100" height="90" rx="8" fill="#F0FDF4"/>
+    <rect x="234" y="50" width="100" height="90" rx="8" fill="none" stroke="#BBF7D0" stroke-width="1"/>
+    <text x="284" y="80" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🖨️</text>
+    <text x="284" y="98" font-family="Arial,sans-serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Printables</text>
+    <text x="284" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Habit trackers</text>
+    <text x="284" y="122" font-family="Arial,sans-serif" font-size="6" fill="#059669" text-anchor="middle">&amp; checklists</text>
+    <text x="284" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Stickers card -->
+    <rect x="344" y="50" width="112" height="90" rx="8" fill="#FFF7ED"/>
+    <rect x="344" y="50" width="112" height="90" rx="8" fill="none" stroke="#FED7AA" stroke-width="1"/>
+    <text x="400" y="80" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">✨</text>
+    <text x="400" y="98" font-family="Arial,sans-serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Digital Stickers</text>
+    <text x="400" y="110" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Planner &amp;</text>
+    <text x="400" y="122" font-family="Arial,sans-serif" font-size="6" fill="#D97706" text-anchor="middle">journal stickers</text>
+    <text x="400" y="132" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">PLR Rights</text>
+
+    <!-- Bottom row -->
+    <rect x="14" y="152" width="210" height="76" rx="8" fill="#F8FAFC"/>
+    <rect x="14" y="152" width="210" height="76" rx="8" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="119" y="178" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">🧠</text>
+    <text x="119" y="196" font-family="Arial,sans-serif" font-size="8.5" fill="#1A1A4E" text-anchor="middle" font-weight="bold">ADHD-Friendly Design</text>
+    <text x="119" y="210" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Low overwhelm · Clear structure · Easy to use</text>
+    <text x="119" y="222" font-family="Arial,sans-serif" font-size="6" fill="#3B82F6" text-anchor="middle">Built for focus and calm</text>
+
+    <rect x="234" y="152" width="222" height="76" rx="8" fill="#0D1B3E"/>
+    <text x="258" y="178" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">💙</text>
+    <text x="320" y="174" font-family="Arial,sans-serif" font-size="8.5" fill="#ffffff" font-weight="bold">Routine Building Kit</text>
+    <text x="320" y="188" font-family="Arial,sans-serif" font-size="6.5" fill="#93C5FD">Morning · Evening · Focus routines</text>
+    <text x="320" y="200" font-family="Arial,sans-serif" font-size="6.5" fill="#93C5FD">Self-care schedules &amp; trackers</text>
+    <text x="320" y="214" font-family="Arial,sans-serif" font-size="6" fill="#6B7280">All included in one bundle</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Bundle Includes</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📋</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Planners</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#EDE9FE"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📱</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Notion Templates</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🖨️</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Printables</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#FFF7ED"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">✨</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Stickers</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#3B82F6" opacity="0.3"/>
+    <rect y="32" width="210" height="12" fill="#3B82F6" opacity="0.3"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Included</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">ADHD daily planners</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Notion focus templates</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Habit &amp; routine trackers</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Printable worksheets</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Digital stickers pack</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Full PLR · Sell &amp; Keep 100%</text>
+  </g>
+</svg>
