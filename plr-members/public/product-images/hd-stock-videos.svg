@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Main video player mockup -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="460" height="305" rx="12" fill="#0D0D0D"/>
+    <!-- Top bar -->
+    <rect width="460" height="32" rx="12" fill="#1A1A1A"/>
+    <rect y="20" width="460" height="12" fill="#1A1A1A"/>
+    <circle cx="18" cy="16" r="5" fill="#FF5F57"/>
+    <circle cx="34" cy="16" r="5" fill="#FFBD2E"/>
+    <circle cx="50" cy="16" r="5" fill="#28CA41"/>
+    <text x="230" y="21" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">HD Stock Video Library — 4K · 1080p</text>
+
+    <!-- Video frame -->
+    <rect x="8" y="40" width="444" height="220" rx="4" fill="#000000"/>
+    <!-- Cinematic scene - city skyline silhouette -->
+    <rect x="8" y="40" width="444" height="220" rx="4" fill="#0D1B3E"/>
+    <!-- Sky gradient effect -->
+    <rect x="8" y="40" width="444" height="100" rx="4" fill="#1565C0" opacity="0.15"/>
+    <!-- Skyline silhouette -->
+    <rect x="40" y="185" width="30" height="75" fill="#0A0F1E"/>
+    <rect x="80" y="165" width="25" height="95" fill="#0A0F1E"/>
+    <rect x="115" y="175" width="20" height="85" fill="#0A0F1E"/>
+    <rect x="145" y="155" width="35" height="105" fill="#0A0F1E"/>
+    <rect x="190" y="170" width="28" height="90" fill="#0A0F1E"/>
+    <rect x="228" y="145" width="40" height="115" fill="#0A0F1E"/>
+    <rect x="278" y="168" width="25" height="92" fill="#0A0F1E"/>
+    <rect x="313" y="158" width="32" height="102" fill="#0A0F1E"/>
+    <rect x="355" y="172" width="22" height="88" fill="#0A0F1E"/>
+    <rect x="387" y="148" width="38" height="112" fill="#0A0F1E"/>
+    <!-- Light dots on buildings -->
+    <rect x="155" y="165" width="3" height="3" fill="#93C5FD" opacity="0.6"/>
+    <rect x="163" y="170" width="3" height="3" fill="#93C5FD" opacity="0.4"/>
+    <rect x="238" y="155" width="3" height="3" fill="#93C5FD" opacity="0.5"/>
+    <rect x="248" y="162" width="3" height="3" fill="#93C5FD" opacity="0.4"/>
+    <rect x="395" y="158" width="3" height="3" fill="#93C5FD" opacity="0.6"/>
+    <!-- Moon/stars -->
+    <circle cx="380" cy="70" r="12" fill="#EFF6FF" opacity="0.15"/>
+    <circle cx="100" cy="65" r="2" fill="#ffffff" opacity="0.4"/>
+    <circle cx="180" cy="58" r="1.5" fill="#ffffff" opacity="0.3"/>
+    <circle cx="300" cy="62" r="2" fill="#ffffff" opacity="0.35"/>
+    <circle cx="420" cy="55" r="1.5" fill="#ffffff" opacity="0.3"/>
+
+    <!-- HD badge -->
+    <rect x="18" y="50" width="30" height="16" rx="3" fill="#1565C0" opacity="0.9"/>
+    <text x="33" y="61" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">HD</text>
+
+    <!-- Play overlay -->
+    <circle cx="230" cy="150" r="28" fill="#ffffff" opacity="0.1"/>
+    <polygon points="221,138 221,162 245,150" fill="#ffffff" opacity="0.8"/>
+
+    <!-- Duration -->
+    <text x="432" y="252" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="end">0:32 / 2:14</text>
+
+    <!-- Player controls -->
+    <rect x="8" y="260" width="444" height="36" rx="0" fill="#1A1A1A" rx="4"/>
+    <!-- Progress bar -->
+    <rect x="18" y="264" width="424" height="4" rx="2" fill="#374151"/>
+    <rect x="18" y="264" width="148" height="4" rx="2" fill="#1565C0"/>
+    <circle cx="166" cy="266" r="5" fill="#93C5FD"/>
+    <!-- Control buttons -->
+    <text x="30" y="285" font-family="Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">⏮</text>
+    <text x="54" y="285" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">⏸</text>
+    <text x="78" y="285" font-family="Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">⏭</text>
+    <text x="420" y="285" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">⛶</text>
+    <text x="440" y="285" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">🔊</text>
+  </g>
+
+  <!-- Thumbnail strip -->
+  <g transform="translate(55, 360)" filter="url(#shadow2)">
+    <rect width="460" height="80" rx="10" fill="#1A1A1A"/>
+    <!-- Thumbnail 1 - Nature -->
+    <rect x="10" y="10" width="96" height="60" rx="4" fill="#0D2B4E"/>
+    <text x="58" y="42" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🌊</text>
+    <text x="58" y="62" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle">Ocean · 4K</text>
+    <!-- Thumbnail 2 - City -->
+    <rect x="114" y="10" width="96" height="60" rx="4" fill="#0A0F1E"/>
+    <text x="162" y="42" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🌆</text>
+    <text x="162" y="62" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle">City · 1080p</text>
+    <!-- Thumbnail 3 - Nature green -->
+    <rect x="218" y="10" width="96" height="60" rx="4" fill="#0A1A0D"/>
+    <text x="266" y="42" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🌿</text>
+    <text x="266" y="62" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle">Nature · 4K</text>
+    <!-- Thumbnail 4 - People -->
+    <rect x="322" y="10" width="96" height="60" rx="4" fill="#1A0A0A"/>
+    <text x="370" y="42" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">👥</text>
+    <text x="370" y="62" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle">People · HD</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(538, 42)" filter="url(#shadow2)">
+    <rect width="210" height="165" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#1A1A4E"/>
+    <rect y="32" width="210" height="12" fill="#1A1A4E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Video Specs</text>
+
+    <rect x="14" y="56" width="86" height="48" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="78" font-family="Arial,sans-serif" font-size="20" fill="#1A1A4E" text-anchor="middle" font-weight="bold">4K</text>
+    <text x="57" y="94" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Ultra HD</text>
+
+    <rect x="110" y="56" width="86" height="48" rx="6" fill="#EFF6FF"/>
+    <text x="153" y="78" font-family="Arial,sans-serif" font-size="14" fill="#1A1A4E" text-anchor="middle" font-weight="bold">1080p</text>
+    <text x="153" y="94" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Full HD</text>
+
+    <rect x="14" y="114" width="182" height="36" rx="6" fill="#1A1A4E"/>
+    <text x="105" y="129" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle" font-weight="bold">MP4 · MOV · AVI</text>
+    <text x="105" y="142" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.6">All major formats included</text>
+  </g>
+
+  <g transform="translate(538, 224)" filter="url(#shadow2)">
+    <rect width="210" height="215" rx="12" fill="#1A1A4E"/>
+    <rect width="210" height="44" rx="12" fill="#1565C0" opacity="0.4"/>
+    <rect y="32" width="210" height="12" fill="#1565C0" opacity="0.4"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Categories</text>
+
+    <text x="28" y="64" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">🌊</text>
+    <text x="46" y="64" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Nature &amp; Landscapes</text>
+    <text x="28" y="84" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">🌆</text>
+    <text x="46" y="84" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Cities &amp; Architecture</text>
+    <text x="28" y="104" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">👥</text>
+    <text x="46" y="104" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">People &amp; Lifestyle</text>
+    <text x="28" y="124" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">💼</text>
+    <text x="46" y="124" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Business &amp; Office</text>
+    <text x="28" y="144" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✈️</text>
+    <text x="46" y="144" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Travel &amp; Aerial</text>
+    <text x="28" y="164" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">🎭</text>
+    <text x="46" y="164" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Abstract &amp; Motion</text>
+
+    <rect x="18" y="176" width="174" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="196" font-family="Arial,sans-serif" font-size="22" fill="#93C5FD" text-anchor="middle" font-weight="bold">500+</text>
+    <text x="105" y="210" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.7">HD Clips · Royalty Free · PLR</text>
+  </g>
+
+  <!-- Label -->
+  <text x="308" y="462" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">Royalty FREE HD Stock Videos</text>
+  <text x="308" y="484" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD" text-anchor="middle">4K · 1080p · MP4 · No Royalties · Full PLR Rights</text>
+</svg>

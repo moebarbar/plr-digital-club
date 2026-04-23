@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="lensFlare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93C5FD;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Overlay preview cards -->
+  <!-- Card 1: Light Leak overlay -->
+  <g transform="translate(58, 42)" filter="url(#shadow)">
+    <rect width="175" height="175" rx="10" fill="#0D1B3E"/>
+    <!-- Base photo -->
+    <rect x="8" y="8" width="159" height="130" rx="6" fill="#1A1A4E"/>
+    <rect x="8" y="8" width="159" height="130" rx="6" fill="#1565C0" opacity="0.15"/>
+    <!-- Light leak overlay -->
+    <ellipse cx="30" cy="30" rx="60" ry="30" fill="#93C5FD" opacity="0.25" transform="rotate(-20,30,30)"/>
+    <ellipse cx="140" cy="100" rx="50" ry="25" fill="#EFF6FF" opacity="0.15" transform="rotate(15,140,100)"/>
+    <ellipse cx="80" cy="80" rx="20" ry="50" fill="#ffffff" opacity="0.08"/>
+    <!-- Subject silhouette -->
+    <ellipse cx="87" cy="75" rx="18" ry="22" fill="#0D1B3E" opacity="0.5"/>
+    <rect x="68" y="95" width="38" height="40" rx="6" fill="#0D1B3E" opacity="0.5"/>
+    <text x="87" y="150" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle" font-weight="bold">Light Leak</text>
+    <text x="87" y="163" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">PNG Overlay</text>
+  </g>
+
+  <!-- Card 2: Lens Flare overlay -->
+  <g transform="translate(250, 42)" filter="url(#shadow)">
+    <rect width="175" height="175" rx="10" fill="#060E24"/>
+    <rect x="8" y="8" width="159" height="130" rx="6" fill="#0D1B3E"/>
+    <!-- Lens flare elements -->
+    <circle cx="130" cy="35" r="18" fill="#ffffff" opacity="0.15"/>
+    <circle cx="130" cy="35" r="10" fill="#ffffff" opacity="0.2"/>
+    <circle cx="130" cy="35" r="4" fill="#ffffff" opacity="0.6"/>
+    <!-- Flare streaks -->
+    <line x1="130" y1="35" x2="20" y2="110" stroke="#93C5FD" stroke-width="1" opacity="0.3"/>
+    <circle cx="75" cy="72" r="8" fill="#93C5FD" opacity="0.15"/>
+    <circle cx="50" cy="90" r="5" fill="#EFF6FF" opacity="0.1"/>
+    <circle cx="30" cy="105" r="12" fill="#1565C0" opacity="0.12"/>
+    <!-- Cross flare -->
+    <line x1="118" y1="35" x2="142" y2="35" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+    <line x1="130" y1="23" x2="130" y2="47" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+    <text x="87" y="150" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle" font-weight="bold">Lens Flare</text>
+    <text x="87" y="163" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">PNG Overlay</text>
+  </g>
+
+  <!-- Card 3: Bokeh overlay -->
+  <g transform="translate(442, 42)" filter="url(#shadow)">
+    <rect width="175" height="175" rx="10" fill="#0D1B3E"/>
+    <rect x="8" y="8" width="159" height="130" rx="6" fill="#111827"/>
+    <!-- Bokeh circles -->
+    <circle cx="40" cy="50" r="20" fill="#93C5FD" opacity="0.08"/>
+    <circle cx="40" cy="50" r="15" fill="none" stroke="#93C5FD" stroke-width="1" opacity="0.2"/>
+    <circle cx="80" cy="30" r="15" fill="#1565C0" opacity="0.1"/>
+    <circle cx="80" cy="30" r="11" fill="none" stroke="#1565C0" stroke-width="1" opacity="0.25"/>
+    <circle cx="125" cy="60" r="22" fill="#EFF6FF" opacity="0.05"/>
+    <circle cx="125" cy="60" r="17" fill="none" stroke="#EFF6FF" stroke-width="1" opacity="0.15"/>
+    <circle cx="60" cy="95" r="18" fill="#93C5FD" opacity="0.07"/>
+    <circle cx="60" cy="95" r="13" fill="none" stroke="#93C5FD" stroke-width="1" opacity="0.2"/>
+    <circle cx="110" cy="100" r="12" fill="#1565C0" opacity="0.08"/>
+    <circle cx="110" cy="100" r="8" fill="none" stroke="#1565C0" stroke-width="1" opacity="0.2"/>
+    <circle cx="140" cy="110" r="16" fill="#EFF6FF" opacity="0.06"/>
+    <circle cx="140" cy="110" r="11" fill="none" stroke="#EFF6FF" stroke-width="1" opacity="0.18"/>
+    <text x="87" y="150" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle" font-weight="bold">Bokeh</text>
+    <text x="87" y="163" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">PNG Overlay</text>
+  </g>
+
+  <!-- Card 4: Grunge/Texture overlay -->
+  <g transform="translate(634, 42)" filter="url(#shadow2)">
+    <rect width="120" height="175" rx="10" fill="#1A1A4E"/>
+    <rect x="8" y="8" width="104" height="130" rx="6" fill="#0D1117"/>
+    <!-- Texture pattern -->
+    <rect x="10" y="10" width="100" height="126" rx="5" fill="#1A1A4E" opacity="0.3"/>
+    <!-- Grain/noise dots -->
+    <circle cx="30" cy="35" r="1" fill="#ffffff" opacity="0.2"/>
+    <circle cx="55" cy="28" r="1.5" fill="#ffffff" opacity="0.15"/>
+    <circle cx="80" cy="42" r="1" fill="#ffffff" opacity="0.25"/>
+    <circle cx="100" cy="30" r="1" fill="#ffffff" opacity="0.2"/>
+    <circle cx="40" cy="65" r="1.5" fill="#ffffff" opacity="0.15"/>
+    <circle cx="70" cy="58" r="1" fill="#ffffff" opacity="0.2"/>
+    <circle cx="95" cy="72" r="1.5" fill="#ffffff" opacity="0.18"/>
+    <circle cx="25" cy="90" r="1" fill="#ffffff" opacity="0.22"/>
+    <circle cx="60" cy="100" r="1.5" fill="#ffffff" opacity="0.15"/>
+    <circle cx="90" cy="95" r="1" fill="#ffffff" opacity="0.2"/>
+    <!-- Scratch lines -->
+    <line x1="20" y1="50" x2="100" y2="48" stroke="#ffffff" stroke-width="0.5" opacity="0.08"/>
+    <line x1="15" y1="75" x2="108" y2="73" stroke="#ffffff" stroke-width="0.5" opacity="0.06"/>
+    <line x1="18" y1="110" x2="105" y2="108" stroke="#ffffff" stroke-width="0.5" opacity="0.07"/>
+    <text x="60" y="150" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle" font-weight="bold">Grunge</text>
+    <text x="60" y="163" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Texture</text>
+  </g>
+
+  <!-- Bottom info panel -->
+  <g transform="translate(58, 238)" filter="url(#shadow)">
+    <rect width="714" height="195" rx="12" fill="#ffffff"/>
+    <rect width="714" height="46" rx="12" fill="#1A1A4E"/>
+    <rect y="34" width="714" height="12" fill="#1A1A4E"/>
+    <text x="357" y="26" font-family="Georgia,serif" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="bold">Layer Over Any Image or Video · Instant Pro Results</text>
+
+    <rect x="16" y="60" width="160" height="92" rx="8" fill="#EFF6FF"/>
+    <text x="96" y="88" font-family="Arial,sans-serif" font-size="24" fill="#1A1A4E" text-anchor="middle" font-weight="bold">500+</text>
+    <text x="96" y="104" font-family="Arial,sans-serif" font-size="9" fill="#6B7280" text-anchor="middle">Overlay Styles</text>
+    <text x="96" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">✨</text>
+
+    <rect x="192" y="60" width="160" height="92" rx="8" fill="#EFF6FF"/>
+    <text x="272" y="88" font-family="Arial,sans-serif" font-size="14" fill="#1A1A4E" text-anchor="middle" font-weight="bold">PNG · TIFF</text>
+    <text x="272" y="104" font-family="Arial,sans-serif" font-size="9" fill="#6B7280" text-anchor="middle">Transparent BG</text>
+    <text x="272" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🖼️</text>
+
+    <rect x="368" y="60" width="160" height="92" rx="8" fill="#EFF6FF"/>
+    <text x="448" y="88" font-family="Arial,sans-serif" font-size="14" fill="#1A1A4E" text-anchor="middle" font-weight="bold">PS · LR</text>
+    <text x="448" y="104" font-family="Arial,sans-serif" font-size="9" fill="#6B7280" text-anchor="middle">Canva · Procreate</text>
+    <text x="448" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🛠️</text>
+
+    <rect x="544" y="60" width="154" height="92" rx="8" fill="#1A1A4E"/>
+    <text x="621" y="86" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle" font-weight="bold">Light Leaks</text>
+    <text x="621" y="100" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle">Lens Flares · Bokeh</text>
+    <text x="621" y="114" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">Grunge · Gradients</text>
+    <text x="621" y="138" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🎨</text>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="454" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">Professional Overlays</text>
+  <rect x="260" y="464" width="280" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
+  <text x="400" y="480" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>

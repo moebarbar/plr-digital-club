@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Audio player mockup -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="460" height="360" rx="12" fill="#111827"/>
+    <!-- Top bar -->
+    <rect width="460" height="32" rx="12" fill="#0D1117"/>
+    <rect y="20" width="460" height="12" fill="#0D1117"/>
+    <circle cx="18" cy="16" r="5" fill="#FF5F57"/>
+    <circle cx="34" cy="16" r="5" fill="#FFBD2E"/>
+    <circle cx="50" cy="16" r="5" fill="#28CA41"/>
+    <text x="230" y="21" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Audio Studio — PLR Music Library</text>
+
+    <!-- Album art area -->
+    <rect x="16" y="44" width="130" height="130" rx="8" fill="#1A1A4E"/>
+    <rect x="16" y="44" width="130" height="130" rx="8" fill="#1565C0" opacity="0.2"/>
+    <!-- Vinyl record circles -->
+    <circle cx="81" cy="109" r="50" fill="#0D0D0D" opacity="0.6"/>
+    <circle cx="81" cy="109" r="40" fill="#1A1A4E" opacity="0.4"/>
+    <circle cx="81" cy="109" r="30" fill="#0D0D0D" opacity="0.5"/>
+    <circle cx="81" cy="109" r="8" fill="#1565C0"/>
+    <circle cx="81" cy="109" r="3" fill="#ffffff" opacity="0.8"/>
+    <!-- Music note -->
+    <text x="81" y="113" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#93C5FD" opacity="0.4">♪</text>
+
+    <!-- Track info -->
+    <text x="160" y="64" font-family="Georgia,serif" font-size="12" fill="#ffffff" font-weight="bold">Cinematic Horizon</text>
+    <text x="160" y="80" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD">Epic Orchestral · 3:42</text>
+    <rect x="160" y="88" width="60" height="16" rx="8" fill="#1565C0" opacity="0.5"/>
+    <text x="190" y="100" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="middle">Royalty Free</text>
+
+    <!-- Waveform visualizer -->
+    <rect x="160" y="112" width="284" height="54" rx="4" fill="#0D1117"/>
+    <!-- Waveform bars -->
+    <rect x="166" y="138" width="4" height="12" rx="2" fill="#1565C0" opacity="0.5"/>
+    <rect x="172" y="130" width="4" height="28" rx="2" fill="#1565C0" opacity="0.6"/>
+    <rect x="178" y="124" width="4" height="40" rx="2" fill="#93C5FD" opacity="0.7"/>
+    <rect x="184" y="128" width="4" height="32" rx="2" fill="#1565C0" opacity="0.6"/>
+    <rect x="190" y="134" width="4" height="20" rx="2" fill="#1565C0" opacity="0.5"/>
+    <rect x="196" y="126" width="4" height="36" rx="2" fill="#93C5FD" opacity="0.7"/>
+    <rect x="202" y="120" width="4" height="48" rx="2" fill="#ffffff" opacity="0.8"/>
+    <rect x="208" y="124" width="4" height="40" rx="2" fill="#93C5FD" opacity="0.8"/>
+    <rect x="214" y="118" width="4" height="52" rx="2" fill="#93C5FD" opacity="0.9"/>
+    <rect x="220" y="122" width="4" height="44" rx="2" fill="#ffffff" opacity="0.9"/>
+    <rect x="226" y="116" width="4" height="56" rx="2" fill="#93C5FD" opacity="0.9"/>
+    <!-- Playhead -->
+    <rect x="228" y="112" width="2" height="54" fill="#93C5FD"/>
+    <!-- Right side of waveform (dimmer = not played) -->
+    <rect x="232" y="132" width="4" height="24" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="238" y="126" width="4" height="36" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="244" y="134" width="4" height="20" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="250" y="122" width="4" height="44" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="256" y="128" width="4" height="32" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="262" y="136" width="4" height="16" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="268" y="124" width="4" height="40" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="274" y="130" width="4" height="28" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="280" y="138" width="4" height="12" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="286" y="126" width="4" height="36" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="292" y="120" width="4" height="48" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="298" y="128" width="4" height="32" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="304" y="132" width="4" height="24" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="310" y="118" width="4" height="52" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="316" y="126" width="4" height="36" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="322" y="130" width="4" height="28" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="328" y="124" width="4" height="40" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="334" y="136" width="4" height="16" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="340" y="128" width="4" height="32" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="346" y="120" width="4" height="48" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="352" y="132" width="4" height="24" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="358" y="126" width="4" height="36" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="364" y="134" width="4" height="20" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="370" y="122" width="4" height="44" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="376" y="130" width="4" height="28" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="382" y="124" width="4" height="40" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="388" y="128" width="4" height="32" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="394" y="120" width="4" height="48" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="400" y="132" width="4" height="24" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="406" y="126" width="4" height="36" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="412" y="138" width="4" height="12" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="418" y="124" width="4" height="40" rx="2" fill="#1565C0" opacity="0.25"/>
+    <rect x="424" y="130" width="4" height="28" rx="2" fill="#1565C0" opacity="0.2"/>
+    <rect x="430" y="118" width="4" height="52" rx="2" fill="#1565C0" opacity="0.3"/>
+    <rect x="436" y="128" width="4" height="32" rx="2" fill="#1565C0" opacity="0.25"/>
+
+    <!-- Progress + time -->
+    <text x="162" y="176" font-family="Arial,sans-serif" font-size="7" fill="#6B7280">1:28</text>
+    <text x="436" y="176" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="end">3:42</text>
+
+    <!-- Controls -->
+    <rect x="160" y="180" width="284" height="30" rx="4" fill="#0D1117"/>
+    <text x="210" y="200" font-family="Arial,sans-serif" font-size="14" fill="#6B7280" text-anchor="middle">⏮</text>
+    <text x="240" y="200" font-family="Arial,sans-serif" font-size="14" fill="#93C5FD" text-anchor="middle">⏸</text>
+    <text x="270" y="200" font-family="Arial,sans-serif" font-size="14" fill="#6B7280" text-anchor="middle">⏭</text>
+    <text x="340" y="200" font-family="Arial,sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">🔀</text>
+    <text x="370" y="200" font-family="Arial,sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">🔁</text>
+    <text x="420" y="200" font-family="Arial,sans-serif" font-size="11" fill="#6B7280" text-anchor="middle">🔊</text>
+
+    <!-- Track list -->
+    <rect x="16" y="220" width="428" height="128" rx="6" fill="#0D1117"/>
+    <text x="28" y="238" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF" font-weight="bold">TRACK LIST</text>
+
+    <!-- Track items -->
+    <rect x="20" y="244" width="420" height="22" rx="3" fill="#1565C0" opacity="0.2"/>
+    <text x="32" y="258" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD">♪</text>
+    <text x="46" y="258" font-family="Arial,sans-serif" font-size="7" fill="#ffffff">01 · Cinematic Horizon</text>
+    <text x="430" y="258" font-family="Arial,sans-serif" font-size="7" fill="#93C5FD" text-anchor="end">3:42</text>
+
+    <rect x="20" y="270" width="420" height="22" rx="3" fill="#111827"/>
+    <text x="32" y="284" font-family="Arial,sans-serif" font-size="7" fill="#6B7280">♪</text>
+    <text x="46" y="284" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF">02 · Deep Space Ambient</text>
+    <text x="430" y="284" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="end">4:18</text>
+
+    <rect x="20" y="296" width="420" height="22" rx="3" fill="#111827"/>
+    <text x="32" y="310" font-family="Arial,sans-serif" font-size="7" fill="#6B7280">♪</text>
+    <text x="46" y="310" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF">03 · Corporate Uplift</text>
+    <text x="430" y="310" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="end">2:55</text>
+
+    <rect x="20" y="322" width="420" height="22" rx="3" fill="#111827"/>
+    <text x="32" y="336" font-family="Arial,sans-serif" font-size="7" fill="#6B7280">♪</text>
+    <text x="46" y="336" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF">04 · Dramatic Tension SFX</text>
+    <text x="430" y="336" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="end">0:08</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(538, 42)" filter="url(#shadow2)">
+    <rect width="210" height="175" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#1A1A4E"/>
+    <rect y="32" width="210" height="12" fill="#1A1A4E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Audio Categories</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="75" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🎬</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Cinematic</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="153" y="75" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🎵</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Music Tracks</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="127" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🔊</text>
+    <text x="57" y="142" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Sound FX</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="153" y="127" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🌫️</text>
+    <text x="153" y="142" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Ambient</text>
+  </g>
+
+  <g transform="translate(538, 234)" filter="url(#shadow2)">
+    <rect width="210" height="168" rx="12" fill="#1A1A4E"/>
+    <rect width="210" height="44" rx="12" fill="#1565C0" opacity="0.4"/>
+    <rect y="32" width="210" height="12" fill="#1565C0" opacity="0.4"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Formats &amp; Use</text>
+
+    <text x="28" y="64" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="46" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">MP3 · WAV · FLAC</text>
+    <text x="28" y="84" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="46" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">YouTube &amp; social safe</text>
+    <text x="28" y="104" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="46" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Film, ads &amp; podcast use</text>
+    <text x="28" y="124" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="46" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">No attribution needed</text>
+
+    <rect x="18" y="136" width="174" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="156" font-family="Arial,sans-serif" font-size="22" fill="#93C5FD" text-anchor="middle" font-weight="bold">1000+</text>
+    <text x="105" y="162" font-family="Arial,sans-serif" font-size="0" fill="#ffffff" text-anchor="middle" opacity="0.7">tracks</text>
+  </g>
+
+  <!-- Label -->
+  <text x="308" y="432" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">Royalty FREE Audio &amp; Cinematic Sounds</text>
+  <text x="308" y="454" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD" text-anchor="middle">Music · SFX · Ambient · Cinematic · No Royalties</text>
+  <rect x="145" y="466" width="326" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
+  <text x="308" y="482" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>
