@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F97316"/>
+      <stop offset="100%" style="stop-color:#EA580C"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Main messenger mockup -->
+  <g transform="translate(40, 38)" filter="url(#shadow)">
+    <rect width="480" height="310" rx="12" fill="#0D0D0D"/>
+    <!-- Title bar -->
+    <rect width="480" height="36" rx="12" fill="#1A1A1A"/>
+    <rect y="24" width="480" height="12" fill="#1A1A1A"/>
+    <circle cx="18" cy="18" r="5" fill="#FF5F57"/>
+    <circle cx="34" cy="18" r="5" fill="#FFBD2E"/>
+    <circle cx="50" cy="18" r="5" fill="#28CA41"/>
+    <text x="240" y="23" font-family="Arial,sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">ManyChat — Automation Flow Builder</text>
+
+    <!-- Chat header -->
+    <rect x="0" y="36" width="480" height="44" fill="#111111"/>
+    <circle cx="26" cy="58" r="14" fill="url(#orange)"/>
+    <text x="26" y="63" font-family="Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">🤖</text>
+    <text x="48" y="55" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" font-weight="bold">BusinessBot</text>
+    <text x="48" y="68" font-family="Arial,sans-serif" font-size="8" fill="#10B981">● Active · Automation Running</text>
+    <rect x="430" y="46" width="38" height="22" rx="11" fill="url(#orange)"/>
+    <text x="449" y="61" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Live</text>
+
+    <!-- Chat messages -->
+    <!-- Bot message 1 -->
+    <circle cx="26" cy="106" r="10" fill="url(#orange)"/>
+    <text x="26" y="110" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">🤖</text>
+    <rect x="44" y="92" width="220" height="40" rx="10" fill="#1F2937"/>
+    <rect x="44" y="92" width="10" height="10" fill="#1F2937"/>
+    <text x="56" y="108" font-family="Arial,sans-serif" font-size="8" fill="#F3F4F6">👋 Hey! Ready to grab your FREE gift?</text>
+    <text x="56" y="122" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF">Tap below to get instant access 👇</text>
+    <text x="44" y="142" font-family="Arial,sans-serif" font-size="7" fill="#6B7280">9:01 AM · Automated</text>
+
+    <!-- Quick reply buttons -->
+    <rect x="44" y="148" width="100" height="22" rx="11" fill="url(#orange)"/>
+    <text x="94" y="163" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">✅ Yes, send it!</text>
+    <rect x="152" y="148" width="90" height="22" rx="11" fill="#374151"/>
+    <text x="197" y="163" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF" text-anchor="middle">Tell me more</text>
+
+    <!-- User reply -->
+    <rect x="220" y="178" width="130" height="26" rx="10" fill="#F97316"/>
+    <rect x="350" y="178" width="10" height="10" fill="#F97316"/>
+    <text x="285" y="195" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">✅ Yes, send it!</text>
+    <text x="360" y="214" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="end">9:01 AM</text>
+
+    <!-- Bot message 2 -->
+    <circle cx="26" cy="228" r="10" fill="url(#orange)"/>
+    <text x="26" y="232" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">🤖</text>
+    <rect x="44" y="214" width="260" height="52" rx="10" fill="#1F2937"/>
+    <rect x="44" y="214" width="10" height="10" fill="#1F2937"/>
+    <text x="56" y="230" font-family="Arial,sans-serif" font-size="8" fill="#F3F4F6">🎉 Amazing! Here's your exclusive access.</text>
+    <text x="56" y="244" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF">Also — what's your email so I can send</text>
+    <text x="56" y="256" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF">you the bonus training? 📧</text>
+    <text x="44" y="274" font-family="Arial,sans-serif" font-size="7" fill="#6B7280">9:01 AM · Automated</text>
+
+    <!-- Typing indicator -->
+    <circle cx="26" cy="294" r="10" fill="url(#orange)"/>
+    <text x="26" y="298" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">🤖</text>
+    <rect x="44" y="282" width="62" height="24" rx="12" fill="#1F2937"/>
+    <circle cx="62" cy="294" r="3" fill="#6B7280"/>
+    <circle cx="74" cy="294" r="3" fill="#9CA3AF"/>
+    <circle cx="86" cy="294" r="3" fill="#D1D5DB"/>
+  </g>
+
+  <!-- Flow diagram strip -->
+  <g transform="translate(40, 362)" filter="url(#shadow2)">
+    <rect width="480" height="100" rx="10" fill="#111827"/>
+
+    <!-- Flow nodes -->
+    <!-- Node 1 -->
+    <rect x="12" y="18" width="64" height="32" rx="6" fill="#F97316"/>
+    <text x="44" y="32" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Trigger</text>
+    <text x="44" y="43" font-family="Arial,sans-serif" font-size="7" fill="#FED7AA" text-anchor="middle">DM / Story</text>
+    <!-- Arrow -->
+    <line x1="76" y1="34" x2="94" y2="34" stroke="#F97316" stroke-width="2"/>
+    <polygon points="90,30 98,34 90,38" fill="#F97316"/>
+    <!-- Node 2 -->
+    <rect x="96" y="18" width="64" height="32" rx="6" fill="#1F2937" stroke="#F97316" stroke-width="1"/>
+    <text x="128" y="32" font-family="Arial,sans-serif" font-size="7" fill="#F3F4F6" text-anchor="middle" font-weight="bold">Welcome</text>
+    <text x="128" y="43" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">Message</text>
+    <!-- Arrow -->
+    <line x1="160" y1="34" x2="178" y2="34" stroke="#6B7280" stroke-width="2"/>
+    <polygon points="174,30 182,34 174,38" fill="#6B7280"/>
+    <!-- Node 3 -->
+    <rect x="180" y="18" width="64" height="32" rx="6" fill="#1F2937" stroke="#F97316" stroke-width="1"/>
+    <text x="212" y="32" font-family="Arial,sans-serif" font-size="7" fill="#F3F4F6" text-anchor="middle" font-weight="bold">Quick</text>
+    <text x="212" y="43" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">Replies</text>
+    <!-- Arrow -->
+    <line x1="244" y1="34" x2="262" y2="34" stroke="#6B7280" stroke-width="2"/>
+    <polygon points="258,30 266,34 258,38" fill="#6B7280"/>
+    <!-- Node 4 -->
+    <rect x="264" y="18" width="64" height="32" rx="6" fill="#1F2937" stroke="#F97316" stroke-width="1"/>
+    <text x="296" y="32" font-family="Arial,sans-serif" font-size="7" fill="#F3F4F6" text-anchor="middle" font-weight="bold">Collect</text>
+    <text x="296" y="43" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">Email</text>
+    <!-- Arrow -->
+    <line x1="328" y1="34" x2="346" y2="34" stroke="#6B7280" stroke-width="2"/>
+    <polygon points="342,30 350,34 342,38" fill="#6B7280"/>
+    <!-- Node 5 -->
+    <rect x="348" y="18" width="64" height="32" rx="6" fill="#1F2937" stroke="#F97316" stroke-width="1"/>
+    <text x="380" y="32" font-family="Arial,sans-serif" font-size="7" fill="#F3F4F6" text-anchor="middle" font-weight="bold">Follow-up</text>
+    <text x="380" y="43" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">Sequence</text>
+    <!-- Arrow -->
+    <line x1="412" y1="34" x2="430" y2="34" stroke="#6B7280" stroke-width="2"/>
+    <polygon points="426,30 434,34 426,38" fill="#6B7280"/>
+    <!-- Node 6 -->
+    <rect x="432" y="18" width="40" height="32" rx="6" fill="#10B981"/>
+    <text x="452" y="30" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Sale</text>
+    <text x="452" y="42" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">💸</text>
+
+    <!-- Label -->
+    <text x="240" y="75" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Lead Generation Automation Flow · 12 flows included · Plug &amp; play setup</text>
+    <text x="240" y="90" font-family="Arial,sans-serif" font-size="7" fill="#F97316" text-anchor="middle" font-weight="bold">PLR + MRR INCLUDED — Resell for Profit</text>
+  </g>
+
+  <!-- Right panel 1 — Flows list -->
+  <g transform="translate(548, 38)" filter="url(#shadow2)">
+    <rect width="210" height="210" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="url(#orange)"/>
+    <rect y="32" width="210" height="12" fill="#EA580C"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">12 Automation Flows</text>
+    <text x="18" y="62" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Build Email List</text>
+    <text x="18" y="76" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Insta Stories Sales</text>
+    <text x="18" y="90" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Sales Coupon</text>
+    <text x="18" y="104" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Email › Sales Coupon</text>
+    <text x="18" y="118" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Giveaway</text>
+    <text x="18" y="132" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Booking Appointment</text>
+    <text x="18" y="146" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Bootcamp Sign Up</text>
+    <text x="18" y="160" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Online Courses</text>
+    <text x="18" y="174" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Lead Generation</text>
+    <text x="18" y="188" font-family="Arial,sans-serif" font-size="7" fill="#374151">» Course Sales · Webinar Leads</text>
+  </g>
+
+  <!-- Right panel 2 — Features -->
+  <g transform="translate(548, 266)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#111827"/>
+    <rect width="210" height="44" rx="12" fill="url(#orange)" opacity="0.9"/>
+    <rect y="32" width="210" height="12" fill="#EA580C" opacity="0.9"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Included</text>
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="9" fill="#F97316">✔</text>
+    <text x="36" y="64" font-family="Arial,sans-serif" font-size="8" fill="#F3F4F6">Ready-to-use flows</text>
+    <text x="22" y="82" font-family="Arial,sans-serif" font-size="9" fill="#F97316">✔</text>
+    <text x="36" y="82" font-family="Arial,sans-serif" font-size="8" fill="#F3F4F6">Step-by-step setup guides</text>
+    <text x="22" y="100" font-family="Arial,sans-serif" font-size="9" fill="#F97316">✔</text>
+    <text x="36" y="100" font-family="Arial,sans-serif" font-size="8" fill="#F3F4F6">High-converting templates</text>
+    <text x="22" y="118" font-family="Arial,sans-serif" font-size="9" fill="#F97316">✔</text>
+    <text x="36" y="118" font-family="Arial,sans-serif" font-size="8" fill="#F3F4F6">Marketing resell materials</text>
+    <rect x="16" y="130" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <!-- PLR + MRR badges -->
+    <rect x="18" y="142" width="80" height="26" rx="6" fill="#F97316"/>
+    <text x="58" y="153" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">PLR</text>
+    <text x="58" y="163" font-family="Arial,sans-serif" font-size="6" fill="#FED7AA" text-anchor="middle">Private Label</text>
+    <rect x="112" y="142" width="80" height="26" rx="6" fill="#7C3AED"/>
+    <text x="152" y="153" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">MRR</text>
+    <text x="152" y="163" font-family="Arial,sans-serif" font-size="6" fill="#E9D5FF" text-anchor="middle">Master Resell</text>
+    <text x="105" y="185" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" text-anchor="middle">Plug into ManyChat instantly</text>
+  </g>
+</svg>
