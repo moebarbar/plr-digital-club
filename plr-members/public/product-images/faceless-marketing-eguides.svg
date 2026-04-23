@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4C1D95"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.4"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="80" height="22" rx="11" fill="url(#purple)"/>
+    <text x="56" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">🎭 FACELESS</text>
+    <!-- Title -->
+    <text x="16" y="72" font-family="Georgia,serif" font-size="21" fill="#ffffff" font-weight="bold">Faceless Marketing</text>
+    <text x="16" y="94" font-family="Georgia,serif" font-size="21" fill="#C4B5FD" font-weight="bold">eGuides Collection</text>
+    <rect x="16" y="104" width="220" height="2" fill="#7C3AED"/>
+    <text x="16" y="122" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">Dominate your niche with anonymity · In-Demand Mastery Collection</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="48" fill="#7C3AED" opacity="0.1"/>
+    <circle cx="415" cy="65" r="30" fill="#7C3AED" opacity="0.12"/>
+    <text x="415" y="76" font-family="Arial,sans-serif" font-size="30" text-anchor="middle">🎭</text>
+  </g>
+
+  <!-- Guide cards grid -->
+  <g transform="translate(55, 188)">
+    <!-- Card 1 -->
+    <rect width="108" height="138" rx="8" fill="#ffffff" filter="url(#shadow2)"/>
+    <rect width="108" height="52" rx="8" fill="url(#purple)"/>
+    <rect y="42" width="108" height="10" fill="#7C3AED"/>
+    <text x="54" y="30" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🎭</text>
+    <text x="54" y="72" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Faceless Brand</text>
+    <text x="54" y="84" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Building Guide</text>
+    <rect x="10" y="96" width="88" height="4" rx="2" fill="#EFF6FF"/>
+    <rect x="10" y="96" width="72" height="4" rx="2" fill="#7C3AED" opacity="0.5"/>
+    <text x="54" y="114" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Bestseller</text>
+    <text x="54" y="128" font-family="Arial,sans-serif" font-size="7" fill="#7C3AED" text-anchor="middle" font-weight="bold">PLR Rights</text>
+
+    <!-- Card 2 -->
+    <rect x="118" width="108" height="138" rx="8" fill="#ffffff" filter="url(#shadow2)"/>
+    <rect x="118" width="108" height="52" rx="8" fill="#1565C0"/>
+    <rect x="118" y="42" width="108" height="10" fill="#1565C0"/>
+    <text x="172" y="30" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📱</text>
+    <text x="172" y="72" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Social Media</text>
+    <text x="172" y="84" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Anonymous Strategy</text>
+    <rect x="128" y="96" width="88" height="4" rx="2" fill="#EFF6FF"/>
+    <rect x="128" y="96" width="65" height="4" rx="2" fill="#1565C0" opacity="0.5"/>
+    <text x="172" y="114" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Trending</text>
+    <text x="172" y="128" font-family="Arial,sans-serif" font-size="7" fill="#1565C0" text-anchor="middle" font-weight="bold">PLR Rights</text>
+
+    <!-- Card 3 -->
+    <rect x="236" width="108" height="138" rx="8" fill="#ffffff" filter="url(#shadow2)"/>
+    <rect x="236" width="108" height="52" rx="8" fill="#0D1B3E"/>
+    <rect x="236" y="42" width="108" height="10" fill="#0D1B3E"/>
+    <text x="290" y="30" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">💰</text>
+    <text x="290" y="72" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Passive Income</text>
+    <text x="290" y="84" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Faceless Methods</text>
+    <rect x="246" y="96" width="88" height="4" rx="2" fill="#EFF6FF"/>
+    <rect x="246" y="96" width="78" height="4" rx="2" fill="#7C3AED" opacity="0.5"/>
+    <text x="290" y="114" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">High demand</text>
+    <text x="290" y="128" font-family="Arial,sans-serif" font-size="7" fill="#7C3AED" text-anchor="middle" font-weight="bold">PLR Rights</text>
+
+    <!-- Card 4 -->
+    <rect x="354" width="116" height="138" rx="8" fill="#ffffff" filter="url(#shadow2)"/>
+    <rect x="354" width="116" height="52" rx="8" fill="#7C3AED" opacity="0.8"/>
+    <rect x="354" y="42" width="116" height="10" fill="#7C3AED" opacity="0.8"/>
+    <text x="412" y="30" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🚀</text>
+    <text x="412" y="72" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Viral Content</text>
+    <text x="412" y="84" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">No-Face Marketing</text>
+    <rect x="364" y="96" width="96" height="4" rx="2" fill="#EFF6FF"/>
+    <rect x="364" y="96" width="82" height="4" rx="2" fill="#7C3AED" opacity="0.5"/>
+    <text x="412" y="114" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">New release</text>
+    <text x="412" y="128" font-family="Arial,sans-serif" font-size="7" fill="#7C3AED" text-anchor="middle" font-weight="bold">PLR Rights</text>
+  </g>
+
+  <!-- Bottom info bar -->
+  <g transform="translate(55, 342)" filter="url(#shadow)">
+    <rect width="470" height="88" rx="12" fill="#ffffff"/>
+    <rect width="470" height="36" rx="12" fill="#0D1B3E"/>
+    <rect y="24" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="20" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Dominate Your Niche — No Face Required</text>
+
+    <rect x="14" y="46" width="100" height="32" rx="6" fill="#F5F3FF"/>
+    <text x="64" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">🎭</text>
+    <text x="64" y="72" font-family="Arial,sans-serif" font-size="6" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Stay Anonymous</text>
+
+    <rect x="124" y="46" width="100" height="32" rx="6" fill="#F5F3FF"/>
+    <text x="174" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">📈</text>
+    <text x="174" y="72" font-family="Arial,sans-serif" font-size="6" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Scale Fast</text>
+
+    <rect x="234" y="46" width="100" height="32" rx="6" fill="#F5F3FF"/>
+    <text x="284" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">💸</text>
+    <text x="284" y="72" font-family="Arial,sans-serif" font-size="6" fill="#1A1A4E" text-anchor="middle" font-weight="bold">Keep 100% Profit</text>
+
+    <rect x="344" y="46" width="112" height="32" rx="6" fill="#0D1B3E"/>
+    <text x="400" y="60" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">✦</text>
+    <text x="400" y="72" font-family="Arial,sans-serif" font-size="6" fill="#C4B5FD" text-anchor="middle" font-weight="bold">Full PLR · Rebrandable</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="175" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Guide Categories</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🎭</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Brand Building</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📱</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Social Media</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">💰</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Passive Income</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🚀</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Viral Content</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#7C3AED" opacity="0.35"/>
+    <rect y="32" width="210" height="12" fill="#7C3AED" opacity="0.35"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Inside</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Faceless brand strategies</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Anonymous social growth</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Passive income blueprints</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Viral content frameworks</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#C4B5FD">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Niche domination tactics</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#C4B5FD" text-anchor="middle">Rebrand · Resell · Keep 100%</text>
+  </g>
+
+  <!-- Label -->
+  <text x="308" y="440" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">Faceless Marketing eGuides</text>
+  <text x="308" y="462" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD" text-anchor="middle">Anonymous Strategy · Brand Building · Passive Income</text>
+  <rect x="168" y="472" width="280" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
+  <text x="308" y="488" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>
