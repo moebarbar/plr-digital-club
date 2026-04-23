@@ -21,12 +21,12 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow group cursor-pointer">
       {/* Image */}
-      <div className="relative overflow-hidden bg-[#1A1A4E] aspect-[8/5]">
+      <div className="relative overflow-hidden bg-[#1A1A4E] aspect-[80/43]">
         {product.image_url ? (
           <img
             src={product.image_url}
             alt={product.title}
-            className="w-full h-full object-fill group-hover:scale-105 transition-transform duration-300 ease-out"
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300 ease-out"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-white/30 text-3xl font-bold">
