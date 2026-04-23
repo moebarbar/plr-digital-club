@@ -56,7 +56,14 @@ export default function CheckoutPage() {
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* LEFT — Value pitch */}
-      <div className="bg-[#1A1A4E] text-white p-10 lg:p-16 flex flex-col justify-center">
+      <div
+        className="bg-[#1A1A4E] text-white p-10 lg:p-16 flex flex-col justify-center"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)',
+          backgroundSize: '40px 40px',
+        }}
+      >
         <Image src="/logo.png" alt="PLR Digital Club" width={180} height={45} className="h-11 w-auto" priority />
         <h1 className="text-4xl font-bold leading-tight mt-6 mb-8">
           1,000+ Digital Products.<br />One Payment. Forever.
