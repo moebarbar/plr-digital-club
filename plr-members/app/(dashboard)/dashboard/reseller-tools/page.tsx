@@ -75,6 +75,13 @@ const RESOURCES = [
     icon: '🌍',
     internal: true,
   },
+  {
+    title: 'Pricing Guide',
+    description: 'A guide to help you understand how to price the digital products you are selling',
+    url: '/dashboard/reseller-tools/pricing-guide',
+    icon: '💰',
+    internal: true,
+  },
 ]
 
 const SOCIAL_CAPTIONS = [

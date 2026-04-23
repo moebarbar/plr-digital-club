@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: '/library', label: 'Product Library', icon: '📦' },
   { href: '/dashboard/whats-new', label: "What's New", icon: '✨' },
   { href: '/dashboard/reseller-tools', label: 'Reseller Tools', icon: '🔧' },
+  { href: '/dashboard/getting-started', label: 'Getting Started', icon: '🎓' },
   { href: '/profile', label: 'My Profile', icon: '👤' },
 ]
 
