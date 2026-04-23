@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#065F46"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="135" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="135" rx="12" fill="none" stroke="#059669" stroke-width="1" opacity="0.4"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="70" height="22" rx="11" fill="url(#green)"/>
+    <text x="51" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">MEGA BUNDLE</text>
+    <!-- Title -->
+    <text x="16" y="68" font-family="Georgia,serif" font-size="24" fill="#ffffff" font-weight="bold">Mega Fitness Bundle</text>
+    <text x="16" y="88" font-family="Arial,sans-serif" font-size="11" fill="#6EE7B7">eBooks · Articles · Yoga Quotes · Full PLR Rights</text>
+    <rect x="16" y="100" width="220" height="2" fill="#059669"/>
+    <text x="16" y="120" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">150 eBooks · 5,000 Articles · 2,500 Yoga Quote Images</text>
+    <!-- Decorative -->
+    <circle cx="410" cy="68" r="52" fill="#059669" opacity="0.08"/>
+    <circle cx="410" cy="68" r="32" fill="#059669" opacity="0.1"/>
+    <text x="410" y="78" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">💪</text>
+  </g>
+
+  <!-- Stats row -->
+  <g transform="translate(55, 190)">
+    <!-- Stat 1 -->
+    <rect width="148" height="72" rx="10" fill="#ffffff" filter="url(#shadow2)"/>
+    <text x="74" y="28" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📚</text>
+    <text x="74" y="48" font-family="Arial,sans-serif" font-size="18" fill="#065F46" text-anchor="middle" font-weight="bold">150</text>
+    <text x="74" y="62" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Fitness eBooks</text>
+
+    <!-- Stat 2 -->
+    <rect x="161" width="148" height="72" rx="10" fill="#ffffff" filter="url(#shadow2)"/>
+    <text x="235" y="28" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">📝</text>
+    <text x="235" y="48" font-family="Arial,sans-serif" font-size="18" fill="#065F46" text-anchor="middle" font-weight="bold">5,000</text>
+    <text x="235" y="62" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">H&amp;F Articles</text>
+
+    <!-- Stat 3 -->
+    <rect x="322" width="148" height="72" rx="10" fill="#ffffff" filter="url(#shadow2)"/>
+    <text x="396" y="28" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🧘</text>
+    <text x="396" y="48" font-family="Arial,sans-serif" font-size="18" fill="#065F46" text-anchor="middle" font-weight="bold">2,500</text>
+    <text x="396" y="62" font-family="Arial,sans-serif" font-size="8" fill="#6B7280" text-anchor="middle">Yoga Quote Images</text>
+  </g>
+
+  <!-- eBook grid -->
+  <g transform="translate(55, 278)" filter="url(#shadow2)">
+    <rect width="470" height="152" rx="12" fill="#ffffff"/>
+    <rect width="470" height="40" rx="12" fill="#0D1B3E"/>
+    <rect y="28" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="24" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Sample eBook Covers</text>
+
+    <!-- Book 1 -->
+    <rect x="14" y="50" width="64" height="88" rx="5" fill="#059669"/>
+    <rect x="14" y="50" width="64" height="88" rx="5" fill="none" stroke="#047857" stroke-width="1"/>
+    <text x="46" y="82" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🏋️</text>
+    <text x="46" y="98" font-family="Arial,sans-serif" font-size="5.5" fill="#ffffff" text-anchor="middle" font-weight="bold">Strength</text>
+    <text x="46" y="108" font-family="Arial,sans-serif" font-size="5.5" fill="#A7F3D0" text-anchor="middle">Training Guide</text>
+    <text x="46" y="128" font-family="Arial,sans-serif" font-size="5" fill="#A7F3D0" text-anchor="middle">PLR Rights</text>
+
+    <!-- Book 2 -->
+    <rect x="88" y="50" width="64" height="88" rx="5" fill="#1565C0"/>
+    <rect x="88" y="50" width="64" height="88" rx="5" fill="none" stroke="#1A56DB" stroke-width="1"/>
+    <text x="120" y="82" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🏃</text>
+    <text x="120" y="98" font-family="Arial,sans-serif" font-size="5.5" fill="#ffffff" text-anchor="middle" font-weight="bold">Cardio &amp; HIIT</text>
+    <text x="120" y="108" font-family="Arial,sans-serif" font-size="5.5" fill="#BFDBFE" text-anchor="middle">Complete Plan</text>
+    <text x="120" y="128" font-family="Arial,sans-serif" font-size="5" fill="#BFDBFE" text-anchor="middle">PLR Rights</text>
+
+    <!-- Book 3 -->
+    <rect x="162" y="50" width="64" height="88" rx="5" fill="#7C3AED"/>
+    <rect x="162" y="50" width="64" height="88" rx="5" fill="none" stroke="#6D28D9" stroke-width="1"/>
+    <text x="194" y="82" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🥗</text>
+    <text x="194" y="98" font-family="Arial,sans-serif" font-size="5.5" fill="#ffffff" text-anchor="middle" font-weight="bold">Nutrition &amp; Diet</text>
+    <text x="194" y="108" font-family="Arial,sans-serif" font-size="5.5" fill="#DDD6FE" text-anchor="middle">Meal Planning</text>
+    <text x="194" y="128" font-family="Arial,sans-serif" font-size="5" fill="#DDD6FE" text-anchor="middle">PLR Rights</text>
+
+    <!-- Book 4 -->
+    <rect x="236" y="50" width="64" height="88" rx="5" fill="#DC2626"/>
+    <rect x="236" y="50" width="64" height="88" rx="5" fill="none" stroke="#B91C1C" stroke-width="1"/>
+    <text x="268" y="82" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🧘</text>
+    <text x="268" y="98" font-family="Arial,sans-serif" font-size="5.5" fill="#ffffff" text-anchor="middle" font-weight="bold">Yoga &amp; Mindset</text>
+    <text x="268" y="108" font-family="Arial,sans-serif" font-size="5.5" fill="#FECACA" text-anchor="middle">Wellness Series</text>
+    <text x="268" y="128" font-family="Arial,sans-serif" font-size="5" fill="#FECACA" text-anchor="middle">PLR Rights</text>
+
+    <!-- Book 5 -->
+    <rect x="310" y="50" width="64" height="88" rx="5" fill="#D97706"/>
+    <rect x="310" y="50" width="64" height="88" rx="5" fill="none" stroke="#B45309" stroke-width="1"/>
+    <text x="342" y="82" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">💪</text>
+    <text x="342" y="98" font-family="Arial,sans-serif" font-size="5.5" fill="#ffffff" text-anchor="middle" font-weight="bold">Home Workouts</text>
+    <text x="342" y="108" font-family="Arial,sans-serif" font-size="5.5" fill="#FEF3C7" text-anchor="middle">No Equipment</text>
+    <text x="342" y="128" font-family="Arial,sans-serif" font-size="5" fill="#FEF3C7" text-anchor="middle">PLR Rights</text>
+
+    <!-- Book 6 -->
+    <rect x="384" y="50" width="72" height="88" rx="5" fill="#0D1B3E"/>
+    <rect x="384" y="50" width="72" height="88" rx="5" fill="none" stroke="#059669" stroke-width="1"/>
+    <text x="420" y="78" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">+144</text>
+    <text x="420" y="96" font-family="Arial,sans-serif" font-size="7" fill="#6EE7B7" text-anchor="middle" font-weight="bold">More eBooks</text>
+    <text x="420" y="110" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Arms · Legs · Core</text>
+    <text x="420" y="122" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">Back · Shoulders</text>
+    <text x="420" y="134" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">&amp; more...</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="175" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Bundle Contents</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📚</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">150 eBooks</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📝</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">5K Articles</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🧘</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">2.5K Yoga Quotes</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#F0FDF4"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">💰</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Full PLR Rights</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#059669" opacity="0.4"/>
+    <rect y="32" width="210" height="12" fill="#059669" opacity="0.4"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Topics Covered</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="9" fill="#6EE7B7">🏋️</text>
+    <text x="38" y="64" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Strength &amp; weight training</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="9" fill="#6EE7B7">🏃</text>
+    <text x="38" y="84" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Cardio, HIIT &amp; running</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="9" fill="#6EE7B7">🥗</text>
+    <text x="38" y="104" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Nutrition &amp; meal planning</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="9" fill="#6EE7B7">🧘</text>
+    <text x="38" y="124" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Yoga &amp; mindfulness</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="9" fill="#6EE7B7">💪</text>
+    <text x="38" y="144" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Body-part specific training</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#6EE7B7" text-anchor="middle">Sell · Rebrand · Keep 100%</text>
+  </g>
+
+  <!-- Label -->
+  <text x="308" y="440" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">Mega Fitness Bundle</text>
+  <text x="308" y="462" font-family="Arial,sans-serif" font-size="11" fill="#93C5FD" text-anchor="middle">150 eBooks · 5,000 Articles · 2,500 Yoga Quote Images</text>
+  <rect x="168" y="472" width="280" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
+  <text x="308" y="488" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
+</svg>
