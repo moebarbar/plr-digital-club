@@ -132,10 +132,4 @@
 
     <text x="105" y="276" font-family="Arial,sans-serif" font-size="7" fill="#9CA3AF" text-anchor="middle">PLR · Resell Rights</text>
   </g>
-
-  <!-- Label -->
-  <text x="400" y="358" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Infographics</text>
-  <text x="400" y="382" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">Charts · Data Viz · Process · Stats</text>
-  <rect x="270" y="394" width="260" height="22" rx="11" fill="#ffffff" opacity="0.1"/>
-  <text x="400" y="410" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
 </svg>

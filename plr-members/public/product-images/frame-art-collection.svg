@@ -130,9 +130,4 @@
     <rect x="18" y="176" width="214" height="1" fill="#ffffff" opacity="0.1"/>
     <text x="125" y="198" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Digital Download · Resell Rights</text>
   </g>
-
-  <!-- Label -->
-  <text x="400" y="468" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">Frame Art Collection</text>
-  <rect x="260" y="476" width="280" height="20" rx="10" fill="#ffffff" opacity="0.1"/>
-  <text x="400" y="491" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">✦ PLR Digital Club</text>
 </svg>

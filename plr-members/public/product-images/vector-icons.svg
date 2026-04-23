@@ -167,9 +167,4 @@
     <rect x="18" y="154" width="174" height="1" fill="#ffffff" opacity="0.1"/>
     <text x="105" y="172" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Figma · Canva · AI ready</text>
   </g>
-
-  <!-- Label -->
-  <text x="400" y="452" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Vector Icons</text>
-  <text x="400" y="474" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">10,000+ Icons · 7 Styles · SVG · PNG · AI · EPS</text>
-  <rect x="275" y="482" width="250" height="14" rx="7" fill="#ffffff" opacity="0.1"/>
 </svg>

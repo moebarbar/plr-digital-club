@@ -150,9 +150,4 @@
     <rect x="18" y="158" width="294" height="1" fill="#ffffff" opacity="0.1"/>
     <text x="165" y="182" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">.ABR Format · Instant Download · PLR Rights</text>
   </g>
-
-  <!-- Label -->
-  <text x="400" y="452" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Photoshop Brushes</text>
-  <text x="400" y="474" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">Watercolor · Ink · Grunge · Nature · Texture</text>
-  <rect x="275" y="482" width="250" height="14" rx="7" fill="#ffffff" opacity="0.1"/>
 </svg>

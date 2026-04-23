@@ -125,8 +125,4 @@
     <text x="621" y="120" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.6">Sell on any platform</text>
     <text x="621" y="140" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">🛒</text>
   </g>
-
-  <!-- Label -->
-  <text x="400" y="463" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Mug Designs</text>
-  <text x="400" y="484" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">Print-Ready · POD · Full Resell Rights</text>
 </svg>

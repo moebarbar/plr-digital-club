@@ -141,8 +141,4 @@
     <text x="94" y="172" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.7">Merch · Printful Ready</text>
     <rect x="24" y="180" width="140" height="4" rx="2" fill="#1565C0" opacity="0.5"/>
   </g>
-
-  <!-- Label -->
-  <text x="400" y="464" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">T-Shirt Designs</text>
-  <text x="400" y="484" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">Print-Ready · Merch · Full Resell Rights</text>
 </svg>
