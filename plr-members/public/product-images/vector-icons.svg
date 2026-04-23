@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Main icon showcase panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="460" height="370" rx="12" fill="#ffffff"/>
+    <rect width="460" height="52" rx="12" fill="#1A1A4E"/>
+    <rect y="40" width="460" height="12" fill="#1A1A4E"/>
+    <text x="230" y="30" font-family="Georgia,serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Vector Icon Library</text>
+
+    <!-- Search bar -->
+    <rect x="16" y="60" width="428" height="26" rx="13" fill="#F3F4F6"/>
+    <text x="36" y="77" font-family="Arial,sans-serif" font-size="10" fill="#9CA3AF">🔍</text>
+    <text x="58" y="77" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF">Search icons...</text>
+    <rect x="378" y="64" width="58" height="18" rx="9" fill="#1565C0"/>
+    <text x="407" y="76" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">10,000+</text>
+
+    <!-- Category tabs -->
+    <rect x="16" y="94" width="60" height="20" rx="10" fill="#1A1A4E"/>
+    <text x="46" y="108" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle">All</text>
+    <rect x="82" y="94" width="60" height="20" rx="10" fill="#EFF6FF"/>
+    <text x="112" y="108" font-family="Arial,sans-serif" font-size="7" fill="#1565C0" text-anchor="middle">Business</text>
+    <rect x="148" y="94" width="60" height="20" rx="10" fill="#EFF6FF"/>
+    <text x="178" y="108" font-family="Arial,sans-serif" font-size="7" fill="#1565C0" text-anchor="middle">Social</text>
+    <rect x="214" y="94" width="60" height="20" rx="10" fill="#EFF6FF"/>
+    <text x="244" y="108" font-family="Arial,sans-serif" font-size="7" fill="#1565C0" text-anchor="middle">Tech</text>
+    <rect x="280" y="94" width="60" height="20" rx="10" fill="#EFF6FF"/>
+    <text x="310" y="108" font-family="Arial,sans-serif" font-size="7" fill="#1565C0" text-anchor="middle">Nature</text>
+    <rect x="346" y="94" width="60" height="20" rx="10" fill="#EFF6FF"/>
+    <text x="376" y="108" font-family="Arial,sans-serif" font-size="7" fill="#1565C0" text-anchor="middle">UI/UX</text>
+
+    <!-- Icon grid - Row 1 -->
+    <rect x="16" y="122" width="56" height="56" rx="8" fill="#EFF6FF"/>
+    <text x="44" y="152" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">🏠</text>
+    <text x="44" y="170" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">home</text>
+
+    <rect x="80" y="122" width="56" height="56" rx="8" fill="#EFF6FF"/>
+    <text x="108" y="152" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">📊</text>
+    <text x="108" y="170" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">analytics</text>
+
+    <rect x="144" y="122" width="56" height="56" rx="8" fill="#EFF6FF"/>
+    <text x="172" y="152" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">👤</text>
+    <text x="172" y="170" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">user</text>
+
+    <rect x="208" y="122" width="56" height="56" rx="8" fill="#EFF6FF"/>
+    <text x="236" y="152" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">⚙️</text>
+    <text x="236" y="170" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">settings</text>
+
+    <rect x="272" y="122" width="56" height="56" rx="8" fill="#EFF6FF"/>
+    <text x="300" y="152" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">🔔</text>
+    <text x="300" y="170" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">alert</text>
+
+    <rect x="336" y="122" width="56" height="56" rx="8" fill="#EFF6FF"/>
+    <text x="364" y="152" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">📱</text>
+    <text x="364" y="170" font-family="Arial,sans-serif" font-size="6" fill="#6B7280" text-anchor="middle">mobile</text>
+
+    <rect x="400" y="122" width="44" height="56" rx="8" fill="#1A1A4E"/>
+    <text x="422" y="148" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD" text-anchor="middle">+500</text>
+    <text x="422" y="162" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">more</text>
+
+    <!-- Icon grid - Row 2 -->
+    <rect x="16" y="186" width="56" height="56" rx="8" fill="#1A1A4E"/>
+    <text x="44" y="216" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">💼</text>
+    <text x="44" y="234" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">business</text>
+
+    <rect x="80" y="186" width="56" height="56" rx="8" fill="#1A1A4E"/>
+    <text x="108" y="216" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">💡</text>
+    <text x="108" y="234" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">idea</text>
+
+    <rect x="144" y="186" width="56" height="56" rx="8" fill="#1A1A4E"/>
+    <text x="172" y="216" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">🌐</text>
+    <text x="172" y="234" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">global</text>
+
+    <rect x="208" y="186" width="56" height="56" rx="8" fill="#1A1A4E"/>
+    <text x="236" y="216" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">🛒</text>
+    <text x="236" y="234" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">shop</text>
+
+    <rect x="272" y="186" width="56" height="56" rx="8" fill="#1A1A4E"/>
+    <text x="300" y="216" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">📧</text>
+    <text x="300" y="234" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">email</text>
+
+    <rect x="336" y="186" width="56" height="56" rx="8" fill="#1A1A4E"/>
+    <text x="364" y="216" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">📍</text>
+    <text x="364" y="234" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">location</text>
+
+    <rect x="400" y="186" width="44" height="56" rx="8" fill="#1565C0" opacity="0.3"/>
+    <text x="422" y="216" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">+9k</text>
+
+    <!-- Style samples strip -->
+    <rect x="16" y="252" width="428" height="50" rx="8" fill="#F8F8FF"/>
+    <text x="24" y="268" font-family="Arial,sans-serif" font-size="7" fill="#6B7280" letter-spacing="1">STYLES INCLUDED:</text>
+    <!-- Outline style icon -->
+    <circle cx="64" cy="282" r="12" fill="none" stroke="#1A1A4E" stroke-width="2"/>
+    <text x="64" y="287" font-family="Arial,sans-serif" font-size="10" fill="#1A1A4E" text-anchor="middle">✦</text>
+    <!-- Filled style icon -->
+    <circle cx="104" cy="282" r="12" fill="#1565C0"/>
+    <text x="104" y="287" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">✦</text>
+    <!-- Duotone style icon -->
+    <circle cx="144" cy="282" r="12" fill="#EFF6FF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="144" y="287" font-family="Arial,sans-serif" font-size="10" fill="#1565C0" text-anchor="middle">✦</text>
+    <!-- Flat style -->
+    <rect x="162" y="274" width="28" height="16" rx="4" fill="#1A1A4E"/>
+    <text x="176" y="286" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">flat</text>
+    <!-- Bold style -->
+    <rect x="198" y="274" width="28" height="16" rx="4" fill="#EFF6FF"/>
+    <text x="212" y="286" font-family="Arial,sans-serif" font-size="8" fill="#1A1A4E" text-anchor="middle" font-weight="bold">bold</text>
+
+    <text x="256" y="285" font-family="Arial,sans-serif" font-size="8" fill="#9CA3AF">+ Line · Rounded · Sharp · 3D</text>
+
+    <!-- Format bar -->
+    <rect x="16" y="314" width="428" height="38" rx="8" fill="#1A1A4E"/>
+    <text x="230" y="330" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle" font-weight="bold">SVG · PNG · AI · EPS · PDF formats included</text>
+    <text x="230" y="344" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.6">Infinitely scalable · Fully editable · Commercial Use</text>
+  </g>
+
+  <!-- Right stats -->
+  <g transform="translate(538, 42)" filter="url(#shadow2)">
+    <rect width="210" height="175" rx="12" fill="#1565C0" opacity="0.15"/>
+    <rect width="210" height="175" rx="12" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+    <text x="105" y="30" font-family="Arial,sans-serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Collection Stats</text>
+    <rect x="20" y="38" width="170" height="1" fill="#ffffff" opacity="0.15"/>
+
+    <text x="105" y="72" font-family="Arial,sans-serif" font-size="34" fill="#93C5FD" text-anchor="middle" font-weight="bold">10K+</text>
+    <text x="105" y="88" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.8">Unique Vector Icons</text>
+
+    <rect x="20" y="98" width="170" height="1" fill="#ffffff" opacity="0.1"/>
+
+    <text x="105" y="122" font-family="Arial,sans-serif" font-size="14" fill="#93C5FD" text-anchor="middle" font-weight="bold">SVG · PNG · AI</text>
+    <text x="105" y="136" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.7">Multiple export formats</text>
+
+    <rect x="20" y="146" width="170" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="165" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD" text-anchor="middle">Commercial Use · PLR</text>
+  </g>
+
+  <g transform="translate(538, 234)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#1A1A4E"/>
+    <rect width="210" height="44" rx="12" fill="#1565C0" opacity="0.4"/>
+    <rect y="32" width="210" height="12" fill="#1565C0" opacity="0.4"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Use Cases</text>
+
+    <text x="28" y="62" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">🌐</text>
+    <text x="46" y="62" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Website &amp; App Design</text>
+    <text x="28" y="82" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">📊</text>
+    <text x="46" y="82" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Presentations &amp; Reports</text>
+    <text x="28" y="102" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">📱</text>
+    <text x="46" y="102" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Social Media Graphics</text>
+    <text x="28" y="122" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">🏪</text>
+    <text x="46" y="122" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Branding &amp; Marketing</text>
+    <text x="28" y="142" font-family="Arial,sans-serif" font-size="9" fill="#93C5FD">🖨️</text>
+    <text x="46" y="142" font-family="Arial,sans-serif" font-size="8" fill="#ffffff">Print &amp; Merchandise</text>
+
+    <rect x="18" y="154" width="174" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="172" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Figma · Canva · AI ready</text>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="452" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Vector Icons</text>
+  <text x="400" y="474" font-family="Arial,sans-serif" font-size="12" fill="#93C5FD" text-anchor="middle">10,000+ Icons · 7 Styles · SVG · PNG · AI · EPS</text>
+  <rect x="275" y="482" width="250" height="14" rx="7" fill="#ffffff" opacity="0.1"/>
+</svg>
