@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A4E"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="meta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1877F2"/>
+      <stop offset="100%" style="stop-color:#0668E1"/>
+    </linearGradient>
+    <linearGradient id="ig" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E1306C"/>
+      <stop offset="50%" style="stop-color:#833AB4"/>
+      <stop offset="100%" style="stop-color:#F77737"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="720" cy="80" r="150" fill="#ffffff" opacity="0.03"/>
+  <circle cx="80" cy="430" r="120" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Hero panel -->
+  <g transform="translate(55, 42)" filter="url(#shadow)">
+    <rect width="470" height="130" rx="12" fill="#0D1B3E"/>
+    <rect width="470" height="130" rx="12" fill="none" stroke="#1877F2" stroke-width="1" opacity="0.5"/>
+    <!-- Badge -->
+    <rect x="16" y="18" width="106" height="22" rx="11" fill="url(#meta)"/>
+    <text x="69" y="33" font-family="Arial,sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" font-weight="bold">📢 500+ AD TEMPLATES</text>
+    <!-- Title -->
+    <text x="16" y="68" font-family="Georgia,serif" font-size="21" fill="#ffffff" font-weight="bold">Meta Ad Templates</text>
+    <text x="16" y="90" font-family="Georgia,serif" font-size="16" fill="#93C5FD" font-weight="bold">Facebook · Instagram · Email</text>
+    <rect x="16" y="102" width="220" height="2" fill="#1877F2"/>
+    <text x="16" y="119" font-family="Arial,sans-serif" font-size="8" fill="#6B7280">500+ Canva templates · Convert &amp; scale your ad campaigns</text>
+    <!-- Icon -->
+    <circle cx="415" cy="65" r="50" fill="#1877F2" opacity="0.08"/>
+    <circle cx="415" cy="65" r="30" fill="#1877F2" opacity="0.1"/>
+    <text x="415" y="77" font-family="Arial,sans-serif" font-size="32" text-anchor="middle">📢</text>
+  </g>
+
+  <!-- Template preview grid -->
+  <g transform="translate(55, 188)" filter="url(#shadow2)">
+    <rect width="470" height="242" rx="12" fill="#ffffff"/>
+    <rect width="470" height="38" rx="12" fill="#0D1B3E"/>
+    <rect y="26" width="470" height="12" fill="#0D1B3E"/>
+    <text x="235" y="23" font-family="Arial,sans-serif" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">Ad Format Previews</text>
+
+    <!-- Facebook Feed Ad -->
+    <rect x="14" y="50" width="128" height="100" rx="8" fill="#F0F2F5"/>
+    <rect x="14" y="50" width="128" height="100" rx="8" fill="none" stroke="#1877F2" stroke-width="1.5"/>
+    <!-- FB header -->
+    <rect x="14" y="50" width="128" height="28" rx="8" fill="#1877F2"/>
+    <rect x="14" y="66" width="128" height="12" fill="#1877F2"/>
+    <text x="78" y="68" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">f  Facebook Feed Ad</text>
+    <!-- Ad mockup body -->
+    <rect x="22" y="86" width="112" height="44" rx="4" fill="#E8F0FE"/>
+    <text x="78" y="112" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🛒</text>
+    <!-- CTA button -->
+    <rect x="22" y="134" width="112" height="12" rx="6" fill="#1877F2"/>
+    <text x="78" y="143" font-family="Arial,sans-serif" font-size="6.5" fill="#ffffff" text-anchor="middle" font-weight="bold">Shop Now</text>
+    <text x="78" y="144" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7280" text-anchor="middle"> </text>
+    <text x="78" y="157" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Facebook Feed · 1:1</text>
+
+    <!-- Instagram Story Ad -->
+    <rect x="152" y="50" width="72" height="128" rx="8" fill="#1A1A2E"/>
+    <rect x="152" y="50" width="72" height="128" rx="8" fill="none" stroke="#E1306C" stroke-width="1.5"/>
+    <!-- IG gradient header -->
+    <rect x="152" y="50" width="72" height="24" rx="8" fill="url(#ig)"/>
+    <rect x="152" y="62" width="72" height="12" fill="url(#ig)" opacity="0.8"/>
+    <text x="188" y="65" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Instagram Story</text>
+    <!-- Content area -->
+    <text x="188" y="105" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">✨</text>
+    <text x="188" y="125" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Limited Offer</text>
+    <text x="188" y="137" font-family="Arial,sans-serif" font-size="6" fill="#F9A8D4" text-anchor="middle">Swipe Up</text>
+    <!-- Swipe indicator -->
+    <rect x="164" y="148" width="48" height="18" rx="9" fill="url(#ig)"/>
+    <text x="188" y="160" font-family="Arial,sans-serif" font-size="6.5" fill="#ffffff" text-anchor="middle">Swipe Up ↑</text>
+    <text x="188" y="170" font-family="Arial,sans-serif" font-size="5.5" fill="#9CA3AF" text-anchor="middle">Story · 9:16</text>
+
+    <!-- Instagram Feed Ad -->
+    <rect x="234" y="50" width="100" height="100" rx="8" fill="#1A1A2E"/>
+    <rect x="234" y="50" width="100" height="100" rx="8" fill="none" stroke="#833AB4" stroke-width="1.5"/>
+    <rect x="234" y="50" width="100" height="24" rx="8" fill="url(#ig)"/>
+    <rect x="234" y="62" width="100" height="12" fill="url(#ig)" opacity="0.8"/>
+    <text x="284" y="65" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Instagram Feed</text>
+    <text x="284" y="98" font-family="Arial,sans-serif" font-size="24" text-anchor="middle">🎯</text>
+    <rect x="242" y="118" width="84" height="12" rx="6" fill="url(#ig)"/>
+    <text x="284" y="127" font-family="Arial,sans-serif" font-size="6.5" fill="#ffffff" text-anchor="middle" font-weight="bold">Learn More</text>
+    <text x="284" y="143" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Feed · Square · 1:1</text>
+
+    <!-- Email template -->
+    <rect x="344" y="50" width="112" height="168" rx="8" fill="#ffffff"/>
+    <rect x="344" y="50" width="112" height="168" rx="8" fill="none" stroke="#1565C0" stroke-width="1.5"/>
+    <!-- Email header bar -->
+    <rect x="344" y="50" width="112" height="30" rx="8" fill="#1877F2"/>
+    <rect x="344" y="68" width="112" height="12" fill="#1877F2"/>
+    <text x="400" y="68" font-family="Arial,sans-serif" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">Email Campaign</text>
+    <!-- Email body blocks -->
+    <rect x="352" y="88" width="96" height="36" rx="4" fill="#EFF6FF"/>
+    <text x="400" y="110" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📧</text>
+    <rect x="352" y="130" width="96" height="6" rx="2" fill="#E2E8F0"/>
+    <rect x="352" y="140" width="76" height="6" rx="2" fill="#E2E8F0"/>
+    <rect x="352" y="150" width="86" height="6" rx="2" fill="#E2E8F0"/>
+    <rect x="360" y="164" width="80" height="18" rx="9" fill="#1877F2"/>
+    <text x="400" y="176" font-family="Arial,sans-serif" font-size="7" fill="#ffffff" text-anchor="middle" font-weight="bold">Get Offer →</text>
+    <text x="400" y="210" font-family="Arial,sans-serif" font-size="6" fill="#9CA3AF" text-anchor="middle">Email · 600px wide</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(548, 42)" filter="url(#shadow2)">
+    <rect width="210" height="178" rx="12" fill="#ffffff"/>
+    <rect width="210" height="44" rx="12" fill="#0D1B3E"/>
+    <rect y="32" width="210" height="12" fill="#0D1B3E"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Ad Formats Included</text>
+
+    <rect x="14" y="56" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📘</text>
+    <text x="57" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Facebook Ads</text>
+
+    <rect x="110" y="56" width="86" height="44" rx="6" fill="#FDF2F8"/>
+    <text x="153" y="74" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📷</text>
+    <text x="153" y="90" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Instagram Ads</text>
+
+    <rect x="14" y="108" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="57" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">📧</text>
+    <text x="57" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Email Campaigns</text>
+
+    <rect x="110" y="108" width="86" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="153" y="126" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">🎠</text>
+    <text x="153" y="141" font-family="Arial,sans-serif" font-size="7" fill="#1A1A4E" text-anchor="middle">Carousels</text>
+  </g>
+
+  <g transform="translate(548, 234)" filter="url(#shadow2)">
+    <rect width="210" height="196" rx="12" fill="#0D1B3E"/>
+    <rect width="210" height="44" rx="12" fill="#1877F2" opacity="0.35"/>
+    <rect y="32" width="210" height="12" fill="#1877F2" opacity="0.35"/>
+    <text x="105" y="26" font-family="Georgia,serif" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">What's Included</text>
+
+    <text x="22" y="64" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="64" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">500+ Canva ad templates</text>
+    <text x="22" y="84" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="84" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Facebook feed &amp; stories</text>
+    <text x="22" y="104" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="104" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Instagram feed &amp; stories</text>
+    <text x="22" y="124" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="124" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Email campaign layouts</text>
+    <text x="22" y="144" font-family="Arial,sans-serif" font-size="10" fill="#93C5FD">✓</text>
+    <text x="40" y="144" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Editable in free Canva</text>
+
+    <rect x="16" y="156" width="178" height="1" fill="#ffffff" opacity="0.1"/>
+    <text x="105" y="178" font-family="Arial,sans-serif" font-size="8" fill="#93C5FD" text-anchor="middle">Full PLR · Rebrand &amp; Resell</text>
+  </g>
+</svg>
