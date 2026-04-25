@@ -60,7 +60,7 @@ export default function CheckoutPage() {
         className="bg-[#1A1A4E] text-white p-10 lg:p-16 flex flex-col justify-center"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)',
+            'linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }}
       >
