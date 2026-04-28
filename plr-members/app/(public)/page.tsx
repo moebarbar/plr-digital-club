@@ -64,7 +64,15 @@ export default function CheckoutPage() {
           backgroundSize: '40px 40px',
         }}
       >
-        <Image src="/logo.png" alt="PLR Digital Club" width={180} height={45} className="h-11 w-auto" priority />
+        <Image
+          src="/logo.png"
+          alt="PLR Digital Club"
+          width={160}
+          height={40}
+          className="h-10 w-auto"
+          style={{ height: '40px', width: 'auto' }}
+          priority
+        />
         <h1 className="text-4xl font-bold leading-tight mt-6 mb-8">
           1,000+ Digital Products.<br />One Payment. Forever.
         </h1>
