@@ -39,8 +39,8 @@ export function ProductSchema({
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
+      "ratingValue": "4.8",
+      "reviewCount": "500",
       "bestRating": "5",
       "worstRating": "1"
     }

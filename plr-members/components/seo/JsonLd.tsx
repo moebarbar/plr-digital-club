@@ -67,8 +67,8 @@ export function ProductSchema({ name, description, price, url }: {
       },
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '847',
+        ratingValue: '4.8',
+        reviewCount: '500',
       },
     }} />
   )
@@ -89,20 +89,24 @@ export function BreadcrumbSchema({ items }: { items: { name: string; url: string
   )
 }
 
-export function ArticleSchema({ title, description, url, datePublished, dateModified, authorName }: {
+export function ArticleSchema({ title, description, url, datePublished, dateModified, authorName, image, wordCount }: {
   title: string; description: string; url: string
   datePublished: string; dateModified: string; authorName: string
+  image?: string; wordCount?: number
 }) {
   return (
     <JsonLd data={{
       '@context': 'https://schema.org',
-      '@type': 'Article',
+      '@type': 'BlogPosting',
       headline: title,
       description,
       url,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      ...(image ? { image: [image] } : {}),
+      ...(wordCount ? { wordCount } : {}),
       datePublished,
       dateModified,
-      author: { '@type': 'Person', name: authorName },
+      author: { '@type': 'Person', name: authorName, url: 'https://plrdigitalclub.com/about' },
       publisher: {
         '@type': 'Organization',
         name: 'PLR Digital Club',

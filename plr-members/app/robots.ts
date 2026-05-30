@@ -15,8 +15,10 @@ export default function robots(): MetadataRoute.Robots {
           '/plr-ebooks',
           '/plr-canva-templates',
           '/plr-social-media-templates',
-          '/mrr-courses',
           '/best-plr-sites-2026',
+          '/products',
+          '/about',
+          '/contact',
         ],
         disallow: [
           '/dashboard',

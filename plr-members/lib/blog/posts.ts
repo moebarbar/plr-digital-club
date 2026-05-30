@@ -8,6 +8,16 @@ export interface BlogPost {
   category: string
   readTime: string
   content: string
+  /** Optional hero/cover image URL (also used for OpenGraph + BlogPosting schema). */
+  image?: string
+  /** Descriptive alt text for the hero image (required for accessibility + SEO when image is set). */
+  imageAlt?: string
+  /** Optional author short bio for E-E-A-T (rendered under the article). */
+  authorBio?: string
+  /** Optional one-paragraph direct answer shown as a "Quick answer" box for AEO/featured snippets. */
+  quickAnswer?: string
+  /** Optional FAQ block rendered at the end of the article and emitted as FAQPage schema (AEO). */
+  faqs?: { q: string; a: string }[]
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -859,5 +869,290 @@ Use **PLR** when you want to build a long-term brand, create a unique product ca
 Use **MRR** when you want to sell high-ticket products quickly without any creation work, or when the "resell rights" aspect is a key selling point to your audience.
 
 Use **both** (which is what the smartest sellers do) — PLR for lead magnets and low-ticket entry products, MRR for premium backend offers. PLR Digital Club includes both types in one lifetime membership.`,
+  },
+  {
+    slug: 'how-to-sell-digital-products-on-etsy',
+    title: 'How to Sell Digital Products on Etsy in 2026 (Step-by-Step)',
+    description: 'A complete 2026 guide to selling digital products on Etsy — what sells, how to list, pricing, and how to use PLR to launch a profitable shop fast.',
+    datePublished: '2026-05-12',
+    dateModified: '2026-05-27',
+    author: 'PLR Digital Club Team',
+    authorBio: 'The PLR Digital Club editorial team has helped thousands of sellers launch and grow digital product shops since 2021. We test every platform, licence type, and selling strategy we write about.',
+    category: 'Selling Strategies',
+    readTime: '9 min read',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'A laptop showing an online shop dashboard used to sell digital products on Etsy',
+    quickAnswer: 'To sell digital products on Etsy in 2026: open an Etsy shop, create or source products you can legally resell (PLR digital products are ideal), upload them as instant-download listings with keyword-rich titles, price them between $5 and $40, and drive traffic with Etsy SEO and Pinterest. Most new shops can publish their first listing in under an hour.',
+    faqs: [
+      { q: 'Is it legal to sell PLR digital products on Etsy?', a: 'Yes. Etsy permits digital downloads, and PLR (Private Label Rights) licences give you the legal right to edit, rebrand, and resell the product. Etsy does require that listings be your own work, so you should customise PLR products — change the title, cover, and at least part of the content — before listing them.' },
+      { q: 'How much does it cost to sell on Etsy?', a: 'Etsy charges $0.20 to publish each listing (valid for four months), a 6.5% transaction fee, and payment processing fees of roughly 3% + $0.25 per order. There is no monthly subscription required to start.' },
+      { q: 'What digital products sell best on Etsy?', a: 'Printables, planners, Canva templates, spreadsheets, eBooks, social media templates, and digital wall art are the top-selling digital categories. Niche-specific bundles tend to convert best.' },
+      { q: 'How long does it take to make your first sale on Etsy?', a: 'With keyword-optimised listings and consistent Pinterest promotion, many new sellers see their first sale within 1 to 4 weeks. Building reviews and ranking for buyer keywords accelerates sales over the first few months.' },
+    ],
+    content: `Etsy is one of the easiest places in the world to start selling digital products. There is no inventory, no shipping, and a built-in audience of millions of buyers actively searching for downloads. In this guide you will learn exactly how to set up a shop, what to sell, how to price, and how to use PLR products to launch in days instead of months.
+
+> Selling digital products on Etsy means you create the file once and sell it unlimited times — every sale after the first is almost pure profit.
+
+## Why Sell Digital Products on Etsy?
+
+Etsy already attracts buyers who expect to pay for digital downloads, which removes the hardest part of selling online: finding an audience.
+
+- **Built-in traffic:** Millions of shoppers search Etsy every day, so you are not starting from zero.
+- **No inventory or shipping:** Instant downloads are delivered automatically after purchase.
+- **High margins:** Create once, sell forever — there is no per-unit cost.
+- **Low startup cost:** A listing costs just $0.20, so you can test ideas cheaply.
+
+## Step 1: Decide What to Sell
+
+The best digital products on Etsy solve a specific problem for a specific person. The top-performing categories in 2026 are:
+
+- **Printables and planners** — budget trackers, meal planners, habit trackers
+- **Canva templates** — social media kits, Instagram templates, business branding
+- **eBooks and guides** — niche how-to guides and recipe books
+- **Spreadsheets** — finance trackers, small-business tools
+- **Digital wall art** — quotes, nursery prints, seasonal décor
+
+If you do not want to create products from scratch, this is where **PLR digital products** become a shortcut. With a Private Label Rights licence you can take a ready-made product, rebrand it, and list it as your own. Learn more in our guide to [what PLR digital products are](/blog/what-are-plr-digital-products).
+
+![A flat-lay of digital planner and template designs ready to list on Etsy](https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&h=600&q=80)
+
+## Step 2: Open and Brand Your Etsy Shop
+
+Creating a shop takes about 15 minutes:
+
+1. **Sign up** at Etsy and choose "Sell on Etsy."
+2. **Name your shop** — pick something brandable and easy to spell.
+3. **Add a banner and logo** — you can design both for free in Canva.
+4. **Write your shop's About section** — buyers trust shops that feel personal and professional.
+5. **Set up payments** so you can get paid via Etsy Payments.
+
+## Step 3: Create High-Converting Listings
+
+Your listing is your storefront. Three things make or break it: the **title**, the **photos**, and the **keywords**.
+
+### Write Keyword-Rich Titles
+
+Buyers find products by searching. Put your main keyword first and naturally include variations, such as "Budget Planner Printable, Monthly Finance Tracker, Digital Download."
+
+### Design Scroll-Stopping Mockups
+
+Even digital products need attractive preview images. Show the product in use — a planner on a tablet, a template on a phone — so buyers instantly understand what they get.
+
+### Fill Every Tag
+
+Etsy gives you 13 tags. Use all of them with buyer-intent phrases like "small business template" or "weekly meal planner."
+
+## Step 4: Price for Profit
+
+Most digital products on Etsy sell between **$5 and $40**. Price based on perceived value, not effort:
+
+- **Single printable:** $3 to $8
+- **Template or planner:** $10 to $25
+- **Bundle or toolkit:** $25 to $45
+
+Bundles raise your average order value dramatically, so package related items together whenever possible. For a deeper framework, read our guide on the [psychology of pricing digital products](/blog/psychology-pricing-digital-products).
+
+## Step 5: Drive Traffic With Etsy SEO and Pinterest
+
+Etsy rewards listings that get clicks and sales. Kick-start that momentum with outside traffic:
+
+- **Pinterest** is the single best free traffic source for digital products — pin every listing with a keyword-rich description.
+- **Etsy ads** can be worth testing once a listing converts organically.
+- **Email** your buyers about new products to earn repeat sales.
+
+## How PLR Speeds Everything Up
+
+The slowest part of selling on Etsy is creating products. PLR removes it entirely. Instead of designing a planner from scratch, you start with a finished, professionally made product, rebrand it, and list it the same day. A single membership can stock an entire shop — see how it compares in [Etsy vs your own website](/blog/etsy-vs-own-website-where-to-sell).
+
+## Final Thoughts
+
+Selling digital products on Etsy in 2026 is one of the most accessible online businesses there is. Open your shop, list keyword-optimised products, price for profit, and drive Pinterest traffic. Use PLR to skip the creation bottleneck and you can have a stocked, sellable shop this week.
+
+Ready to stock your shop? [Get instant access to thousands of ready-to-sell PLR products.](/checkout)`,
+  },
+  {
+    slug: 'how-much-money-selling-plr-products',
+    title: 'How Much Money Can You Make Selling PLR Products in 2026?',
+    description: 'Realistic 2026 income expectations for selling PLR digital products — profit margins, example earnings, and the factors that decide how much you actually make.',
+    datePublished: '2026-05-19',
+    dateModified: '2026-05-28',
+    author: 'PLR Digital Club Team',
+    authorBio: 'The PLR Digital Club editorial team has helped thousands of sellers launch and grow digital product shops since 2021. We test every platform, licence type, and selling strategy we write about.',
+    category: 'Passive Income',
+    readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'A laptop displaying revenue growth charts from selling PLR digital products',
+    quickAnswer: 'There is no fixed income from selling PLR products — earnings depend on your niche, traffic, and pricing. Realistically, a beginner selling rebranded PLR products might make $100 to $1,000 in their first few months, while established sellers with consistent traffic earn $2,000 to $10,000+ per month. Because PLR has no per-unit cost, profit margins are typically 90 to 100%.',
+    faqs: [
+      { q: 'Can you really make money selling PLR products?', a: 'Yes. PLR products carry almost no cost per sale, so once you cover your one-time licence, nearly every sale is profit. Income depends on traffic and pricing rather than product cost — sellers who drive consistent traffic and rebrand well can build a reliable income stream.' },
+      { q: 'How much do PLR sellers make per month?', a: 'It varies widely. Beginners often make $100 to $1,000 per month while learning traffic and listings, and experienced sellers with multiple products and steady traffic commonly earn $2,000 to $10,000+ per month. There is no guaranteed figure — results depend on effort, niche, and marketing.' },
+      { q: 'What profit margin do PLR products have?', a: 'Very high. After your one-time PLR membership or licence, individual products cost nothing to reproduce, so margins are typically 90 to 100% minus platform and payment fees (roughly 3 to 9% on Etsy or Gumroad).' },
+      { q: 'How long does it take to start earning from PLR?', a: 'Most sellers make their first sales within a few weeks of listing optimised, rebranded products and driving traffic. Building to a consistent monthly income usually takes 3 to 6 months of adding products and growing traffic sources.' },
+    ],
+    content: `"How much can I actually make?" is the first question every new seller asks. The honest answer is that PLR income is not a fixed number — it is a function of your niche, your traffic, and your pricing. But we can map out realistic ranges and the exact levers that move them.
+
+> PLR products have almost no cost per sale, so your earnings are limited by demand and traffic, not by production cost. That is what makes the margins so attractive.
+
+## The Short Answer
+
+Here is what realistic earnings tend to look like across experience levels. These are ranges, not guarantees:
+
+- **Beginner (months 1 to 3):** $100 to $1,000 per month while learning listings and traffic.
+- **Intermediate (months 3 to 12):** $1,000 to $3,000 per month with multiple products and steady traffic.
+- **Established (12+ months):** $3,000 to $10,000+ per month with a catalogue and several traffic sources.
+
+Your results depend on the work you put in — there is no passive overnight income here.
+
+## Why PLR Margins Are So High
+
+The maths behind PLR is what makes it appealing. Consider a single product:
+
+- **Cost to create:** $0 (the product already exists)
+- **Cost per sale:** $0 (it is a digital file)
+- **Your only costs:** a one-time PLR membership plus platform and payment fees
+
+That means after you cover your membership, **90 to 100% of every sale is profit** (minus small platform fees). Compare that to physical products, where materials, shipping, and storage eat into every order.
+
+![A person reviewing sales analytics for a digital product business](https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=1200&h=600&q=80)
+
+## The 4 Factors That Decide Your Income
+
+### 1. Traffic
+
+Traffic is the single biggest factor. A great product with no visitors earns nothing; an average product in front of thousands of buyers earns well. Pinterest, Etsy search, TikTok, and email are the workhorses.
+
+### 2. Niche Demand
+
+Some niches simply have more buyers and higher willingness to pay — finance, business, wellness, and productivity consistently perform. See our breakdown of [5 digital product niches that are booming](/blog/5-digital-product-niches-booming).
+
+### 3. Pricing and Bundling
+
+Selling one $7 product is fine; bundling five into a $35 toolkit multiplies your average order value. Smart pricing can double revenue from the same traffic — our [pricing psychology guide](/blog/psychology-pricing-digital-products) breaks down how.
+
+### 4. Rebranding Quality
+
+Generic, unedited PLR competes on price and loses. Rebranded, polished products command premium prices. Learn the process in [rebranding digital products for maximum profit](/blog/rebranding-digital-products-maximum-profit).
+
+## A Realistic Example
+
+Imagine you list 20 rebranded PLR products priced at an average of $15, and Pinterest sends you 3,000 visitors a month. At a modest 2% conversion rate:
+
+- 3,000 visitors at 2% = **60 sales**
+- 60 sales at $15 = **$900 per month**
+- Minus roughly 7% fees = about **$837 profit**
+
+Double your traffic or your average order value and that figure climbs to $1,600+ — from the same catalogue.
+
+## How to Increase Your PLR Income
+
+1. **Add more products.** More listings means more entry points from search.
+2. **Raise your average order value.** Bundle and upsell.
+3. **Diversify traffic.** Do not rely on one platform.
+4. **Build an email list.** Repeat buyers cost nothing to reach.
+5. **Improve your best sellers.** Double down on what already converts.
+
+## Final Thoughts
+
+You can absolutely make money selling PLR products — but it rewards consistency, not luck. The economics are excellent: near-zero costs and 90 to 100% margins. Your income ceiling is set by how much traffic you can attract and how well you package and price what you sell.
+
+Want a catalogue you can start selling today? [Get instant access to thousands of PLR products.](/checkout)`,
+  },
+  {
+    slug: 'how-to-sell-canva-templates',
+    title: 'How to Sell Canva Templates With PLR in 2026 (Beginner Guide)',
+    description: 'Learn how to sell Canva templates in 2026 using PLR — what templates sell, how to set up share links, where to sell, and how to price for maximum profit.',
+    datePublished: '2026-05-26',
+    dateModified: '2026-05-29',
+    author: 'PLR Digital Club Team',
+    authorBio: 'The PLR Digital Club editorial team has helped thousands of sellers launch and grow digital product shops since 2021. We test every platform, licence type, and selling strategy we write about.',
+    category: 'Product Creation',
+    readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'A designer creating and editing Canva templates to sell online',
+    quickAnswer: 'To sell Canva templates with PLR: source editable PLR Canva templates, customise the design and branding, generate a Canva "Template" share link, and sell access on Etsy, Gumroad, or your own site. Templates typically sell for $5 to $30 each, or $20 to $60 as a bundle, with near-100% profit margins because the file is reused for every sale.',
+    faqs: [
+      { q: 'Can you legally sell Canva templates made from PLR?', a: 'Yes, provided your PLR licence allows resale of the design (PLR licences are designed for exactly this). You deliver the template as a Canva "Use as template" share link rather than the raw file, and you should customise the design so it is distinct from other sellers.' },
+      { q: 'How do you deliver a Canva template to a buyer?', a: 'In Canva, open your design, click Share, then "More" and "Template link," and choose "Use as template." This generates a link that gives the buyer their own editable copy without touching your original. You deliver that link as the digital download.' },
+      { q: 'How much can you sell Canva templates for?', a: 'Single templates usually sell for $5 to $30 depending on complexity and niche. Bundles of related templates (for example, a 20-piece Instagram pack) commonly sell for $20 to $60 and significantly increase your average order value.' },
+      { q: 'Do you need a paid Canva account to sell templates?', a: 'You can create and share templates on the free Canva plan, but Canva Pro unlocks premium elements, fonts, and the brand kit, which makes producing professional, sellable templates much easier.' },
+    ],
+    content: `Canva templates are one of the most profitable digital products you can sell in 2026. Buyers love them because they are easy to customise, and sellers love them because one template can be sold unlimited times. Using PLR, you can skip the design work entirely and launch a template shop in a single afternoon.
+
+> A Canva template is sold as a "share link," not a file — so the same design generates income from every single buyer while your original stays untouched.
+
+## Why Canva Templates Sell So Well
+
+Canva has hundreds of millions of users, and most of them are not designers. They want professional-looking graphics without learning design — and they will happily pay for a template that gets them there in minutes.
+
+- **Huge demand:** Small businesses, creators, and coaches all need branded graphics constantly.
+- **Easy to deliver:** A single share link does the whole job automatically.
+- **Repeatable income:** Create or rebrand once, sell forever.
+- **High margins:** No printing, no shipping, near-100% profit.
+
+## What Canva Templates Sell Best?
+
+The strongest sellers solve a recurring design headache:
+
+- **Instagram and social media template packs**
+- **Pinterest pin templates**
+- **Business branding kits** (logos, business cards, brand boards)
+- **Lead magnet and eBook templates**
+- **Presentation and pitch decks**
+- **Planners, checklists, and workbooks**
+
+If template creation feels intimidating, PLR Canva templates let you start with finished, editable designs. Browse what is possible on our [PLR Canva templates page](/plr-canva-templates).
+
+![A set of branded social media template designs created in Canva](https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&h=600&q=80)
+
+## Step 1: Source or Create Your Templates
+
+You have two paths:
+
+1. **Design from scratch** in Canva — full control, but slow.
+2. **Start with PLR Canva templates** — professionally designed and ready to rebrand, so you can launch the same day.
+
+Most successful template sellers use PLR to build their catalogue quickly, then add their own designs over time.
+
+## Step 2: Customise and Brand
+
+Never sell a PLR template exactly as you received it. A few changes make it uniquely yours and let you charge more:
+
+- Swap in your colour palette and fonts
+- Adjust layouts and spacing
+- Add your own cover and preview mockups
+- Rename the template around a clear buyer outcome
+
+## Step 3: Create the Template Share Link
+
+This is the mechanism that makes selling Canva templates work:
+
+1. Open your finished design in Canva.
+2. Click **Share**, then **More**, then **Template link**.
+3. Select **"Use as template."**
+4. Copy the generated link — this is what your buyer receives.
+
+When a buyer opens the link, Canva creates their own editable copy. Your master file is never altered, so the same link sells endlessly.
+
+## Step 4: Choose Where to Sell
+
+- **Etsy** — built-in buyer traffic; great for discovery. See our [guide to selling digital products on Etsy](/blog/how-to-sell-digital-products-on-etsy).
+- **Gumroad or Payhip** — simple, low-fee, and you keep more control.
+- **Your own website** — highest margins and full ownership of the customer.
+
+Many sellers list on Etsy for traffic and their own site for repeat buyers — weigh the trade-offs in [Etsy vs your own website](/blog/etsy-vs-own-website-where-to-sell).
+
+## Step 5: Price for Profit
+
+- **Single template:** $5 to $30
+- **Template bundle:** $20 to $60
+- **Mega bundle or membership:** $47 to $97
+
+Bundles win. A pack of 20 Instagram templates feels far more valuable than one, and it raises your average order value with no extra delivery work.
+
+## Final Thoughts
+
+Selling Canva templates is a near-perfect digital product business: high demand, effortless delivery, and excellent margins. Use PLR to stock your shop fast, customise each template so it stands out, deliver it with a Canva share link, and price in bundles. You can have your first templates listed today.
+
+Ready to start? [Get instant access to PLR Canva templates and thousands more products.](/checkout)`,
   },
 ]

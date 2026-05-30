@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { BLOG_POSTS } from '@/lib/blog/posts'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
@@ -41,28 +42,43 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="block bg-white rounded-xl border border-gray-200 p-6 hover:border-[#1565C0] hover:shadow-md transition-all"
+                className="flex flex-col sm:flex-row bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-[#1565C0] hover:shadow-md transition-all"
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-medium text-[#1565C0] bg-blue-50 px-3 py-1 rounded-full">
-                    {post.category}
-                  </span>
-                  <span className="text-xs text-gray-400">{post.readTime}</span>
-                  <span className="text-xs text-gray-400">
-                    {new Date(post.datePublished).toLocaleDateString('en-GB', {
-                      day: 'numeric',
-                      month: 'long',
-                      year: 'numeric',
-                    })}
+                {post.image ? (
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt ?? post.title}
+                    width={224}
+                    height={176}
+                    className="w-full sm:w-56 h-44 sm:h-auto object-cover flex-shrink-0"
+                  />
+                ) : (
+                  <div className="w-full sm:w-56 h-44 sm:h-auto min-h-[11rem] bg-gradient-to-br from-[#1A1A4E] to-[#1565C0] flex items-center justify-center flex-shrink-0">
+                    <span className="text-white/90 text-sm font-semibold px-6 text-center">{post.category}</span>
+                  </div>
+                )}
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-xs font-medium text-[#1565C0] bg-blue-50 px-3 py-1 rounded-full">
+                      {post.category}
+                    </span>
+                    <span className="text-xs text-gray-400">{post.readTime}</span>
+                    <span className="text-xs text-gray-400">
+                      {new Date(post.datePublished).toLocaleDateString('en-GB', {
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric',
+                      })}
+                    </span>
+                  </div>
+                  <h2 className="text-xl font-bold text-gray-900 mb-2 hover:text-[#1565C0] transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-500 text-sm leading-relaxed">{post.description}</p>
+                  <span className="inline-block mt-4 text-[#1565C0] text-sm font-medium">
+                    Read guide →
                   </span>
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-2 hover:text-[#1565C0] transition-colors">
-                  {post.title}
-                </h2>
-                <p className="text-gray-500 text-sm leading-relaxed">{post.description}</p>
-                <span className="inline-block mt-4 text-[#1565C0] text-sm font-medium">
-                  Read guide →
-                </span>
               </Link>
             ))}
           </div>

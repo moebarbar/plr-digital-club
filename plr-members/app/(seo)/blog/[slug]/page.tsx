@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { BLOG_POSTS } from '@/lib/blog/posts'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
+import { FAQSection } from '@/components/seo/FAQSection'
 
 // NOTE: renderMarkdown output is only ever injected from server-controlled static
 // blog post content defined in lib/blog/posts.ts — never from user input. Safe.
@@ -31,6 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified,
       authors: [post.author],
+      ...(post.image ? { images: [{ url: post.image, alt: post.imageAlt ?? post.title }] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      ...(post.image ? { images: [post.image] } : {}),
     },
   }
 }
@@ -39,6 +48,8 @@ function renderMarkdown(content: string): string {
   return content
     .replace(/^## (.+)$/gm, '<h2 class="text-2xl font-bold text-[#1A1A4E] mt-10 mb-4">$1</h2>')
     .replace(/^### (.+)$/gm, '<h3 class="text-xl font-bold text-gray-900 mt-8 mb-3">$1</h3>')
+    // Images (must run before inline links, since ![alt](src) contains the link pattern):
+    .replace(/^!\[([^\]]*)\]\(([^)]+)\)\s*$/gm, '<figure class="my-8"><img src="$2" alt="$1" loading="lazy" class="w-full rounded-xl border border-gray-200" /><figcaption class="text-center text-sm text-gray-400 mt-3">$1</figcaption></figure>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-[#1565C0] hover:underline">$1</a>')
@@ -53,6 +64,10 @@ function renderMarkdown(content: string): string {
     .replace(/(<li.*<\/li>\n?)+/g, (block) => `<ul class="space-y-2 my-4">${block}</ul>`)
     .replace(/(<tr.*<\/tr>\n?)+/g, (block) => `<div class="overflow-x-auto my-6"><table class="w-full bg-white rounded-xl border border-gray-200 text-sm"><tbody>${block}</tbody></table></div>`)
     .replace(/\n\n+/g, '</p><p class="text-gray-600 leading-relaxed my-4">')
+}
+
+function countWords(content: string): number {
+  return content.trim().split(/\s+/).filter(Boolean).length
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -71,6 +86,8 @@ export default async function BlogPostPage({ params }: Props) {
         datePublished={post.datePublished}
         dateModified={post.dateModified}
         authorName={post.author}
+        image={post.image}
+        wordCount={countWords(post.content)}
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://plrdigitalclub.com' },
@@ -101,15 +118,55 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Hero image */}
+      {post.image && (
+        <div className="max-w-4xl mx-auto px-6 -mt-8 md:-mt-10 relative z-10">
+          <Image
+            src={post.image}
+            alt={post.imageAlt ?? post.title}
+            width={1200}
+            height={630}
+            priority
+            className="w-full rounded-2xl border border-gray-200 shadow-lg object-cover aspect-[1200/630]"
+          />
+        </div>
+      )}
+
       {/* Article body — content is static server-controlled markdown from lib/blog/posts.ts */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-6">
+          {post.quickAnswer && (
+            <div className="bg-[#F8F8FF] border border-[#1565C0]/20 rounded-2xl p-6 mb-10">
+              <p className="text-xs font-bold uppercase tracking-wider text-[#1565C0] mb-2">Quick answer</p>
+              <p className="text-gray-800 text-lg leading-relaxed">{post.quickAnswer}</p>
+            </div>
+          )}
+
           <article
             className="text-gray-600 leading-relaxed text-lg"
             dangerouslySetInnerHTML={{ __html: renderMarkdown(post.content) }}
           />
+
+          {post.authorBio && (
+            <div className="mt-12 border-t border-gray-200 pt-8">
+              <div className="flex items-start gap-4 bg-[#F8F8FF] rounded-2xl p-6">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1A1A4E] to-[#1565C0] text-white font-bold flex items-center justify-center flex-shrink-0">
+                  {post.author.split(' ').map((w) => w[0]).slice(0, 2).join('')}
+                </div>
+                <div>
+                  <p className="font-bold text-[#1A1A4E]">{post.author}</p>
+                  <p className="text-gray-600 text-sm mt-1">{post.authorBio}</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </section>
+
+      {/* FAQ (AEO) — also emits FAQPage schema */}
+      {post.faqs && post.faqs.length > 0 && (
+        <FAQSection items={post.faqs} title="Frequently Asked Questions" />
+      )}
 
       {/* CTA */}
       <section className="py-12 bg-[#F8F8FF]">

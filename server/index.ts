@@ -30,6 +30,8 @@ const NEXT_ROUTES = [
   "/plr-social-media-templates",
   "/best-plr-sites-2026",
   "/blog",
+  "/about",
+  "/contact",
   "/admin",
   "/sitemap.xml",
   "/robots.txt",
