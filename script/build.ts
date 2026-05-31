@@ -41,7 +41,15 @@ async function buildAll() {
   await viteBuild();
 
   console.log("installing plr-members dependencies...");
-  execSync("npm ci", { stdio: "inherit", cwd: resolve("plr-members") });
+  // --include=dev: Next build needs build-time tooling (@tailwindcss/postcss,
+  // tailwindcss, typescript, @types/*) which live in devDependencies. Railway
+  // sets NODE_ENV=production, under which `npm ci` skips devDependencies, so the
+  // Tailwind PostCSS plugin would be missing and the build would fail. Force them.
+  execSync("npm ci --include=dev", {
+    stdio: "inherit",
+    cwd: resolve("plr-members"),
+    env: { ...process.env, NODE_ENV: "development" },
+  });
 
   console.log("building Next.js (plr-members)...");
   execSync("npm run build", { stdio: "inherit", cwd: resolve("plr-members") });
