@@ -7,7 +7,7 @@ export function PublicNav() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
           <Image
-            src="/logo.png"
+            src="/logo-white.png"
             alt="PLR Digital Club"
             width={160}
             height={40}
@@ -39,7 +39,7 @@ export function PublicFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <Image
-              src="/logo.png"
+              src="/logo-white.png"
               alt="PLR Digital Club"
               width={140}
               height={35}

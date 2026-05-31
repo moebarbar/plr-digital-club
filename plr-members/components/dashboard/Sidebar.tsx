@@ -35,7 +35,7 @@ function SidebarContent({ profile, onClose }: { profile: Profile; onClose: () =>
     <div className="flex flex-col h-full bg-[#1A1A4E] w-64">
       <div className="px-5 py-5 border-b border-white/10">
         <Image
-          src="/logo.png"
+          src="/logo-white.png"
           alt="PLR Digital Club"
           width={150}
           height={38}

@@ -65,7 +65,7 @@ export default function CheckoutPage() {
         }}
       >
         <Image
-          src="/logo.png"
+          src="/logo-white.png"
           alt="PLR Digital Club"
           width={160}
           height={40}

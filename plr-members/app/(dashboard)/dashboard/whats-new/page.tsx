@@ -67,22 +67,22 @@ export default async function WhatsNewPage() {
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {items.map((product) => (
                 <div
                   key={product.id}
                   className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
                 >
-                  {/* Thumbnail */}
-                  <div className="h-36 bg-[#1A1A4E] relative overflow-hidden">
+                  {/* Thumbnail — match Product Library's 8:5 ratio + object-fill so full graphic shows */}
+                  <div className="aspect-[8/5] bg-[#1A1A4E] relative overflow-hidden">
                     {product.image_url ? (
                       <img
                         src={product.image_url}
                         alt={product.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-fill"
                       />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center text-white/20 text-4xl">
+                      <div className="w-full h-full flex items-center justify-center text-white/20 text-5xl">
                         ⚡
                       </div>
                     )}

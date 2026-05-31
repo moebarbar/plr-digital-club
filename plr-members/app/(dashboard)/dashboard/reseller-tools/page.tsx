@@ -123,10 +123,6 @@ function CopyButton({ text, label = 'Copy' }: { text: string; label?: string }) 
 }
 
 export default function ResellerToolsPage() {
-  const affiliateUrl = typeof window !== 'undefined'
-    ? `${window.location.origin}?ref=member`
-    : 'https://plrdigitalclub.com?ref=member'
-
   return (
     <div className="max-w-3xl space-y-8">
       <div>
@@ -161,18 +157,6 @@ export default function ResellerToolsPage() {
               <Badge variant="info">Lifetime Access</Badge>
             </div>
           </div>
-        </div>
-      </Card>
-
-      {/* Affiliate link */}
-      <Card>
-        <h2 className="font-bold text-gray-900 mb-3">Your Referral Link</h2>
-        <p className="text-sm text-gray-500 mb-3">
-          Share this link to refer new members. Replace the placeholder with your own tracking if needed.
-        </p>
-        <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2">
-          <code className="flex-1 text-sm text-gray-700 truncate">{affiliateUrl}</code>
-          <CopyButton text={affiliateUrl} label="Copy Link" />
         </div>
       </Card>
 
