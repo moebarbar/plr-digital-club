@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import CountdownTimer from '@/components/checkout/CountdownTimer'
 
-export default function CheckoutPage() {
+export default function CheckoutForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -85,7 +85,7 @@ export default function CheckoutPage() {
             '300+ Canva Templates',
             'Planners & Journals',
             'Social Media Templates',
-            '300,000+ eBooks',
+            'PLR eBooks',
             'Notion Templates',
             '60,000+ Logo Templates',
             'Reseller Tools & Resources',

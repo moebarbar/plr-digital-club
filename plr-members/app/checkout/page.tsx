@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import CheckoutForm from '../(public)/page'
+import CheckoutForm from '@/components/checkout/CheckoutForm'
 
 export const metadata: Metadata = {
   title: 'Get Lifetime Access — PLR Digital Club',

@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     template: '%s | PLR Digital Club',
   },
   description: 'Get lifetime access to 1,000+ PLR & MRR digital products. Canva templates, eBooks, courses, social media templates & more. Rebrand, resell, keep 100% profit.',
-  keywords: ['PLR digital products', 'MRR digital products', 'master resell rights', 'private label rights', 'digital products to resell', 'PLR membership'],
   authors: [{ name: 'PLR Digital Club' }],
   creator: 'PLR Digital Club',
   icons: {
