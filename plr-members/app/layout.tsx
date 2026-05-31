@@ -110,23 +110,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           />
         </noscript>
 
-        {/* Pinterest events */}
-        <Script id="pinterest-events" strategy="afterInteractive">{`
-          if (typeof pintrk === 'function') {
-            pintrk('track', 'pagevisit', { event_id: 'eventId0001' });
-            pintrk('track', 'addtocart', { event_id: 'eventId0001', value: 100, order_quantity: 1, currency: 'USD' });
-            pintrk('track', 'checkout', { event_id: 'eventId0001', value: 100, order_quantity: 1, currency: 'USD' });
-          }
-        `}</Script>
-
         {/* Weblise pixel */}
         <Script src="https://weblise.co/pixel/WXtnLvHnxxPhlikA" strategy="afterInteractive" />
-
-        {/* Viewtrace pixel */}
-        <Script src="https://viewtrace.com/pixel/C0QejEzyFiFbkjUM" strategy="afterInteractive" />
-
-        {/* Popuppuff pixel */}
-        <Script src="https://popuppuff.com/pixel/xWRSNKpHUgQFmHzvffCkjGFYKP6Crlmp" strategy="afterInteractive" />
 
         {/* GRP pixel */}
         <Script id="grp-pixel" strategy="afterInteractive">{`
