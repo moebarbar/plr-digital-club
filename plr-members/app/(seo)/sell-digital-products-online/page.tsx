@@ -1,18 +1,15 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'How to Sell Digital Products Online in 2026 — Complete Guide',
   description: 'Learn how to sell digital products online and keep 100% profit. Step-by-step guide for beginners — no experience needed. Start with PLR & MRR products today.',
-  alternates: { canonical: 'https://plrdigitalclub.com/sell-digital-products-online' },
-  openGraph: {
-    title: 'How to Sell Digital Products Online in 2026 — Complete Guide',
-    description: 'The complete beginner guide to selling digital products online. Earn passive income with PLR & MRR products.',
-    url: 'https://plrdigitalclub.com/sell-digital-products-online',
-  },
-}
+  path: '/sell-digital-products-online',
+  ogDescription: 'The complete beginner guide to selling digital products online. Earn passive income with PLR & MRR products.',
+})
 
 const FAQ_ITEMS = [
   { q: 'What is the easiest digital product to sell online?', a: 'Templates — especially Canva templates — are among the easiest digital products to start with. They are visual, in high demand on Etsy, and PLR Digital Club has 300+ Canva templates ready to sell.' },
@@ -83,7 +80,7 @@ export default function SellDigitalProductsPage() {
               {
                 step: 1,
                 title: 'Choose Your Products',
-                body: 'Start with a niche you understand or products with proven demand. Canva templates and planners sell extremely well on Etsy. eBooks and guides work well on Gumroad. With PLR Digital Club, you get 1,000+ products across 13 categories — pick what fits your audience.',
+                body: 'Start with a niche you understand or products with proven demand. Canva templates and planners sell extremely well on Etsy. eBooks and guides work well on Gumroad. With PLR Digital Club, you get 1,000+ products across 48 categories — pick what fits your audience.',
               },
               {
                 step: 2,

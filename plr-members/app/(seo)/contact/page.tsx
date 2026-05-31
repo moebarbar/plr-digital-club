@@ -1,17 +1,15 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Contact PLR Digital Club — Support & Help',
   description: 'Get in touch with the PLR Digital Club team. Email our support team for help with your account, products, billing, or general questions.',
-  alternates: { canonical: 'https://plrdigitalclub.com/contact' },
-  openGraph: {
-    title: 'Contact PLR Digital Club',
-    description: 'Questions about PLR Digital Club? Contact our support team — we typically reply within one business day.',
-    url: 'https://plrdigitalclub.com/contact',
-  },
-}
+  path: '/contact',
+  ogTitle: 'Contact PLR Digital Club',
+  ogDescription: 'Questions about PLR Digital Club? Contact our support team — we typically reply within one business day.',
+})
 
 const SUPPORT_EMAIL = 'support@plrdigitalclub.com'
 

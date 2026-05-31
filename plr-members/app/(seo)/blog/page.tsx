@@ -1,19 +1,16 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import Image from 'next/image'
 import { BLOG_POSTS } from '@/lib/blog/posts'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'PLR & MRR Blog — Guides, Tips & Strategies for Digital Product Sellers',
   description: 'Free guides on PLR products, master resell rights, and how to sell digital products online. Practical strategies for building a digital product business.',
-  alternates: { canonical: 'https://plrdigitalclub.com/blog' },
-  openGraph: {
-    title: 'PLR & MRR Blog — Guides, Tips & Strategies for Digital Product Sellers',
-    description: 'Free guides on PLR products, MRR, and selling digital products online.',
-    url: 'https://plrdigitalclub.com/blog',
-  },
-}
+  path: '/blog',
+  ogDescription: 'Free guides on PLR products, MRR, and selling digital products online.',
+})
 
 export default function BlogPage() {
   return (

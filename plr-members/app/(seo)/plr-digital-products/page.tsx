@@ -1,33 +1,30 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { ProductSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'PLR Digital Products — 1,000+ Private Label Rights Products',
   description: 'Browse 1,000+ PLR digital products with full private label rights. Canva templates, eBooks, planners, social media packs & more. Rebrand and resell, keep 100% profit.',
-  alternates: { canonical: 'https://plrdigitalclub.com/plr-digital-products' },
-  openGraph: {
-    title: 'PLR Digital Products — 1,000+ Private Label Rights Products',
-    description: 'Get lifetime access to 1,000+ PLR digital products. Rebrand, resell, keep 100% profit.',
-    url: 'https://plrdigitalclub.com/plr-digital-products',
-  },
-}
+  path: '/plr-digital-products',
+  ogDescription: 'Get lifetime access to 1,000+ PLR digital products. Rebrand, resell, keep 100% profit.',
+})
 
-const CATEGORIES = [
-  { icon: '🎨', name: 'Canva Templates', count: '300+', slug: '/plr-canva-templates', desc: 'Done-for-you Canva designs you can brand and sell instantly.' },
-  { icon: '📱', name: 'Social Media Templates', count: '500+', slug: '/plr-social-media-templates', desc: 'Instagram, Facebook, TikTok and Pinterest ready-made packs.' },
-  { icon: '📚', name: 'PLR eBooks', count: '300,000+', slug: '/plr-ebooks', desc: 'Publish, resell or use as lead magnets. Every niche covered.' },
-  { icon: '📋', name: 'Planners & Journals', count: '200+', slug: '#', desc: 'Printable and digital planners with full resell rights.' },
-  { icon: '📊', name: 'PowerPoint Templates', count: '100+', slug: '#', desc: 'Professional slide decks ready to white-label.' },
-  { icon: '💡', name: 'Notion Templates', count: '150+', slug: '#', desc: 'Productivity and business Notion setups with PLR.' },
+const CATEGORIES: { icon: string; name: string; count: string; href: string | null; desc: string }[] = [
+  { icon: '🎨', name: 'Canva Templates', count: '300+ templates', href: '/plr-canva-templates', desc: 'Done-for-you Canva designs you can brand and sell instantly.' },
+  { icon: '📱', name: 'Social Media Templates', count: '500+ templates', href: '/plr-social-media-templates', desc: 'Instagram, Facebook, TikTok and Pinterest ready-made packs.' },
+  { icon: '📚', name: 'PLR eBooks', count: 'Huge library', href: '/plr-ebooks', desc: 'Publish, resell or use as lead magnets. Every niche covered.' },
+  { icon: '📋', name: 'Planners & Journals', count: '200+ products', href: null, desc: 'Printable and digital planners with full resell rights.' },
+  { icon: '📊', name: 'PowerPoint Templates', count: '100+ templates', href: null, desc: 'Professional slide decks ready to white-label.' },
+  { icon: '💡', name: 'Notion Templates', count: '150+ templates', href: null, desc: 'Productivity and business Notion setups with PLR.' },
 ]
 
 const FAQ_ITEMS = [
   { q: 'What are PLR digital products?', a: 'PLR (Private Label Rights) digital products are pre-made digital files — eBooks, templates, graphics, courses — that you purchase with the right to rebrand, edit, and resell as your own. You keep 100% of the profit from every sale.' },
   { q: 'Can I really resell PLR products and keep all the money?', a: 'Yes. That is the core benefit of PLR. Once you join PLR Digital Club, you own a licence to sell every product in the library. Every sale you make goes directly into your account — we take nothing.' },
   { q: 'Do I need any design or technical skills?', a: 'No. All products are done-for-you and ready to sell. For Canva templates you just need a free Canva account to add your branding. eBooks and planners can be sold as-is.' },
-  { q: 'How many PLR products do I get?', a: 'Your lifetime membership includes 1,000+ products across 13 categories, plus new products added every week at no extra cost.' },
+  { q: 'How many PLR products do I get?', a: 'Your lifetime membership includes 1,000+ products across 48 categories, plus new products added every week at no extra cost.' },
   { q: 'Where can I sell PLR digital products?', a: 'You can sell on Etsy, Gumroad, Payhip, your own website, Amazon KDP (for eBooks), or through social media. The reseller tools inside your dashboard include ready-made sales copy and social captions.' },
   { q: 'Is PLR Digital Club a one-time payment?', a: 'Yes — $197 one time, lifetime access. No monthly fees, no hidden charges. All future product additions are included.' },
 ]
@@ -75,7 +72,7 @@ export default function PLRDigitalProductsPage() {
               For digital entrepreneurs, PLR products are a powerful shortcut. Instead of spending weeks creating products from scratch, you can launch a digital product business the same day you join. The demand for digital products — planners, templates, eBooks, guides — has never been higher, and PLR gives you the inventory to meet that demand instantly.
             </p>
             <p className="mt-4">
-              At PLR Digital Club, we have curated over <strong>1,000 PLR and MRR digital products</strong> across 13 categories. Every product is ready to sell on Etsy, Gumroad, your own store, or anywhere else you choose.
+              At PLR Digital Club, we have curated over <strong>1,000 PLR and MRR digital products</strong> across 48 categories. Every product is ready to sell on Etsy, Gumroad, your own store, or anywhere else you choose.
             </p>
           </div>
         </div>
@@ -87,14 +84,28 @@ export default function PLRDigitalProductsPage() {
           <h2 className="text-3xl font-bold text-[#1A1A4E] mb-3 text-center">Browse PLR Product Categories</h2>
           <p className="text-gray-500 text-center mb-10">Every category comes with full private label rights and resell rights.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {CATEGORIES.map((cat) => (
-              <Link key={cat.name} href={cat.slug} className="bg-white rounded-xl border border-gray-200 p-6 hover:border-[#1565C0] hover:shadow-md transition-all">
-                <span className="text-3xl">{cat.icon}</span>
-                <h3 className="font-bold text-gray-900 mt-3 mb-1">{cat.name}</h3>
-                <p className="text-[#1565C0] text-sm font-semibold mb-2">{cat.count} products</p>
-                <p className="text-gray-500 text-sm">{cat.desc}</p>
-              </Link>
-            ))}
+            {CATEGORIES.map((cat) => {
+              const base = 'bg-white rounded-xl border border-gray-200 p-6 transition-all'
+              const content = (
+                <>
+                  <span className="text-3xl">{cat.icon}</span>
+                  <h3 className="font-bold text-gray-900 mt-3 mb-1">{cat.name}</h3>
+                  <p className="text-[#1565C0] text-sm font-semibold mb-2">{cat.count}</p>
+                  <p className="text-gray-500 text-sm">{cat.desc}</p>
+                </>
+              )
+              // Categories without a dedicated page render as a non-clickable card
+              // (no dead href="#" links for crawlers).
+              return cat.href ? (
+                <Link key={cat.name} href={cat.href} className={`${base} hover:border-[#1565C0] hover:shadow-md`}>
+                  {content}
+                </Link>
+              ) : (
+                <div key={cat.name} className={base}>
+                  {content}
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>

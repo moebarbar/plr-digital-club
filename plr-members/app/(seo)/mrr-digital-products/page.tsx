@@ -1,18 +1,15 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { ProductSchema, BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'MRR Digital Products — Master Resell Rights Products Library',
   description: 'Access 1,000+ MRR digital products with master resell rights. Sell courses, templates & eBooks and keep 100% profit. Lifetime access for a one-time $197 payment.',
-  alternates: { canonical: 'https://plrdigitalclub.com/mrr-digital-products' },
-  openGraph: {
-    title: 'MRR Digital Products — Master Resell Rights Products Library',
-    description: 'Get lifetime access to 1,000+ MRR digital products. Sell and keep 100% profit.',
-    url: 'https://plrdigitalclub.com/mrr-digital-products',
-  },
-}
+  path: '/mrr-digital-products',
+  ogDescription: 'Get lifetime access to 1,000+ MRR digital products. Sell and keep 100% profit.',
+})
 
 const FAQ_ITEMS = [
   { q: 'What is Master Resell Rights (MRR)?', a: 'Master Resell Rights (MRR) means you can resell a product AND pass on the resell rights to your customers. Your buyers can then sell the product themselves. This creates a chain of resellers, all starting with the product you bought.' },

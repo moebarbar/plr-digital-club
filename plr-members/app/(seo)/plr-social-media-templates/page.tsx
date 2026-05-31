@@ -1,18 +1,15 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'PLR Social Media Templates — 500+ Done-For-You Social Media Packs',
   description: 'Get 500+ PLR social media templates for Instagram, Pinterest, TikTok & Facebook with resell rights. Rebrand and sell or use for your own business. From $197 lifetime.',
-  alternates: { canonical: 'https://plrdigitalclub.com/plr-social-media-templates' },
-  openGraph: {
-    title: 'PLR Social Media Templates — 500+ Done-For-You Social Media Packs',
-    description: '500+ PLR social media templates with resell rights. Rebrand, sell, keep 100% profit.',
-    url: 'https://plrdigitalclub.com/plr-social-media-templates',
-  },
-}
+  path: '/plr-social-media-templates',
+  ogDescription: '500+ PLR social media templates with resell rights. Rebrand, sell, keep 100% profit.',
+})
 
 const PLATFORMS = [
   { name: 'Instagram', formats: 'Square posts, stories, carousels, reels covers', count: '200+' },
@@ -129,7 +126,7 @@ export default function PLRSocialMediaTemplatesPage() {
 
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
         <h2 className="text-3xl font-bold mb-4">Get 500+ PLR Social Media Templates Today</h2>
-        <p className="text-blue-200 mb-8 max-w-xl mx-auto">Plus 300+ Canva templates, 300,000+ eBooks, planners, and more. One payment, lifetime access.</p>
+        <p className="text-blue-200 mb-8 max-w-xl mx-auto">Plus 300+ Canva templates, PLR eBooks, planners, and more. One payment, lifetime access.</p>
         <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Join PLR Digital Club — $197 →
         </Link>

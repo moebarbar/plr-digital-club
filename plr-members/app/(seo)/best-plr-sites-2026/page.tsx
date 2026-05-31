@@ -1,18 +1,15 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'Best PLR Sites 2026 — Top PLR Websites Reviewed & Ranked',
   description: 'Reviewed and ranked: the best PLR sites in 2026. Compare PLR Digital Club, IDPLR, BuyQualityPLR, and more. Find the best value PLR membership for your business.',
-  alternates: { canonical: 'https://plrdigitalclub.com/best-plr-sites-2026' },
-  openGraph: {
-    title: 'Best PLR Sites 2026 — Top PLR Websites Reviewed & Ranked',
-    description: 'The definitive guide to the best PLR sites in 2026. Honest comparison of PLR libraries, pricing, and licensing.',
-    url: 'https://plrdigitalclub.com/best-plr-sites-2026',
-  },
-}
+  path: '/best-plr-sites-2026',
+  ogDescription: 'The definitive guide to the best PLR sites in 2026. Honest comparison of PLR libraries, pricing, and licensing.',
+})
 
 const PLR_SITES = [
   {

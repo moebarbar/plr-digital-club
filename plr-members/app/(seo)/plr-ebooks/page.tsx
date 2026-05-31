@@ -1,23 +1,20 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
-  title: 'PLR eBooks — 300,000+ eBooks With Private Label Rights',
-  description: 'Access 300,000+ PLR eBooks with full private label rights. Publish on Amazon KDP, sell on Etsy, or use as lead magnets. Lifetime access from $197.',
-  alternates: { canonical: 'https://plrdigitalclub.com/plr-ebooks' },
-  openGraph: {
-    title: 'PLR eBooks — 300,000+ eBooks With Private Label Rights',
-    description: 'Get 300,000+ PLR eBooks. Publish, resell, or use as lead magnets. Lifetime access.',
-    url: 'https://plrdigitalclub.com/plr-ebooks',
-  },
-}
+export const metadata: Metadata = pageMetadata({
+  title: 'PLR eBooks — Private Label Rights eBooks to Rebrand & Resell',
+  description: 'Access a huge library of PLR eBooks with full private label rights. Publish on Amazon KDP, sell on Etsy, or use as lead magnets. Lifetime access from $197.',
+  path: '/plr-ebooks',
+  ogDescription: 'Get PLR eBooks with full private label rights. Publish, resell, or use as lead magnets. Lifetime access.',
+})
 
 const FAQ_ITEMS = [
   { q: 'Can I publish PLR eBooks on Amazon KDP?', a: 'Yes. PLR eBooks can be published on Amazon KDP after you rebrand and modify them. Amazon requires the content to be sufficiently unique, so we recommend rewriting at least 30–40% and adding your own branding, introduction, and conclusion.' },
   { q: 'Can I use PLR eBooks as lead magnets?', a: 'Absolutely. PLR eBooks make excellent lead magnets. Give them away for free in exchange for an email address to grow your list. This is one of the most popular uses of PLR eBooks among digital marketers.' },
-  { q: 'What niches do the PLR eBooks cover?', a: 'PLR Digital Club eBooks cover business, finance, health, wellness, relationships, self-improvement, parenting, pets, food, travel, marketing, social media, and many more. With 300,000+ eBooks, virtually every niche is covered.' },
+  { q: 'What niches do the PLR eBooks cover?', a: 'PLR Digital Club eBooks cover business, finance, health, wellness, relationships, self-improvement, parenting, pets, food, travel, marketing, social media, and many more. With our huge eBook library, virtually every niche is covered.' },
   { q: 'Can I sell PLR eBooks on Etsy?', a: 'Yes. Digital eBooks sell well on Etsy, especially in niches like wellness, productivity, and finance. PLR rights allow you to list and sell them directly. Many of our members generate consistent Etsy income from PLR eBooks.' },
   { q: 'Do I need to edit PLR eBooks before selling?', a: 'You can sell them as-is, but we recommend adding your branding, updating any outdated information, and writing a personal introduction. This increases perceived value and makes the product feel more premium.' },
 ]
@@ -35,13 +32,13 @@ export default function PLREbooksPage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-blue-300 text-sm font-medium uppercase tracking-wider mb-4">Private Label Rights eBooks</p>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            300,000+ PLR eBooks — Publish, Sell, and Keep 100% Profit
+            PLR eBooks — Publish, Sell, and Keep 100% Profit
           </h1>
           <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-8">
             The largest PLR eBook library online. Rebrand and publish on Amazon KDP, sell on Etsy, or use as lead magnets. Every niche covered. Lifetime access from one payment.
           </p>
           <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
-            Get All 300,000+ eBooks — $197 Lifetime →
+            Get All PLR eBooks — $197 Lifetime →
           </Link>
         </div>
       </section>
@@ -54,7 +51,7 @@ export default function PLREbooksPage() {
               <strong>PLR eBooks</strong> (Private Label Rights eBooks) are pre-written digital books that come with a licence allowing you to rebrand, edit, and resell them as your own. You can put your name on the cover, modify the content, add your branding, and publish or sell the eBook — keeping 100% of every sale.
             </p>
             <p>
-              PLR Digital Club includes over <strong>300,000 PLR eBooks</strong> spanning every major niche — business, health, wellness, finance, relationships, parenting, self-improvement, and more. Whether you want to publish on Amazon KDP, sell on Etsy, or use eBooks as lead magnets to grow your email list, the content is ready to go.
+              PLR Digital Club includes a <strong>huge library of PLR eBooks</strong> spanning every major niche — business, health, wellness, finance, relationships, parenting, self-improvement, and more. Whether you want to publish on Amazon KDP, sell on Etsy, or use eBooks as lead magnets to grow your email list, the content is ready to go.
             </p>
             <p>
               Unlike paying a ghostwriter ($500–$5,000 per eBook), PLR eBooks let you access professional, well-researched content at a fraction of the cost — and your lifetime membership covers every eBook in the library plus new additions each week.
@@ -121,7 +118,7 @@ export default function PLREbooksPage() {
       </section>
 
       <section className="py-16 bg-[#1A1A4E] text-white text-center px-6">
-        <h2 className="text-3xl font-bold mb-4">Get 300,000+ PLR eBooks Today</h2>
+        <h2 className="text-3xl font-bold mb-4">Get Our Full PLR eBook Library Today</h2>
         <p className="text-blue-200 mb-8 max-w-xl mx-auto">Plus 700+ Canva templates, social media packs, planners, and more. One payment, lifetime access.</p>
         <Link href="/checkout" className="inline-block bg-white text-[#1A1A4E] font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors text-lg">
           Join PLR Digital Club — $197 →

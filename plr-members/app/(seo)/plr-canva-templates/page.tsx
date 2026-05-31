@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'PLR Canva Templates — 300+ Canva Templates With Resell Rights',
   description: 'Get 300+ Canva templates with full PLR & resell rights. Social media, business, branding, Etsy-ready designs. Lifetime access from $197. Sell and keep 100% profit.',
-  alternates: { canonical: 'https://plrdigitalclub.com/plr-canva-templates' },
-}
+  path: '/plr-canva-templates',
+})
 
 const FAQ_ITEMS = [
   { q: 'Can I sell Canva templates with PLR rights on Etsy?', a: 'Yes. Canva templates are one of the best-selling digital products on Etsy. With PLR rights from PLR Digital Club, you can list and sell them on Etsy and keep 100% of every sale.' },

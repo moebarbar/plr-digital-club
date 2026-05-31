@@ -1,17 +1,15 @@
 import type { Metadata } from 'next'
+import { pageMetadata } from '@/lib/seo/metadata'
 import Link from 'next/link'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: 'About PLR Digital Club — Who We Are & What We Do',
   description: 'PLR Digital Club gives entrepreneurs thousands of done-for-you digital products with PLR & MRR licences. Learn our story, mission, and how we vet every product.',
-  alternates: { canonical: 'https://plrdigitalclub.com/about' },
-  openGraph: {
-    title: 'About PLR Digital Club',
-    description: 'Thousands of done-for-you PLR & MRR digital products you can rebrand and resell for 100% profit. Learn who we are.',
-    url: 'https://plrdigitalclub.com/about',
-  },
-}
+  path: '/about',
+  ogTitle: 'About PLR Digital Club',
+  ogDescription: 'Thousands of done-for-you PLR & MRR digital products you can rebrand and resell for 100% profit. Learn who we are.',
+})
 
 const VALUES = [
   { title: 'Quality over quantity', body: 'Every product in our library is reviewed for usefulness and resale potential. We would rather give you products that sell than pad a number.' },
