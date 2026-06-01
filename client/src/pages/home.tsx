@@ -1017,10 +1017,10 @@ export default function Home() {
     <div className="min-h-screen bg-background" data-testid="page-home">
       <WebsiteSchema />
       <OrganizationSchema />
-      <ProductSchema 
+      <ProductSchema
         name="PLR Digital Club Lifetime Membership"
         description="Get instant access to 1000+ premium PLR & MRR digital products. Download Notion templates, ebooks, courses, planners and more. Rebrand and resell anywhere - keep 100% of every sale."
-        price={97}
+        price={197}
         url="https://plrdigitalclub.com/checkout"
       />
       <ReviewSchema reviews={[

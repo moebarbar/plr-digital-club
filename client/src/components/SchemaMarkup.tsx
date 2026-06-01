@@ -3,16 +3,16 @@ interface ProductSchemaProps {
   description: string;
   price: number;
   currency?: string;
-  image?: string;
+  image?: string | string[];
   url?: string;
 }
 
-export function ProductSchema({ 
-  name, 
-  description, 
-  price, 
+export function ProductSchema({
+  name,
+  description,
+  price,
   currency = "USD",
-  image,
+  image = "https://plrdigitalclub.com/images/plr-digital-club-product.jpg",
   url = "https://plrdigitalclub.com"
 }: ProductSchemaProps) {
   const schema = {
@@ -20,7 +20,8 @@ export function ProductSchema({
     "@type": "Product",
     "name": name,
     "description": description,
-    "image": image || "https://plrdigitalclub.com/og-image.png",
+    // Google Merchant listings require `image`; an array of absolute HTTPS URLs is preferred.
+    "image": Array.isArray(image) ? image : [image],
     "brand": {
       "@type": "Brand",
       "name": "PLR Digital Club"
