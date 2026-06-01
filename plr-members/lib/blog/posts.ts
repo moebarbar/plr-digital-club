@@ -30,6 +30,8 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'PLR Digital Club',
     category: 'PLR Basics',
     readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'A digital entrepreneur managing an online product business on a laptop',
     content: `Starting an online business in 2026 doesn't require you to spend 6 months locked in a room writing a book or filming a massive course. Instead, tens of thousands of clever entrepreneurs are leveraging pre-made digital assets to launch incredibly profitable storefronts in just a few weeks. The secret? **Private Label Rights (PLR)**.
 
 If you don't know how to resell PLR products correctly, you run the risk of blending into a sea of identical competitors. The key to high margins isn't just about selling; it's about *transformation* and *product positioning*.
@@ -135,6 +137,8 @@ By prioritizing deep rebranding, focusing on a specific niche problem, and estab
     author: 'PLR Digital Club',
     category: 'Selling Strategies',
     readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Charts showing booming digital product niche trends',
     content: `Choosing the right niche is the difference between struggling to make a sale and watching your Stripe notifications ping all day long.
 
 In 2026, consumer behavior has heavily shifted. Broad, generic products (like "How To Lose Weight" or "General Productivity") are highly saturated. On the other hand, the demand for highly specific, specialized digital products that save time has absolutely exploded.
@@ -217,6 +221,8 @@ Instead, they start in **one hyper-specific niche**, build authority, dominate t
     author: 'PLR Digital Club',
     category: 'PLR Basics',
     readTime: '9 min read',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Comparing business licensing models on a desk with documents',
     content: `When you enter the lucrative world of digital products, you quickly encounter a barrage of acronyms and jargon. The two most common — and heavily debated — terms you will see are **MRR (Master Resell Rights)** and **PLR (Private Label Rights)**.
 
 Both business models allow you to sell high-quality products you didn't create from scratch, but they operate under vastly different legal licenses and require entirely different marketing strategies.
@@ -286,6 +292,8 @@ If you are ready to start building your unique long-term digital empire, leverag
     author: 'PLR Digital Club',
     category: 'Passive Income',
     readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Passive income growth represented by coins and an upward chart',
     content: `The term "passive income" is often thrown around online, painting a highly romanticized picture of sitting on a beach in Tulum while your phone endlessly notifies you of new Stripe sales.
 
 While financial freedom and geographical independence are absolutely the end goal, getting there requires active, strategic work at the start — especially if you have zero experience in marketing or online business.
@@ -355,6 +363,8 @@ It takes consistent effort to build the marketing machine, but once the flywheel
     author: 'PLR Digital Club',
     category: 'Product Creation',
     readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Rebranding digital product designs in a creative workspace',
     content: `When you buy Private Label Rights (PLR) content, what you are essentially acquiring is raw material. A massive mistake that new digital sellers constantly make is taking that raw material and tossing it onto a storefront with zero changes.
 
 If a customer finds your identical PLR ebook being sold by five different stores — some for $37 and some for $3 — your business will immediately collapse in a race to the bottom.
@@ -413,6 +423,8 @@ By completely changing the medium, you instantly divorce the product from its PL
     author: 'PLR Digital Club',
     category: 'Digital Marketing',
     readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'A laptop with digital tools for selling products online',
     content: `Running a highly profitable digital product business doesn't require a large staff, an office, or thousands of dollars in startup capital. It simply requires the right software stack.
 
 In 2026, intelligent automation, aesthetic storefronts, and AI workflows are doing the heavy lifting for savvy solopreneurs. If you are tracking orders on a spreadsheet and emailing PDFs manually, you are leaving money and time on the table.
@@ -474,6 +486,8 @@ Equipping yourself with these tools removes the technical friction from selling 
     author: 'PLR Digital Club',
     category: 'Selling Strategies',
     readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'A clean Notion-style workspace and planner on a laptop',
     content: `If you are looking for the absolute lowest barrier to entry in the digital product ecosystem — combined with the highest potential return — look no further than building and selling **Notion templates**.
 
 Over the last few years, Notion has evolved from a simple note-taking app into the ultimate operating system for thousands of businesses, freelancers, and students. Because of its incredible flexibility, users frequently suffer from the "blank page problem." The software can do anything, which means setting it up is incredibly daunting for the average user.
@@ -540,6 +554,8 @@ Notion templates bridge the gap between beautiful aesthetics and profound softwa
     author: 'PLR Digital Club',
     category: 'Digital Marketing',
     readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'An online storefront dashboard for selling digital products',
     content: `You have finally done the hard work: you have acquired premium assets, completely rebranded them, designed gorgeous covers in Canva, and perfected your pricing psychology.
 
 Now comes the crucial, business-defining question: **Where do you actually sell these digital products?**
@@ -598,6 +614,8 @@ Over time, as brand authority grows and their email list swells, they rely on Et
     author: 'PLR Digital Club',
     category: 'Product Creation',
     readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Creating and launching an online course at a desk',
     content: `The global e-learning market is currently an industry valued at hundreds of billions of dollars. Being an educator online allows you to command absolute premium prices (ranging from $197 to $997+ per sale), establish immense brand authority, and construct true, highly scalable passive income.
 
 However, actually building an online course from complete scratch is utterly exhausting.
@@ -669,6 +687,8 @@ By intelligently leveraging premium PLR assets, you effectively transform a daun
     author: 'PLR Digital Club',
     category: 'Selling Strategies',
     readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Pricing strategy with a calculator and financial notes',
     content: `You have done the hard work. You have painstakingly rebranded an incredibly beautiful PLR bundle, designed the storefront, and your organic TikTok traffic is consistently flowing.
 
 But when it finally came to setting the actual price tag, you simply guessed. You boldly typed "$15.00" into the box and hoped for the best.
@@ -730,6 +750,8 @@ Mastering these core psychological pricing levers will instantly increase your A
     author: 'PLR Digital Club Team',
     category: 'PLR Guides',
     readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Digital products and templates displayed on a laptop screen',
     content: `## What Are PLR Digital Products?
 
 PLR digital products — short for **Private Label Rights digital products** — are pre-made digital files that come with a special licence allowing you to rebrand, edit, and resell them as your own. Unlike standard digital products, PLR gives you the right to put your name on the product, modify it however you like, and sell it to others while keeping 100% of the profit.
@@ -784,6 +806,8 @@ Here are the biggest advantages:
     author: 'PLR Digital Club Team',
     category: 'MRR Guides',
     readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Reading about master resell rights licensing on a laptop',
     content: `## What Is Master Resell Rights (MRR)?
 
 **Master Resell Rights (MRR)** is a type of digital product licence that allows you to resell a product and — crucially — pass those same resell rights on to your customers. When someone buys an MRR product from you, they can sell it too.
@@ -833,6 +857,8 @@ PLR Digital Club includes both PLR and MRR products in a single lifetime members
     author: 'PLR Digital Club Team',
     category: 'PLR Guides',
     readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=630&q=80',
+    imageAlt: 'Comparing PLR and MRR licensing options on a notepad and laptop',
     content: `## PLR vs MRR — The Core Difference
 
 Both PLR and MRR are types of digital product licences that allow you to sell products created by someone else. The key difference is what you can do with the product and what rights your customers receive.
