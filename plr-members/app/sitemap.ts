@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { BLOG_POSTS } from '@/lib/blog/posts'
+import { KEYWORD_PAGE_SLUGS } from '@/lib/seo/keywordPages'
 
 const BASE = 'https://plrdigitalclub.com'
 
@@ -40,5 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticEntries, ...blogEntries]
+  // Keyword-targeted SEO landing pages
+  const keywordEntries: MetadataRoute.Sitemap = KEYWORD_PAGE_SLUGS.map((slug) => ({
+    url: `${BASE}/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...staticEntries, ...blogEntries, ...keywordEntries]
 }

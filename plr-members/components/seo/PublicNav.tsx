@@ -36,8 +36,8 @@ export function PublicFooter() {
   return (
     <footer className="bg-[#1A1A4E] text-blue-200 py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-8">
+          <div className="col-span-2 md:col-span-1">
             <Image
               src="/logo-white.png"
               alt="PLR Digital Club"
@@ -58,12 +58,26 @@ export function PublicFooter() {
             </ul>
           </div>
           <div>
+            <p className="font-semibold text-white mb-3">Use Cases & Guides</p>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/plr-for-etsy-sellers" className="hover:text-white">PLR for Etsy Sellers</Link></li>
+              <li><Link href="/plr-for-coaches" className="hover:text-white">PLR for Coaches</Link></li>
+              <li><Link href="/plr-for-digital-marketers" className="hover:text-white">PLR for Digital Marketers</Link></li>
+              <li><Link href="/faceless-digital-marketing" className="hover:text-white">Faceless Digital Marketing</Link></li>
+              <li><Link href="/how-to-start-a-digital-product-business" className="hover:text-white">Start a Digital Product Business</Link></li>
+              <li><Link href="/done-for-you-digital-products" className="hover:text-white">Done-For-You Products</Link></li>
+            </ul>
+          </div>
+          <div>
             <p className="font-semibold text-white mb-3">Resources</p>
             <ul className="space-y-2 text-sm">
               <li><Link href="/sell-digital-products-online" className="hover:text-white">How to Sell Digital Products</Link></li>
+              <li><Link href="/plr-planners-and-journals" className="hover:text-white">PLR Planners & Journals</Link></li>
+              <li><Link href="/plr-notion-templates" className="hover:text-white">PLR Notion Templates</Link></li>
+              <li><Link href="/plr-printables" className="hover:text-white">PLR Printables</Link></li>
+              <li><Link href="/plr-health-and-wellness" className="hover:text-white">PLR Health & Wellness</Link></li>
               <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
               <li><Link href="/best-plr-sites-2026" className="hover:text-white">Best PLR Sites 2026</Link></li>
-              <li><Link href="/blog/plr-vs-mrr-difference" className="hover:text-white">PLR vs MRR Guide</Link></li>
             </ul>
           </div>
           <div>
