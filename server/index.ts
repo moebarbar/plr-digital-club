@@ -12,10 +12,9 @@ const NEXT_PORT = 3001;
 
 // Routes that Next.js (backend) handles
 const NEXT_ROUTES = [
-  // Homepage is now server-rendered by Next.js. shouldProxyToNext only matches
-  // the exact "/" for this entry (route + "/" === "//" never prefix-matches a
-  // real path), so static assets like /favicon.png still fall through to Vite.
-  "/",
+  // NOTE: "/" is intentionally NOT here — the homepage is served by the original
+  // Vite marketing app (client/src/pages/home.tsx). Everything below is handled
+  // by the Next.js members/SEO app.
   "/checkout",
   "/login",
   "/reset-password",
