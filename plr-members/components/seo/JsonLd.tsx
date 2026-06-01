@@ -47,15 +47,22 @@ export function WebsiteSchema() {
   )
 }
 
-export function ProductSchema({ name, description, price, url }: {
+export function ProductSchema({ name, description, price, url, image }: {
   name: string; description: string; price: string; url: string
+  image?: string | string[]
 }) {
+  // Google Merchant listings require `image`; default to the homepage product image.
+  const images = image
+    ? (Array.isArray(image) ? image : [image])
+    : ['https://plrdigitalclub.com/images/plr-digital-club-product.jpg']
   return (
     <JsonLd data={{
       '@context': 'https://schema.org',
       '@type': 'Product',
       name,
       description,
+      image: images,
+      brand: { '@type': 'Brand', name: 'PLR Digital Club' },
       url,
       offers: {
         '@type': 'Offer',

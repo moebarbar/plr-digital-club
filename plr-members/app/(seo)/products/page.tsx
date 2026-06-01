@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { BreadcrumbSchema } from '@/components/seo/JsonLd'
+import { CATEGORY_IMAGES } from '@/lib/categoryImages'
 
 export const metadata: Metadata = {
   title: 'Browse All Products — 48 Categories, 1,000+ Digital Products',
@@ -98,9 +100,22 @@ export default function ProductsPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {CATEGORIES.map((cat) => (
-              <div key={cat.title} className="bg-white rounded-xl border border-gray-200 p-6 hover:border-[#1565C0] hover:shadow-md transition-all">
-                <h2 className="font-bold text-gray-900 mb-1 text-lg">{cat.title}</h2>
-                <p className="text-gray-500 text-sm">{cat.description}</p>
+              <div key={cat.title} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-[#1565C0] hover:shadow-md transition-all group">
+                {CATEGORY_IMAGES[cat.title] && (
+                  <div className="aspect-[8/5] bg-[#1A1A4E] overflow-hidden">
+                    <Image
+                      src={CATEGORY_IMAGES[cat.title]}
+                      alt={cat.title}
+                      width={400}
+                      height={250}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
+                <div className="p-6">
+                  <h2 className="font-bold text-gray-900 mb-1 text-lg">{cat.title}</h2>
+                  <p className="text-gray-500 text-sm">{cat.description}</p>
+                </div>
               </div>
             ))}
           </div>

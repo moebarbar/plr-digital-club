@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FAQSection } from '@/components/seo/FAQSection'
 import { OrganizationSchema, WebsiteSchema, ProductSchema } from '@/components/seo/JsonLd'
+import { CATEGORY_IMAGES } from '@/lib/categoryImages'
 
 export const metadata: Metadata = {
   title: { absolute: 'Get Resell-Ready Digital Products for 100% Profit | PLR Digital Club' },
@@ -35,12 +37,12 @@ const STEPS = [
 ]
 
 const CATEGORIES = [
-  { icon: '🎨', name: 'Canva Templates', count: '300+', href: '/plr-canva-templates' },
-  { icon: '📱', name: 'Social Media Templates', count: '500+', href: '/plr-social-media-templates' },
-  { icon: '📚', name: 'PLR eBooks', count: 'Huge library', href: '/plr-ebooks' },
-  { icon: '🗓️', name: 'Planners & Journals', count: '200+', href: '/products' },
-  { icon: '💡', name: 'Notion Templates', count: '150+', href: '/products' },
-  { icon: '🔖', name: 'Logo Templates', count: '60,000+', href: '/products' },
+  { img: CATEGORY_IMAGES['Canva Templates'], name: 'Canva Templates', count: '300+', href: '/plr-canva-templates' },
+  { img: CATEGORY_IMAGES['Social Media Templates'], name: 'Social Media Templates', count: '500+', href: '/plr-social-media-templates' },
+  { img: CATEGORY_IMAGES['eBooks'], name: 'PLR eBooks', count: 'Huge library', href: '/plr-ebooks' },
+  { img: CATEGORY_IMAGES['Journals & Planners'], name: 'Planners & Journals', count: '200+', href: '/products' },
+  { img: CATEGORY_IMAGES['Notion Templates'], name: 'Notion Templates', count: '150+', href: '/products' },
+  { img: CATEGORY_IMAGES['Logo Templates'], name: 'Logo Templates', count: '60,000+', href: '/products' },
 ]
 
 const VALUE_ITEMS = [
@@ -74,6 +76,7 @@ export default function HomePage() {
         description="1,000+ PLR & MRR digital products with full resell rights. Rebrand, resell anywhere, and keep 100% of the profit. One-time $197 lifetime access."
         price="197"
         url="https://plrdigitalclub.com/"
+        image="https://plrdigitalclub.com/images/plr-digital-club-product.jpg"
       />
 
       {/* Hero */}
@@ -94,6 +97,16 @@ export default function HomePage() {
             <span>★★★★★ 4.8 from 500+ happy users</span>
             <span>🔒 Secure SSL Checkout</span>
             <span>✓ 30-Day Money-Back Guarantee</span>
+          </div>
+          <div className="mt-12 max-w-3xl mx-auto">
+            <Image
+              src="/hero.webp"
+              alt="PLR Digital Club — 1,000+ PLR & MRR digital products preview"
+              width={1200}
+              height={630}
+              priority
+              className="w-full rounded-2xl border border-white/10 shadow-2xl"
+            />
           </div>
         </div>
       </section>
@@ -149,10 +162,20 @@ export default function HomePage() {
           <p className="text-gray-500 text-center mb-10">A preview of what you get. Full access includes 48 categories with 1,000+ products.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {CATEGORIES.map((cat) => (
-              <Link key={cat.name} href={cat.href} className="bg-white rounded-xl border border-gray-200 p-6 hover:border-[#1565C0] hover:shadow-md transition-all">
-                <span className="text-3xl">{cat.icon}</span>
-                <h3 className="font-bold text-gray-900 mt-3 mb-1">{cat.name}</h3>
-                <p className="text-[#1565C0] text-sm font-semibold">{cat.count}</p>
+              <Link key={cat.name} href={cat.href} className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-[#1565C0] hover:shadow-md transition-all group">
+                <div className="aspect-[8/5] bg-[#1A1A4E] overflow-hidden">
+                  <Image
+                    src={cat.img}
+                    alt={cat.name}
+                    width={400}
+                    height={250}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-bold text-gray-900 mb-1">{cat.name}</h3>
+                  <p className="text-[#1565C0] text-sm font-semibold">{cat.count}</p>
+                </div>
               </Link>
             ))}
           </div>
