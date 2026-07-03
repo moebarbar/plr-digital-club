@@ -18,14 +18,24 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Invalid signature' }, { status: 400 })
   }
 
-  // Return 200 immediately — process async
-  const response = NextResponse.json({ received: true }, { status: 200 })
-
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session
     const userId = session.metadata?.supabase_user_id
     if (userId) {
       const admin = getSupabaseAdmin()
+
+      // Idempotency: Stripe retries webhooks on timeouts/errors. If we've
+      // already recorded this checkout session, skip so retries can't insert
+      // a duplicate order or re-send the welcome email.
+      const { data: existing } = await admin
+        .from('orders')
+        .select('id')
+        .eq('stripe_session_id', session.id)
+        .maybeSingle()
+
+      if (existing) {
+        return NextResponse.json({ received: true, duplicate: true }, { status: 200 })
+      }
 
       await admin.from('profiles').update({ is_active: true }).eq('id', userId)
 
@@ -54,5 +64,7 @@ export async function POST(request: Request) {
     console.error('Payment failed:', event.data.object)
   }
 
-  return response
+  // 200 only after processing succeeds — if anything above throws, Stripe
+  // gets a 500 and retries, and the idempotency check makes retries safe.
+  return NextResponse.json({ received: true }, { status: 200 })
 }
