@@ -105,6 +105,18 @@ declare module "http" {
   }
 }
 
+// Security headers on every response (Vite-served pages and static assets).
+// Keep identical to SECURITY_HEADERS in plr-members/next.config.ts — proxied
+// Next responses carry the same values, so either layer answering is fine.
+app.use((_req, res, next) => {
+  res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+  next();
+});
+
 app.use(
   express.json({
     verify: (req, _res, buf) => {
@@ -153,6 +165,27 @@ app.use((req, res, next) => {
   });
 
   if (process.env.NODE_ENV === "production") {
+    // Fail loudly (in logs) on missing configuration. A missing NEXT_PUBLIC_*
+    // var otherwise surfaces only as a cryptic client-side "Failed to fetch".
+    const REQUIRED_ENV = [
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "SUPABASE_SERVICE_ROLE_KEY",
+      "STRIPE_SECRET_KEY",
+      "STRIPE_PRICE_ID",
+      "STRIPE_WEBHOOK_SECRET",
+      "RESEND_API_KEY",
+      "ADMIN_EMAIL",
+      "NEXT_PUBLIC_APP_URL",
+    ];
+    const missing = REQUIRED_ENV.filter((name) => !process.env[name]);
+    for (const name of missing) {
+      log(`MISSING REQUIRED ENV VAR: ${name} — auth/payments/email will fail until it is set`, "env");
+    }
+    if (missing.length === 0) {
+      log("all required env vars present", "env");
+    }
+
     // Start Next.js on internal port 3001
     const nextBin = path.join(process.cwd(), "plr-members", "node_modules", ".bin", "next");
     const nextCwd = path.join(process.cwd(), "plr-members");
