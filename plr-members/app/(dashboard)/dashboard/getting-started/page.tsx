@@ -1,3 +1,5 @@
+import StartChecklist from '@/components/dashboard/StartChecklist'
+
 const LICENSES = [
   {
     name: 'Personal Use License',
@@ -117,6 +119,9 @@ export default function GettingStartedPage() {
           </p>
         </div>
       </div>
+
+      {/* First-week roadmap (progress saved locally) */}
+      <StartChecklist />
 
       {/* Important notice */}
       <div className="flex gap-4 bg-amber-50 border border-amber-200 rounded-xl p-5">
