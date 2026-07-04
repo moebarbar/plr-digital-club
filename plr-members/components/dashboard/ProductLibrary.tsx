@@ -16,7 +16,20 @@ interface ProductLibraryProps {
 export default function ProductLibrary({ products, categories, initialCategory }: ProductLibraryProps) {
   const [query, setQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState(initialCategory ?? 'all')
+  const [newOnly, setNewOnly] = useState(false)
   const [sortBy, setSortBy] = useState<SortOption>('newest')
+
+  // Product count per category slug, so the filter chips show real numbers.
+  const categoryCounts = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const p of products) {
+      const slug = p.categories?.slug
+      if (slug) counts.set(slug, (counts.get(slug) ?? 0) + 1)
+    }
+    return counts
+  }, [products])
+
+  const newCount = useMemo(() => products.filter((p) => p.is_new).length, [products])
 
   const filtered = useMemo(() => {
     let result = [...products]
@@ -25,12 +38,17 @@ export default function ProductLibrary({ products, categories, initialCategory }
       result = result.filter((p) => p.categories?.slug === activeCategory)
     }
 
+    if (newOnly) {
+      result = result.filter((p) => p.is_new)
+    }
+
     if (query.trim()) {
       const q = query.toLowerCase()
       result = result.filter(
         (p) =>
           p.title.toLowerCase().includes(q) ||
-          (p.description ?? '').toLowerCase().includes(q)
+          (p.description ?? '').toLowerCase().includes(q) ||
+          (p.categories?.name ?? '').toLowerCase().includes(q)
       )
     }
 
@@ -42,7 +60,7 @@ export default function ProductLibrary({ products, categories, initialCategory }
     // 'newest' is already ordered by created_at desc from server
 
     return result
-  }, [products, activeCategory, query, sortBy])
+  }, [products, activeCategory, newOnly, query, sortBy])
 
   return (
     <div>
@@ -61,7 +79,19 @@ export default function ProductLibrary({ products, categories, initialCategory }
       {/* Filters + sort */}
       <div className="flex items-center justify-between mt-4 gap-4">
         <div className="flex gap-2 overflow-x-auto pb-1 flex-1">
-          {[{ name: 'All', slug: 'all' }, ...categories.map((c) => ({ name: c.name, slug: c.slug }))].map(
+          {newCount > 0 && (
+            <button
+              onClick={() => setNewOnly((v) => !v)}
+              className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap cursor-pointer transition-colors ${
+                newOnly
+                  ? 'bg-accent text-white'
+                  : 'bg-white border border-accent/40 text-accent hover:border-accent'
+              }`}
+            >
+              ✨ New ({newCount})
+            </button>
+          )}
+          {[{ name: 'All', slug: 'all', count: products.length }, ...categories.map((c) => ({ name: c.name, slug: c.slug, count: categoryCounts.get(c.slug) ?? 0 }))].map(
             (cat) => (
               <button
                 key={cat.slug}
@@ -73,6 +103,9 @@ export default function ProductLibrary({ products, categories, initialCategory }
                 }`}
               >
                 {cat.name}
+                <span className={`ml-1.5 text-xs ${activeCategory === cat.slug ? 'text-blue-200' : 'text-gray-400'}`}>
+                  {cat.count}
+                </span>
               </button>
             )
           )}
